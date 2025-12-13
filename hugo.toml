@@ -37,5 +37,21 @@ theme = "PaperMod"
   url = "/"
   weight = 1
 
+[[params.socialIcons]]
+  name = "mastodon"
+  url = "https://mamutovo.cz/@oscloud"
+  title = "Mastodon"
+
+[[params.socialIcons]]
+  name = "email"
+  url = "mailto:info@oscloud.cz"
+  title = "E-mail"
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://git.arch-linux.cz/Oscloud"
+  title = "Gitea (Oscloud)"
+
+
 
 
