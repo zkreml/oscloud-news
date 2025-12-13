@@ -1,0 +1,5 @@
+baseURL = "http://localhost/"
+languageCode = "cs-cz"
+title = "Oscloud News"
+theme = "PaperMod"
+
