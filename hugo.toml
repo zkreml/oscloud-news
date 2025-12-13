@@ -2,4 +2,7 @@ baseURL = "http://localhost/"
 languageCode = "cs-cz"
 title = "Oscloud News"
 theme = "PaperMod"
+[params]
+  label.icon = "logo.png"
+  label.text = "Oscloud News"
 
