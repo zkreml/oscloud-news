@@ -49,6 +49,8 @@ oscloud-news/
 
 - technické zápisky k Oscloudu
 
+- novinky
+
 ## Bez
 
 komentářů
