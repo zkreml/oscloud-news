@@ -1,6 +1,6 @@
 baseURL = "http://localhost/"
 languageCode = "cs-cz"
-title = "Blog Oscloud"
+title = "Oscloud News"
 theme = "PaperMod"
 
 [params]
@@ -12,7 +12,7 @@ theme = "PaperMod"
   ShowRssButtonInSectionTermList = true
   ShowToc = false
   label.icon = "logo.png"
-  label.text = "Blog Oscloud"
+  label.text = "Oscloud News"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
