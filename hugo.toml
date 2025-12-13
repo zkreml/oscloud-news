@@ -32,4 +32,10 @@ theme = "PaperMod"
   url = "/tags/"
   weight = 30
 
+[[menu.main]]
+  name = "🇨🇿"
+  url = "/"
+  weight = 1
+
+
 
