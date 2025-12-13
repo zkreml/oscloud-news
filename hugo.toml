@@ -1,0 +1,23 @@
+baseURL = "https://news.oscloud.cz/"
+languageCode = "cs-cz"
+title = "Oscloud News"
+theme = "ananke"
+
+[params]
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+
+[[params.socialIcons]]
+  name = "mastodon"
+  url = "https://mamutovo.cz/@oscloud"
+
+[[params.socialIcons]]
+  name = "email"
+  url = "mailto:info@oscloud.cz"
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://git.arch-linux.cz/Oscloud"
