@@ -1,8 +1,34 @@
 baseURL = "http://localhost/"
 languageCode = "cs-cz"
-title = "Oscloud News"
+title = "Blog Oscloud"
 theme = "PaperMod"
+
 [params]
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowRssButtonInSectionTermList = true
+  ShowToc = false
   label.icon = "logo.png"
-  label.text = "Oscloud News"
+  label.text = "Blog Oscloud"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+[[menu.main]]
+  name = "Archiv"
+  url = "/archives/"
+  weight = 10
+
+[[menu.main]]
+  name = "Vyhledávání"
+  url = "/search/"
+  weight = 20
+
+[[menu.main]]
+  name = "Tagy"
+  url = "/tags/"
+  weight = 30
+
 
