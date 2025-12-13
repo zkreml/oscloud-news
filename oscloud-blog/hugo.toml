@@ -22,7 +22,7 @@ theme = "PaperMod"
 [params.homeInfoParams]
   Title = "Oscloud News"
   Content = """
-Novinky, změny a důležité informace kolem **Oscloudu**.
+Novinky, změny a důležité informace kolem **[Oscloudu](https://oscloud.cz)**.
 
 - aktualizace služeb  
 - nové aplikace  
