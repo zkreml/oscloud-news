@@ -1,3 +1,63 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "http://localhost/"
+languageCode = "cs-cz"
+title = "Oscloud News"
+theme = "PaperMod"
+[pagination]
+ pagerSize = 5
+
+[params]
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowRssButtonInSectionTermList = true
+  ShowToc = false
+
+[params.label]
+  text = "Oscloud News"
+  icon = "logo.png"
+  iconHeight = 32
+
+[params.homeInfoParams]
+  Title = "Oscloud News"
+  Content = """
+Novinky, změny a důležité informace kolem **Oscloudu**.
+
+- aktualizace služeb  
+- nové aplikace  
+- provozní informace
+"""
+
+[[params.socialIcons]]
+  name = "mastodon"
+  url = "https://mamutovo.cz/@oscloud"
+
+[[params.socialIcons]]
+  name = "email"
+  url = "mailto:info@oscloud.cz"
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://git.arch-linux.cz/Oscloud"
+
+[[menu.main]]
+  name = "🇨🇿"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Archiv"
+  url = "/archives/"
+  weight = 10
+
+[[menu.main]]
+  name = "Vyhledávání"
+  url = "/search/"
+  weight = 20
+
+[[menu.main]]
+  name = "Tagy"
+  url = "/tags/"
+  weight = 30
+
