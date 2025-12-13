@@ -41,3 +41,18 @@ oscloud-news/
 └─ README.md
 ```
 
+## Krátké novinky
+
+- oznámení
+
+- změny služeb
+
+- technické zápisky k Oscloudu
+
+## Bez
+
+komentářů
+
+uživatelských účtů
+
+marketingového balastu
