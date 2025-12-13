@@ -1,4 +1,4 @@
-baseURL = "http://localhost/"
+baseURL = "https://blog.oscloud.cz"
 languageCode = "cs-cz"
 title = "Oscloud News"
 theme = "PaperMod"
