@@ -64,3 +64,6 @@ Novinky, změny a důležité informace kolem **[Oscloudu](https://oscloud.cz)**
   url = "/tags/"
   weight = 30
 
+[markup.goldmark.renderer]
+  unsafe = true
+

@@ -4,10 +4,20 @@
     <title>Posts on Oscloud News</title>
     <link>https://blog.oscloud.cz/posts/</link>
     <description>Recent content in Posts on Oscloud News</description>
-    <generator>Hugo -- 0.152.2</generator>
+    <generator>Hugo -- 0.153.1</generator>
     <language>cs-cz</language>
     <lastBuildDate>Sat, 13 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.oscloud.cz/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VHSky.cz – ohlédnutí za rokem 2025 🎬</title>
+      <link>https://blog.oscloud.cz/posts/vhsky-2025/</link>
+      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.oscloud.cz/posts/vhsky-2025/</guid>
+      <description>&lt;p&gt;VHSky.cz vzniklo jako PeerTube instance pro komunitní videoobsah. Rok 2025 byl prvním rokem, kdy se ukázalo, že má smysl projekt dělat dál.&lt;/p&gt;
+&lt;h2 id=&#34;proč-vlastně-peertube-&#34;&gt;Proč vlastně PeerTube? 🤔&lt;/h2&gt;
+&lt;p&gt;YouTube se stal faktickým monopolem na video hosting. Pravidla se mění podle toho, jak se to hodí korporátu, algoritmy rozhodují o tom, co se dostane k divákům, a celý systém stojí na centralizovaném modelu, který tvůrcům dává minimální kontrolu.&lt;/p&gt;
+&lt;p&gt;VHSky.cz vzniklo jako alternativa pro ty, kteří chtějí publikovat videa bez reklam, bez sledování a bez závislosti na jedné komerční platformě. Ne jako náhrada YouTube, ale jako svobodná možnost vedle něj.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Vítejte na Oscloud News</title>
       <link>https://blog.oscloud.cz/posts/vitejte-na-oscloud-news/</link>

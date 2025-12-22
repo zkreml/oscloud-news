@@ -4,7 +4,7 @@
     <title>Tags on Oscloud News</title>
     <link>https://blog.oscloud.cz/tags/</link>
     <description>Recent content in Tags on Oscloud News</description>
-    <generator>Hugo -- 0.152.2</generator>
+    <generator>Hugo -- 0.153.1</generator>
     <language>cs-cz</language>
     <lastBuildDate>Sat, 13 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.oscloud.cz/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -20,6 +20,20 @@
       <link>https://blog.oscloud.cz/tags/oscloud/</link>
       <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://blog.oscloud.cz/tags/oscloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Peertube</title>
+      <link>https://blog.oscloud.cz/tags/peertube/</link>
+      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.oscloud.cz/tags/peertube/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vhsky</title>
+      <link>https://blog.oscloud.cz/tags/vhsky/</link>
+      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.oscloud.cz/tags/vhsky/</guid>
       <description></description>
     </item>
   </channel>
