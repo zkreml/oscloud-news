@@ -44,6 +44,14 @@ Novinky, změny a důležité informace kolem **[Oscloudu](https://oscloud.cz)**
   name = "github"
   url = "https://git.arch-linux.cz/Oscloud"
 
+[[params.socialIcons]]
+  name = "rss"
+  url = "/index.xml"
+
+[[params.socialIcons]]
+  name = "peertube"
+  url = "https://vhsky.cz/c/oscloud/videos"
+
 [[menu.main]]
   name = "🇨🇿"
   url = "/"
