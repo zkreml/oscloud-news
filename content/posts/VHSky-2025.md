@@ -48,9 +48,13 @@ Na překladu a zpracování se podíleli:
 
 ## OpenAlt 2025
 
-Největším testem byl OpenAlt. Podařilo se vystreamovat všechny přednášky, což ukázalo, že technické zázemí drží i pod zátěží. OpenAlt znovu potvrdil, že dělat projekty otevřeně a komunitně má smysl – a bylo fajn potkat lidi, kteří přemýšlejí podobně.
+OpenAlt byl pro VHSky.cz největší technickou zkouškou. Bylo dopředu jasné, že samotný server instance by kompletní streamování a transkódování všech přednášek nezvládl. PeerTube naštěstí umožňuje využít vzdálené runnery, které převezmou výpočetně náročné úlohy.
 
-## Díky patří 🙏
+Zásadní ale je, že transkódování nelze kombinovat – buď běží celé lokálně, nebo celé na runnerech. Bylo tedy nutné zajistit dostatek výkonu, který by pokryl vše. Díky vstřícnosti Adama Štraucha a týmu z rosti.cz jsme mohli využít zapůjčený výkonný stroj, na kterém běžel samostatný runner určený výhradně pro OpenAlt.
+
+Díky tomuto zázemí se podařilo všechny přednášky odstreamovat.
+
+## Poděkování 🙏
 
 Velké poděkování patří moderátorům, kteří udržují komunitu funkční a atmosféru slušnou – zvlášť [Schmakerovi](https://schmaker.eu/profile/schmaker) za dlouhodobou a konzistentní práci.
 
