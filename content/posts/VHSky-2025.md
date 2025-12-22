@@ -34,7 +34,7 @@ U stejného poskytovatele běží také VPS s runnerem, který zajišťuje náro
 
 ### Komunitní spolupráce 🤝
 
-Runner pro titulky se stal základem pro jednu hezkou komunitní akci. Společně se nám podařilo připravit českou verzi videa, které slouží jako barvitý úvod do světa sociální sítě Fediverse. Video představuje alternativní pohled na sociální média – s respektem k soukromí, důrazem na uživatele a bez vlivu velkých technologických firem.
+Společně se nám podařilo připravit českou verzi videa, které slouží jako barvitý úvod do světa sociální sítě Fediverse. Video představuje alternativní pohled na sociální média – s respektem k soukromí, důrazem na uživatele a bez vlivu velkých technologických firem.
 
 Na překladu a zpracování se podíleli:
 
