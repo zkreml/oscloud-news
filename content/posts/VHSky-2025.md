@@ -54,6 +54,8 @@ Zásadní ale je, že transkódování nelze kombinovat – buď běží celé l
 
 Díky tomuto zázemí se podařilo všechny přednášky odstreamovat.
 
+<iframe title="PeerTube - software za Vhsky.cz (Jiří Eischmann)" width="560" height="315" src="https://vhsky.cz/videos/embed/dpzeh2rWGrqMvWG9gU9RoP" style="border: 0px;" allow="fullscreen" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+
 ## Poděkování 🙏
 
 Velké poděkování patří moderátorům, kteří udržují komunitu funkční a atmosféru slušnou – zvlášť [Schmakerovi](https://schmaker.eu/profile/schmaker) za dlouhodobou a konzistentní práci.
