@@ -2,38 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Oscloud News</title>
-    <link>https://blog.oscloud.cz/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Oscloud News</description>
-    <generator>Hugo -- 0.153.1</generator>
+    <generator>Hugo -- 0.153.3</generator>
     <language>cs-cz</language>
-    <lastBuildDate>Sat, 13 Dec 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blog.oscloud.cz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Jan 2026 11:20:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Novinky</title>
-      <link>https://blog.oscloud.cz/tags/novinky/</link>
-      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://blog.oscloud.cz/tags/novinky/</guid>
+      <title>Komunita</title>
+      <link>http://localhost:1313/tags/komunita/</link>
+      <pubDate>Thu, 01 Jan 2026 11:20:00 +0100</pubDate>
+      <guid>http://localhost:1313/tags/komunita/</guid>
       <description></description>
     </item>
     <item>
       <title>Oscloud</title>
-      <link>https://blog.oscloud.cz/tags/oscloud/</link>
+      <link>http://localhost:1313/tags/oscloud/</link>
+      <pubDate>Thu, 01 Jan 2026 11:20:00 +0100</pubDate>
+      <guid>http://localhost:1313/tags/oscloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Novinky</title>
+      <link>http://localhost:1313/tags/novinky/</link>
       <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://blog.oscloud.cz/tags/oscloud/</guid>
+      <guid>http://localhost:1313/tags/novinky/</guid>
       <description></description>
     </item>
     <item>
       <title>Peertube</title>
-      <link>https://blog.oscloud.cz/tags/peertube/</link>
+      <link>http://localhost:1313/tags/peertube/</link>
       <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://blog.oscloud.cz/tags/peertube/</guid>
+      <guid>http://localhost:1313/tags/peertube/</guid>
       <description></description>
     </item>
     <item>
       <title>Vhsky</title>
-      <link>https://blog.oscloud.cz/tags/vhsky/</link>
+      <link>http://localhost:1313/tags/vhsky/</link>
       <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://blog.oscloud.cz/tags/vhsky/</guid>
+      <guid>http://localhost:1313/tags/vhsky/</guid>
       <description></description>
     </item>
   </channel>

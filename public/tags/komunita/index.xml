@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Oscloud on Oscloud News</title>
-    <link>http://localhost:1313/tags/oscloud/</link>
-    <description>Recent content in Oscloud on Oscloud News</description>
+    <title>Komunita on Oscloud News</title>
+    <link>http://localhost:1313/tags/komunita/</link>
+    <description>Recent content in Komunita on Oscloud News</description>
     <generator>Hugo -- 0.153.3</generator>
     <language>cs-cz</language>
     <lastBuildDate>Thu, 01 Jan 2026 11:20:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/oscloud/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/komunita/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Šťastný nový rok 2026</title>
       <link>http://localhost:1313/posts/stastny-novy-rok-2026/</link>
@@ -17,13 +17,6 @@
 &lt;p&gt;Do roku 2026 přejeme hlavně zdraví, klid, stabilní systémy, funkční zálohy a komunitu, která drží při sobě.&lt;/p&gt;
 &lt;p&gt;Díky, že společně dáváme smysl otevřenému, bezpečnému a komunitnímu cloudu. Těšíme se na další společný rok.&lt;/p&gt;
 &lt;p&gt;Tým OSCloud&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Vítejte na Oscloud News</title>
-      <link>http://localhost:1313/posts/vitejte-na-oscloud-news/</link>
-      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/vitejte-na-oscloud-news/</guid>
-      <description>Oficiální start blogu Oscloud News – místo pro novinky, změny a plány komunitního projektu Oscloud.</description>
     </item>
   </channel>
 </rss>

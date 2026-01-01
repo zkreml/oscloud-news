@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Peertube on Oscloud News</title>
-    <link>https://blog.oscloud.cz/tags/peertube/</link>
+    <link>http://localhost:1313/tags/peertube/</link>
     <description>Recent content in Peertube on Oscloud News</description>
-    <generator>Hugo -- 0.153.1</generator>
+    <generator>Hugo -- 0.153.3</generator>
     <language>cs-cz</language>
     <lastBuildDate>Sat, 13 Dec 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blog.oscloud.cz/tags/peertube/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/peertube/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VHSky.cz – ohlédnutí za rokem 2025 🎬</title>
-      <link>https://blog.oscloud.cz/posts/vhsky-2025/</link>
+      <link>http://localhost:1313/posts/vhsky-2025/</link>
       <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://blog.oscloud.cz/posts/vhsky-2025/</guid>
+      <guid>http://localhost:1313/posts/vhsky-2025/</guid>
       <description>&lt;p&gt;VHSky.cz vzniklo jako PeerTube instance pro komunitní videoobsah. Rok 2025 byl prvním rokem, kdy se ukázalo, že má smysl projekt dělat dál.&lt;/p&gt;
 &lt;h2 id=&#34;proč-vlastně-peertube-&#34;&gt;Proč vlastně PeerTube? 🤔&lt;/h2&gt;
 &lt;p&gt;YouTube se stal faktickým monopolem na video hosting. Pravidla se mění podle toho, jak se to hodí korporátu, algoritmy rozhodují o tom, co se dostane k divákům, a celý systém stojí na centralizovaném modelu, který tvůrcům dává minimální kontrolu.&lt;/p&gt;
