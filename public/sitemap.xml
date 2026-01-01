@@ -2,43 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/komunita/</loc>
+    <loc>https://blog.oscloud.cz/tags/komunita/</loc>
     <lastmod>2026-01-01T11:20:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/oscloud/</loc>
+    <loc>https://blog.oscloud.cz/tags/oscloud/</loc>
     <lastmod>2026-01-01T11:20:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://blog.oscloud.cz/</loc>
     <lastmod>2026-01-01T11:20:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://blog.oscloud.cz/posts/</loc>
     <lastmod>2026-01-01T11:20:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/stastny-novy-rok-2026/</loc>
+    <loc>https://blog.oscloud.cz/posts/stastny-novy-rok-2026/</loc>
     <lastmod>2026-01-01T11:20:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://blog.oscloud.cz/tags/</loc>
     <lastmod>2026-01-01T11:20:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/novinky/</loc>
+    <loc>https://blog.oscloud.cz/tags/novinky/</loc>
     <lastmod>2025-12-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/peertube/</loc>
+    <loc>https://blog.oscloud.cz/tags/peertube/</loc>
     <lastmod>2025-12-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/vhsky/</loc>
+    <loc>https://blog.oscloud.cz/tags/vhsky/</loc>
     <lastmod>2025-12-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/vhsky-2025/</loc>
+    <loc>https://blog.oscloud.cz/posts/vhsky-2025/</loc>
     <lastmod>2025-12-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/vitejte-na-oscloud-news/</loc>
+    <loc>https://blog.oscloud.cz/posts/vitejte-na-oscloud-news/</loc>
     <lastmod>2025-12-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/archives/</loc>
+    <loc>https://blog.oscloud.cz/archives/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://blog.oscloud.cz/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/search/</loc>
+    <loc>https://blog.oscloud.cz/search/</loc>
   </url>
 </urlset>

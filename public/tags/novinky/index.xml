@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Novinky on Oscloud News</title>
-    <link>http://localhost:1313/tags/novinky/</link>
+    <link>https://blog.oscloud.cz/tags/novinky/</link>
     <description>Recent content in Novinky on Oscloud News</description>
     <generator>Hugo -- 0.153.3</generator>
     <language>cs-cz</language>
     <lastBuildDate>Sat, 13 Dec 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/novinky/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.oscloud.cz/tags/novinky/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vítejte na Oscloud News</title>
-      <link>http://localhost:1313/posts/vitejte-na-oscloud-news/</link>
+      <link>https://blog.oscloud.cz/posts/vitejte-na-oscloud-news/</link>
       <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/vitejte-na-oscloud-news/</guid>
+      <guid>https://blog.oscloud.cz/posts/vitejte-na-oscloud-news/</guid>
       <description>Oficiální start blogu Oscloud News – místo pro novinky, změny a plány komunitního projektu Oscloud.</description>
     </item>
   </channel>
