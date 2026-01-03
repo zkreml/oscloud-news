@@ -6,8 +6,46 @@
     <description>Recent content on Oscloud News</description>
     <generator>Hugo -- 0.153.3</generator>
     <language>cs-cz</language>
-    <lastBuildDate>Thu, 01 Jan 2026 11:20:00 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 03 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.oscloud.cz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OSCloud 2026: Tvoje data, tvoje pravidla</title>
+      <link>https://blog.oscloud.cz/posts/oscloud-2026/</link>
+      <pubDate>Sat, 03 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.oscloud.cz/posts/oscloud-2026/</guid>
+      <description>&lt;p&gt;Provozujeme OSCloud pro lidi, co chtějí mít kontrolu nad svými daty. Žádný Google, žádný Microsoft, žádný tracking. Jenom open source aplikace na našem dedikovaném serveru.&lt;/p&gt;
+&lt;h2 id=&#34;co-máme-k-dispozici&#34;&gt;Co máme k dispozici&lt;/h2&gt;
+&lt;h3 id=&#34;komunikace&#34;&gt;Komunikace&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://docs.oscloud.cz/apps/mirotalk/&#34;&gt;Talk&lt;/a&gt;&lt;/strong&gt; – videohovory bez instalace, přímo z prohlížeče&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://web.mxchat.cz/&#34;&gt;MxChat&lt;/a&gt;&lt;/strong&gt; – Matrix chat, šifrovaný end-to-end&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://about.mamutovo.cz/&#34;&gt;Mastodon&lt;/a&gt;&lt;/strong&gt; – decentralizovaná sociální síť bez algoritmů&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;produktivita&#34;&gt;Produktivita&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://docs.oscloud.cz/apps/nextcloud/&#34;&gt;Nextcloud&lt;/a&gt;&lt;/strong&gt; – Cloudové úložiště s online kanceláří.
+Díky integraci Collabora Online (postavené na LibreOffice) můžete dokumenty upravovat přímo v prohlížeči.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://docs.oscloud.cz/apps/cryptpad/&#34;&gt;CryptPad&lt;/a&gt;&lt;/strong&gt; – kancelář kde nikdo nevidí co píšeš&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://docs.oscloud.cz/apps/hedgedoc/&#34;&gt;HedgeDoc&lt;/a&gt;&lt;/strong&gt; – kolaborace na dokumentech real-time&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Vikunja&lt;/strong&gt; – task manager bez cloud vendor lock-in&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://docs.oscloud.cz/apps/triliumnext/&#34;&gt;Trilium&lt;/a&gt;&lt;/strong&gt; – hierarchické poznámky pro všechno&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;média--content&#34;&gt;Média &amp;amp; Content&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://docs.oscloud.cz/apps/peertube/&#34;&gt;PeerTube&lt;/a&gt;&lt;/strong&gt; – video hosting bez YouTube&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://pixelfed.cz&#34;&gt;Pixelfed&lt;/a&gt;&lt;/strong&gt; – fotky bez Instagramu&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://docs.oscloud.cz/apps/immich/&#34;&gt;Immich&lt;/a&gt;&lt;/strong&gt; – foto galerie pro fotografy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;utilita&#34;&gt;Utilita&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://docs.oscloud.cz/apps/vaultwarden/&#34;&gt;Vaultwarden&lt;/a&gt;&lt;/strong&gt; – správce hesel self-hosted&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://docs.oscloud.cz/apps/wallabag/&#34;&gt;Wallabag&lt;/a&gt;&lt;/strong&gt; – read-it-later bez Pocket&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://docs.oscloud.cz/apps/tinytinyrss/&#34;&gt;Tiny Tiny RSS&lt;/a&gt;&lt;/strong&gt; – RSS reader&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://docs.oscloud.cz/apps/pairdrop/&#34;&gt;PairDrop&lt;/a&gt;&lt;/strong&gt; – sdílení souborů P2P, žádný cloud uprostřed&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://docs.oscloud.cz/apps/searxng/&#34;&gt;SearXNG&lt;/a&gt;&lt;/strong&gt; – meta-vyhledávač bez trackingu&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Postupně zde budeme představovat všechny aplikace&lt;/strong&gt; – použití, tipy, proč je používáme a jak ti můžou pomoct zbavit se big tech závislosti.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Šťastný nový rok 2026</title>
       <link>https://blog.oscloud.cz/posts/stastny-novy-rok-2026/</link>
