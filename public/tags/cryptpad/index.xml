@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Cryptpad on Oscloud News</title>
-    <link>http://localhost:1313/tags/cryptpad/</link>
+    <link>https://blog.oscloud.cz/tags/cryptpad/</link>
     <description>Recent content in Cryptpad on Oscloud News</description>
     <generator>Hugo -- 0.155.2</generator>
     <language>cs-cz</language>
     <lastBuildDate>Sat, 07 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/cryptpad/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.oscloud.cz/tags/cryptpad/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CryptPad: Bezpečná kancelář, která nevidí do vašich dokumentů</title>
-      <link>http://localhost:1313/posts/crytpad/</link>
+      <link>https://blog.oscloud.cz/posts/crytpad/</link>
       <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/crytpad/</guid>
+      <guid>https://blog.oscloud.cz/posts/crytpad/</guid>
       <description>&lt;h2 id=&#34;cryptpad-bezpečná-kancelář-která-nevidí-do-vašich-dokumentů&#34;&gt;CryptPad: Bezpečná kancelář, která nevidí do vašich dokumentů&lt;/h2&gt;
 &lt;p&gt;Představte si, že píšete dokument, tabulku nebo poznámky přímo v prohlížeči, sdílíte je s kolegy a spolupracujete v reálném čase – ale na rozdíl od Google Docs nebo Microsoft 365 váš obsah nikdy neuvidí provozovatel serveru, žádná firma ho neskenuje kvůli reklamám a žádný algoritmus ho neanalyzuje. Přesně tohle nabízí &lt;strong&gt;CryptPad&lt;/strong&gt; – open-source kancelářský balík s end-to-end šifrováním.&lt;/p&gt;
 &lt;p&gt;Na OSCloud ho najdete na adrese &lt;a href=&#34;https://cryptpad.arch-linux.cz/&#34;&gt;&lt;strong&gt;https://cryptpad.arch-linux.cz/&lt;/strong&gt;&lt;/a&gt; – běží v našem komunitním prostředí bez reklam, trackingu a prodávání dat. Je to nástroj pro každého, kdo chce pracovat s dokumenty online, ale nechce je svěřovat velkým technologickým firmám.&lt;/p&gt;</description>
