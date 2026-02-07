@@ -26,10 +26,12 @@ Volba mamutovo.cz nepadla náhodně, ale hlavně proto, že tato doména působ�
 Mastodon jako takový nekončí, pouze budeme provozovat pouze jednu instanci - **mamutovo.cz**.
 
 Pokud budete potřebovat, samozřejmě vám pomůžeme s:
+
 - Migrací účtu (přesměrování followerů)
 - Exportem a importem dat
 - Vysvětlíme celý postup krok za krokem
 
+**Ivan pro vás připravil podrobný návod na migraci:** [Návod na migraci účtu](https://about.mamutovo.cz/zalozeni-uctu-2/)
 V případě, že se na to nebudete cítit, domluvíme si detaily přes PM a celý přenos provedeme za vás.
 
 ## Proč to děláme?
@@ -51,14 +53,17 @@ Celý přesun nebudeme dělat nijak překotně a dáme vám dost času se se zm�
 Jsme tady pro vás jako vždycky. Napište nám:
 
 **Soukromou zprávu:**
+
 - Archos: [@archos@mastodon.arch-linux.cz](https://mastodon.arch-linux.cz/@archos)
 - Ivan: [@cynik_obecny@mamutovo.cz](https://mamutovo.cz/@cynik_obecny)
 
 **Matrix:**
+
 - Archos: [matrix.to/#/@archos:mxchat.cz](https://matrix.to/#/@archos:mxchat.cz)
 - Ivan: [matrix.to/#/@ivan_stloukal:mxchat.cz](https://matrix.to/#/@ivan_stloukal:mxchat.cz)
 
 **WhatsApp, Telegram, Signal:**
+
 - Ivan: +447498113020
 - Archos: +420739274900
 

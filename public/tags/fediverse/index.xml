@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Fediverse on Oscloud News</title>
-    <link>https://blog.oscloud.cz/tags/fediverse/</link>
+    <link>http://localhost:1313/tags/fediverse/</link>
     <description>Recent content in Fediverse on Oscloud News</description>
     <generator>Hugo -- 0.155.2</generator>
     <language>cs-cz</language>
     <lastBuildDate>Sat, 07 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blog.oscloud.cz/tags/fediverse/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/fediverse/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sloučení Mastodon instancí – mamutovo.cz a mastodon.arch-linux.cz</title>
-      <link>https://blog.oscloud.cz/posts/slouceni-mastodon-instanci/</link>
+      <link>http://localhost:1313/posts/slouceni-mastodon-instanci/</link>
       <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://blog.oscloud.cz/posts/slouceni-mastodon-instanci/</guid>
+      <guid>http://localhost:1313/posts/slouceni-mastodon-instanci/</guid>
       <description>&lt;p&gt;Ahoj kamarádi, kolegoví, Mastodontíci!&lt;/p&gt;
 &lt;p&gt;Rádi bychom vás informovali o našich plánech a změnách na našich Mastodon instancích.&lt;/p&gt;
 &lt;p&gt;Jak určitě víte, provozujeme aktuálně dvě instance - &lt;strong&gt;mamutovo.cz&lt;/strong&gt; a &lt;strong&gt;mastodon.arch-linux.cz&lt;/strong&gt;. Rozhodli jsme se, že pro zjednodušení správy, aktualizací, a ano, samozřejmě i snížení nákladů na provoz bychom rádi ponechali jen jednu instanci – &lt;strong&gt;mamutovo.cz&lt;/strong&gt;, které chceme i nadále věnovat maximální prioritu.&lt;/p&gt;
