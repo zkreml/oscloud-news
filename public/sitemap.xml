@@ -2,74 +2,86 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.oscloud.cz/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2026-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/tags/fediverse/</loc>
+    <loc>http://localhost:1313/tags/cryptpad/</loc>
     <lastmod>2026-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/tags/mamutovo.cz/</loc>
+    <loc>http://localhost:1313/posts/crytpad/</loc>
     <lastmod>2026-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/tags/mastodon/</loc>
+    <loc>http://localhost:1313/tags/e2ee/</loc>
     <lastmod>2026-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/tags/oscloud/</loc>
+    <loc>http://localhost:1313/tags/fediverse/</loc>
     <lastmod>2026-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/</loc>
+    <loc>http://localhost:1313/tags/mamutovo.cz/</loc>
     <lastmod>2026-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/categories/ozn%C3%A1men%C3%AD/</loc>
+    <loc>http://localhost:1313/tags/mastodon/</loc>
     <lastmod>2026-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/posts/</loc>
+    <loc>http://localhost:1313/tags/oscloud/</loc>
     <lastmod>2026-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/posts/slouceni-mastodon-instanci/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2026-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/tags/</loc>
+    <loc>http://localhost:1313/categories/ozn%C3%A1men%C3%AD/</loc>
     <lastmod>2026-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/tags/aplikace/</loc>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/slouceni-mastodon-instanci/</loc>
+    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/soukrom%C3%AD/</loc>
+    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/aplikace/</loc>
     <lastmod>2026-01-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/tags/nextcloud/</loc>
+    <loc>http://localhost:1313/tags/nextcloud/</loc>
     <lastmod>2026-01-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/posts/nextcloud-oscloud/</loc>
+    <loc>http://localhost:1313/posts/nextcloud-oscloud/</loc>
     <lastmod>2026-01-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/tags/privacy/</loc>
+    <loc>http://localhost:1313/tags/privacy/</loc>
     <lastmod>2026-01-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/tags/komunita/</loc>
+    <loc>http://localhost:1313/tags/komunita/</loc>
     <lastmod>2026-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/posts/oscloud-2026/</loc>
+    <loc>http://localhost:1313/posts/oscloud-2026/</loc>
     <lastmod>2026-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/posts/stastny-novy-rok-2026/</loc>
+    <loc>http://localhost:1313/posts/stastny-novy-rok-2026/</loc>
     <lastmod>2026-01-01T11:20:00+01:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/tags/novinky/</loc>
+    <loc>http://localhost:1313/tags/novinky/</loc>
     <lastmod>2025-12-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/tags/peertube/</loc>
+    <loc>http://localhost:1313/tags/peertube/</loc>
     <lastmod>2025-12-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/tags/vhsky/</loc>
+    <loc>http://localhost:1313/tags/vhsky/</loc>
     <lastmod>2025-12-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/posts/vhsky-2025/</loc>
+    <loc>http://localhost:1313/posts/vhsky-2025/</loc>
     <lastmod>2025-12-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/posts/vitejte-na-oscloud-news/</loc>
+    <loc>http://localhost:1313/posts/vitejte-na-oscloud-news/</loc>
     <lastmod>2025-12-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/archives/</loc>
+    <loc>http://localhost:1313/archives/</loc>
   </url><url>
-    <loc>https://blog.oscloud.cz/search/</loc>
+    <loc>http://localhost:1313/search/</loc>
   </url>
 </urlset>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>CryptPad: Bezpečná kancelář, která nevidí do vašich dokumentů | Oscloud News</title>
+<meta name="keywords" content="cryptpad, soukromí, e2ee">
+<meta name="description" content="CryptPad: Bezpečná kancelář, která nevidí do vašich dokumentů
+Představte si, že píšete dokument, tabulku nebo poznámky přímo v prohlížeči, sdílíte je s kolegy a spolupracujete v reálném čase – ale na rozdíl od Google Docs nebo Microsoft 365 váš obsah nikdy neuvidí provozovatel serveru, žádná firma ho neskenuje kvůli reklamám a žádný algoritmus ho neanalyzuje. Přesně tohle nabízí CryptPad – open-source kancelářský balík s end-to-end šifrováním.
+Na OSCloud ho najdete na adrese https://cryptpad.arch-linux.cz/ – běží v našem komunitním prostředí bez reklam, trackingu a prodávání dat. Je to nástroj pro každého, kdo chce pracovat s dokumenty online, ale nechce je svěřovat velkým technologickým firmám.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/crytpad/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/crytpad/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><script defer src="https://analytics.oscloud.cz/script.js" data-website-id="70aaf052-385c-41fb-9cfe-d3b3c6f54f2d"></script>
+
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Oscloud News (Alt + H)">
+                <img src="http://localhost:1313/logo.png" alt="" aria-label="logo"
+                    height="32">Oscloud News</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="🇨🇿">
+                    <span>🇨🇿</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archiv">
+                    <span>Archiv</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="Vyhledávání">
+                    <span>Vyhledávání</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tagy">
+                    <span>Tagy</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      CryptPad: Bezpečná kancelář, která nevidí do vašich dokumentů
+    </h1>
+    <div class="post-meta"><span title='2026-02-07 00:00:00 +0000 UTC'>February 7, 2026</span>&nbsp;·&nbsp;<span>7 min</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="cryptpad-bezpečná-kancelář-která-nevidí-do-vašich-dokumentů">CryptPad: Bezpečná kancelář, která nevidí do vašich dokumentů<a hidden class="anchor" aria-hidden="true" href="#cryptpad-bezpečná-kancelář-která-nevidí-do-vašich-dokumentů">#</a></h2>
+<p>Představte si, že píšete dokument, tabulku nebo poznámky přímo v prohlížeči, sdílíte je s kolegy a spolupracujete v reálném čase – ale na rozdíl od Google Docs nebo Microsoft 365 váš obsah nikdy neuvidí provozovatel serveru, žádná firma ho neskenuje kvůli reklamám a žádný algoritmus ho neanalyzuje. Přesně tohle nabízí <strong>CryptPad</strong> – open-source kancelářský balík s end-to-end šifrováním.</p>
+<p>Na OSCloud ho najdete na adrese <a href="https://cryptpad.arch-linux.cz/"><strong>https://cryptpad.arch-linux.cz/</strong></a> – běží v našem komunitním prostředí bez reklam, trackingu a prodávání dat. Je to nástroj pro každého, kdo chce pracovat s dokumenty online, ale nechce je svěřovat velkým technologickým firmám.</p>
+<img src="/images/crytpad.png" alt="Crytpad" width="600">
+<h2 id="co-cryptpad-umí">Co CryptPad umí<a hidden class="anchor" aria-hidden="true" href="#co-cryptpad-umí">#</a></h2>
+<p>CryptPad není jen textový editor. Nabízí kompletní sadu nástrojů pro práci a spolupráci:</p>
+<ul>
+<li><strong>Textové dokumenty</strong> – bohatě formátovaný WYSIWYG editor podobný Google Docs</li>
+<li><strong>Tabulky</strong> – pro rozpočty, seznamy, jednoduché výpočty</li>
+<li><strong>Prezentace</strong> – slides pro prezentace a školení</li>
+<li><strong>Markdown/kód</strong> – pro programátory a pisatele dokumentace</li>
+<li><strong>Whiteboard</strong> – pro náčrty, brainstorming, vizuální spolupráci</li>
+<li><strong>Kanban</strong> – pro projektové plánování ve stylu Trello</li>
+<li><strong>Formuláře</strong> – pro ankety a sběr odpovědí</li>
+<li><strong>Sdílený disk (Drive)</strong> – organizace souborů do složek</li>
+</ul>
+<p>Všechno funguje přímo v prohlížeči, bez instalace. Můžete pracovat sami nebo s ostatními v reálném čase – vidíte kurzory spolupracovníků, změny se synchronizují okamžitě.</p>
+<h3 id="sdílení-bez-komplikací">Sdílení bez komplikací<a hidden class="anchor" aria-hidden="true" href="#sdílení-bez-komplikací">#</a></h3>
+<p>Každý dokument můžete sdílet pomocí odkazu. Nemusíte zakládat účet, nemusíte nikoho zvát emailem – stačí poslat URL. K tomu můžete nastavit:</p>
+<ul>
+<li><strong>Práva na čtení</strong> – ostatní vidí obsah, ale nemohou editovat</li>
+<li><strong>Práva na úpravy</strong> – kdokoliv s odkazem může měnit obsah</li>
+<li><strong>Heslo</strong> – ochrana odkazu heslem pro citlivější věci</li>
+<li><strong>Vlastníka</strong> – pokud máte účet, můžete dokument spravovat a mazat</li>
+</ul>
+<p>Bez účtu funguje CryptPad jako anonymní scratchpad – vytvoříte dokument, sdílíte odkaz, spolupracujete. S účtem získáte Drive, historii změn, možnost obnovit smazané dokumenty a lepší správu přístupů.</p>
+<h2 id="bezpečnost-a-soukromí-jak-to-funguje">Bezpečnost a soukromí: jak to funguje<a hidden class="anchor" aria-hidden="true" href="#bezpečnost-a-soukromí-jak-to-funguje">#</a></h2>
+<p>Tady začíná to zajímavé. CryptPad používá <strong>end-to-end šifrování (E2EE)</strong> – což znamená, že data se šifrují přímo ve vašem prohlížeči ještě předtím, než se odešlou na server. Server ukládá jen šifrovanou kaši, kterou bez klíče nemůže přečíst.</p>
+<h3 id="zero-knowledge-architektura">Zero-knowledge architektura<a hidden class="anchor" aria-hidden="true" href="#zero-knowledge-architektura">#</a></h3>
+<p>Provozovatel serveru (v případě OSCloud my) technicky nemůže vidět obsah vašich dokumentů. Nemůžeme je prohledávat, číst, analyzovat ani nikomu předat – protože máme jen zašifrovaná data. Klíč k dešifrování je součástí URL odkazu (za znakem <code>#</code>) a ten se nikdy neposílá na server.</p>
+<p><strong>Co to znamená v praxi:</strong></p>
+<ul>
+<li>Při úniku databáze útočník získá jen nečitelná zašifrovaná data</li>
+<li>Pokud by byl server kompromitován, útočník pořád nemůže přečíst vaše dokumenty</li>
+<li>Nemůžeme vás špehovat, prodat vaše data třetím stranám ani je předat na požádání</li>
+<li>Dokonce ani nemůžeme obnovit zapomenutý obsah – klíč máte jen vy</li>
+</ul>
+<h3 id="kde-má-e2ee-hranice">Kde má E2EE hranice<a hidden class="anchor" aria-hidden="true" href="#kde-má-e2ee-hranice">#</a></h3>
+<p>End-to-end šifrování je skvělá věc, ale není to kouzlo, které vyřeší všechno:</p>
+<p><strong>Ztráta přístupu:</strong> Pokud ztratíte odkaz na dokument (a nemáte účet nebo jej neuložíte do Drive), je pryč navždy. Server nemá jak ho najít nebo obnovit.</p>
+<p><strong>Metadata:</strong> I když obsah dokumentu je šifrovaný, server vidí <em>kdy</em> a <em>jak velký</em> dokument byl vytvořen, kolik lidí ho upravuje, IP adresy připojení (těch se ale zbavujeme pravidelným mazáním logů).</p>
+<p><strong>Heslo k účtu:</strong> Vaše heslo není šifrované klíčem – pokud ho někdo uhádne nebo ukradne, dostane se k vašim dokumentům. Používejte silné heslo a správce hesel.</p>
+<p><strong>Zálohy a export:</strong> Když si dokument exportujete nebo stáhnete, přestává být chráněný šifrováním. Soubor na disku je v plaintextu.</p>
+<p><strong>Prohlížeč a zařízení:</strong> Pokud máte kompromitovaný prohlížeč, keylogger nebo malware na počítači, E2EE vám nepomůže – útočník může číst data ještě před šifrováním.</p>
+<p>E2EE je silná ochrana proti útokům na server a proti provozovateli, který by chtěl šmírovat. Ale není to všelék – bezpečnost závisí i na vás.</p>
+<h2 id="cryptpad-na-oscloud">CryptPad na OSCloud<a hidden class="anchor" aria-hidden="true" href="#cryptpad-na-oscloud">#</a></h2>
+<p>OSCloud je komunitní ekosystém open-source služeb, které fungují jako alternativa k velkým komerčním platformám. CryptPad sem zapadá perfektně:</p>
+<ul>
+<li><strong>Komunitní provoz</strong> – žádná firma, která by vámi vydělávala, žádné reklamy, žádný tracking</li>
+<li><strong>EU datacentrum</strong> – servery běží v Německu (Hetzner), podléhají evropským zákonům o ochraně dat</li>
+</ul>
+<p>CryptPad na OSCloud je primárně pro členy komunity – lidi, kteří chtějí alternativu k big-tech kancelářím, ale nechtějí obětovat pohodlí. Není to replacement pro Google – je to nástroj pro ty, kdo vědomě odmítají surveillance capitalism a chtějí si udržet kontrolu nad svými daty.</p>
+<h3 id="pro-koho-se-to-hodí">Pro koho se to hodí<a hidden class="anchor" aria-hidden="true" href="#pro-koho-se-to-hodí">#</a></h3>
+<ul>
+<li><strong>Malé týmy a komunity</strong> – sdílené zápisy, plánování, dokumentace bez závislosti na Google Workspace</li>
+<li><strong>Studenti a učitelé</strong> – spolupráce na projektech bez trackingu a profilování</li>
+<li><strong>Aktivisté a občanské iniciativy</strong> – bezpečnější místo pro citlivé dokumenty</li>
+<li><strong>Kdokoliv řešící soukromí</strong> – prostě nechcete, aby vaše poznámky četl algoritmus</li>
+</ul>
+<p>Nejde o paranoju – jde o rozumnou prevenci a princip. Proč by měl Google vědět, co píšete do soukromých dokumentů?</p>
+<h2 id="praktické-scénáře">Praktické scénáře<a hidden class="anchor" aria-hidden="true" href="#praktické-scénáře">#</a></h2>
+<h3 id="sdílené-zápisy-z-porady">Sdílené zápisy z porady<a hidden class="anchor" aria-hidden="true" href="#sdílené-zápisy-z-porady">#</a></h3>
+<p>Vytvoříte dokument, nastavíte práva na úpravy, pošlete odkaz týmu. Všichni zapisují poznámky v reálném čase, vidíte kurzory ostatních. Po poradě uložíte finální verzi do svého Drive nebo ji exportujete jako PDF.</p>
+<h3 id="plánování-projektu-kanban">Plánování projektu (kanban)<a hidden class="anchor" aria-hidden="true" href="#plánování-projektu-kanban">#</a></h3>
+<p>Založíte kanban board s kolonkami „TODO&quot;, „Doing&quot;, „Done&quot;. Každý člen týmu má odkaz s právy na úpravy, tahá kartičky, přidává úkoly. Obsah je šifrovaný, nikdo cizí nevidí, co plánujete.</p>
+<h3 id="společná-tabulka-na-rozpočet">Společná tabulka na rozpočet<a hidden class="anchor" aria-hidden="true" href="#společná-tabulka-na-rozpočet">#</a></h3>
+<p>Sdílený rozpočet akce, společné výdaje na byt, sběr příspěvků – tabulka s pravidelnými vzorci. Sdílíte odkaz, každý vidí aktuální stav, může přidávat položky.</p>
+<h3 id="anonymní-dokument-bez-registrace">Anonymní dokument bez registrace<a hidden class="anchor" aria-hidden="true" href="#anonymní-dokument-bez-registrace">#</a></h3>
+<p>Potřebujete rychle něco napsat s někým, kdo nemá účet? Vytvoříte dokument anonymně, pošlete odkaz. Po dokončení práce dokument smažete nebo necháte vypršet (pokud existuje expirace – závisí na nastavení instance).</p>
+<h3 id="bezpečné-sdílení-citlivějších-poznámek">Bezpečné sdílení citlivějších poznámek<a hidden class="anchor" aria-hidden="true" href="#bezpečné-sdílení-citlivějších-poznámek">#</a></h3>
+<p>Máte citlivé poznámky (hesla, kontakty, drafty článků)? Vytvoříte dokument s heslem, pošlete odkaz bezpečným kanálem (Matrix, Signal), heslo pošlete jiným kanálem. I když někdo odposlouchává jednu cestu, nemá kompletní přístup.</p>
+<h2 id="tipy-pro-používání">Tipy pro používání<a hidden class="anchor" aria-hidden="true" href="#tipy-pro-používání">#</a></h2>
+<h3 id="jak-sdílet-bezpečně">Jak sdílet bezpečně<a hidden class="anchor" aria-hidden="true" href="#jak-sdílet-bezpečně">#</a></h3>
+<ul>
+<li><strong>Práva:</strong> Pro běžnou spolupráci dávejte práva na úpravy. Pro sdílení finálních výstupů nebo citlivějších věcí jen práva na čtení.</li>
+<li><strong>Heslo:</strong> Používejte heslo na dokument, pokud sdílíte citlivější věci nebo přes nedůvěryhodný kanál (email, veřejný chat).</li>
+<li><strong>Expirace:</strong> Pokud instance podporuje nastavení expirace dokumentu, použijte to pro dočasné sdílení.</li>
+<li><strong>Rozdělení tajemství:</strong> Odkaz posílejte jedním kanálem (Matrix), heslo jiným (SMS, osobně). Odposlech jedné cesty nestačí.</li>
+</ul>
+<h3 id="jak-nepřijít-o-přístup">Jak nepřijít o přístup<a hidden class="anchor" aria-hidden="true" href="#jak-nepřijít-o-přístup">#</a></h3>
+<ul>
+<li><strong>Uložte si odkazy:</strong> Bez účtu nemáte Drive – pokud ztratíte odkaz, dokument je pryč. Ukládejte je do správce hesel, bookmarků nebo poznámek.</li>
+<li><strong>Založte si účet:</strong> S účtem máte všechno v Drive, můžete dokumenty organizovat do složek, obnovovat smazané, sdílet bezpečněji.</li>
+<li><strong>Export a záloha:</strong> Důležité dokumenty exportujte ven (PDF, Markdown, HTML) – CryptPad není primárně archivační úložiště.</li>
+</ul>
+<h3 id="doporučení-pro-týmy">Doporučení pro týmy<a hidden class="anchor" aria-hidden="true" href="#doporučení-pro-týmy">#</a></h3>
+<ul>
+<li><strong>Organizace složek:</strong> Vytvořte strukturu složek podle projektů nebo témat. Sdílejte celé složky s týmem.</li>
+<li><strong>Názvosloví:</strong> Pojmenujte dokumenty jasně – „Zápis z porady 2025-01-25&quot;, ne „Dokument 1&quot;. Usnadní to hledání.</li>
+<li><strong>Pravidla přístupu:</strong> Dohodněte se, kdo má práva na úpravy, kdo jen na čtení. U citlivějších věcí používejte hesla.</li>
+<li><strong>Archivace:</strong> Staré dokumenty buď exportujte, nebo je přesuňte do archivní složky. Nemazejte bez domluvy.</li>
+</ul>
+<h2 id="shrnutí">Shrnutí<a hidden class="anchor" aria-hidden="true" href="#shrnutí">#</a></h2>
+<p>CryptPad je open-source kancelářský balík s end-to-end šifrováním, který dává uživatelům kontrolu nad jejich daty. Na OSCloud ho najdete jako komunitní službu bez reklam, trackingu a profilování – na adrese <a href="https://cryptpad.arch-linux.cz/"><strong>https://cryptpad.arch-linux.cz/</strong></a>.</p>
+<p><strong>Hlavní výhody:</strong></p>
+<ul>
+<li>End-to-end šifrování – server nevidí obsah dokumentů</li>
+<li>Spolupráce v reálném čase bez nutnosti instalace</li>
+<li>Sdílení odkazem s nastavitelnými právy a heslem</li>
+<li>Kompletní sada nástrojů – dokumenty, tabulky, prezentace, kanban, whiteboard</li>
+<li>Komunitní provoz v EU bez závislosti na big-tech</li>
+</ul>
+<p><strong>Ideální pro:</strong></p>
+<ul>
+<li>Lidi, kteří řeší soukromí a nechtějí korporátní surveillance</li>
+<li>Malé týmy a komunity hledající alternativu k Google Workspace</li>
+<li>Kohokoliv, kdo chce pracovat s dokumenty online, ale bez trackingu</li>
+</ul>
+<p><strong>Zkuste to:</strong> Otevřete <a href="https://cryptpad.arch-linux.cz/">https://cryptpad.arch-linux.cz/</a>, vytvořte dokument (i bez účtu) a vyzkoušejte, jestli vám to sedne. Pokud ano, založte si účet a začněte organizovat dokumenty do složek. Je to jednodušší, než si myslíte – a rozhodně bezpečnější než posílat poznámky přes Gmail nebo ukládat citlivé věci do Google Docs.</p>
+<hr>
+<h2 id="faq">FAQ<a hidden class="anchor" aria-hidden="true" href="#faq">#</a></h2>
+<p><strong>Můžu používat CryptPad bez účtu?</strong><br>
+Ano. Dokument vytvoříte anonymně, sdílíte odkaz a pracujete. Bez účtu ale nemáte Drive a ztráta odkazu znamená ztrátu přístupu.</p>
+<p><strong>Je to opravdu bezpečné?</strong><br>
+End-to-end šifrování znamená, že server nemá přístup k obsahu dokumentů. Bezpečnost ale závisí i na vás – silné heslo, bezpečné sdílení odkazů, zabezpečené zařízení.</p>
+<p><strong>Co když ztratím odkaz na dokument?</strong><br>
+Bez účtu je dokument nenávratně pryč. S účtem máte dokumenty v Drive a můžete je obnovit.</p>
+<p><strong>Můžu to používat na mobilu?</strong><br>
+Ano, CryptPad funguje v mobilním prohlížeči. Není to ideální pro rozsáhlé úpravy, ale prohlížení a základní změny zvládnete.</p>
+<p><strong>Jak se liší od Google Docs?</strong><br>
+Google Docs skenuje obsah dokumentů kvůli reklamám a funkcím (suggestions, smart compose). CryptPad obsah vůbec nevidí – je end-to-end šifrovaný. Nemáte tolik funkcí (AI, integrace, šablony), ale máte soukromí.</p>
+<p><strong>Můžu exportovat dokumenty ven?</strong><br>
+Ano. Dokumenty stáhnete jako PDF, Markdown, HTML, .bin (šifrovaná záloha) nebo je zkopírujete do schránky.</p>
+<p><strong>Co když zapomenu heslo k účtu?</strong><br>
+Heslo nelze obnovit – je to cena za zero-knowledge. Používejte správce hesel a ukládejte si záložní přístupové údaje.</p>
+<p><strong>Je to zadarmo?</strong><br>
+Na OSCloud ano – <a href="https://oscloud.cz/co-to-bude-stat/">služba je provozovaná komunitně za dobrovolné příspěvky</a>.</p>
+<img src="/images/crytpad2.png" alt="Ukázka Markdown kódu" width="600">
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/cryptpad/">Cryptpad</a></li>
+      <li><a href="http://localhost:1313/tags/soukrom%C3%AD/">Soukromí</a></li>
+      <li><a href="http://localhost:1313/tags/e2ee/">E2ee</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="http://localhost:1313/posts/slouceni-mastodon-instanci/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Sloučení Mastodon instancí – mamutovo.cz a mastodon.arch-linux.cz</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Oscloud News</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
