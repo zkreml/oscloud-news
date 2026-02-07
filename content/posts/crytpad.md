@@ -179,4 +179,4 @@ Heslo nelze obnovit – je to cena za zero-knowledge. Používejte správce hese
 **Je to zadarmo?**  
 Na OSCloud ano – [služba je provozovaná komunitně za dobrovolné příspěvky](https://oscloud.cz/co-to-bude-stat/).
 
-<img src="/images/crytpad2.png" alt="Ukázka Markdown kódu" width="600">
+<img src="/images/crytpad2.jpg" alt="Ukázka Markdown kódu" width="600">
