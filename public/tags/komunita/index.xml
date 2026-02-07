@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Komunita on Oscloud News</title>
-    <link>http://localhost:1313/tags/komunita/</link>
+    <link>https://blog.oscloud.cz/tags/komunita/</link>
     <description>Recent content in Komunita on Oscloud News</description>
     <generator>Hugo -- 0.155.2</generator>
     <language>cs-cz</language>
     <lastBuildDate>Sat, 03 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/komunita/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.oscloud.cz/tags/komunita/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OSCloud 2026: Tvoje data, tvoje pravidla</title>
-      <link>http://localhost:1313/posts/oscloud-2026/</link>
+      <link>https://blog.oscloud.cz/posts/oscloud-2026/</link>
       <pubDate>Sat, 03 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/oscloud-2026/</guid>
+      <guid>https://blog.oscloud.cz/posts/oscloud-2026/</guid>
       <description>&lt;p&gt;Provozujeme OSCloud pro lidi, co chtějí mít kontrolu nad svými daty. Žádný Google, žádný Microsoft, žádný tracking. Jenom open source aplikace na našem dedikovaném serveru.&lt;/p&gt;
 &lt;h2 id=&#34;co-máme-k-dispozici&#34;&gt;Co máme k dispozici&lt;/h2&gt;
 &lt;h3 id=&#34;komunikace&#34;&gt;Komunikace&lt;/h3&gt;
@@ -48,9 +48,9 @@ Díky integraci Collabora Online (postavené na LibreOffice) můžete dokumenty 
     </item>
     <item>
       <title>Šťastný nový rok 2026</title>
-      <link>http://localhost:1313/posts/stastny-novy-rok-2026/</link>
+      <link>https://blog.oscloud.cz/posts/stastny-novy-rok-2026/</link>
       <pubDate>Thu, 01 Jan 2026 11:20:00 +0100</pubDate>
-      <guid>http://localhost:1313/posts/stastny-novy-rok-2026/</guid>
+      <guid>https://blog.oscloud.cz/posts/stastny-novy-rok-2026/</guid>
       <description>&lt;p&gt;Děkujeme všem, kteří byli součástí OSCloud v roce 2025 — uživatelům, podporovatelům, přispěvatelům i celé komunitě kolem.&lt;/p&gt;
 &lt;p&gt;Do roku 2026 přejeme hlavně zdraví, klid, stabilní systémy, funkční zálohy a komunitu, která drží při sobě.&lt;/p&gt;
 &lt;p&gt;Díky, že společně dáváme smysl otevřenému, bezpečnému a komunitnímu cloudu. Těšíme se na další společný rok.&lt;/p&gt;
