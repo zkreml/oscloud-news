@@ -53,7 +53,7 @@ Provozovatel serveru (v případě OSCloud my) technicky nemůže vidět obsah v
 * Nemůžeme vás špehovat, prodat vaše data třetím stranám ani je předat na požádání
 * Dokonce ani nemůžeme obnovit zapomenutý obsah – klíč máte jen vy
 
-### Kde má E2EE hranice
+### Kde má E2EE hranic
 
 End-to-end šifrování je skvělá věc, ale není to kouzlo, které vyřeší všechno:
 
@@ -61,7 +61,7 @@ End-to-end šifrování je skvělá věc, ale není to kouzlo, které vyřeší 
 
 **Metadata:** I když obsah dokumentu je šifrovaný, server vidí _kdy_ a _jak velký_ dokument byl vytvořen, kolik lidí ho upravuje, IP adresy připojení (těch se ale zbavujeme pravidelným mazáním logů).
 
-**Heslo k účtu:** Vaše heslo není šifrované klíčem – pokud ho někdo uhádne nebo ukradne, dostane se k vašim dokumentům. Používejte silné heslo a správce hesel.
+**Heslo k účtu:** Přestože jsou dokumenty šifrované, heslo k vašemu účtu chrání přístup k Drive a seznamu dokumentů. Kompromitované heslo znamená ztrátu kontroly nad účtem. Používejte silné heslo a správce hesel.
 
 **Zálohy a export:** Když si dokument exportujete nebo stáhnete, přestává být chráněný šifrováním. Soubor na disku je v plaintextu.
 
