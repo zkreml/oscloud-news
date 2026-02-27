@@ -4,14 +4,16 @@
     <title>Oscloud on Oscloud News</title>
     <link>https://blog.oscloud.cz/tags/oscloud/</link>
     <description>Recent content in Oscloud on Oscloud News</description>
-    <generator>Hugo -- 0.155.3</generator>
+    <generator>Hugo -- 0.156.0</generator>
     <language>cs-cz</language>
+    <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
+    <webMaster>info@oscloud.cz (OSCloud)</webMaster>
     <lastBuildDate>Sat, 07 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.oscloud.cz/tags/oscloud/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sloučení Mastodon instancí – mamutovo.cz a mastodon.arch-linux.cz</title>
       <link>https://blog.oscloud.cz/posts/slouceni-mastodon-instanci/</link>
-      <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
       <guid>https://blog.oscloud.cz/posts/slouceni-mastodon-instanci/</guid>
       <description>&lt;p&gt;Ahoj kamarádi, kolegoví, Mastodontíci!&lt;/p&gt;
 &lt;p&gt;Rádi bychom vás informovali o našich plánech a změnách na našich Mastodon instancích.&lt;/p&gt;
@@ -21,7 +23,7 @@
     <item>
       <title>Nextcloud na OSCloudu: Praktická alternativa ke cloudovým službám</title>
       <link>https://blog.oscloud.cz/posts/nextcloud-oscloud/</link>
-      <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
       <guid>https://blog.oscloud.cz/posts/nextcloud-oscloud/</guid>
       <description>&lt;p&gt;Každý den posíláme soubory přes email, protože &amp;ldquo;sdílení přes Google Drive je nějak složité&amp;rdquo;. Kalendář máme v telefonu, ale kolega používá Outlook, tak se domlouváme přes zprávy. Dokumenty editujeme v Google Docs, i když by stačil prostý textový editor. A všechno to funguje, dokud nepotřebujete vědět, kde vlastně ta data jsou, kdo k nim má přístup a co se s nimi děje.&lt;/p&gt;
 &lt;p&gt;Není to o paranoi. Je to o tom, že někdy prostě chcete mít věci pod kontrolou. A k tomu slouží Nextcloud na OSCloudu.&lt;/p&gt;</description>
@@ -29,7 +31,7 @@
     <item>
       <title>OSCloud 2026: Tvoje data, tvoje pravidla</title>
       <link>https://blog.oscloud.cz/posts/oscloud-2026/</link>
-      <pubDate>Sat, 03 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 03 Jan 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
       <guid>https://blog.oscloud.cz/posts/oscloud-2026/</guid>
       <description>&lt;p&gt;Provozujeme OSCloud pro lidi, co chtějí mít kontrolu nad svými daty. Žádný Google, žádný Microsoft, žádný tracking. Jenom open source aplikace na našem dedikovaném serveru.&lt;/p&gt;
 &lt;h2 id=&#34;co-máme-k-dispozici&#34;&gt;Co máme k dispozici&lt;/h2&gt;
@@ -67,7 +69,7 @@ Díky integraci Collabora Online (postavené na LibreOffice) můžete dokumenty 
     <item>
       <title>Šťastný nový rok 2026</title>
       <link>https://blog.oscloud.cz/posts/stastny-novy-rok-2026/</link>
-      <pubDate>Thu, 01 Jan 2026 11:20:00 +0100</pubDate>
+      <pubDate>Thu, 01 Jan 2026 11:20:00 +0100</pubDate><author>info@oscloud.cz (OSCloud)</author>
       <guid>https://blog.oscloud.cz/posts/stastny-novy-rok-2026/</guid>
       <description>&lt;p&gt;Děkujeme všem, kteří byli součástí OSCloud v roce 2025 — uživatelům, podporovatelům, přispěvatelům i celé komunitě kolem.&lt;/p&gt;
 &lt;p&gt;Do roku 2026 přejeme hlavně zdraví, klid, stabilní systémy, funkční zálohy a komunitu, která drží při sobě.&lt;/p&gt;
@@ -77,7 +79,7 @@ Díky integraci Collabora Online (postavené na LibreOffice) můžete dokumenty 
     <item>
       <title>Vítejte na Oscloud News</title>
       <link>https://blog.oscloud.cz/posts/vitejte-na-oscloud-news/</link>
-      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
       <guid>https://blog.oscloud.cz/posts/vitejte-na-oscloud-news/</guid>
       <description>Oficiální start blogu Oscloud News – místo pro novinky, změny a plány komunitního projektu Oscloud.</description>
     </item>

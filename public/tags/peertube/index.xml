@@ -4,14 +4,16 @@
     <title>Peertube on Oscloud News</title>
     <link>https://blog.oscloud.cz/tags/peertube/</link>
     <description>Recent content in Peertube on Oscloud News</description>
-    <generator>Hugo -- 0.155.3</generator>
+    <generator>Hugo -- 0.156.0</generator>
     <language>cs-cz</language>
+    <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
+    <webMaster>info@oscloud.cz (OSCloud)</webMaster>
     <lastBuildDate>Sat, 13 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.oscloud.cz/tags/peertube/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VHSky.cz – ohlédnutí za rokem 2025 🎬</title>
       <link>https://blog.oscloud.cz/posts/vhsky-2025/</link>
-      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
       <guid>https://blog.oscloud.cz/posts/vhsky-2025/</guid>
       <description>&lt;p&gt;VHSky.cz vzniklo jako PeerTube instance pro komunitní videoobsah. Rok 2025 byl prvním rokem, kdy se ukázalo, že má smysl projekt dělat dál.&lt;/p&gt;
 &lt;h2 id=&#34;proč-vlastně-peertube-&#34;&gt;Proč vlastně PeerTube? 🤔&lt;/h2&gt;

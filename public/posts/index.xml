@@ -4,14 +4,24 @@
     <title>Posts on Oscloud News</title>
     <link>https://blog.oscloud.cz/posts/</link>
     <description>Recent content in Posts on Oscloud News</description>
-    <generator>Hugo -- 0.155.3</generator>
+    <generator>Hugo -- 0.156.0</generator>
     <language>cs-cz</language>
-    <lastBuildDate>Sat, 07 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
+    <webMaster>info@oscloud.cz (OSCloud)</webMaster>
+    <lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.oscloud.cz/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Proč se starat o digitální soukromí (a proč to není paranoia)</title>
+      <link>https://blog.oscloud.cz/posts/soukromi-digitalni/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>https://blog.oscloud.cz/posts/soukromi-digitalni/</guid>
+      <description>&lt;p&gt;Když se zmíníš o ochraně soukromí online, většina lidí si představí nějakého techno-geeka v mikině, co má na laptopu samolepky s pingvinem a volá po šifrování všeho možného. Pravda je ale trochu jiná – ochrana soukromí není záležitost nadšenců do Linuxu, ale zdravý rozum v digitálním věku.&lt;/p&gt;
+&lt;p&gt;Zkus si představit, že někdo chodí za tebou celý den se zápisníkem a píše si: v kolik hodin vstáváš, co jíš k snídani, s kým si píšeš, co čteš, jaká videa koukáš, kde nakupuješ, kam chodíš. A pak ty informace prodává reklamním agenturám, pojišťovnám nebo komu chce. Zní to absurdně? Přesně tohle se děje online každý den.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>CryptPad: Bezpečná kancelář, která nevidí do vašich dokumentů</title>
       <link>https://blog.oscloud.cz/posts/crytpad/</link>
-      <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
       <guid>https://blog.oscloud.cz/posts/crytpad/</guid>
       <description>&lt;h2 id=&#34;cryptpad-bezpečná-kancelář-která-nevidí-do-vašich-dokumentů&#34;&gt;CryptPad: Bezpečná kancelář, která nevidí do vašich dokumentů&lt;/h2&gt;
 &lt;p&gt;Představte si, že píšete dokument, tabulku nebo poznámky přímo v prohlížeči, sdílíte je s kolegy a spolupracujete v reálném čase – ale na rozdíl od Google Docs nebo Microsoft 365 váš obsah nikdy neuvidí provozovatel serveru, žádná firma ho neskenuje kvůli reklamám a žádný algoritmus ho neanalyzuje. Přesně tohle nabízí &lt;strong&gt;CryptPad&lt;/strong&gt; – open-source kancelářský balík s end-to-end šifrováním.&lt;/p&gt;
@@ -20,7 +30,7 @@
     <item>
       <title>Sloučení Mastodon instancí – mamutovo.cz a mastodon.arch-linux.cz</title>
       <link>https://blog.oscloud.cz/posts/slouceni-mastodon-instanci/</link>
-      <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
       <guid>https://blog.oscloud.cz/posts/slouceni-mastodon-instanci/</guid>
       <description>&lt;p&gt;Ahoj kamarádi, kolegoví, Mastodontíci!&lt;/p&gt;
 &lt;p&gt;Rádi bychom vás informovali o našich plánech a změnách na našich Mastodon instancích.&lt;/p&gt;
@@ -30,7 +40,7 @@
     <item>
       <title>Nextcloud na OSCloudu: Praktická alternativa ke cloudovým službám</title>
       <link>https://blog.oscloud.cz/posts/nextcloud-oscloud/</link>
-      <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
       <guid>https://blog.oscloud.cz/posts/nextcloud-oscloud/</guid>
       <description>&lt;p&gt;Každý den posíláme soubory přes email, protože &amp;ldquo;sdílení přes Google Drive je nějak složité&amp;rdquo;. Kalendář máme v telefonu, ale kolega používá Outlook, tak se domlouváme přes zprávy. Dokumenty editujeme v Google Docs, i když by stačil prostý textový editor. A všechno to funguje, dokud nepotřebujete vědět, kde vlastně ta data jsou, kdo k nim má přístup a co se s nimi děje.&lt;/p&gt;
 &lt;p&gt;Není to o paranoi. Je to o tom, že někdy prostě chcete mít věci pod kontrolou. A k tomu slouží Nextcloud na OSCloudu.&lt;/p&gt;</description>
@@ -38,7 +48,7 @@
     <item>
       <title>OSCloud 2026: Tvoje data, tvoje pravidla</title>
       <link>https://blog.oscloud.cz/posts/oscloud-2026/</link>
-      <pubDate>Sat, 03 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 03 Jan 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
       <guid>https://blog.oscloud.cz/posts/oscloud-2026/</guid>
       <description>&lt;p&gt;Provozujeme OSCloud pro lidi, co chtějí mít kontrolu nad svými daty. Žádný Google, žádný Microsoft, žádný tracking. Jenom open source aplikace na našem dedikovaném serveru.&lt;/p&gt;
 &lt;h2 id=&#34;co-máme-k-dispozici&#34;&gt;Co máme k dispozici&lt;/h2&gt;
@@ -76,7 +86,7 @@ Díky integraci Collabora Online (postavené na LibreOffice) můžete dokumenty 
     <item>
       <title>Šťastný nový rok 2026</title>
       <link>https://blog.oscloud.cz/posts/stastny-novy-rok-2026/</link>
-      <pubDate>Thu, 01 Jan 2026 11:20:00 +0100</pubDate>
+      <pubDate>Thu, 01 Jan 2026 11:20:00 +0100</pubDate><author>info@oscloud.cz (OSCloud)</author>
       <guid>https://blog.oscloud.cz/posts/stastny-novy-rok-2026/</guid>
       <description>&lt;p&gt;Děkujeme všem, kteří byli součástí OSCloud v roce 2025 — uživatelům, podporovatelům, přispěvatelům i celé komunitě kolem.&lt;/p&gt;
 &lt;p&gt;Do roku 2026 přejeme hlavně zdraví, klid, stabilní systémy, funkční zálohy a komunitu, která drží při sobě.&lt;/p&gt;
@@ -86,7 +96,7 @@ Díky integraci Collabora Online (postavené na LibreOffice) můžete dokumenty 
     <item>
       <title>VHSky.cz – ohlédnutí za rokem 2025 🎬</title>
       <link>https://blog.oscloud.cz/posts/vhsky-2025/</link>
-      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
       <guid>https://blog.oscloud.cz/posts/vhsky-2025/</guid>
       <description>&lt;p&gt;VHSky.cz vzniklo jako PeerTube instance pro komunitní videoobsah. Rok 2025 byl prvním rokem, kdy se ukázalo, že má smysl projekt dělat dál.&lt;/p&gt;
 &lt;h2 id=&#34;proč-vlastně-peertube-&#34;&gt;Proč vlastně PeerTube? 🤔&lt;/h2&gt;
@@ -96,7 +106,7 @@ Díky integraci Collabora Online (postavené na LibreOffice) můžete dokumenty 
     <item>
       <title>Vítejte na Oscloud News</title>
       <link>https://blog.oscloud.cz/posts/vitejte-na-oscloud-news/</link>
-      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
       <guid>https://blog.oscloud.cz/posts/vitejte-na-oscloud-news/</guid>
       <description>Oficiální start blogu Oscloud News – místo pro novinky, změny a plány komunitního projektu Oscloud.</description>
     </item>

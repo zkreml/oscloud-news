@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.oscloud.cz/</loc>
+    <lastmod>2026-02-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/posts/</loc>
+    <lastmod>2026-02-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/posts/soukromi-digitalni/</loc>
+    <lastmod>2026-02-27T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.oscloud.cz/categories/</loc>
     <lastmod>2026-02-07T00:00:00+00:00</lastmod>
   </url><url>
@@ -26,13 +35,7 @@
     <loc>https://blog.oscloud.cz/tags/oscloud/</loc>
     <lastmod>2026-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/</loc>
-    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.oscloud.cz/categories/ozn%C3%A1men%C3%AD/</loc>
-    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.oscloud.cz/posts/</loc>
     <lastmod>2026-02-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.oscloud.cz/posts/slouceni-mastodon-instanci/</loc>

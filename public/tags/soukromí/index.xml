@@ -4,14 +4,16 @@
     <title>Soukromí on Oscloud News</title>
     <link>https://blog.oscloud.cz/tags/soukrom%C3%AD/</link>
     <description>Recent content in Soukromí on Oscloud News</description>
-    <generator>Hugo -- 0.155.3</generator>
+    <generator>Hugo -- 0.156.0</generator>
     <language>cs-cz</language>
+    <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
+    <webMaster>info@oscloud.cz (OSCloud)</webMaster>
     <lastBuildDate>Sat, 07 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.oscloud.cz/tags/soukrom%C3%AD/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CryptPad: Bezpečná kancelář, která nevidí do vašich dokumentů</title>
       <link>https://blog.oscloud.cz/posts/crytpad/</link>
-      <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
       <guid>https://blog.oscloud.cz/posts/crytpad/</guid>
       <description>&lt;h2 id=&#34;cryptpad-bezpečná-kancelář-která-nevidí-do-vašich-dokumentů&#34;&gt;CryptPad: Bezpečná kancelář, která nevidí do vašich dokumentů&lt;/h2&gt;
 &lt;p&gt;Představte si, že píšete dokument, tabulku nebo poznámky přímo v prohlížeči, sdílíte je s kolegy a spolupracujete v reálném čase – ale na rozdíl od Google Docs nebo Microsoft 365 váš obsah nikdy neuvidí provozovatel serveru, žádná firma ho neskenuje kvůli reklamám a žádný algoritmus ho neanalyzuje. Přesně tohle nabízí &lt;strong&gt;CryptPad&lt;/strong&gt; – open-source kancelářský balík s end-to-end šifrováním.&lt;/p&gt;

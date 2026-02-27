@@ -4,14 +4,16 @@
     <title>Mamutovo.cz on Oscloud News</title>
     <link>https://blog.oscloud.cz/tags/mamutovo.cz/</link>
     <description>Recent content in Mamutovo.cz on Oscloud News</description>
-    <generator>Hugo -- 0.155.3</generator>
+    <generator>Hugo -- 0.156.0</generator>
     <language>cs-cz</language>
+    <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
+    <webMaster>info@oscloud.cz (OSCloud)</webMaster>
     <lastBuildDate>Sat, 07 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.oscloud.cz/tags/mamutovo.cz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sloučení Mastodon instancí – mamutovo.cz a mastodon.arch-linux.cz</title>
       <link>https://blog.oscloud.cz/posts/slouceni-mastodon-instanci/</link>
-      <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
       <guid>https://blog.oscloud.cz/posts/slouceni-mastodon-instanci/</guid>
       <description>&lt;p&gt;Ahoj kamarádi, kolegoví, Mastodontíci!&lt;/p&gt;
 &lt;p&gt;Rádi bychom vás informovali o našich plánech a změnách na našich Mastodon instancích.&lt;/p&gt;

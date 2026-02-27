@@ -4,14 +4,16 @@
     <title>Categories on Oscloud News</title>
     <link>https://blog.oscloud.cz/categories/</link>
     <description>Recent content in Categories on Oscloud News</description>
-    <generator>Hugo -- 0.155.3</generator>
+    <generator>Hugo -- 0.156.0</generator>
     <language>cs-cz</language>
+    <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
+    <webMaster>info@oscloud.cz (OSCloud)</webMaster>
     <lastBuildDate>Sat, 07 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.oscloud.cz/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Oznámení</title>
       <link>https://blog.oscloud.cz/categories/ozn%C3%A1men%C3%AD/</link>
-      <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
       <guid>https://blog.oscloud.cz/categories/ozn%C3%A1men%C3%AD/</guid>
       <description></description>
     </item>
