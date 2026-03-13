@@ -4,12 +4,21 @@
     <title>Soukromí on Oscloud News</title>
     <link>https://blog.oscloud.cz/tags/soukrom%C3%AD/</link>
     <description>Recent content in Soukromí on Oscloud News</description>
-    <generator>Hugo -- 0.156.0</generator>
+    <generator>Hugo -- 0.157.0</generator>
     <language>cs-cz</language>
     <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
     <webMaster>info@oscloud.cz (OSCloud)</webMaster>
-    <lastBuildDate>Sat, 07 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.oscloud.cz/tags/soukrom%C3%AD/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linkwarden: záložky pod vlastní kontrolou</title>
+      <link>https://blog.oscloud.cz/posts/linkwarden-zalozky-pod-vlastni-kontrolou/</link>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>https://blog.oscloud.cz/posts/linkwarden-zalozky-pod-vlastni-kontrolou/</guid>
+      <description>&lt;p&gt;Záložky jsou jednou z těch věcí, které každý nějak řeší, ale málokdo je spokojený s tím, jak to řeší. Složky v prohlížeči se plní a nikdo je neprochází, cloudové služby zavírají nebo mění podmínky, a důležité články mizí spolu s doménami, na kterých byly. Na OScloud teď provozujeme Linkwarden – nástroj, který tohle celé řeší trochu jinak.&lt;/p&gt;
+&lt;h2 id=&#34;co-je-linkwarden-a-proč-ho-máme&#34;&gt;Co je Linkwarden a proč ho máme&lt;/h2&gt;
+&lt;p&gt;Linkwarden je open-source správce záložek s archivací. To zní možná nudně, ale v praxi to znamená, že neukládáš jen odkaz – ukládáš i obsah stránky v podobě snímku. Pokud stránka za rok zmizí, článek máš pořád.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>CryptPad: Bezpečná kancelář, která nevidí do vašich dokumentů</title>
       <link>https://blog.oscloud.cz/posts/crytpad/</link>
