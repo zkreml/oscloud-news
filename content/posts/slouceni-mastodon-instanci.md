@@ -13,7 +13,7 @@ tags:
 author: "Archos & Ivan"
 ---
 
-Ahoj kamarádi, kolegoví, Mastodontíci!
+Ahoj kamarádi, kolegové, Mastodontíci!
 
 Rádi bychom vás informovali o našich plánech a změnách na našich Mastodon instancích.
 
