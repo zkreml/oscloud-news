@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>fedi_start: Postavili jsme průvodce pro nové uživatele Mamutovo.cz | Oscloud News</title>
+<meta name="keywords" content="mastodon, mamutovo, fediverse, onboarding, fedi_start">
+<meta name="description" content="Mamutovo.cz je česko-slovenská instance Mastodonu – komunitní, bez algoritmů, bez reklam.
+Jenže příchod na Mastodon může být ze začátku matoucí. Fediversum funguje jinak než Twitter nebo
+Facebook, a pokud nevíte, koho sledovat nebo jak hashtagy vlastně fungují, snadno to vzdáte dřív,
+než to dostane šanci. Proto vznikl fedi_start – onboarding průvodce přímo pro Mamutovo.cz.
+Co je fedi_start
+fedi.mamutovo.cz je statická webová aplikace, která má jeden cíl:
+pomoci novým uživatelům se zorientovat. Nechceme další obecný tutoriál o Mastodonu, který platí
+pro každou instanci stejně. Chceme něco konkrétního pro naši komunitu.">
+<meta name="author" content="Archos">
+<link rel="canonical" href="https://blog.oscloud.cz/posts/fedi-start-pruvodce-mamutovo/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.01de0cf7a606abfce8ed6089ab89e1538996376aac8ff05d3c7d2340f377b07c.css" integrity="sha256-Ad4M96YGq/zo7WCJq4nhU4mWN2qsj/BdPH0jQPN3sHw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://blog.oscloud.cz/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.oscloud.cz/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.oscloud.cz/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://blog.oscloud.cz/apple-touch-icon.png">
+<link rel="mask-icon" href="https://blog.oscloud.cz/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://blog.oscloud.cz/posts/fedi-start-pruvodce-mamutovo/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><script defer src="https://analytics.oscloud.cz/script.js" data-website-id="70aaf052-385c-41fb-9cfe-d3b3c6f54f2d"></script>
+<meta property="og:url" content="https://blog.oscloud.cz/posts/fedi-start-pruvodce-mamutovo/">
+  <meta property="og:site_name" content="Oscloud News">
+  <meta property="og:title" content="fedi_start: Postavili jsme průvodce pro nové uživatele Mamutovo.cz">
+  <meta property="og:description" content="Mamutovo.cz je česko-slovenská instance Mastodonu – komunitní, bez algoritmů, bez reklam. Jenže příchod na Mastodon může být ze začátku matoucí. Fediversum funguje jinak než Twitter nebo Facebook, a pokud nevíte, koho sledovat nebo jak hashtagy vlastně fungují, snadno to vzdáte dřív, než to dostane šanci. Proto vznikl fedi_start – onboarding průvodce přímo pro Mamutovo.cz.
+Co je fedi_start fedi.mamutovo.cz je statická webová aplikace, která má jeden cíl: pomoci novým uživatelům se zorientovat. Nechceme další obecný tutoriál o Mastodonu, který platí pro každou instanci stejně. Chceme něco konkrétního pro naši komunitu.">
+  <meta property="og:locale" content="cs-cz">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-04-15T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-04-15T00:00:00+00:00">
+    <meta property="article:tag" content="Mastodon">
+    <meta property="article:tag" content="Mamutovo">
+    <meta property="article:tag" content="Fediverse">
+    <meta property="article:tag" content="Onboarding">
+    <meta property="article:tag" content="Fedi_start">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="fedi_start: Postavili jsme průvodce pro nové uživatele Mamutovo.cz">
+<meta name="twitter:description" content="Mamutovo.cz je česko-slovenská instance Mastodonu – komunitní, bez algoritmů, bez reklam.
+Jenže příchod na Mastodon může být ze začátku matoucí. Fediversum funguje jinak než Twitter nebo
+Facebook, a pokud nevíte, koho sledovat nebo jak hashtagy vlastně fungují, snadno to vzdáte dřív,
+než to dostane šanci. Proto vznikl fedi_start – onboarding průvodce přímo pro Mamutovo.cz.
+Co je fedi_start
+fedi.mamutovo.cz je statická webová aplikace, která má jeden cíl:
+pomoci novým uživatelům se zorientovat. Nechceme další obecný tutoriál o Mastodonu, který platí
+pro každou instanci stejně. Chceme něco konkrétního pro naši komunitu.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://blog.oscloud.cz/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "fedi_start: Postavili jsme průvodce pro nové uživatele Mamutovo.cz",
+      "item": "https://blog.oscloud.cz/posts/fedi-start-pruvodce-mamutovo/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "fedi_start: Postavili jsme průvodce pro nové uživatele Mamutovo.cz",
+  "name": "fedi_start: Postavili jsme průvodce pro nové uživatele Mamutovo.cz",
+  "description": "Mamutovo.cz je česko-slovenská instance Mastodonu – komunitní, bez algoritmů, bez reklam. Jenže příchod na Mastodon může být ze začátku matoucí. Fediversum funguje jinak než Twitter nebo Facebook, a pokud nevíte, koho sledovat nebo jak hashtagy vlastně fungují, snadno to vzdáte dřív, než to dostane šanci. Proto vznikl fedi_start – onboarding průvodce přímo pro Mamutovo.cz.\nCo je fedi_start fedi.mamutovo.cz je statická webová aplikace, která má jeden cíl: pomoci novým uživatelům se zorientovat. Nechceme další obecný tutoriál o Mastodonu, který platí pro každou instanci stejně. Chceme něco konkrétního pro naši komunitu.\n",
+  "keywords": [
+    "mastodon", "mamutovo", "fediverse", "onboarding", "fedi_start"
+  ],
+  "articleBody": "Mamutovo.cz je česko-slovenská instance Mastodonu – komunitní, bez algoritmů, bez reklam. Jenže příchod na Mastodon může být ze začátku matoucí. Fediversum funguje jinak než Twitter nebo Facebook, a pokud nevíte, koho sledovat nebo jak hashtagy vlastně fungují, snadno to vzdáte dřív, než to dostane šanci. Proto vznikl fedi_start – onboarding průvodce přímo pro Mamutovo.cz.\nCo je fedi_start fedi.mamutovo.cz je statická webová aplikace, která má jeden cíl: pomoci novým uživatelům se zorientovat. Nechceme další obecný tutoriál o Mastodonu, který platí pro každou instanci stejně. Chceme něco konkrétního pro naši komunitu.\nZdrojový kód je otevřený na git.arch-linux.cz/Mamutovo/fedi_start.\nCo průvodce nabízí Seznam CZ/SK účtů Nejpraktičtější část: databáze 250+ účtů od českých a slovenských uživatelů napříč celým fediversem. Účty jsou rozdělené do kategorií (technologie, příroda, umění, politika, věda…) a dají se filtrovat, takže si rychle najdete lidi, kteří píšou o tématech, která vás zajímají.\nTady je důležitá věc pod kapotou – seznam není aktualizovaný ručně. Účty se stahují automaticky přes Mastodon API pomocí featured_tags. Pokud si uživatel nastaví zvýrazněné hashtagy v profilu, aplikace ho může zařadit do odpovídající kategorie. O tom víc na konci článku.\nPřehled aplikací Mastodon má desítky klientů a vybrat si ten správný je na začátku frustrující. Průvodce proto obsahuje přehled doporučených aplikací pro Android, iOS, web i počítač – s krátkým popisem, aby si každý vybral podle toho, co mu sedí.\nZáklady Mastodonu Sekce pro ty, co přicházejí z jiných sítí a nestíhají, proč věci fungují jinak. Vysvětluje, jak fungují hashtagy (na Mastodonu jsou klíčové, ne okrajové), co je fediversum, jak funguje timeline místní instance vs. federated, proč nemůžete prohledávat obsah jako na Googlu a co z toho plyne pro způsob, jakým komunikujete.\nUvítací bot Na Mamutovo.cz běží @welcome_bot – nový uživatel po registraci dostane automaticky uvítací zprávu s odkazem na průvodce. Žádné přehlcení informacemi hned po přihlášení, jen jednoduchý odkaz, který si může projít, až bude chtít.\nCo přinesla verze 1.2.0 Poslední větší update přinesl dvě věci:\nKlikací hashtagy u účtů v seznamu – každý tag je teď odkaz přímo na daný hashtag na Mamutovo.cz, takže se dá okamžitě prozkoumat, co se pod ním skrývá. Nové kategorie v seznamu účtů, které lépe pokrývají témata aktivní v CZ/SK komunitě. Jak funguje automatické stahování účtů Základ mechanismu je jednoduchý: Mastodon API umožňuje číst featured_tags z profilu každého uživatele – to jsou hashtagy, které si člověk ručně nastaví jako „zvýrazněné\" ve svém profilu. fedi_start tyhle tagy čte a podle nich přiřazuje účty do kategorií.\nVýsledek je, že seznam je živý a nevyžaduje ruční správu. Čím víc lidí si nastaví zvýrazněné hashtagy, tím přesnější a bohatší seznam je.\nVýzva: nastavte si zvýrazněné hashtagy Pokud máte účet na Mamutovo.cz (nebo kdekoliv ve fediversu) a chcete být součástí seznamu – nastavte si zvýrazněné hashtagy v profilu.\nNajdete je v Nastavení → Profil → Zvýrazněné hashtagy. Stačí přidat pár tagů, které odpovídají tomu, o čem píšete. Pokud píšete o Linuxu, přidejte #linux. O fotografii? #fotografie nebo #photography. Nemusí jich být moc – tři čtyři stačí.\nTím přímo přispíváte k tomu, aby byl seznam užitečnější pro další lidi, kteří na Mamutovo.cz přijdou.\nKde to najdete Průvodce: fedi.mamutovo.cz Zdrojový kód: git.arch-linux.cz/Mamutovo/fedi_start Pokud narazíte na chybu, chybějící účet nebo máte nápad na vylepšení, otevřete issue na Gitea nebo napište na Mamutovo.cz. Projekt je komunitní – čím víc lidí přispěje, tím líp to funguje pro všechny.\n",
+  "wordCount" : "546",
+  "inLanguage": "en",
+  "datePublished": "2026-04-15T00:00:00Z",
+  "dateModified": "2026-04-15T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Archos"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://blog.oscloud.cz/posts/fedi-start-pruvodce-mamutovo/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Oscloud News",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://blog.oscloud.cz/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://blog.oscloud.cz/" accesskey="h" title="Oscloud News (Alt + H)">
+                <img src="https://blog.oscloud.cz/logo.png" alt="" aria-label="logo"
+                    height="32">Oscloud News</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://blog.oscloud.cz/" title="🇨🇿">
+                    <span>🇨🇿</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.oscloud.cz/archives/" title="Archiv">
+                    <span>Archiv</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.oscloud.cz/search/" title="Vyhledávání">
+                    <span>Vyhledávání</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.oscloud.cz/tags/" title="Tagy">
+                    <span>Tagy</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://blog.oscloud.cz/">Home</a>&nbsp;»&nbsp;<a href="https://blog.oscloud.cz/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      fedi_start: Postavili jsme průvodce pro nové uživatele Mamutovo.cz
+    </h1>
+    <div class="post-meta"><span title='2026-04-15 00:00:00 +0000 UTC'>April 15, 2026</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Archos</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>Mamutovo.cz je česko-slovenská instance Mastodonu – komunitní, bez algoritmů, bez reklam.
+Jenže příchod na Mastodon může být ze začátku matoucí. Fediversum funguje jinak než Twitter nebo
+Facebook, a pokud nevíte, koho sledovat nebo jak hashtagy vlastně fungují, snadno to vzdáte dřív,
+než to dostane šanci. Proto vznikl <strong>fedi_start</strong> – onboarding průvodce přímo pro Mamutovo.cz.</p>
+<h2 id="co-je-fedi_start">Co je fedi_start<a hidden class="anchor" aria-hidden="true" href="#co-je-fedi_start">#</a></h2>
+<p><a href="https://fedi.mamutovo.cz">fedi.mamutovo.cz</a> je statická webová aplikace, která má jeden cíl:
+pomoci novým uživatelům se zorientovat. Nechceme další obecný tutoriál o Mastodonu, který platí
+pro každou instanci stejně. Chceme něco konkrétního pro naši komunitu.</p>
+<p>Zdrojový kód je otevřený na <a href="https://git.arch-linux.cz/Mamutovo/fedi_start">git.arch-linux.cz/Mamutovo/fedi_start</a>.</p>
+<h2 id="co-průvodce-nabízí">Co průvodce nabízí<a hidden class="anchor" aria-hidden="true" href="#co-průvodce-nabízí">#</a></h2>
+<h3 id="seznam-czsk-účtů">Seznam CZ/SK účtů<a hidden class="anchor" aria-hidden="true" href="#seznam-czsk-účtů">#</a></h3>
+<p>Nejpraktičtější část: databáze <strong>250+ účtů</strong> od českých a slovenských uživatelů napříč celým
+fediversem. Účty jsou rozdělené do kategorií (technologie, příroda, umění, politika, věda…)
+a dají se filtrovat, takže si rychle najdete lidi, kteří píšou o tématech, která vás zajímají.</p>
+<p>Tady je důležitá věc pod kapotou – seznam <strong>není aktualizovaný ručně</strong>. Účty se stahují automaticky
+přes Mastodon API pomocí <code>featured_tags</code>. Pokud si uživatel nastaví zvýrazněné hashtagy v profilu,
+aplikace ho může zařadit do odpovídající kategorie. O tom víc na konci článku.</p>
+<h3 id="přehled-aplikací">Přehled aplikací<a hidden class="anchor" aria-hidden="true" href="#přehled-aplikací">#</a></h3>
+<p>Mastodon má desítky klientů a vybrat si ten správný je na začátku frustrující. Průvodce proto
+obsahuje přehled doporučených aplikací pro <strong>Android, iOS, web i počítač</strong> – s krátkým popisem,
+aby si každý vybral podle toho, co mu sedí.</p>
+<h3 id="základy-mastodonu">Základy Mastodonu<a hidden class="anchor" aria-hidden="true" href="#základy-mastodonu">#</a></h3>
+<p>Sekce pro ty, co přicházejí z jiných sítí a nestíhají, proč věci fungují jinak. Vysvětluje, jak
+fungují hashtagy (na Mastodonu jsou klíčové, ne okrajové), co je fediversum, jak funguje
+timeline místní instance vs. federated, proč nemůžete prohledávat obsah jako na Googlu a co
+z toho plyne pro způsob, jakým komunikujete.</p>
+<h3 id="uvítací-bot">Uvítací bot<a hidden class="anchor" aria-hidden="true" href="#uvítací-bot">#</a></h3>
+<p>Na Mamutovo.cz běží <code>@welcome_bot</code> – nový uživatel po registraci dostane automaticky uvítací
+zprávu s odkazem na průvodce. Žádné přehlcení informacemi hned po přihlášení, jen jednoduchý
+odkaz, který si může projít, až bude chtít.</p>
+<h2 id="co-přinesla-verze-120">Co přinesla verze 1.2.0<a hidden class="anchor" aria-hidden="true" href="#co-přinesla-verze-120">#</a></h2>
+<p>Poslední větší update přinesl dvě věci:</p>
+<ul>
+<li><strong>Klikací hashtagy</strong> u účtů v seznamu – každý tag je teď odkaz přímo na daný hashtag na
+Mamutovo.cz, takže se dá okamžitě prozkoumat, co se pod ním skrývá.</li>
+<li><strong>Nové kategorie</strong> v seznamu účtů, které lépe pokrývají témata aktivní v CZ/SK komunitě.</li>
+</ul>
+<h2 id="jak-funguje-automatické-stahování-účtů">Jak funguje automatické stahování účtů<a hidden class="anchor" aria-hidden="true" href="#jak-funguje-automatické-stahování-účtů">#</a></h2>
+<p>Základ mechanismu je jednoduchý: Mastodon API umožňuje číst <code>featured_tags</code> z profilu každého
+uživatele – to jsou hashtagy, které si člověk ručně nastaví jako „zvýrazněné&quot; ve svém profilu.
+fedi_start tyhle tagy čte a podle nich přiřazuje účty do kategorií.</p>
+<p>Výsledek je, že seznam je živý a nevyžaduje ruční správu. Čím víc lidí si nastaví zvýrazněné
+hashtagy, tím přesnější a bohatší seznam je.</p>
+<h2 id="výzva-nastavte-si-zvýrazněné-hashtagy">Výzva: nastavte si zvýrazněné hashtagy<a hidden class="anchor" aria-hidden="true" href="#výzva-nastavte-si-zvýrazněné-hashtagy">#</a></h2>
+<p>Pokud máte účet na Mamutovo.cz (nebo kdekoliv ve fediversu) a chcete být součástí seznamu –
+nastavte si zvýrazněné hashtagy v profilu.</p>
+<p>Najdete je v <strong>Nastavení → Profil → Zvýrazněné hashtagy</strong>. Stačí přidat pár tagů, které
+odpovídají tomu, o čem píšete. Pokud píšete o Linuxu, přidejte <code>#linux</code>. O fotografii?
+<code>#fotografie</code> nebo <code>#photography</code>. Nemusí jich být moc – tři čtyři stačí.</p>
+<p>Tím přímo přispíváte k tomu, aby byl seznam užitečnější pro další lidi, kteří na Mamutovo.cz
+přijdou.</p>
+<h2 id="kde-to-najdete">Kde to najdete<a hidden class="anchor" aria-hidden="true" href="#kde-to-najdete">#</a></h2>
+<ul>
+<li><strong>Průvodce:</strong> <a href="https://fedi.mamutovo.cz">fedi.mamutovo.cz</a></li>
+<li><strong>Zdrojový kód:</strong> <a href="https://git.arch-linux.cz/Mamutovo/fedi_start">git.arch-linux.cz/Mamutovo/fedi_start</a></li>
+</ul>
+<p>Pokud narazíte na chybu, chybějící účet nebo máte nápad na vylepšení, otevřete issue na Gitea
+nebo napište na Mamutovo.cz. Projekt je komunitní – čím víc lidí přispěje, tím líp to funguje
+pro všechny.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://blog.oscloud.cz/tags/mastodon/">Mastodon</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/mamutovo/">Mamutovo</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/fediverse/">Fediverse</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/onboarding/">Onboarding</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/fedi_start/">Fedi_start</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="https://blog.oscloud.cz/posts/linkwarden-zalozky-pod-vlastni-kontrolou/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Linkwarden: záložky pod vlastní kontrolou</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://blog.oscloud.cz/">Oscloud News</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
