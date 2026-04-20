@@ -8,8 +8,16 @@
     <language>cs-cz</language>
     <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
     <webMaster>info@oscloud.cz (OSCloud)</webMaster>
-    <lastBuildDate>Fri, 13 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2026 12:00:00 +0200</lastBuildDate>
     <atom:link href="https://blog.oscloud.cz/tags/soukrom%C3%AD/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MXChat: komunitní Matrix server pro lidi, co chtějí mít kontrolu nad svou komunikací</title>
+      <link>https://blog.oscloud.cz/posts/mxchat-komunitni-matrix-server/</link>
+      <pubDate>Mon, 20 Apr 2026 12:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>https://blog.oscloud.cz/posts/mxchat-komunitni-matrix-server/</guid>
+      <description>&lt;p&gt;Messenger, WhatsApp, Telegram, Discord. Každý z nás má v telefonu aspoň jednu z těchto aplikací a většinou ani nepřemýšlíme nad tím, komu vlastně posíláme své zprávy. MXChat je jiný přístup k chatování – komunitní server postavený na otevřeném protokolu Matrix, kde data nekončí na serverech Mety nebo jiné velké firmy, ale na infrastruktuře, kterou spravuje komunita sama.&lt;/p&gt;
+&lt;p&gt;Tenhle článek je pro každého, kdo přemýšlí, jestli a proč by měl zkusit něco jiného než mainstreamové messengery – od úplných začátečníků až po lidi, kteří už si hrají s Linuxem a self-hostingem.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Linkwarden: záložky pod vlastní kontrolou</title>
       <link>https://blog.oscloud.cz/posts/linkwarden-zalozky-pod-vlastni-kontrolou/</link>

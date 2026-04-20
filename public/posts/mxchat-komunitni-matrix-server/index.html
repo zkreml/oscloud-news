@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>MXChat: komunitní Matrix server pro lidi, co chtějí mít kontrolu nad svou komunikací | Oscloud News</title>
+<meta name="keywords" content="matrix, mxchat, chat, soukromí, self-hosting">
+<meta name="description" content="Messenger, WhatsApp, Telegram, Discord. Každý z nás má v telefonu aspoň jednu z těchto aplikací a většinou ani nepřemýšlíme nad tím, komu vlastně posíláme své zprávy. MXChat je jiný přístup k chatování – komunitní server postavený na otevřeném protokolu Matrix, kde data nekončí na serverech Mety nebo jiné velké firmy, ale na infrastruktuře, kterou spravuje komunita sama.
+Tenhle článek je pro každého, kdo přemýšlí, jestli a proč by měl zkusit něco jiného než mainstreamové messengery – od úplných začátečníků až po lidi, kteří už si hrají s Linuxem a self-hostingem.">
+<meta name="author" content="Archos">
+<link rel="canonical" href="https://blog.oscloud.cz/posts/mxchat-komunitni-matrix-server/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.01de0cf7a606abfce8ed6089ab89e1538996376aac8ff05d3c7d2340f377b07c.css" integrity="sha256-Ad4M96YGq/zo7WCJq4nhU4mWN2qsj/BdPH0jQPN3sHw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://blog.oscloud.cz/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.oscloud.cz/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.oscloud.cz/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://blog.oscloud.cz/apple-touch-icon.png">
+<link rel="mask-icon" href="https://blog.oscloud.cz/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://blog.oscloud.cz/posts/mxchat-komunitni-matrix-server/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><script defer src="https://analytics.oscloud.cz/script.js" data-website-id="70aaf052-385c-41fb-9cfe-d3b3c6f54f2d"></script>
+<meta property="og:url" content="https://blog.oscloud.cz/posts/mxchat-komunitni-matrix-server/">
+  <meta property="og:site_name" content="Oscloud News">
+  <meta property="og:title" content="MXChat: komunitní Matrix server pro lidi, co chtějí mít kontrolu nad svou komunikací">
+  <meta property="og:description" content="Messenger, WhatsApp, Telegram, Discord. Každý z nás má v telefonu aspoň jednu z těchto aplikací a většinou ani nepřemýšlíme nad tím, komu vlastně posíláme své zprávy. MXChat je jiný přístup k chatování – komunitní server postavený na otevřeném protokolu Matrix, kde data nekončí na serverech Mety nebo jiné velké firmy, ale na infrastruktuře, kterou spravuje komunita sama.
+Tenhle článek je pro každého, kdo přemýšlí, jestli a proč by měl zkusit něco jiného než mainstreamové messengery – od úplných začátečníků až po lidi, kteří už si hrají s Linuxem a self-hostingem.">
+  <meta property="og:locale" content="cs-cz">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-04-20T12:00:00+02:00">
+    <meta property="article:modified_time" content="2026-04-20T12:00:00+02:00">
+    <meta property="article:tag" content="Matrix">
+    <meta property="article:tag" content="Mxchat">
+    <meta property="article:tag" content="Chat">
+    <meta property="article:tag" content="Soukromí">
+    <meta property="article:tag" content="Self-Hosting">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MXChat: komunitní Matrix server pro lidi, co chtějí mít kontrolu nad svou komunikací">
+<meta name="twitter:description" content="Messenger, WhatsApp, Telegram, Discord. Každý z nás má v telefonu aspoň jednu z těchto aplikací a většinou ani nepřemýšlíme nad tím, komu vlastně posíláme své zprávy. MXChat je jiný přístup k chatování – komunitní server postavený na otevřeném protokolu Matrix, kde data nekončí na serverech Mety nebo jiné velké firmy, ale na infrastruktuře, kterou spravuje komunita sama.
+Tenhle článek je pro každého, kdo přemýšlí, jestli a proč by měl zkusit něco jiného než mainstreamové messengery – od úplných začátečníků až po lidi, kteří už si hrají s Linuxem a self-hostingem.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://blog.oscloud.cz/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "MXChat: komunitní Matrix server pro lidi, co chtějí mít kontrolu nad svou komunikací",
+      "item": "https://blog.oscloud.cz/posts/mxchat-komunitni-matrix-server/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "MXChat: komunitní Matrix server pro lidi, co chtějí mít kontrolu nad svou komunikací",
+  "name": "MXChat: komunitní Matrix server pro lidi, co chtějí mít kontrolu nad svou komunikací",
+  "description": "Messenger, WhatsApp, Telegram, Discord. Každý z nás má v telefonu aspoň jednu z těchto aplikací a většinou ani nepřemýšlíme nad tím, komu vlastně posíláme své zprávy. MXChat je jiný přístup k chatování – komunitní server postavený na otevřeném protokolu Matrix, kde data nekončí na serverech Mety nebo jiné velké firmy, ale na infrastruktuře, kterou spravuje komunita sama.\nTenhle článek je pro každého, kdo přemýšlí, jestli a proč by měl zkusit něco jiného než mainstreamové messengery – od úplných začátečníků až po lidi, kteří už si hrají s Linuxem a self-hostingem.\n",
+  "keywords": [
+    "matrix", "mxchat", "chat", "soukromí", "self-hosting"
+  ],
+  "articleBody": "Messenger, WhatsApp, Telegram, Discord. Každý z nás má v telefonu aspoň jednu z těchto aplikací a většinou ani nepřemýšlíme nad tím, komu vlastně posíláme své zprávy. MXChat je jiný přístup k chatování – komunitní server postavený na otevřeném protokolu Matrix, kde data nekončí na serverech Mety nebo jiné velké firmy, ale na infrastruktuře, kterou spravuje komunita sama.\nTenhle článek je pro každého, kdo přemýšlí, jestli a proč by měl zkusit něco jiného než mainstreamové messengery – od úplných začátečníků až po lidi, kteří už si hrají s Linuxem a self-hostingem.\nCo z toho máš jako uživatel:\ntvoje zprávy nikdo nečte (ani provozovatel) nejsi závislý na jedné firmě můžeš si vybrat aplikaci i server Co je MXChat MXChat je server běžící na protokolu Matrix, který provozujeme v rámci OSCloud – české komunitní platformy zaměřené na open-source a soukromí. Slouží k chatování, volání, sdílení souborů a budování komunit. V praxi to vypadá podobně jako Discord nebo Telegram – máš kontakty, skupinové místnosti, posíláš si zprávy, fotky, videa, voláš si.\nRozdíl je v tom, co se děje pod povrchem. MXChat není produkt jedné firmy, nesbírá o tobě data, neprodává reklamu a není závislý na žádném centrálním provozovateli. Je to kousek Fediverse – sítě propojených nezávislých serverů, které spolu mluví stejným jazykem.\nJak to vlastně funguje Nejjednodušší přirovnání: Matrix je pro chat to, co e-mail pro zprávy.\nKdyž pošleš e-mail z Gmailu na Seznam, funguje to, protože oba servery mluví stejným protokolem (SMTP). Nikomu nepřijde divné, že si účet na jednom serveru může psát s účtem na jiném serveru. A stejně tak není nutné, aby všichni používali zrovna Gmail.\nMatrix funguje stejně, jen pro chat. MXChat je jeden z mnoha serverů. Existují další – matrix.org, tchncs.de, a stovky dalších, včetně těch, které si lidé provozují doma na malém počítači. A všechny spolu mluví. Uživatel z MXChat si může normálně psát s uživatelem z kteréhokoli jiného Matrix serveru na světě.\nTechnicky to znamená, že když někomu pošleš zprávu, tvůj server ji předá jeho serveru, a ten ji doručí. Pro tebe jako uživatele je to úplně stejné jako na WhatsAppu – jen nejsi závislý na jedné firmě.\nHomeserver, klient, místnost Abys rozuměl, co kdo znamená:\nHomeserver je místo, kde máš účet a kde leží tvoje data. V našem případě mxchat.cz. Klient je aplikace, ve které chatuješ – třeba Element, SchildiChat nebo Cinny. Něco jako webový prohlížeč pro Matrix – existuje jich víc a můžeš si vybrat. Místnost (room) je chat – buď mezi dvěma lidmi, nebo skupinová. Každá místnost má své nastavení, šifrování a pravidla. Proč ho používat Soukromí, které dává smysl MXChat nečte tvé zprávy. Nemůže, i kdyby chtěl – veškerá komunikace mezi lidmi je end-to-end šifrovaná (o tom níž). To je zásadní rozdíl oproti spoustě “bezpečných” aplikací, které sice tvrdí, že šifrují, ale zároveň si ze zpráv dělají metadata, profil uživatele a reklamní cíl.\nJako správci serveru máme teoreticky přístup k serverovým logům a metadatům (kdy jsi byl online, kolik zpráv prošlo systémem), ale neanalyzujeme je, neprofilujeme uživatele a neprodáváme nikomu data. Obsah šifrovaných zpráv neumíme přečíst ani my.\nOtevřený kód Matrix i klienti jako Element jsou open source – kdokoliv si může kód prohlédnout, ověřit, že dělá to, co říká, nebo si ho upravit. Nemáš slovo firmy, že “nesbíráme data”. Máš možnost to zkontrolovat.\nNezávislost Když Facebook zítra vypne WhatsApp, tvoje kontakty a historie jsou pryč. Když jedna instance Matrixu zmizí, zbytek sítě funguje dál. A protože si můžeš účet kdykoliv přestěhovat na jiný server (nebo si klidně rozjet vlastní), nejsi uzamčen v jedné krabici.\nCo na něm můžeš dělat Stručně: všechno, co děláš na normálním messengeru.\nChatování – 1:1 i skupiny, reakce, odpovědi, editace zpráv, mazání, připíchnuté zprávy, vlákna.\nSdílení souborů – fotky, videa, dokumenty. Velikost má limit (v našem případě 100 MB na soubor), ale na běžné použití to stačí.\nVolání – hlasové i video, 1:1 i skupinové. Na MXChat máme vlastní integrovaný nástroj pro videokonference.\nKomunity a místnosti – veřejné místnosti, do kterých se může připojit kdokoliv, soukromé skupiny jen pro pozvané, tematické servery (tzv. “spaces”, něco jako Discord servery s kanály uvnitř).\nEmoji reakce, stickery, GIFy – nic, co by ses bál postrádat.\nSrovnání s tím, co znáš Bez přikrášlování. Každá aplikace má svoje pro a proti.\nWhatsApp Plusy MXChatu: nepatří Metě, neukládá si tvoje metadata, nemusíš mít telefonní číslo, funguje na víc zařízeních bez závislosti na jednom “hlavním” telefonu.\nMínusy: tví známí tam pravděpodobně nejsou. WhatsApp má výhodu, že ho má skoro každý.\nTelegram Plusy MXChatu: Telegram standardně nešifruje zprávy end-to-end (musíš ručně zapnout “secret chat” a jen v 1:1). Na MXChatu je šifrování zapnuté ve výchozím nastavení pro soukromé konverzace.\nMínusy: Telegram má hladší UX, rychlejší synchronizaci, lepší boty pro masové použití.\nDiscord Plusy MXChatu: Discord je úplně centralizovaný, čte tvoje zprávy, zobrazuje reklamy a pro komerční zájem může cokoliv změnit. Matrix má podobný koncept komunit, ale bez toho všeho.\nMínusy: Discord je vyladěnější pro hráče a velké komunity, má lepší hlasové kanály a víc integrací.\nZávěr: MXChat není náhrada, která by tě vytrhla z nuly. Je to alternativa pro lidi, kterým záleží na tom, kde končí jejich data, a kteří jsou ochotní občas přemluvit kamaráda, aby si stáhl jinou appku.\nJak začít 1. Zařiď si pozvánku A tady rovnou upřímně: registrace na MXChat nejsou momentálně otevřené pro veřejnost. Funguje to přes schválení a registrační token.\nProč? Otevřené registrace jsou lákavé sousto pro spammery a trolly. Stačí pár dní otevřené registrace a máš na serveru stovky botů, kteří spamují veřejné místnosti a kazí reputaci celé instance napříč Matrix sítí. Proto jsme se rozhodli pro mírnou bariéru – není to šikana, je to ochrana lidí, kteří už tu jsou. Nejde o uzavřenou komunitu – jen o základní ochranu proti spamu.\nProces je rychlý a lidský:\nNapiš na helpdesk Proběhne krátké ověření – stačí říct, kdo jsi a proč máš zájem. Žádný dotazník, jen pár vět. Dostaneš registrační token (řetězec znaků) Tokenem dokončíš registraci v aplikaci Celé to zabere většinou pár hodin až den, podle toho, kdy se dostaneme k e-mailu.\n2. Vyber si aplikaci Matrix klientů je hodně. Pro začátek doporučuju:\nElement – nejrozšířenější, dostupný na webu, Windows, macOS, Linuxu, Androidu i iOS. Pokud nevíš, čím začít, začni tímhle. SchildiChat – fork Elementu s příjemnějším rozhraním, zejména na mobilu. Cinny – moderní webový klient, hezky vypadá, běží v prohlížeči. Stáhnout si je můžeš z element.io, z Google Play, App Store nebo z F-Droidu.\n3. První přihlášení V aplikaci při prvním spuštění:\nKlikni na Sign in / Přihlásit se U pole Homeserver zadej mxchat.cz (místo výchozího matrix.org) Vyplň uživatelské jméno, heslo a registrační token Hotovo 4. Ulož si bezpečnostní klíče – tohle nepřeskakuj Jakmile jsi přihlášený, aplikace tě vyzve k nastavení zabezpečeného úložiště (Secure Backup) a vygeneruje ti bezpečnostní klíč (Security Key) – dlouhý řetězec znaků, něco jako EsTe XkPq 9aWr ....\nTenhle klíč si ulož. Ne “potvrdím později”. Ne “vyřeším, až to budu potřebovat”. Ulož.\nProč to tak tlačím: end-to-end šifrování znamená, že zprávy umí rozšifrovat jen tvoje zařízení. Když si smažeš appku, přeinstaluješ telefon, nebo se přihlásíš na novém počítači, nové zařízení tvoje staré zprávy neumí přečíst, pokud mu k tomu nedáš klíč. A ten klíč ti server nedá – ten ho nezná. Máš ho jen ty.\nKdyž si klíč neuložíš a ztratíš přístup k zařízení, přijdeš o historii zpráv. Definitivně. Nikdo z nás ji neobnoví, protože ji ani my nevidíme.\nJak to uložit rozumně:\nsprávce hesel (Bitwarden, KeePassXC, Proton Pass) – nejlepší volba šifrovaná poznámka v Trilium, Obsidianu, CryptPadu vytištěný papír v šuplíku – nezní to moderně, ale funguje to Kromě klíče si Element nabídne i volbu Security Phrase – heslo, kterým si klíč chráníš. Funguje jako záložní způsob, jak se ke klíči dostat. Pokud ji nastavíš, zapamatuj si ji stejně pečlivě.\nKdykoliv se pak budeš přihlašovat na novém zařízení, klíč (nebo frázi) zadáš a zprávy se ti rozšifrují.\n5. Začni chatovat Přidej si první kontakt – buď zadáním jeho Matrix ID ve formátu @jmeno:server.cz, nebo tak, že tě pozve do místnosti. Veřejné místnosti najdeš přes průzkumník místností přímo v aplikaci.\nPřihlášení přes OSCloud (SSO) Pokud už máš účet na OSCloudu, můžeš se do MXChatu přihlásit přes jednotné přihlášení (SSO). Nemusíš si tak vytvářet nový účet ani řešit další heslo.\nJak na to:\nV klientovi (např. Element) zvol Sign in with SSO Vyber OSCloud / přesměrování na přihlášení Přihlas se svým OSCloud účtem Po návratu jsi automaticky přihlášený do MXChatu Důležité omezení:\nnový klient Element X zatím nepodporuje SSO, takže s OSCloud účtem ho aktuálně nepoužiješ použij klasický Element nebo jiný klient s podporou SSO SSO je pohodlné řešení, pokud už OSCloud používáš – jinak zůstává standardní registrace přes token.\nPokročilejší možnosti Boti Matrix umí roboty – malé programy, které sedí v místnosti a něco dělají. U nás na OSCloudu používáme vlastní boty pro FAQ, RSS čtečky (do místnosti ti chodí nové články z blogů, které sleduješ), překladače a různé utility.\nPokud tě baví hrát si, protokol Matrix má skvělou dokumentaci pro vývoj vlastních botů – my osobně používáme BaiBot.\nPropojení s jinými službami Matrix umí bridging – mosty mezi sítěmi. V praxi to znamená, že si z Matrixu můžeš psát s lidmi, kteří jsou na úplně jiné platformě, aniž bys tu platformu musel mít otevřenou.\nNa MXChatu provozujeme mosty do těchto sítí:\nWhatsApp Signal Telegram Meta Messenger Funguje to tak, že si most jednorázově propojíš se svým účtem (např. naskenováním QR kódu z WhatsApp Web) a pak ti všechny konverzace padají přímo do Matrixu. Místo čtyř aplikací máš jednu. Pokud tě zajímají detaily nastavení, napiš na helpdesk – rádi projdeme, co k tomu potřebuješ.\nVíce zařízení Na Matrix se přihlásíš z kolika zařízení chceš najednou. Telefon, notebook, pracovní stanice, tablet. Každé zařízení má svůj šifrovací klíč, ověřuješ je mezi sebou (QR kódem nebo emoji řetězcem) a zprávy ti přijdou všude.\nBezpečnost a soukromí Šifrování jednoduše Představ si, že posíláš dopis v zamčené schránce, a klíč máš jen ty a adresát. Cestou projde schránka přes spoustu pošťáků, ale nikdo z nich ji nemůže otevřít. Když dorazí, adresát ji odemkne svým klíčem. To je end-to-end šifrování (E2EE).\nV Matrixu to funguje stejně. Když pošleš zprávu v šifrované místnosti, tvůj klient ji zašifruje klíčem, který má jen příjemce. Server ji přenese, ale nevidí její obsah. Ani my jako správci, ani nikdo, kdo by se snažil na servery dostat.\nCo o tobě víme Na úrovni serveru vidíme: uživatelské jméno, e-mail (pokud jsi ho zadal pro reset hesla), metadata – kdy ses přihlásil, v jakých místnostech jsi, kdy posíláš zprávy. Obsah šifrovaných zpráv nevidíme nikdy, v žádné formě. U neveřejných místností (což je výchozí nastavení pro 1:1 a skupiny) je to technicky nemožné.\nJsme upřímní – serverový administrátor má vždycky teoretickou možnost k některým datům přistoupit. Rozdíl mezi námi a Metou je v tom, že k tomu nemáme důvod, neděláme to a nestaví na tom obchodní model.\nPro koho se to hodí a pro koho ne Hodí se ti, pokud:\nti vadí, že aplikace, které používáš, vydělávají na tvých datech máš komunitu, kterou chceš mít pod kontrolou (klub, zájmová skupina, rodinný chat) chceš si psát s lidmi z různých Matrix serverů, aniž bys musel mít všude účet tě baví open source a decentralizace Spíš se nehodí, pokud:\npotřebuješ, aby tě 100 % kontaktů mohlo bez řečí ihned najít (to dneska umí jen WhatsApp nebo Messenger) chceš “zapnout a zapomenout” – Matrix má občas drobnosti, které vyžadují trochu pozornosti (verifikace zařízení, bezpečnostní klíč) hledáš platformu primárně pro live streaming nebo hlasové kanály pro desítky lidí najednou Shrnutí MXChat je komunitní Matrix server provozovaný v rámci OSCloudu. Nabízí moderní chat se všemi funkcemi, které znáš z WhatsAppu nebo Telegramu, ale bez závislosti na velké firmě. Komunikuje s celou Matrix sítí, šifruje zprávy end-to-end a respektuje tvé soukromí.\nRegistrace jsou uzavřené kvůli ochraně proti spamu, ale získat pozvánku je otázka jedné zprávy na helpdesk.\nJak začít dnes Napiš na helpdesk a popros o registrační token (nebo použij SSO, pokud už máš OSCloud účet) Stáhni si Element Při přihlášení nastav homeserver na mxchat.cz, zadej token, vytvoř si účet Ulož si bezpečnostní klíč – bez něj přijdeš o historii při přeinstalaci Přidej si první kontakt přes Matrix ID (@jmeno:mxchat.cz) a napiš mu “ahoj” Víc informací najdeš na web.mxchat.cz. Pokud něco nefunguje nebo si nevíš rady, napiš na helpdesk – jsme lidé, nejsme bot a odpovídáme.\n",
+  "wordCount" : "2030",
+  "inLanguage": "en",
+  "datePublished": "2026-04-20T12:00:00+02:00",
+  "dateModified": "2026-04-20T12:00:00+02:00",
+  "author":{
+    "@type": "Person",
+    "name": "Archos"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://blog.oscloud.cz/posts/mxchat-komunitni-matrix-server/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Oscloud News",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://blog.oscloud.cz/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://blog.oscloud.cz/" accesskey="h" title="Oscloud News (Alt + H)">
+                <img src="https://blog.oscloud.cz/logo.png" alt="" aria-label="logo"
+                    height="32">Oscloud News</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://blog.oscloud.cz/" title="🇨🇿">
+                    <span>🇨🇿</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.oscloud.cz/archives/" title="Archiv">
+                    <span>Archiv</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.oscloud.cz/search/" title="Vyhledávání">
+                    <span>Vyhledávání</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.oscloud.cz/tags/" title="Tagy">
+                    <span>Tagy</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://blog.oscloud.cz/">Home</a>&nbsp;»&nbsp;<a href="https://blog.oscloud.cz/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      MXChat: komunitní Matrix server pro lidi, co chtějí mít kontrolu nad svou komunikací
+    </h1>
+    <div class="post-meta"><span title='2026-04-20 12:00:00 +0200 CEST'>April 20, 2026</span>&nbsp;·&nbsp;<span>10 min</span>&nbsp;·&nbsp;<span>Archos</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>Messenger, WhatsApp, Telegram, Discord. Každý z nás má v telefonu aspoň jednu z těchto aplikací a většinou ani nepřemýšlíme nad tím, komu vlastně posíláme své zprávy. MXChat je jiný přístup k chatování – komunitní server postavený na otevřeném protokolu Matrix, kde data nekončí na serverech Mety nebo jiné velké firmy, ale na infrastruktuře, kterou spravuje komunita sama.</p>
+<p>Tenhle článek je pro každého, kdo přemýšlí, jestli a proč by měl zkusit něco jiného než mainstreamové messengery – od úplných začátečníků až po lidi, kteří už si hrají s Linuxem a self-hostingem.</p>
+<p><strong>Co z toho máš jako uživatel:</strong></p>
+<ul>
+<li>tvoje zprávy nikdo nečte (ani provozovatel)</li>
+<li>nejsi závislý na jedné firmě</li>
+<li>můžeš si vybrat aplikaci i server</li>
+</ul>
+<h2 id="co-je-mxchat">Co je MXChat<a hidden class="anchor" aria-hidden="true" href="#co-je-mxchat">#</a></h2>
+<p>MXChat je server běžící na protokolu Matrix, který provozujeme v rámci <a href="https://oscloud.cz">OSCloud</a> – české komunitní platformy zaměřené na open-source a soukromí. Slouží k chatování, volání, sdílení souborů a budování komunit. V praxi to vypadá podobně jako Discord nebo Telegram – máš kontakty, skupinové místnosti, posíláš si zprávy, fotky, videa, voláš si.</p>
+<p>Rozdíl je v tom, co se děje pod povrchem. MXChat není produkt jedné firmy, nesbírá o tobě data, neprodává reklamu a není závislý na žádném centrálním provozovateli. Je to kousek Fediverse – sítě propojených nezávislých serverů, které spolu mluví stejným jazykem.</p>
+<h2 id="jak-to-vlastně-funguje">Jak to vlastně funguje<a hidden class="anchor" aria-hidden="true" href="#jak-to-vlastně-funguje">#</a></h2>
+<p>Nejjednodušší přirovnání: <strong>Matrix je pro chat to, co e-mail pro zprávy.</strong></p>
+<p>Když pošleš e-mail z Gmailu na Seznam, funguje to, protože oba servery mluví stejným protokolem (SMTP). Nikomu nepřijde divné, že si účet na jednom serveru může psát s účtem na jiném serveru. A stejně tak není nutné, aby všichni používali zrovna Gmail.</p>
+<p>Matrix funguje stejně, jen pro chat. MXChat je jeden z mnoha serverů. Existují další – matrix.org, tchncs.de, a stovky dalších, včetně těch, které si lidé provozují doma na malém počítači. A všechny spolu mluví. Uživatel z MXChat si může normálně psát s uživatelem z kteréhokoli jiného Matrix serveru na světě.</p>
+<p>Technicky to znamená, že když někomu pošleš zprávu, tvůj server ji předá jeho serveru, a ten ji doručí. Pro tebe jako uživatele je to úplně stejné jako na WhatsAppu – jen nejsi závislý na jedné firmě.</p>
+<h3 id="homeserver-klient-místnost">Homeserver, klient, místnost<a hidden class="anchor" aria-hidden="true" href="#homeserver-klient-místnost">#</a></h3>
+<p>Abys rozuměl, co kdo znamená:</p>
+<ul>
+<li><strong>Homeserver</strong> je místo, kde máš účet a kde leží tvoje data. V našem případě <code>mxchat.cz</code>.</li>
+<li><strong>Klient</strong> je aplikace, ve které chatuješ – třeba Element, SchildiChat nebo Cinny. Něco jako webový prohlížeč pro Matrix – existuje jich víc a můžeš si vybrat.</li>
+<li><strong>Místnost</strong> (room) je chat – buď mezi dvěma lidmi, nebo skupinová. Každá místnost má své nastavení, šifrování a pravidla.</li>
+</ul>
+<h2 id="proč-ho-používat">Proč ho používat<a hidden class="anchor" aria-hidden="true" href="#proč-ho-používat">#</a></h2>
+<h3 id="soukromí-které-dává-smysl">Soukromí, které dává smysl<a hidden class="anchor" aria-hidden="true" href="#soukromí-které-dává-smysl">#</a></h3>
+<p>MXChat nečte tvé zprávy. Nemůže, i kdyby chtěl – veškerá komunikace mezi lidmi je <strong>end-to-end šifrovaná</strong> (o tom níž). To je zásadní rozdíl oproti spoustě &ldquo;bezpečných&rdquo; aplikací, které sice tvrdí, že šifrují, ale zároveň si ze zpráv dělají metadata, profil uživatele a reklamní cíl.</p>
+<p>Jako správci serveru máme teoreticky přístup k serverovým logům a metadatům (kdy jsi byl online, kolik zpráv prošlo systémem), ale neanalyzujeme je, neprofilujeme uživatele a neprodáváme nikomu data. Obsah šifrovaných zpráv neumíme přečíst ani my.</p>
+<h3 id="otevřený-kód">Otevřený kód<a hidden class="anchor" aria-hidden="true" href="#otevřený-kód">#</a></h3>
+<p>Matrix i klienti jako Element jsou open source – kdokoliv si může kód prohlédnout, ověřit, že dělá to, co říká, nebo si ho upravit. Nemáš slovo firmy, že &ldquo;nesbíráme data&rdquo;. Máš možnost to zkontrolovat.</p>
+<h3 id="nezávislost">Nezávislost<a hidden class="anchor" aria-hidden="true" href="#nezávislost">#</a></h3>
+<p>Když Facebook zítra vypne WhatsApp, tvoje kontakty a historie jsou pryč. Když jedna instance Matrixu zmizí, zbytek sítě funguje dál. A protože si můžeš účet kdykoliv přestěhovat na jiný server (nebo si klidně rozjet vlastní), nejsi uzamčen v jedné krabici.</p>
+<h2 id="co-na-něm-můžeš-dělat">Co na něm můžeš dělat<a hidden class="anchor" aria-hidden="true" href="#co-na-něm-můžeš-dělat">#</a></h2>
+<p>Stručně: všechno, co děláš na normálním messengeru.</p>
+<p><strong>Chatování</strong> – 1:1 i skupiny, reakce, odpovědi, editace zpráv, mazání, připíchnuté zprávy, vlákna.</p>
+<p><strong>Sdílení souborů</strong> – fotky, videa, dokumenty. Velikost má limit (v našem případě 100 MB na soubor), ale na běžné použití to stačí.</p>
+<p><strong>Volání</strong> – hlasové i video, 1:1 i skupinové. Na MXChat máme vlastní integrovaný nástroj pro videokonference.</p>
+<p><strong>Komunity a místnosti</strong> – veřejné místnosti, do kterých se může připojit kdokoliv, soukromé skupiny jen pro pozvané, tematické servery (tzv. &ldquo;spaces&rdquo;, něco jako Discord servery s kanály uvnitř).</p>
+<p><strong>Emoji reakce, stickery, GIFy</strong> – nic, co by ses bál postrádat.</p>
+<h2 id="srovnání-s-tím-co-znáš">Srovnání s tím, co znáš<a hidden class="anchor" aria-hidden="true" href="#srovnání-s-tím-co-znáš">#</a></h2>
+<p>Bez přikrášlování. Každá aplikace má svoje pro a proti.</p>
+<h3 id="whatsapp">WhatsApp<a hidden class="anchor" aria-hidden="true" href="#whatsapp">#</a></h3>
+<p><em>Plusy MXChatu:</em> nepatří Metě, neukládá si tvoje metadata, nemusíš mít telefonní číslo, funguje na víc zařízeních bez závislosti na jednom &ldquo;hlavním&rdquo; telefonu.</p>
+<p><em>Mínusy:</em> tví známí tam pravděpodobně nejsou. WhatsApp má výhodu, že ho má skoro každý.</p>
+<h3 id="telegram">Telegram<a hidden class="anchor" aria-hidden="true" href="#telegram">#</a></h3>
+<p><em>Plusy MXChatu:</em> Telegram standardně <strong>nešifruje</strong> zprávy end-to-end (musíš ručně zapnout &ldquo;secret chat&rdquo; a jen v 1:1). Na MXChatu je šifrování zapnuté ve výchozím nastavení pro soukromé konverzace.</p>
+<p><em>Mínusy:</em> Telegram má hladší UX, rychlejší synchronizaci, lepší boty pro masové použití.</p>
+<h3 id="discord">Discord<a hidden class="anchor" aria-hidden="true" href="#discord">#</a></h3>
+<p><em>Plusy MXChatu:</em> Discord je úplně centralizovaný, čte tvoje zprávy, zobrazuje reklamy a pro komerční zájem může cokoliv změnit. Matrix má podobný koncept komunit, ale bez toho všeho.</p>
+<p><em>Mínusy:</em> Discord je vyladěnější pro hráče a velké komunity, má lepší hlasové kanály a víc integrací.</p>
+<p>Závěr: MXChat není náhrada, která by tě vytrhla z nuly. Je to alternativa pro lidi, kterým záleží na tom, kde končí jejich data, a kteří jsou ochotní občas přemluvit kamaráda, aby si stáhl jinou appku.</p>
+<h2 id="jak-začít">Jak začít<a hidden class="anchor" aria-hidden="true" href="#jak-začít">#</a></h2>
+<h3 id="1-zařiď-si-pozvánku">1. Zařiď si pozvánku<a hidden class="anchor" aria-hidden="true" href="#1-zařiď-si-pozvánku">#</a></h3>
+<p>A tady rovnou upřímně: <strong>registrace na MXChat nejsou momentálně otevřené pro veřejnost.</strong> Funguje to přes schválení a registrační token.</p>
+<p>Proč? Otevřené registrace jsou lákavé sousto pro spammery a trolly. Stačí pár dní otevřené registrace a máš na serveru stovky botů, kteří spamují veřejné místnosti a kazí reputaci celé instance napříč Matrix sítí. Proto jsme se rozhodli pro mírnou bariéru – není to šikana, je to ochrana lidí, kteří už tu jsou. Nejde o uzavřenou komunitu – jen o základní ochranu proti spamu.</p>
+<p>Proces je rychlý a lidský:</p>
+<ol>
+<li>Napiš na <a href="https://helpdesk.oscloud.cz/help/3020290644">helpdesk</a></li>
+<li>Proběhne krátké ověření – stačí říct, kdo jsi a proč máš zájem. Žádný dotazník, jen pár vět.</li>
+<li>Dostaneš registrační token (řetězec znaků)</li>
+<li>Tokenem dokončíš registraci v aplikaci</li>
+</ol>
+<p>Celé to zabere většinou pár hodin až den, podle toho, kdy se dostaneme k e-mailu.</p>
+<h3 id="2-vyber-si-aplikaci">2. Vyber si aplikaci<a hidden class="anchor" aria-hidden="true" href="#2-vyber-si-aplikaci">#</a></h3>
+<p>Matrix klientů je hodně. Pro začátek doporučuju:</p>
+<ul>
+<li><strong>Element</strong> – nejrozšířenější, dostupný na webu, Windows, macOS, Linuxu, Androidu i iOS. Pokud nevíš, čím začít, začni tímhle.</li>
+<li><strong>SchildiChat</strong> – fork Elementu s příjemnějším rozhraním, zejména na mobilu.</li>
+<li><strong>Cinny</strong> – moderní webový klient, hezky vypadá, běží v prohlížeči.</li>
+</ul>
+<p>Stáhnout si je můžeš z <a href="https://element.io">element.io</a>, z Google Play, App Store nebo z F-Droidu.</p>
+<h3 id="3-první-přihlášení">3. První přihlášení<a hidden class="anchor" aria-hidden="true" href="#3-první-přihlášení">#</a></h3>
+<p>V aplikaci při prvním spuštění:</p>
+<ol>
+<li>Klikni na <strong>Sign in</strong> / <strong>Přihlásit se</strong></li>
+<li>U pole <em>Homeserver</em> zadej <code>mxchat.cz</code> (místo výchozího <code>matrix.org</code>)</li>
+<li>Vyplň uživatelské jméno, heslo a registrační token</li>
+<li>Hotovo
+<img alt="Registrační obrazovka mxchat.cz" loading="lazy" src="/images/mxchat-registrace.png"></li>
+</ol>
+<h3 id="4-ulož-si-bezpečnostní-klíče--tohle-nepřeskakuj">4. Ulož si bezpečnostní klíče – tohle nepřeskakuj<a hidden class="anchor" aria-hidden="true" href="#4-ulož-si-bezpečnostní-klíče--tohle-nepřeskakuj">#</a></h3>
+<p>Jakmile jsi přihlášený, aplikace tě vyzve k nastavení <strong>zabezpečeného úložiště</strong> (Secure Backup) a vygeneruje ti <strong>bezpečnostní klíč</strong> (Security Key) – dlouhý řetězec znaků, něco jako <code>EsTe XkPq 9aWr ...</code>.</p>
+<p><strong>Tenhle klíč si ulož.</strong> Ne &ldquo;potvrdím později&rdquo;. Ne &ldquo;vyřeším, až to budu potřebovat&rdquo;. Ulož.</p>
+<p>Proč to tak tlačím: end-to-end šifrování znamená, že zprávy umí rozšifrovat jen tvoje zařízení. Když si smažeš appku, přeinstaluješ telefon, nebo se přihlásíš na novém počítači, nové zařízení tvoje staré zprávy <strong>neumí přečíst</strong>, pokud mu k tomu nedáš klíč. A ten klíč ti server nedá – ten ho nezná. Máš ho jen ty.</p>
+<p>Když si klíč neuložíš a ztratíš přístup k zařízení, přijdeš o historii zpráv. Definitivně. Nikdo z nás ji neobnoví, protože ji ani my nevidíme.</p>
+<p>Jak to uložit rozumně:</p>
+<ul>
+<li><strong>správce hesel</strong> (Bitwarden, KeePassXC, Proton Pass) – nejlepší volba</li>
+<li><strong>šifrovaná poznámka</strong> v Trilium, Obsidianu, CryptPadu</li>
+<li><strong>vytištěný papír</strong> v šuplíku – nezní to moderně, ale funguje to</li>
+</ul>
+<p>Kromě klíče si Element nabídne i volbu <strong>Security Phrase</strong> – heslo, kterým si klíč chráníš. Funguje jako záložní způsob, jak se ke klíči dostat. Pokud ji nastavíš, zapamatuj si ji stejně pečlivě.</p>
+<p>Kdykoliv se pak budeš přihlašovat na novém zařízení, klíč (nebo frázi) zadáš a zprávy se ti rozšifrují.</p>
+<h3 id="5-začni-chatovat">5. Začni chatovat<a hidden class="anchor" aria-hidden="true" href="#5-začni-chatovat">#</a></h3>
+<p>Přidej si první kontakt – buď zadáním jeho Matrix ID ve formátu <code>@jmeno:server.cz</code>, nebo tak, že tě pozve do místnosti. Veřejné místnosti najdeš přes průzkumník místností přímo v aplikaci.</p>
+<h2 id="přihlášení-přes-oscloud-sso">Přihlášení přes OSCloud (SSO)<a hidden class="anchor" aria-hidden="true" href="#přihlášení-přes-oscloud-sso">#</a></h2>
+<p>Pokud už máš účet na OSCloudu, můžeš se do MXChatu přihlásit přes jednotné přihlášení (SSO). Nemusíš si tak vytvářet nový účet ani řešit další heslo.</p>
+<p><strong>Jak na to:</strong></p>
+<ol>
+<li>V klientovi (např. Element) zvol <strong>Sign in with SSO</strong></li>
+<li>Vyber OSCloud / přesměrování na přihlášení</li>
+<li>Přihlas se svým OSCloud účtem</li>
+<li>Po návratu jsi automaticky přihlášený do MXChatu</li>
+</ol>
+<p><strong>Důležité omezení:</strong></p>
+<ul>
+<li>nový klient <strong>Element X zatím nepodporuje SSO</strong>, takže s OSCloud účtem ho aktuálně nepoužiješ</li>
+<li>použij klasický <strong>Element</strong> nebo jiný klient s podporou SSO</li>
+</ul>
+<p>SSO je pohodlné řešení, pokud už OSCloud používáš – jinak zůstává standardní registrace přes token.</p>
+<h2 id="pokročilejší-možnosti">Pokročilejší možnosti<a hidden class="anchor" aria-hidden="true" href="#pokročilejší-možnosti">#</a></h2>
+<h3 id="boti">Boti<a hidden class="anchor" aria-hidden="true" href="#boti">#</a></h3>
+<p>Matrix umí roboty – malé programy, které sedí v místnosti a něco dělají. U nás na OSCloudu používáme vlastní boty pro FAQ, RSS čtečky (do místnosti ti chodí nové články z blogů, které sleduješ), překladače a různé utility.</p>
+<p>Pokud tě baví hrát si, protokol Matrix má skvělou dokumentaci pro vývoj vlastních botů – my osobně používáme BaiBot.</p>
+<h3 id="propojení-s-jinými-službami">Propojení s jinými službami<a hidden class="anchor" aria-hidden="true" href="#propojení-s-jinými-službami">#</a></h3>
+<p>Matrix umí <strong>bridging</strong> – mosty mezi sítěmi. V praxi to znamená, že si z Matrixu můžeš psát s lidmi, kteří jsou na úplně jiné platformě, aniž bys tu platformu musel mít otevřenou.</p>
+<p>Na MXChatu provozujeme mosty do těchto sítí:</p>
+<ul>
+<li><strong>WhatsApp</strong></li>
+<li><strong>Signal</strong></li>
+<li><strong>Telegram</strong></li>
+<li><strong>Meta Messenger</strong></li>
+</ul>
+<p>Funguje to tak, že si most jednorázově propojíš se svým účtem (např. naskenováním QR kódu z WhatsApp Web) a pak ti všechny konverzace padají přímo do Matrixu. Místo čtyř aplikací máš jednu. Pokud tě zajímají detaily nastavení, napiš na helpdesk – rádi projdeme, co k tomu potřebuješ.</p>
+<h3 id="více-zařízení">Více zařízení<a hidden class="anchor" aria-hidden="true" href="#více-zařízení">#</a></h3>
+<p>Na Matrix se přihlásíš z kolika zařízení chceš najednou. Telefon, notebook, pracovní stanice, tablet. Každé zařízení má svůj šifrovací klíč, ověřuješ je mezi sebou (QR kódem nebo emoji řetězcem) a zprávy ti přijdou všude.</p>
+<h2 id="bezpečnost-a-soukromí">Bezpečnost a soukromí<a hidden class="anchor" aria-hidden="true" href="#bezpečnost-a-soukromí">#</a></h2>
+<h3 id="šifrování-jednoduše">Šifrování jednoduše<a hidden class="anchor" aria-hidden="true" href="#šifrování-jednoduše">#</a></h3>
+<p>Představ si, že posíláš dopis v zamčené schránce, a klíč máš jen ty a adresát. Cestou projde schránka přes spoustu pošťáků, ale nikdo z nich ji nemůže otevřít. Když dorazí, adresát ji odemkne svým klíčem. To je <strong>end-to-end šifrování</strong> (E2EE).</p>
+<p>V Matrixu to funguje stejně. Když pošleš zprávu v šifrované místnosti, tvůj klient ji zašifruje klíčem, který má jen příjemce. Server ji přenese, ale <strong>nevidí její obsah</strong>. Ani my jako správci, ani nikdo, kdo by se snažil na servery dostat.</p>
+<h3 id="co-o-tobě-víme">Co o tobě víme<a hidden class="anchor" aria-hidden="true" href="#co-o-tobě-víme">#</a></h3>
+<p>Na úrovni serveru vidíme: uživatelské jméno, e-mail (pokud jsi ho zadal pro reset hesla), metadata – kdy ses přihlásil, v jakých místnostech jsi, kdy posíláš zprávy. <strong>Obsah šifrovaných zpráv nevidíme nikdy, v žádné formě.</strong> U neveřejných místností (což je výchozí nastavení pro 1:1 a skupiny) je to technicky nemožné.</p>
+<p>Jsme upřímní – serverový administrátor má vždycky teoretickou možnost k některým datům přistoupit. Rozdíl mezi námi a Metou je v tom, že k tomu nemáme důvod, neděláme to a nestaví na tom obchodní model.</p>
+<h2 id="pro-koho-se-to-hodí-a-pro-koho-ne">Pro koho se to hodí a pro koho ne<a hidden class="anchor" aria-hidden="true" href="#pro-koho-se-to-hodí-a-pro-koho-ne">#</a></h2>
+<p><strong>Hodí se ti, pokud:</strong></p>
+<ul>
+<li>ti vadí, že aplikace, které používáš, vydělávají na tvých datech</li>
+<li>máš komunitu, kterou chceš mít pod kontrolou (klub, zájmová skupina, rodinný chat)</li>
+<li>chceš si psát s lidmi z různých Matrix serverů, aniž bys musel mít všude účet</li>
+<li>tě baví open source a decentralizace</li>
+</ul>
+<p><strong>Spíš se nehodí, pokud:</strong></p>
+<ul>
+<li>potřebuješ, aby tě 100 % kontaktů mohlo bez řečí ihned najít (to dneska umí jen WhatsApp nebo Messenger)</li>
+<li>chceš &ldquo;zapnout a zapomenout&rdquo; – Matrix má občas drobnosti, které vyžadují trochu pozornosti (verifikace zařízení, bezpečnostní klíč)</li>
+<li>hledáš platformu primárně pro live streaming nebo hlasové kanály pro desítky lidí najednou</li>
+</ul>
+<h2 id="shrnutí">Shrnutí<a hidden class="anchor" aria-hidden="true" href="#shrnutí">#</a></h2>
+<p>MXChat je komunitní Matrix server provozovaný v rámci OSCloudu. Nabízí moderní chat se všemi funkcemi, které znáš z WhatsAppu nebo Telegramu, ale bez závislosti na velké firmě. Komunikuje s celou Matrix sítí, šifruje zprávy end-to-end a respektuje tvé soukromí.</p>
+<p>Registrace jsou uzavřené kvůli ochraně proti spamu, ale získat pozvánku je otázka jedné zprávy na helpdesk.</p>
+<h3 id="jak-začít-dnes">Jak začít dnes<a hidden class="anchor" aria-hidden="true" href="#jak-začít-dnes">#</a></h3>
+<ol>
+<li>Napiš na <a href="https://helpdesk.oscloud.cz/help/3020290644">helpdesk</a> a popros o registrační token (nebo použij SSO, pokud už máš OSCloud účet)</li>
+<li>Stáhni si <a href="https://element.io">Element</a></li>
+<li>Při přihlášení nastav homeserver na <code>mxchat.cz</code>, zadej token, vytvoř si účet</li>
+<li><strong>Ulož si bezpečnostní klíč</strong> – bez něj přijdeš o historii při přeinstalaci</li>
+<li>Přidej si první kontakt přes Matrix ID (<code>@jmeno:mxchat.cz</code>) a napiš mu &ldquo;ahoj&rdquo;</li>
+</ol>
+<p>Víc informací najdeš na <a href="https://web.mxchat.cz/index.html">web.mxchat.cz</a>. Pokud něco nefunguje nebo si nevíš rady, napiš na <a href="https://helpdesk.oscloud.cz/help/3020290644">helpdesk</a> – jsme lidé, nejsme bot a odpovídáme.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://blog.oscloud.cz/tags/matrix/">Matrix</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/mxchat/">Mxchat</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/chat/">Chat</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/soukrom%C3%AD/">Soukromí</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/self-hosting/">Self-Hosting</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="https://blog.oscloud.cz/posts/fedi-start-pruvodce-mamutovo/">
+    <span class="title">Next »</span>
+    <br>
+    <span>fedi_start: Postavili jsme průvodce pro nové uživatele Mamutovo.cz</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://blog.oscloud.cz/">Oscloud News</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
