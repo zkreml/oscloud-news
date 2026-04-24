@@ -2,28 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Self-Hosted on Oscloud News</title>
-    <link>https://blog.oscloud.cz/tags/self-hosted/</link>
+    <link>http://localhost:1313/tags/self-hosted/</link>
     <description>Recent content in Self-Hosted on Oscloud News</description>
     <generator>Hugo -- 0.160.1</generator>
     <language>cs-cz</language>
     <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
     <webMaster>info@oscloud.cz (OSCloud)</webMaster>
     <lastBuildDate>Fri, 24 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blog.oscloud.cz/tags/self-hosted/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/self-hosted/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vikunja na OSCloud: todo aplikace, kterou si nemusíte hostovat sami</title>
-      <link>https://blog.oscloud.cz/posts/vikunja-na-oscloud/</link>
+      <link>http://localhost:1313/posts/vikunja-na-oscloud/</link>
       <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/posts/vikunja-na-oscloud/</guid>
+      <guid>http://localhost:1313/posts/vikunja-na-oscloud/</guid>
       <description>&lt;p&gt;Todo aplikací je mraky. Většina běžných (Todoist, Microsoft To Do, Trello, Asana) ale běží na cizích serverech, má různé &amp;ldquo;free&amp;rdquo; limity a vaše úkoly — včetně těch osobních a pracovních — leží někde, kam nevidíte. Vikunja je open-source alternativa, kterou na OSCloud provozujeme pro komunitu na adrese &lt;a href=&#34;https://todo.oscloud.cz/&#34;&gt;todo.oscloud.cz&lt;/a&gt;. Tenhle článek je o tom, co Vikunja umí a jak ji používat přes OSCloud — žádné dockery, žádné instalace.&lt;/p&gt;
 &lt;h2 id=&#34;co-je-vikunja&#34;&gt;Co je Vikunja&lt;/h2&gt;
 &lt;p&gt;Vikunja je open-source správa úkolů a projektů. V základu je to klasická todo aplikace — vytvoříte si projekt, hodíte do něj úkoly, nastavíte termíny, štítky, priority. Navíc to ale umí věci, kvůli kterým lidi obvykle platí Todoist nebo Trello: kanban nástěnky, Gantt diagramy, tabulkové zobrazení, filtry, sdílení projektů s dalšími uživateli, komentáře k úkolům, přílohy.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Linkwarden: záložky pod vlastní kontrolou</title>
-      <link>https://blog.oscloud.cz/posts/linkwarden-zalozky-pod-vlastni-kontrolou/</link>
+      <link>http://localhost:1313/posts/linkwarden-zalozky-pod-vlastni-kontrolou/</link>
       <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/posts/linkwarden-zalozky-pod-vlastni-kontrolou/</guid>
+      <guid>http://localhost:1313/posts/linkwarden-zalozky-pod-vlastni-kontrolou/</guid>
       <description>&lt;p&gt;Záložky jsou jednou z těch věcí, které každý nějak řeší, ale málokdo je spokojený s tím, jak to řeší. Složky v prohlížeči se plní a nikdo je neprochází, cloudové služby zavírají nebo mění podmínky, a důležité články mizí spolu s doménami, na kterých byly. Na OScloud teď provozujeme Linkwarden – nástroj, který tohle celé řeší trochu jinak.&lt;/p&gt;
 &lt;h2 id=&#34;co-je-linkwarden-a-proč-ho-máme&#34;&gt;Co je Linkwarden a proč ho máme&lt;/h2&gt;
 &lt;p&gt;Linkwarden je open-source správce záložek s archivací. To zní možná nudně, ale v praxi to znamená, že neukládáš jen odkaz – ukládáš i obsah stránky v podobě snímku. Pokud stránka za rok zmizí, článek máš pořád.&lt;/p&gt;</description>
