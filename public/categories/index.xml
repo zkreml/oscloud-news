@@ -18,6 +18,13 @@
       <description></description>
     </item>
     <item>
+      <title>Novinky</title>
+      <link>http://localhost:1313/categories/novinky/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/categories/novinky/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Matrix</title>
       <link>http://localhost:1313/categories/matrix/</link>
       <pubDate>Mon, 20 Apr 2026 12:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
