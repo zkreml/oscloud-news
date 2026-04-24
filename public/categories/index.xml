@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Oscloud News</title>
-    <link>https://blog.oscloud.cz/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on Oscloud News</description>
     <generator>Hugo -- 0.160.1</generator>
     <language>cs-cz</language>
     <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
     <webMaster>info@oscloud.cz (OSCloud)</webMaster>
-    <lastBuildDate>Mon, 20 Apr 2026 12:00:00 +0200</lastBuildDate>
-    <atom:link href="https://blog.oscloud.cz/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Matrix</title>
-      <link>https://blog.oscloud.cz/categories/matrix/</link>
-      <pubDate>Mon, 20 Apr 2026 12:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/categories/matrix/</guid>
+      <title>Služby</title>
+      <link>http://localhost:1313/categories/slu%C5%BEby/</link>
+      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/categories/slu%C5%BEby/</guid>
       <description></description>
     </item>
     <item>
-      <title>Služby</title>
-      <link>https://blog.oscloud.cz/categories/slu%C5%BEby/</link>
+      <title>Matrix</title>
+      <link>http://localhost:1313/categories/matrix/</link>
       <pubDate>Mon, 20 Apr 2026 12:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/categories/slu%C5%BEby/</guid>
+      <guid>http://localhost:1313/categories/matrix/</guid>
       <description></description>
     </item>
     <item>
       <title>Projekty</title>
-      <link>https://blog.oscloud.cz/categories/projekty/</link>
+      <link>http://localhost:1313/categories/projekty/</link>
       <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/categories/projekty/</guid>
+      <guid>http://localhost:1313/categories/projekty/</guid>
       <description></description>
     </item>
     <item>
       <title>Oznámení</title>
-      <link>https://blog.oscloud.cz/categories/ozn%C3%A1men%C3%AD/</link>
+      <link>http://localhost:1313/categories/ozn%C3%A1men%C3%AD/</link>
       <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/categories/ozn%C3%A1men%C3%AD/</guid>
+      <guid>http://localhost:1313/categories/ozn%C3%A1men%C3%AD/</guid>
       <description></description>
     </item>
   </channel>
