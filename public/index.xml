@@ -27,15 +27,6 @@
 &lt;p&gt;Vikunja je open-source správa úkolů a projektů. V základu je to klasická todo aplikace — vytvoříte si projekt, hodíte do něj úkoly, nastavíte termíny, štítky, priority. Navíc to ale umí věci, kvůli kterým lidi obvykle platí Todoist nebo Trello: kanban nástěnky, Gantt diagramy, tabulkové zobrazení, filtry, sdílení projektů s dalšími uživateli, komentáře k úkolům, přílohy.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Novinka: Teď nabízíme i webhosting!</title>
-      <link>https://blog.oscloud.cz/posts/spoustime-webhosting-oscloud-site/</link>
-      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/posts/spoustime-webhosting-oscloud-site/</guid>
-      <description>&lt;p&gt;Ahoj všichni! 😊&lt;/p&gt;
-&lt;p&gt;Jako správní členové naší komunity víte, že OSCLOUD.cz není jen o open-source projektech a diskuzích. Vždycky jsme chtěli nabízet služby, které dávají smysl a které skutečně pomáhají lidem jako vy. A teď je ten správný čas rozšířit naše portfolio!&lt;/p&gt;
-&lt;p&gt;Představujeme vám &lt;strong&gt;&lt;a href=&#34;https://oscloud.site&#34;&gt;oscloud.site&lt;/a&gt;&lt;/strong&gt; — náš nový webhosting, který je přirozeným pokračováním toho, co už děláme. Pokud jste někdy používali naše služby nebo jste členem komunity, víte, že se zaměřujeme na kvalitu, transparentnost a skutečnou podporu. Hosting není výjimka.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>MXChat: komunitní Matrix server pro lidi, co chtějí mít kontrolu nad svou komunikací</title>
       <link>https://blog.oscloud.cz/posts/mxchat-komunitni-matrix-server/</link>
       <pubDate>Mon, 20 Apr 2026 12:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>

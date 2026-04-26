@@ -1,7 +1,7 @@
 ---
 title: "Novinka: Teď nabízíme i webhosting!"
 date: 2026-04-23
-draft: false
+draft: true
 slug: "spoustime-webhosting-oscloud-site"
 categories: ["novinky"]
 tags: ["webhosting", "oscloud.site", "služby"]
