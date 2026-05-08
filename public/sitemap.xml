@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.oscloud.cz/categories/</loc>
+    <lastmod>2026-05-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/posts/spoustime-webhosting-oscloud-site/</loc>
+    <lastmod>2026-05-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/categories/novinky/</loc>
+    <lastmod>2026-05-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/</loc>
+    <lastmod>2026-05-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/tags/oscloud.site/</loc>
+    <lastmod>2026-05-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/posts/</loc>
+    <lastmod>2026-05-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/tags/slu%C5%BEby/</loc>
+    <lastmod>2026-05-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/tags/</loc>
+    <lastmod>2026-05-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/tags/webhosting/</loc>
+    <lastmod>2026-05-08T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.oscloud.cz/tags/fediverse/</loc>
     <lastmod>2026-04-26T00:00:00+00:00</lastmod>
   </url><url>
@@ -11,23 +38,11 @@
     <loc>https://blog.oscloud.cz/tags/oscloud/</loc>
     <lastmod>2026-04-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/</loc>
-    <lastmod>2026-04-26T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.oscloud.cz/tags/ozn%C3%A1men%C3%AD/</loc>
-    <lastmod>2026-04-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.oscloud.cz/posts/</loc>
     <lastmod>2026-04-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.oscloud.cz/posts/rozlouceni-mastodon-arch-linux-cz/</loc>
     <lastmod>2026-04-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.oscloud.cz/tags/</loc>
-    <lastmod>2026-04-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.oscloud.cz/categories/</loc>
-    <lastmod>2026-04-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.oscloud.cz/tags/produktivita/</loc>
     <lastmod>2026-04-24T00:00:00+00:00</lastmod>

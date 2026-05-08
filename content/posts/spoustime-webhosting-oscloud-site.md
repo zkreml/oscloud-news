@@ -1,7 +1,7 @@
 ---
 title: "Novinka: Teď nabízíme i webhosting!"
-date: 2026-04-23
-draft: true
+date: 2026-05-08
+draft: false
 slug: "spoustime-webhosting-oscloud-site"
 categories: ["novinky"]
 tags: ["webhosting", "oscloud.site", "služby"]
@@ -24,7 +24,7 @@ Představujeme vám **[oscloud.site](https://oscloud.site)** — náš nový web
 - **Migrace zdarma:** Přecházíte odjinud? Pomůžeme vám přenést web bez výpadku.
 - **Komunitní podpora 24/7:** Chat, WhatsApp, telefon, e-mail — vždycky jsme tu pro vás.
 
-Hosting je postavený na stejných principech jako zbytek našich služeb: férové ceny, žádné skryté poplatky, 30denní záruka vrácení peněz a garance dostupnosti 99,8 %. Nechceme anonymní zákazníky — chceme mít přehled o tom, komu hostujeme, a nabídnout skutečnou podporu každému, kdo se k nám přidá.
+Hosting je postavený na stejných principech jako zbytek našich služeb: férové ceny, žádné skryté poplatky, 30denní záruka vrácení peněz a garance dostupnosti 99,9 %. Nechceme anonymní zákazníky — chceme mít přehled o tom, komu hostujeme, a nabídnout skutečnou podporu každému, kdo se k nám přidá.
 
 ## Máme čtyři plány podle vašich potřeb
 
