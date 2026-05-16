@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>OSCloud: vlastní cloud, soukromí a digitální nezávislost bez kompromisů | Oscloud News</title>
+<meta name="keywords" content="nextcloud, matrix, soukromí, open source cloud, webhosting, alternativa google, digitální soukromí">
+<meta name="description" content="Každý den posíláš e-maily přes Gmail, fotky zálohuje Google Photos, dokumenty ti sedí na OneDrivu a kalendář synchronizuje Apple. Funguje to. Nikdo se neptá, co se s těmi daty děje. A právě to je problém.
+OSCloud je komunitní platforma postavená na open source technologiích, která ti dává zpět kontrolu nad vlastními daty. Žádné skryté podmínky, žádné profilování, žádné závislosti na korporátním ekosystému. Jen spolehlivé nástroje, které znáš — jen tentokrát hostované tak, aby data zůstala tvoje.">
+<meta name="author" content="oscloud">
+<link rel="canonical" href="https://blog.oscloud.cz/posts/oscloud-vlastni-cloud-soukromi-digitalni-nezavislost/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.01de0cf7a606abfce8ed6089ab89e1538996376aac8ff05d3c7d2340f377b07c.css" integrity="sha256-Ad4M96YGq/zo7WCJq4nhU4mWN2qsj/BdPH0jQPN3sHw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://blog.oscloud.cz/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.oscloud.cz/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.oscloud.cz/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://blog.oscloud.cz/apple-touch-icon.png">
+<link rel="mask-icon" href="https://blog.oscloud.cz/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://blog.oscloud.cz/posts/oscloud-vlastni-cloud-soukromi-digitalni-nezavislost/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><script defer src="https://analytics.oscloud.cz/script.js" data-website-id="70aaf052-385c-41fb-9cfe-d3b3c6f54f2d"></script>
+<meta property="og:url" content="https://blog.oscloud.cz/posts/oscloud-vlastni-cloud-soukromi-digitalni-nezavislost/">
+  <meta property="og:site_name" content="Oscloud News">
+  <meta property="og:title" content="OSCloud: vlastní cloud, soukromí a digitální nezávislost bez kompromisů">
+  <meta property="og:description" content="Každý den posíláš e-maily přes Gmail, fotky zálohuje Google Photos, dokumenty ti sedí na OneDrivu a kalendář synchronizuje Apple. Funguje to. Nikdo se neptá, co se s těmi daty děje. A právě to je problém.
+OSCloud je komunitní platforma postavená na open source technologiích, která ti dává zpět kontrolu nad vlastními daty. Žádné skryté podmínky, žádné profilování, žádné závislosti na korporátním ekosystému. Jen spolehlivé nástroje, které znáš — jen tentokrát hostované tak, aby data zůstala tvoje.">
+  <meta property="og:locale" content="cs-cz">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-05-16T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-05-16T00:00:00+00:00">
+    <meta property="article:tag" content="Nextcloud">
+    <meta property="article:tag" content="Matrix">
+    <meta property="article:tag" content="Soukromí">
+    <meta property="article:tag" content="Open Source Cloud">
+    <meta property="article:tag" content="Webhosting">
+    <meta property="article:tag" content="Alternativa Google">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="OSCloud: vlastní cloud, soukromí a digitální nezávislost bez kompromisů">
+<meta name="twitter:description" content="Každý den posíláš e-maily přes Gmail, fotky zálohuje Google Photos, dokumenty ti sedí na OneDrivu a kalendář synchronizuje Apple. Funguje to. Nikdo se neptá, co se s těmi daty děje. A právě to je problém.
+OSCloud je komunitní platforma postavená na open source technologiích, která ti dává zpět kontrolu nad vlastními daty. Žádné skryté podmínky, žádné profilování, žádné závislosti na korporátním ekosystému. Jen spolehlivé nástroje, které znáš — jen tentokrát hostované tak, aby data zůstala tvoje.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://blog.oscloud.cz/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "OSCloud: vlastní cloud, soukromí a digitální nezávislost bez kompromisů",
+      "item": "https://blog.oscloud.cz/posts/oscloud-vlastni-cloud-soukromi-digitalni-nezavislost/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "OSCloud: vlastní cloud, soukromí a digitální nezávislost bez kompromisů",
+  "name": "OSCloud: vlastní cloud, soukromí a digitální nezávislost bez kompromisů",
+  "description": "Každý den posíláš e-maily přes Gmail, fotky zálohuje Google Photos, dokumenty ti sedí na OneDrivu a kalendář synchronizuje Apple. Funguje to. Nikdo se neptá, co se s těmi daty děje. A právě to je problém.\nOSCloud je komunitní platforma postavená na open source technologiích, která ti dává zpět kontrolu nad vlastními daty. Žádné skryté podmínky, žádné profilování, žádné závislosti na korporátním ekosystému. Jen spolehlivé nástroje, které znáš — jen tentokrát hostované tak, aby data zůstala tvoje.\n",
+  "keywords": [
+    "nextcloud", "matrix", "soukromí", "open source cloud", "webhosting", "alternativa google", "digitální soukromí"
+  ],
+  "articleBody": "Každý den posíláš e-maily přes Gmail, fotky zálohuje Google Photos, dokumenty ti sedí na OneDrivu a kalendář synchronizuje Apple. Funguje to. Nikdo se neptá, co se s těmi daty děje. A právě to je problém.\nOSCloud je komunitní platforma postavená na open source technologiích, která ti dává zpět kontrolu nad vlastními daty. Žádné skryté podmínky, žádné profilování, žádné závislosti na korporátním ekosystému. Jen spolehlivé nástroje, které znáš — jen tentokrát hostované tak, aby data zůstala tvoje.\nCo je OSCloud a jak funguje OSCloud není produkt jedné firmy. Je to sada open source služeb provozovaných na dedikované infrastruktuře v Evropě (Hetzner EU), spravovaná komunitou lidí, kteří sami používají to, co provozují. To je zásadní rozdíl oproti komerčním cloudovým gigantům.\nZákladem je jedno SSO přihlášení — jeden účet, přístup ke všem službám. Nemusíš si pamatovat deset hesel k deseti různým nástrojům. Registruješ se jednou a máš k dispozici cloud, chat, správu hesel, poznámky, RSS čtečku a další nástroje najednou.\nTechnicky jde o platformu Cloudron, která umožňuje jednoduchou správu aplikací na vlastním serveru. Všechny aplikace jsou pravidelně aktualizované, monitorované a zálohované. Uživatel se nemusí starat o infrastrukturu — to je práce správce. Stará se jen o svá data.\nProč lidé začínají řešit soukromí na internetu Ještě před pěti lety byl argument „nemám co skrývat\" celkem běžnou odpovědí. Dnes je situace jiná. Úniky dat jsou rutina, reklamy sledují pohyb mezi weby i aplikacemi a algoritmy rozhodují o tom, co vidíš — ne ty.\nGoogle si z bezplatných služeb vydělává tím, že zpracovává tvé e-maily, vyhledávání, polohu a chování k budování reklamního profilu. Totéž dělá Meta se všemi svými aplikacemi. Microsoft ve výchozím nastavení odesílá diagnostická data z Windows a integruje AI nástroje přímo do kancelářských aplikací — s přístupem k obsahu dokumentů.\nProblém není jen soukromí v abstraktním slova smyslu. Je to i praktická závislost na jednom ekosystému. Když Google změní podmínky, zdraží úložiště nebo zruší službu (a to se stává pravidelně — Google Reader, Stadia, Inbox…), nemáš kam jít. Všechno máš tam.\nDigitální soukromí neznamená paranoia. Znamená rozhodovat se vědomě o tom, komu a za jakých podmínek svěřuješ svá data.\nVýhody používání OSCloudu v praxi Přechod na OSCloud nemusí být dramatický. Většina nástrojů nahrazuje přesně to, co už používáš — jen bez sledování a bez závislosti na konkrétní firmě.\nVlastní cloud a synchronizace souborů Nextcloud funguje jako Google Drive nebo Dropbox — synchronizuje soubory mezi počítačem, telefonem a prohlížečem. Rozdíl je v tom, že soubory jsou uložené na serverech OSCloud v EU, ne v Googlu. Máš přehled, kde data jsou, a nikdo je neanalyzuje.\nKalendáře a kontakty Nextcloud zvládá i CalDAV a CardDAV — standardní protokoly pro synchronizaci kalendářů a kontaktů. Fungují s Thunderbirdem, s nativními aplikacemi na Androidu i iOS. Přestaneš být závislý na Google Calendar nebo iCloud.\nPoznámky Trilium Notes je hierarchický nástroj pro správu znalostí. Hodí se pro osobní wiki, projektovou dokumentaci, zápisky ze schůzek i denní deník. Není to Notion, není to Google Keep — je to nástroj, který nepotřebuje internet a data drží tam, kde chceš.\nTýmová spolupráce Nextcloud Office (integrovaný Collabora) umožňuje editaci dokumentů, tabulek a prezentací přímo v prohlížeči — víc lidí najednou, v reálném čase. Pro tým, spolek nebo malý projekt jde o plnohodnotnou alternativu Google Workspace.\nKomunikace Matrix chat (přes klienta Element nebo Element X) nahrazuje Slack, WhatsApp i Discord. Je to decentralizovaný protokol — server OSCloud se může federovat s jinými Matrix servery, takže komunikuješ s komunitou bez ohledu na to, kde jsou. Navíc: přes mosty se dá připojit i na WhatsApp, Telegram nebo Signal.\nSpráva hesel Vaultwarden je kompatibilní implementace Bitwarden serveru. Hesla jsou šifrovaná na serveru i při přenosu, přistupuješ k nim přes prohlížečové rozšíření nebo mobilní aplikaci. Bezpečnější než zapisování do poznámek, pohodlnější než pamatování si všeho.\nRSS a čtení webu FreshRSS je RSS agregátor — centralizované místo pro sledování blogů, zpravodajských webů a Fediverse zdrojů bez algoritmů. Čteš to, co chceš sledovat, ne to, co ti někdo podsune.\nSdílení souborů a záložky Wallabag slouží jako read-it-later aplikace — ukládáš články z webu pro pozdější čtení, offline i bez reklam. Linkwarden pak spravuje záložky se štítky a kolekcemi. Žádný Pocket, žádný Instapaper.\nBezpečnost a soukromí: co to konkrétně znamená „Bezpečný cloud\" je fráze, která se dnes lepí na kdeco. Tady jsou konkrétní věci, které OSCloud dělá a proč na nich záleží.\nOpen source software znamená, že kdokoli může zkontrolovat zdrojový kód aplikací. Nextcloud, Matrix, Vaultwarden — to vše je veřejně dostupný kód, který prochází komunitním auditem. Skryté backdoory jsou podstatně těžší implementovat, když se na kód dívají tisíce lidí.\nTransparentnost provozu — víš, kde server fyzicky je (Hetzner, EU), víš, kdo ho spravuje. Není to anonymní korporace ukrytá za podmínkami o zpracování dat.\nPravidelné aktualizace jsou na platformě Cloudron záležitostí správce, ne uživatele. Bezpečnostní záplaty se nasazují rychle, bez čekání na uživatelský souhlas nebo odložené aktualizace.\nŠifrování přenosu je samozřejmost — HTTPS všude, TLS pro e-mailové protokoly, end-to-end šifrování v Matrix chatu tam, kde to protokol podporuje.\nMenší attack surface — čím méně dat centralizuješ u jednoho poskytovatele, tím menší škodu způsobí případný únik. Pokud by (hypoteticky) Googlu unikla databáze, uniknou data o miliardách lidí. Komunitní server má jiný rozsah.\nNení to dokonalé řešení. Žádné není. Ale je to podstatně lepší než bezmy­šlenkovité svěřování všeho jednomu korporátnímu silu.\nJaké služby může uživatel každý den používat Přehled toho, co OSCloud aktuálně nabízí:\nNextcloud — základ všeho K čemu: synchronizace souborů, kalendáře, kontakty, sdílené složky, Nextcloud Office.\nKomu se hodí: každému, kdo potřebuje cloud. Doslova.\nProč je zajímavý: je to nejpropracovanější open source alternativa ke Google Drive + Calendar + Contacts v jednom balíku.\nMatrix / MXChat — chat bez centrálního bodu K čemu: textová komunikace, skupinové místnosti, hlasové a video hovory, mosty na jiné platformy.\nKomu se hodí: týmům, komunitám, lidem unaveným z proprietárních chatovacích aplikací.\nProč je zajímavý: decentralizovaný protokol znamená, že nikdo „nevlastní\" tvůj chat. Element X je moderní klient pro mobil, Element Web funguje v prohlížeči.\nVaultwarden — správce hesel K čemu: bezpečné ukládání a synchronizace hesel, TOTP kódů, bezpečných poznámek.\nKomu se hodí: všem — opravdu. Správce hesel je základ digitální hygieny.\nProč je zajímavý: Bitwarden-kompatibilní server, funguje se všemi klienty Bitwarden, data jsou šifrovaná end-to-end.\nTrilium Notes — znalostní báze K čemu: hierarchické poznámky, osobní wiki, projektová dokumentace.\nKomu se hodí: lidem, kteří potřebují víc než Google Keep, ale méně než Confluence.\nProč je zajímavý: plně offline schopný, výkonné propojování poznámek, skriptování.\nFreshRSS — RSS agregátor K čemu: sledování blogů, zpravodajských webů, YouTube kanálů i Fediverse zdrojů přes RSS.\nKomu se hodí: každému, kdo chce číst internet bez algoritmů.\nProč je zajímavý: jednoduchý, rychlý, funguje i jako Fever/Google Reader API pro kompatibilní mobilní klienty.\nPeerTube / VHSky — video bez YouTube K čemu: hostování a sledování videí na federované platformě.\nKomu se hodí: tvůrcům, kteří nechtějí být závislí na YouTube algoritmech a chce mít obsah pod kontrolou.\nProč je zajímavý: instance VHSky.cz běží na OSCloud infrastruktuře, videa jsou dostupná přes ActivityPub — lze je sledovat i z Mastodonu nebo jiných Fediverse platforem. Pokud chceš vlastní PeerTube instanci pro projekt nebo komunitu, OSCloud to umí zařídit.\nMastodon / Mamutovo — sociální síť bez algoritmu K čemu: mikroblogging, sdílení krátkých příspěvků, sledování lidí z celého Fediverse.\nKomu se hodí: komunitám, projektům a lidem, kteří chtějí sociální síť bez reklamního feedu a bez zásahů algoritmu do toho, co vidíš.\nProč je zajímavý: instance mamutovo.cz je součástí OSCloud ekosystému a propojuje se s celým Fediversem — Mastodonem, Pixelfedem, PeerTubem i dalšími. Část uživatelů OSCloud si u nás hostuje i vlastní Mastodon instance pro svoje projekty nebo komunity.\nPixelfed — Instagram bez Instagramu K čemu: sdílení fotek a krátkých alb ve Fediverse.\nKomu se hodí: fotografům, kreativcům a komunitám, kteří chtějí vizuální obsah sdílet bez závislosti na Metě.\nProč je zajímavý: Pixelfed je federovaná alternativa k Instagramu — příspěvky jsou viditelné i uživatelům Mastodonu a dalších ActivityPub platforem. OSCloud provozuje instanci na pixelfed.cz a stejně jako u dalších federovaných služeb je možné hostovat i instanci na míru.\nGitea — správa kódu K čemu: Git repozitáře, issue tracker, wiki, CI/CD pipeline.\nKomu se hodí: vývojářům a projektům, které nechtějí být na GitHubu (který patří Microsoftu).\nProč je zajímavý: plnohodnotný GitHub-like interface, federace přes ForgeFed v plánu.\nWallabag — čtení bez rušení K čemu: ukládání článků pro pozdější čtení, offline přístup, čistý reader view.\nKomu se hodí: čtenářům, kteří si chtějí odložit zajímavé články bez reklam a trackerů.\nProč je zajímavý: exportuje do EPUB, synchronizuje s mobilními aplikacemi, žádné sledování.\nWebhosting a vlastní webové stránky OSCloud v květnu 2026 spustil webhosting pod doménou oscloud.site — a je to přirozené rozšíření toho, co komunita dělala od začátku.\nPokud provozuješ blog, web spolku, portfolio nebo malý projekt, není důvod platit za hosting u velkých hráčů, kteří ti dají generický cPanel a supportu se nedočkáš. OSCloud.site staví na stejných principech jako zbytek platformy: férové ceny, žádné skryté poplatky, reálná podpora.\nCo konkrétně nabízí:\nNVMe SSD — rychlé načítání, nízká latence SSL certifikáty automaticky — HTTPS bez příplatku a bez ruční konfigurace Zálohy každé 4 hodiny s historií 90 dní — to je víc, než nabízí většina komerčních hostingů E-mailové schránky na vlastní doméně — od základního plánu WordPress na jedno kliknutí — nebo jiné aplikace, více verzí PHP Migrace zdarma — přecházíš odjinud, pomůžeme s přenosem Plány jsou čtyři: od základního pro začátečníky přes spravovaný hosting (kde se o techniku stará tým OSCloud) až po multihosting pro větší projekty. Speciální komunitní plán existuje pro neziskovky a komunitní projekty za symbolickou cenu.\nWebhosting je vhodný i pro postupný přechod — nemusíš hned měnit všechno. Můžeš začít tím, že přesuneš web. Zbytek přijde postupně.\nPro koho je OSCloud vhodný OSCloud není jen pro linuxové nadšence s domácím serverem. Cílí na širší spektrum:\nBěžní uživatelé — kteří chtějí synchronizovat soubory, fotky a kontakty bez toho, aby je sledoval Google. Nextcloud je přístupný, má mobilní aplikace a funguje podobně jako to, co znají.\nRodiny — sdílený kalendář, sdílená složka na fotky, správce hesel pro celou domácnost. Bez předplatného Googlu One nebo Microsoft 365.\nKomunity a spolky — Matrix pro komunikaci, Nextcloud pro sdílené dokumenty, Gitea pro kód nebo projektové soubory. Vše pod jednou střechou, bez závislosti na komerčních nástrojích.\nMenší projekty a startupy — alternativa ke Google Workspace za rozumnou cenu, s daty v EU a bez obav z podmínek, které se mění bez upozornění.\nTechnicky zaměření uživatelé — kteří ocení přístup ke Gitea, možnost vlastních domén, ssh přístupy a pokročilé funkce jednotlivých aplikací.\nLidé unudzení z Google nebo Microsoft ekosystému — kteří hledají cestu ven, ale nechtějí stavět vlastní server od nuly.\nJak začít s OSCloudem Začít je jednodušší, než to vypadá. A není nutné hned měnit všechno.\n1. Registrace přes helpdesk\nÚčet na OSCloud se zakládá přes helpdesk na adrese helpdesk.oscloud.cz. Nejde o anonymní registraci — jde o komunitní platformu, ne veřejný free tier.\n2. Jeden účet, všechny služby\nDíky SSO se přihlásíš jedním účtem ke všem dostupným službám. Nemusíš zakládat deset různých profilů.\n3. Začni tím, co potřebuješ\nDoporučení pro začátečníky:\nNextcloud — první krok pro synchronizaci souborů a nahrazení Google Drive Vaultwarden — správce hesel je nízký práh a vysoký přínos pro bezpečnost Matrix / Element — pokud hledáš alternativu k WhatsApp nebo Slacku 4. Postupný přechod funguje\nNemusíš přejít ze dne na den. Klidně měsíc používej Nextcloud paralelně s Google Drive, než přeneseš soubory a zavřeš starý účet. Stejně s chatem, RSS nebo správou hesel.\n5. Dokumentace je k dispozici\nNa docs.oscloud.cz najdeš návody pro jednotlivé aplikace. Komunita je aktivní — otázky se dají řešit přes Matrix nebo helpdesk.\nZávěr: digitální nezávislost není utopie OSCloud není dokonalý. Žádná komunita ani žádný software není. Ale je to reálná alternativa ke korporátnímu cloudu — s konkrétními výhodami, které lze popsat bez marketingového žargonu.\nData zůstávají v EU. Software je open source a auditovatelný. Provoz je transparentní. Ceny jsou férové. A pokud se něco pokazí, máš koho kontaktovat — ne anonymní chatbot korporátní podpory.\nDigitální soukromí není o tom, že máš co skrývat. Je o tom, že se svobodně rozhoduješ, komu a co svěřuješ. A o tom, že za pět let nebudeš vázán na podmínky, které jsi při registraci ani nečetl.\nZačít může být malý krok — záložky místo Chrome Bookmarks, hesla místo browserového uložiště, soubory v Nextcloudu místo Google Drive. Každý krok se počítá.\nZaregistruj se přes helpdesk →\nWebhosting → oscloud.site\nDokumentace → docs.oscloud.cz\n",
+  "wordCount" : "2038",
+  "inLanguage": "en",
+  "datePublished": "2026-05-16T00:00:00Z",
+  "dateModified": "2026-05-16T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "oscloud"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://blog.oscloud.cz/posts/oscloud-vlastni-cloud-soukromi-digitalni-nezavislost/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Oscloud News",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://blog.oscloud.cz/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://blog.oscloud.cz/" accesskey="h" title="Oscloud News (Alt + H)">
+                <img src="https://blog.oscloud.cz/logo.png" alt="" aria-label="logo"
+                    height="32">Oscloud News</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://blog.oscloud.cz/" title="🇨🇿">
+                    <span>🇨🇿</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.oscloud.cz/archives/" title="Archiv">
+                    <span>Archiv</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.oscloud.cz/search/" title="Vyhledávání">
+                    <span>Vyhledávání</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.oscloud.cz/tags/" title="Tagy">
+                    <span>Tagy</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://blog.oscloud.cz/">Home</a>&nbsp;»&nbsp;<a href="https://blog.oscloud.cz/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      OSCloud: vlastní cloud, soukromí a digitální nezávislost bez kompromisů
+    </h1>
+    <div class="post-meta"><span title='2026-05-16 00:00:00 +0000 UTC'>16. května 2026</span>&nbsp;·&nbsp;<span>10 min</span>&nbsp;·&nbsp;<span>oscloud</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>Každý den posíláš e-maily přes Gmail, fotky zálohuje Google Photos, dokumenty ti sedí na OneDrivu a kalendář synchronizuje Apple. Funguje to. Nikdo se neptá, co se s těmi daty děje. A právě to je problém.</p>
+<p>OSCloud je komunitní platforma postavená na open source technologiích, která ti dává zpět kontrolu nad vlastními daty. Žádné skryté podmínky, žádné profilování, žádné závislosti na korporátním ekosystému. Jen spolehlivé nástroje, které znáš — jen tentokrát hostované tak, aby data zůstala tvoje.</p>
+<hr>
+<h2 id="co-je-oscloud-a-jak-funguje">Co je OSCloud a jak funguje<a hidden class="anchor" aria-hidden="true" href="#co-je-oscloud-a-jak-funguje">#</a></h2>
+<p>OSCloud není produkt jedné firmy. Je to sada open source služeb provozovaných na dedikované infrastruktuře v Evropě (Hetzner EU), spravovaná komunitou lidí, kteří sami používají to, co provozují. To je zásadní rozdíl oproti komerčním cloudovým gigantům.</p>
+<p>Základem je jedno SSO přihlášení — jeden účet, přístup ke všem službám. Nemusíš si pamatovat deset hesel k deseti různým nástrojům. Registruješ se jednou a máš k dispozici cloud, chat, správu hesel, poznámky, RSS čtečku a další nástroje najednou.</p>
+<p>Technicky jde o platformu Cloudron, která umožňuje jednoduchou správu aplikací na vlastním serveru. Všechny aplikace jsou pravidelně aktualizované, monitorované a zálohované. Uživatel se nemusí starat o infrastrukturu — to je práce správce. Stará se jen o svá data.</p>
+<hr>
+<h2 id="proč-lidé-začínají-řešit-soukromí-na-internetu">Proč lidé začínají řešit soukromí na internetu<a hidden class="anchor" aria-hidden="true" href="#proč-lidé-začínají-řešit-soukromí-na-internetu">#</a></h2>
+<p>Ještě před pěti lety byl argument „nemám co skrývat&quot; celkem běžnou odpovědí. Dnes je situace jiná. Úniky dat jsou rutina, reklamy sledují pohyb mezi weby i aplikacemi a algoritmy rozhodují o tom, co vidíš — ne ty.</p>
+<p><strong>Google</strong> si z bezplatných služeb vydělává tím, že zpracovává tvé e-maily, vyhledávání, polohu a chování k budování reklamního profilu. Totéž dělá Meta se všemi svými aplikacemi. <strong>Microsoft</strong> ve výchozím nastavení odesílá diagnostická data z Windows a integruje AI nástroje přímo do kancelářských aplikací — s přístupem k obsahu dokumentů.</p>
+<p>Problém není jen soukromí v abstraktním slova smyslu. Je to i praktická závislost na jednom ekosystému. Když Google změní podmínky, zdraží úložiště nebo zruší službu (a to se stává pravidelně — Google Reader, Stadia, Inbox&hellip;), nemáš kam jít. Všechno máš tam.</p>
+<p>Digitální soukromí neznamená paranoia. Znamená rozhodovat se vědomě o tom, komu a za jakých podmínek svěřuješ svá data.</p>
+<hr>
+<h2 id="výhody-používání-oscloudu-v-praxi">Výhody používání OSCloudu v praxi<a hidden class="anchor" aria-hidden="true" href="#výhody-používání-oscloudu-v-praxi">#</a></h2>
+<p>Přechod na OSCloud nemusí být dramatický. Většina nástrojů nahrazuje přesně to, co už používáš — jen bez sledování a bez závislosti na konkrétní firmě.</p>
+<h3 id="vlastní-cloud-a-synchronizace-souborů">Vlastní cloud a synchronizace souborů<a hidden class="anchor" aria-hidden="true" href="#vlastní-cloud-a-synchronizace-souborů">#</a></h3>
+<p>Nextcloud funguje jako Google Drive nebo Dropbox — synchronizuje soubory mezi počítačem, telefonem a prohlížečem. Rozdíl je v tom, že soubory jsou uložené na serverech OSCloud v EU, ne v Googlu. Máš přehled, kde data jsou, a nikdo je neanalyzuje.</p>
+<h3 id="kalendáře-a-kontakty">Kalendáře a kontakty<a hidden class="anchor" aria-hidden="true" href="#kalendáře-a-kontakty">#</a></h3>
+<p>Nextcloud zvládá i CalDAV a CardDAV — standardní protokoly pro synchronizaci kalendářů a kontaktů. Fungují s Thunderbirdem, s nativními aplikacemi na Androidu i iOS. Přestaneš být závislý na Google Calendar nebo iCloud.</p>
+<h3 id="poznámky">Poznámky<a hidden class="anchor" aria-hidden="true" href="#poznámky">#</a></h3>
+<p>Trilium Notes je hierarchický nástroj pro správu znalostí. Hodí se pro osobní wiki, projektovou dokumentaci, zápisky ze schůzek i denní deník. Není to Notion, není to Google Keep — je to nástroj, který nepotřebuje internet a data drží tam, kde chceš.</p>
+<h3 id="týmová-spolupráce">Týmová spolupráce<a hidden class="anchor" aria-hidden="true" href="#týmová-spolupráce">#</a></h3>
+<p>Nextcloud Office (integrovaný Collabora) umožňuje editaci dokumentů, tabulek a prezentací přímo v prohlížeči — víc lidí najednou, v reálném čase. Pro tým, spolek nebo malý projekt jde o plnohodnotnou alternativu Google Workspace.</p>
+<h3 id="komunikace">Komunikace<a hidden class="anchor" aria-hidden="true" href="#komunikace">#</a></h3>
+<p>Matrix chat (přes klienta Element nebo Element X) nahrazuje Slack, WhatsApp i Discord. Je to decentralizovaný protokol — server OSCloud se může federovat s jinými Matrix servery, takže komunikuješ s komunitou bez ohledu na to, kde jsou. Navíc: přes mosty se dá připojit i na WhatsApp, Telegram nebo Signal.</p>
+<h3 id="správa-hesel">Správa hesel<a hidden class="anchor" aria-hidden="true" href="#správa-hesel">#</a></h3>
+<p>Vaultwarden je kompatibilní implementace Bitwarden serveru. Hesla jsou šifrovaná na serveru i při přenosu, přistupuješ k nim přes prohlížečové rozšíření nebo mobilní aplikaci. Bezpečnější než zapisování do poznámek, pohodlnější než pamatování si všeho.</p>
+<h3 id="rss-a-čtení-webu">RSS a čtení webu<a hidden class="anchor" aria-hidden="true" href="#rss-a-čtení-webu">#</a></h3>
+<p>FreshRSS je RSS agregátor — centralizované místo pro sledování blogů, zpravodajských webů a Fediverse zdrojů bez algoritmů. Čteš to, co chceš sledovat, ne to, co ti někdo podsune.</p>
+<h3 id="sdílení-souborů-a-záložky">Sdílení souborů a záložky<a hidden class="anchor" aria-hidden="true" href="#sdílení-souborů-a-záložky">#</a></h3>
+<p>Wallabag slouží jako read-it-later aplikace — ukládáš články z webu pro pozdější čtení, offline i bez reklam. Linkwarden pak spravuje záložky se štítky a kolekcemi. Žádný Pocket, žádný Instapaper.</p>
+<hr>
+<h2 id="bezpečnost-a-soukromí-co-to-konkrétně-znamená">Bezpečnost a soukromí: co to konkrétně znamená<a hidden class="anchor" aria-hidden="true" href="#bezpečnost-a-soukromí-co-to-konkrétně-znamená">#</a></h2>
+<p>„Bezpečný cloud&quot; je fráze, která se dnes lepí na kdeco. Tady jsou konkrétní věci, které OSCloud dělá a proč na nich záleží.</p>
+<p><strong>Open source software</strong> znamená, že kdokoli může zkontrolovat zdrojový kód aplikací. Nextcloud, Matrix, Vaultwarden — to vše je veřejně dostupný kód, který prochází komunitním auditem. Skryté backdoory jsou podstatně těžší implementovat, když se na kód dívají tisíce lidí.</p>
+<p><strong>Transparentnost provozu</strong> — víš, kde server fyzicky je (Hetzner, EU), víš, kdo ho spravuje. Není to anonymní korporace ukrytá za podmínkami o zpracování dat.</p>
+<p><strong>Pravidelné aktualizace</strong> jsou na platformě Cloudron záležitostí správce, ne uživatele. Bezpečnostní záplaty se nasazují rychle, bez čekání na uživatelský souhlas nebo odložené aktualizace.</p>
+<p><strong>Šifrování přenosu</strong> je samozřejmost — HTTPS všude, TLS pro e-mailové protokoly, end-to-end šifrování v Matrix chatu tam, kde to protokol podporuje.</p>
+<p><strong>Menší attack surface</strong> — čím méně dat centralizuješ u jednoho poskytovatele, tím menší škodu způsobí případný únik. Pokud by (hypoteticky) Googlu unikla databáze, uniknou data o miliardách lidí. Komunitní server má jiný rozsah.</p>
+<p>Není to dokonalé řešení. Žádné není. Ale je to podstatně lepší než bezmy­šlenkovité svěřování všeho jednomu korporátnímu silu.</p>
+<hr>
+<h2 id="jaké-služby-může-uživatel-každý-den-používat">Jaké služby může uživatel každý den používat<a hidden class="anchor" aria-hidden="true" href="#jaké-služby-může-uživatel-každý-den-používat">#</a></h2>
+<p>Přehled toho, co OSCloud aktuálně nabízí:</p>
+<h3 id="nextcloud--základ-všeho">Nextcloud — základ všeho<a hidden class="anchor" aria-hidden="true" href="#nextcloud--základ-všeho">#</a></h3>
+<p>K čemu: synchronizace souborů, kalendáře, kontakty, sdílené složky, Nextcloud Office.<br>
+Komu se hodí: každému, kdo potřebuje cloud. Doslova.<br>
+Proč je zajímavý: je to nejpropracovanější open source alternativa ke Google Drive + Calendar + Contacts v jednom balíku.</p>
+<h3 id="matrix--mxchat--chat-bez-centrálního-bodu">Matrix / MXChat — chat bez centrálního bodu<a hidden class="anchor" aria-hidden="true" href="#matrix--mxchat--chat-bez-centrálního-bodu">#</a></h3>
+<p>K čemu: textová komunikace, skupinové místnosti, hlasové a video hovory, mosty na jiné platformy.<br>
+Komu se hodí: týmům, komunitám, lidem unaveným z proprietárních chatovacích aplikací.<br>
+Proč je zajímavý: decentralizovaný protokol znamená, že nikdo „nevlastní&quot; tvůj chat. Element X je moderní klient pro mobil, Element Web funguje v prohlížeči.</p>
+<h3 id="vaultwarden--správce-hesel">Vaultwarden — správce hesel<a hidden class="anchor" aria-hidden="true" href="#vaultwarden--správce-hesel">#</a></h3>
+<p>K čemu: bezpečné ukládání a synchronizace hesel, TOTP kódů, bezpečných poznámek.<br>
+Komu se hodí: všem — opravdu. Správce hesel je základ digitální hygieny.<br>
+Proč je zajímavý: Bitwarden-kompatibilní server, funguje se všemi klienty Bitwarden, data jsou šifrovaná end-to-end.</p>
+<h3 id="trilium-notes--znalostní-báze">Trilium Notes — znalostní báze<a hidden class="anchor" aria-hidden="true" href="#trilium-notes--znalostní-báze">#</a></h3>
+<p>K čemu: hierarchické poznámky, osobní wiki, projektová dokumentace.<br>
+Komu se hodí: lidem, kteří potřebují víc než Google Keep, ale méně než Confluence.<br>
+Proč je zajímavý: plně offline schopný, výkonné propojování poznámek, skriptování.</p>
+<h3 id="freshrss--rss-agregátor">FreshRSS — RSS agregátor<a hidden class="anchor" aria-hidden="true" href="#freshrss--rss-agregátor">#</a></h3>
+<p>K čemu: sledování blogů, zpravodajských webů, YouTube kanálů i Fediverse zdrojů přes RSS.<br>
+Komu se hodí: každému, kdo chce číst internet bez algoritmů.<br>
+Proč je zajímavý: jednoduchý, rychlý, funguje i jako Fever/Google Reader API pro kompatibilní mobilní klienty.</p>
+<h3 id="peertube--vhsky--video-bez-youtube">PeerTube / VHSky — video bez YouTube<a hidden class="anchor" aria-hidden="true" href="#peertube--vhsky--video-bez-youtube">#</a></h3>
+<p>K čemu: hostování a sledování videí na federované platformě.<br>
+Komu se hodí: tvůrcům, kteří nechtějí být závislí na YouTube algoritmech a chce mít obsah pod kontrolou.<br>
+Proč je zajímavý: instance <a href="https://vhsky.cz">VHSky.cz</a> běží na OSCloud infrastruktuře, videa jsou dostupná přes ActivityPub — lze je sledovat i z Mastodonu nebo jiných Fediverse platforem. Pokud chceš vlastní PeerTube instanci pro projekt nebo komunitu, OSCloud to umí zařídit.</p>
+<h3 id="mastodon--mamutovo--sociální-síť-bez-algoritmu">Mastodon / Mamutovo — sociální síť bez algoritmu<a hidden class="anchor" aria-hidden="true" href="#mastodon--mamutovo--sociální-síť-bez-algoritmu">#</a></h3>
+<p>K čemu: mikroblogging, sdílení krátkých příspěvků, sledování lidí z celého Fediverse.<br>
+Komu se hodí: komunitám, projektům a lidem, kteří chtějí sociální síť bez reklamního feedu a bez zásahů algoritmu do toho, co vidíš.<br>
+Proč je zajímavý: instance <a href="https://about.mamutovo.cz">mamutovo.cz</a> je součástí OSCloud ekosystému a propojuje se s celým Fediversem — Mastodonem, Pixelfedem, PeerTubem i dalšími. Část uživatelů OSCloud si u nás hostuje i vlastní Mastodon instance pro svoje projekty nebo komunity.</p>
+<h3 id="pixelfed--instagram-bez-instagramu">Pixelfed — Instagram bez Instagramu<a hidden class="anchor" aria-hidden="true" href="#pixelfed--instagram-bez-instagramu">#</a></h3>
+<p>K čemu: sdílení fotek a krátkých alb ve Fediverse.<br>
+Komu se hodí: fotografům, kreativcům a komunitám, kteří chtějí vizuální obsah sdílet bez závislosti na Metě.<br>
+Proč je zajímavý: Pixelfed je federovaná alternativa k Instagramu — příspěvky jsou viditelné i uživatelům Mastodonu a dalších ActivityPub platforem. OSCloud provozuje instanci na <a href="https://pixelfed.cz">pixelfed.cz</a> a stejně jako u dalších federovaných služeb je možné hostovat i instanci na míru.</p>
+<h3 id="gitea--správa-kódu">Gitea — správa kódu<a hidden class="anchor" aria-hidden="true" href="#gitea--správa-kódu">#</a></h3>
+<p>K čemu: Git repozitáře, issue tracker, wiki, CI/CD pipeline.<br>
+Komu se hodí: vývojářům a projektům, které nechtějí být na GitHubu (který patří Microsoftu).<br>
+Proč je zajímavý: plnohodnotný GitHub-like interface, federace přes ForgeFed v plánu.</p>
+<h3 id="wallabag--čtení-bez-rušení">Wallabag — čtení bez rušení<a hidden class="anchor" aria-hidden="true" href="#wallabag--čtení-bez-rušení">#</a></h3>
+<p>K čemu: ukládání článků pro pozdější čtení, offline přístup, čistý reader view.<br>
+Komu se hodí: čtenářům, kteří si chtějí odložit zajímavé články bez reklam a trackerů.<br>
+Proč je zajímavý: exportuje do EPUB, synchronizuje s mobilními aplikacemi, žádné sledování.</p>
+<hr>
+<h2 id="webhosting-a-vlastní-webové-stránky">Webhosting a vlastní webové stránky<a hidden class="anchor" aria-hidden="true" href="#webhosting-a-vlastní-webové-stránky">#</a></h2>
+<p>OSCloud v květnu 2026 spustil webhosting pod doménou <a href="https://oscloud.site">oscloud.site</a> — a je to přirozené rozšíření toho, co komunita dělala od začátku.</p>
+<p>Pokud provozuješ blog, web spolku, portfolio nebo malý projekt, není důvod platit za hosting u velkých hráčů, kteří ti dají generický cPanel a supportu se nedočkáš. OSCloud.site staví na stejných principech jako zbytek platformy: férové ceny, žádné skryté poplatky, reálná podpora.</p>
+<p>Co konkrétně nabízí:</p>
+<ul>
+<li><strong>NVMe SSD</strong> — rychlé načítání, nízká latence</li>
+<li><strong>SSL certifikáty automaticky</strong> — HTTPS bez příplatku a bez ruční konfigurace</li>
+<li><strong>Zálohy každé 4 hodiny</strong> s historií 90 dní — to je víc, než nabízí většina komerčních hostingů</li>
+<li><strong>E-mailové schránky na vlastní doméně</strong> — od základního plánu</li>
+<li><strong>WordPress na jedno kliknutí</strong> — nebo jiné aplikace, více verzí PHP</li>
+<li><strong>Migrace zdarma</strong> — přecházíš odjinud, pomůžeme s přenosem</li>
+</ul>
+<p>Plány jsou čtyři: od základního pro začátečníky přes spravovaný hosting (kde se o techniku stará tým OSCloud) až po multihosting pro větší projekty. Speciální komunitní plán existuje pro neziskovky a komunitní projekty za symbolickou cenu.</p>
+<p>Webhosting je vhodný i pro postupný přechod — nemusíš hned měnit všechno. Můžeš začít tím, že přesuneš web. Zbytek přijde postupně.</p>
+<hr>
+<h2 id="pro-koho-je-oscloud-vhodný">Pro koho je OSCloud vhodný<a hidden class="anchor" aria-hidden="true" href="#pro-koho-je-oscloud-vhodný">#</a></h2>
+<p>OSCloud není jen pro linuxové nadšence s domácím serverem. Cílí na širší spektrum:</p>
+<p><strong>Běžní uživatelé</strong> — kteří chtějí synchronizovat soubory, fotky a kontakty bez toho, aby je sledoval Google. Nextcloud je přístupný, má mobilní aplikace a funguje podobně jako to, co znají.</p>
+<p><strong>Rodiny</strong> — sdílený kalendář, sdílená složka na fotky, správce hesel pro celou domácnost. Bez předplatného Googlu One nebo Microsoft 365.</p>
+<p><strong>Komunity a spolky</strong> — Matrix pro komunikaci, Nextcloud pro sdílené dokumenty, Gitea pro kód nebo projektové soubory. Vše pod jednou střechou, bez závislosti na komerčních nástrojích.</p>
+<p><strong>Menší projekty a startupy</strong> — alternativa ke Google Workspace za rozumnou cenu, s daty v EU a bez obav z podmínek, které se mění bez upozornění.</p>
+<p><strong>Technicky zaměření uživatelé</strong> — kteří ocení přístup ke Gitea, možnost vlastních domén, ssh přístupy a pokročilé funkce jednotlivých aplikací.</p>
+<p><strong>Lidé unudzení z Google nebo Microsoft ekosystému</strong> — kteří hledají cestu ven, ale nechtějí stavět vlastní server od nuly.</p>
+<hr>
+<h2 id="jak-začít-s-oscloudem">Jak začít s OSCloudem<a hidden class="anchor" aria-hidden="true" href="#jak-začít-s-oscloudem">#</a></h2>
+<p>Začít je jednodušší, než to vypadá. A není nutné hned měnit všechno.</p>
+<p><strong>1. Registrace přes helpdesk</strong><br>
+Účet na OSCloud se zakládá přes helpdesk na adrese <a href="https://helpdesk.oscloud.cz/help/3020290644">helpdesk.oscloud.cz</a>. Nejde o anonymní registraci — jde o komunitní platformu, ne veřejný free tier.</p>
+<p><strong>2. Jeden účet, všechny služby</strong><br>
+Díky SSO se přihlásíš jedním účtem ke všem dostupným službám. Nemusíš zakládat deset různých profilů.</p>
+<p><strong>3. Začni tím, co potřebuješ</strong><br>
+Doporučení pro začátečníky:</p>
+<ul>
+<li><strong>Nextcloud</strong> — první krok pro synchronizaci souborů a nahrazení Google Drive</li>
+<li><strong>Vaultwarden</strong> — správce hesel je nízký práh a vysoký přínos pro bezpečnost</li>
+<li><strong>Matrix / Element</strong> — pokud hledáš alternativu k WhatsApp nebo Slacku</li>
+</ul>
+<p><strong>4. Postupný přechod funguje</strong><br>
+Nemusíš přejít ze dne na den. Klidně měsíc používej Nextcloud paralelně s Google Drive, než přeneseš soubory a zavřeš starý účet. Stejně s chatem, RSS nebo správou hesel.</p>
+<p><strong>5. Dokumentace je k dispozici</strong><br>
+Na <a href="https://docs.oscloud.cz/apps/">docs.oscloud.cz</a> najdeš návody pro jednotlivé aplikace. Komunita je aktivní — otázky se dají řešit přes Matrix nebo helpdesk.</p>
+<hr>
+<h2 id="závěr-digitální-nezávislost-není-utopie">Závěr: digitální nezávislost není utopie<a hidden class="anchor" aria-hidden="true" href="#závěr-digitální-nezávislost-není-utopie">#</a></h2>
+<p>OSCloud není dokonalý. Žádná komunita ani žádný software není. Ale je to reálná alternativa ke korporátnímu cloudu — s konkrétními výhodami, které lze popsat bez marketingového žargonu.</p>
+<p>Data zůstávají v EU. Software je open source a auditovatelný. Provoz je transparentní. Ceny jsou férové. A pokud se něco pokazí, máš koho kontaktovat — ne anonymní chatbot korporátní podpory.</p>
+<p>Digitální soukromí není o tom, že máš co skrývat. Je o tom, že se svobodně rozhoduješ, komu a co svěřuješ. A o tom, že za pět let nebudeš vázán na podmínky, které jsi při registraci ani nečetl.</p>
+<p>Začít může být malý krok — záložky místo Chrome Bookmarks, hesla místo browserového uložiště, soubory v Nextcloudu místo Google Drive. Každý krok se počítá.</p>
+<p><a href="https://helpdesk.oscloud.cz/help/3020290644">Zaregistruj se přes helpdesk →</a><br>
+<a href="https://oscloud.site">Webhosting → oscloud.site</a><br>
+<a href="https://docs.oscloud.cz/apps/">Dokumentace → docs.oscloud.cz</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://blog.oscloud.cz/tags/nextcloud/">Nextcloud</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/matrix/">Matrix</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/soukrom%C3%AD/">Soukromí</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/open-source-cloud/">Open Source Cloud</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/webhosting/">Webhosting</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/alternativa-google/">Alternativa Google</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/digit%C3%A1ln%C3%AD-soukrom%C3%AD/">Digitální Soukromí</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="https://blog.oscloud.cz/posts/spoustime-webhosting-oscloud-site/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Novinka: Teď nabízíme i webhosting!</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://blog.oscloud.cz/">Oscloud News</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

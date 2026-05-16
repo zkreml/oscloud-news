@@ -8,8 +8,16 @@
     <language>cs-cz</language>
     <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
     <webMaster>info@oscloud.cz (OSCloud)</webMaster>
-    <lastBuildDate>Fri, 08 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.oscloud.cz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OSCloud: vlastní cloud, soukromí a digitální nezávislost bez kompromisů</title>
+      <link>https://blog.oscloud.cz/posts/oscloud-vlastni-cloud-soukromi-digitalni-nezavislost/</link>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>https://blog.oscloud.cz/posts/oscloud-vlastni-cloud-soukromi-digitalni-nezavislost/</guid>
+      <description>&lt;p&gt;Každý den posíláš e-maily přes Gmail, fotky zálohuje Google Photos, dokumenty ti sedí na OneDrivu a kalendář synchronizuje Apple. Funguje to. Nikdo se neptá, co se s těmi daty děje. A právě to je problém.&lt;/p&gt;
+&lt;p&gt;OSCloud je komunitní platforma postavená na open source technologiích, která ti dává zpět kontrolu nad vlastními daty. Žádné skryté podmínky, žádné profilování, žádné závislosti na korporátním ekosystému. Jen spolehlivé nástroje, které znáš — jen tentokrát hostované tak, aby data zůstala tvoje.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Novinka: Teď nabízíme i webhosting!</title>
       <link>https://blog.oscloud.cz/posts/spoustime-webhosting-oscloud-site/</link>

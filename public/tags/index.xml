@@ -8,8 +8,57 @@
     <language>cs-cz</language>
     <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
     <webMaster>info@oscloud.cz (OSCloud)</webMaster>
-    <lastBuildDate>Fri, 08 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.oscloud.cz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Alternativa Google</title>
+      <link>https://blog.oscloud.cz/tags/alternativa-google/</link>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>https://blog.oscloud.cz/tags/alternativa-google/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Digitální Soukromí</title>
+      <link>https://blog.oscloud.cz/tags/digit%C3%A1ln%C3%AD-soukrom%C3%AD/</link>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>https://blog.oscloud.cz/tags/digit%C3%A1ln%C3%AD-soukrom%C3%AD/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Matrix</title>
+      <link>https://blog.oscloud.cz/tags/matrix/</link>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>https://blog.oscloud.cz/tags/matrix/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nextcloud</title>
+      <link>https://blog.oscloud.cz/tags/nextcloud/</link>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>https://blog.oscloud.cz/tags/nextcloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open Source Cloud</title>
+      <link>https://blog.oscloud.cz/tags/open-source-cloud/</link>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>https://blog.oscloud.cz/tags/open-source-cloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Soukromí</title>
+      <link>https://blog.oscloud.cz/tags/soukrom%C3%AD/</link>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>https://blog.oscloud.cz/tags/soukrom%C3%AD/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Webhosting</title>
+      <link>https://blog.oscloud.cz/tags/webhosting/</link>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>https://blog.oscloud.cz/tags/webhosting/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Oscloud.site</title>
       <link>https://blog.oscloud.cz/tags/oscloud.site/</link>
@@ -22,13 +71,6 @@
       <link>https://blog.oscloud.cz/tags/slu%C5%BEby/</link>
       <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
       <guid>https://blog.oscloud.cz/tags/slu%C5%BEby/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Webhosting</title>
-      <link>https://blog.oscloud.cz/tags/webhosting/</link>
-      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/webhosting/</guid>
       <description></description>
     </item>
     <item>
@@ -95,13 +137,6 @@
       <description></description>
     </item>
     <item>
-      <title>Matrix</title>
-      <link>https://blog.oscloud.cz/tags/matrix/</link>
-      <pubDate>Mon, 20 Apr 2026 12:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/matrix/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Mxchat</title>
       <link>https://blog.oscloud.cz/tags/mxchat/</link>
       <pubDate>Mon, 20 Apr 2026 12:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
@@ -113,13 +148,6 @@
       <link>https://blog.oscloud.cz/tags/self-hosting/</link>
       <pubDate>Mon, 20 Apr 2026 12:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
       <guid>https://blog.oscloud.cz/tags/self-hosting/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Soukromí</title>
-      <link>https://blog.oscloud.cz/tags/soukrom%C3%AD/</link>
-      <pubDate>Mon, 20 Apr 2026 12:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/soukrom%C3%AD/</guid>
       <description></description>
     </item>
     <item>
@@ -183,13 +211,6 @@
       <link>https://blog.oscloud.cz/tags/aplikace/</link>
       <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
       <guid>https://blog.oscloud.cz/tags/aplikace/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nextcloud</title>
-      <link>https://blog.oscloud.cz/tags/nextcloud/</link>
-      <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/nextcloud/</guid>
       <description></description>
     </item>
     <item>
