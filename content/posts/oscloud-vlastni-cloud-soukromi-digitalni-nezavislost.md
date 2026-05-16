@@ -58,7 +58,7 @@ Nextcloud Office (integrovaný Collabora) umožňuje editaci dokumentů, tabulek
 
 ### Komunikace
 
-Matrix chat (přes klienta Element nebo Element X) nahrazuje Slack, WhatsApp i Discord. Je to decentralizovaný protokol — server OSCloud se může federovat s jinými Matrix servery, takže komunikuješ s komunitou bez ohledu na to, kde jsou. Navíc: přes mosty se dá připojit i na WhatsApp, Telegram nebo Signal.
+Matrix chat (přes klienta Element nebo Element X) nahrazuje Slack, WhatsApp i Discord. Je to federovaný protokol — server OSCloud se může federovat s jinými Matrix servery, takže komunikuješ s komunitou bez ohledu na to, kde jsou. Navíc: přes mosty se dá připojit i na WhatsApp, Telegram nebo Signal.
 
 ### Správa hesel
 
@@ -102,11 +102,11 @@ K čemu: synchronizace souborů, kalendáře, kontakty, sdílené složky, Nextc
 Komu se hodí: každému, kdo potřebuje cloud. Doslova.  
 Proč je zajímavý: je to nejpropracovanější open source alternativa ke Google Drive + Calendar + Contacts v jednom balíku.
 
-### Matrix / MXChat — chat bez centrálního bodu
+### Matrix / MXChat — federovaný chat
 
 K čemu: textová komunikace, skupinové místnosti, hlasové a video hovory, mosty na jiné platformy.  
 Komu se hodí: týmům, komunitám, lidem unaveným z proprietárních chatovacích aplikací.  
-Proč je zajímavý: decentralizovaný protokol znamená, že nikdo „nevlastní" tvůj chat. Element X je moderní klient pro mobil, Element Web funguje v prohlížeči.
+Proč je zajímavý: federovaný protokol znamená, že nikdo „nevlastní" tvůj chat. Element X je moderní klient pro mobil, Element Web funguje v prohlížeči.
 
 ### Vaultwarden — správce hesel
 
