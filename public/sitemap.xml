@@ -2,10 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.oscloud.cz/tags/alternativa-google/</loc>
-    <lastmod>2026-05-16T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.oscloud.cz/categories/</loc>
+    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/categories/komunita/</loc>
+    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/tags/komunita/</loc>
+    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/posts/pomuzeme-vam-byt-videt/</loc>
+    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/tags/opensource/</loc>
+    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/</loc>
+    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/posts/</loc>
+    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/tags/spoluprace/</loc>
+    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/tags/</loc>
+    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/tags/webhosting/</loc>
+    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/tags/alternativa-google/</loc>
     <lastmod>2026-05-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.oscloud.cz/tags/digit%C3%A1ln%C3%AD-soukrom%C3%AD/</loc>
@@ -26,25 +53,13 @@
     <loc>https://blog.oscloud.cz/categories/oscloud/</loc>
     <lastmod>2026-05-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/</loc>
-    <lastmod>2026-05-16T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.oscloud.cz/posts/oscloud-vlastni-cloud-soukromi-digitalni-nezavislost/</loc>
-    <lastmod>2026-05-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.oscloud.cz/posts/</loc>
     <lastmod>2026-05-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.oscloud.cz/categories/soukrom%C3%AD/</loc>
     <lastmod>2026-05-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.oscloud.cz/tags/soukrom%C3%AD/</loc>
-    <lastmod>2026-05-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.oscloud.cz/tags/</loc>
-    <lastmod>2026-05-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.oscloud.cz/tags/webhosting/</loc>
     <lastmod>2026-05-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.oscloud.cz/posts/spoustime-webhosting-oscloud-site/</loc>
@@ -160,9 +175,6 @@
   </url><url>
     <loc>https://blog.oscloud.cz/tags/privacy/</loc>
     <lastmod>2026-01-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.oscloud.cz/tags/komunita/</loc>
-    <lastmod>2026-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.oscloud.cz/posts/oscloud-2026/</loc>
     <lastmod>2026-01-03T00:00:00+00:00</lastmod>
