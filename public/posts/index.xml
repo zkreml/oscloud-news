@@ -4,12 +4,20 @@
     <title>Posts on Oscloud News</title>
     <link>https://blog.oscloud.cz/posts/</link>
     <description>Recent content in Posts on Oscloud News</description>
-    <generator>Hugo -- 0.161.1</generator>
+    <generator>Hugo -- 0.162.0</generator>
     <language>cs-cz</language>
     <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
     <webMaster>info@oscloud.cz (OSCloud)</webMaster>
-    <lastBuildDate>Wed, 20 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 07:00:00 +0200</lastBuildDate>
     <atom:link href="https://blog.oscloud.cz/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vhsky.cz je na PeerTube 8.2!</title>
+      <link>https://blog.oscloud.cz/posts/vhsky-peertube-8-2/</link>
+      <pubDate>Sat, 30 May 2026 07:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>https://blog.oscloud.cz/posts/vhsky-peertube-8-2/</guid>
+      <description>PeerTube běžící pod vhsky.cz byl aktualizován na verzi 8.2. Nová verze přináší převod kanálů, pozastavení livestreamu, ořez videí v editoru a import z YouTube s automatickou synchronizací.
+</description>
+    </item>
     <item>
       <title>Máte nápad nebo svoji srdcovku? Pomůžeme vám být vidět – a nemusí vás to stát ani korunu!</title>
       <link>https://blog.oscloud.cz/posts/pomuzeme-vam-byt-videt/</link>
