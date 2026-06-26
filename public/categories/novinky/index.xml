@@ -1,23 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Novinky on Oscloud News</title>
-    <link>http://localhost:1313/categories/novinky/</link>
-    <description>Recent content in Novinky on Oscloud News</description>
-    <generator>Hugo -- 0.163.3</generator>
-    <language>cs-cz</language>
-    <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
-    <webMaster>info@oscloud.cz (OSCloud)</webMaster>
-    <lastBuildDate>Fri, 08 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/novinky/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Novinka: Teď nabízíme i webhosting!</title>
-      <link>http://localhost:1313/posts/spoustime-webhosting-oscloud-site/</link>
-      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>http://localhost:1313/posts/spoustime-webhosting-oscloud-site/</guid>
-      <description>&lt;p&gt;Ahoj všichni! 😊&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Novinky on Oscloud News</title><link>https://blog.oscloud.cz/categories/novinky/</link><description>Recent content in Novinky on Oscloud News</description><generator>Hugo -- 0.163.3</generator><language>cs-cz</language><managingEditor>info@oscloud.cz (OSCloud)</managingEditor><webMaster>info@oscloud.cz (OSCloud)</webMaster><lastBuildDate>Fri, 08 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.oscloud.cz/categories/novinky/index.xml" rel="self" type="application/rss+xml"/><item><title>Novinka: Teď nabízíme i webhosting!</title><link>https://blog.oscloud.cz/posts/spoustime-webhosting-oscloud-site/</link><pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author><guid>https://blog.oscloud.cz/posts/spoustime-webhosting-oscloud-site/</guid><description>&lt;p&gt;Ahoj všichni! 😊&lt;/p&gt;
 &lt;p&gt;Jako správní členové naší komunity víte, že OSCLOUD.cz není jen o open-source projektech a diskuzích. Vždycky jsme chtěli nabízet služby, které dávají smysl a které skutečně pomáhají lidem jako vy. A teď je ten správný čas rozšířit naše portfolio!&lt;/p&gt;
-&lt;p&gt;Představujeme vám &lt;strong&gt;&lt;a href=&#34;https://oscloud.site&#34;&gt;oscloud.site&lt;/a&gt;&lt;/strong&gt; — náš nový webhosting, který je přirozeným pokračováním toho, co už děláme. Pokud jste někdy používali naše služby nebo jste členem komunity, víte, že se zaměřujeme na kvalitu, transparentnost a skutečnou podporu. Hosting není výjimka.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+&lt;p&gt;Představujeme vám &lt;strong&gt;&lt;a href="https://oscloud.site"&gt;oscloud.site&lt;/a&gt;&lt;/strong&gt; — náš nový webhosting, který je přirozeným pokračováním toho, co už děláme. Pokud jste někdy používali naše služby nebo jste členem komunity, víte, že se zaměřujeme na kvalitu, transparentnost a skutečnou podporu. Hosting není výjimka.&lt;/p&gt;</description></item></channel></rss>

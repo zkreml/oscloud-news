@@ -1,45 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Mastodon on Oscloud News</title>
-    <link>http://localhost:1313/tags/mastodon/</link>
-    <description>Recent content in Mastodon on Oscloud News</description>
-    <generator>Hugo -- 0.163.3</generator>
-    <language>cs-cz</language>
-    <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
-    <webMaster>info@oscloud.cz (OSCloud)</webMaster>
-    <lastBuildDate>Sun, 26 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/mastodon/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Rozloučení s mastodon.arch-linux.cz</title>
-      <link>http://localhost:1313/posts/rozlouceni-mastodon-arch-linux-cz/</link>
-      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>http://localhost:1313/posts/rozlouceni-mastodon-arch-linux-cz/</guid>
-      <description>28. dubna 2026 vypínáme mastodon.arch-linux.cz. Instance, která sehrála zásadní roli v historii českého fediversu.</description>
-    </item>
-    <item>
-      <title>fedi_start: Postavili jsme průvodce pro nové uživatele Mamutovo.cz</title>
-      <link>http://localhost:1313/posts/fedi-start-pruvodce-mamutovo/</link>
-      <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>http://localhost:1313/posts/fedi-start-pruvodce-mamutovo/</guid>
-      <description>&lt;p&gt;Mamutovo.cz je česko-slovenská instance Mastodonu – komunitní, bez algoritmů, bez reklam.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Mastodon on Oscloud News</title><link>https://blog.oscloud.cz/tags/mastodon/</link><description>Recent content in Mastodon on Oscloud News</description><generator>Hugo -- 0.163.3</generator><language>cs-cz</language><managingEditor>info@oscloud.cz (OSCloud)</managingEditor><webMaster>info@oscloud.cz (OSCloud)</webMaster><lastBuildDate>Sun, 26 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.oscloud.cz/tags/mastodon/index.xml" rel="self" type="application/rss+xml"/><item><title>Rozloučení s mastodon.arch-linux.cz</title><link>https://blog.oscloud.cz/posts/rozlouceni-mastodon-arch-linux-cz/</link><pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author><guid>https://blog.oscloud.cz/posts/rozlouceni-mastodon-arch-linux-cz/</guid><description>28. dubna 2026 vypínáme mastodon.arch-linux.cz. Instance, která sehrála zásadní roli v historii českého fediversu.</description></item><item><title>fedi_start: Postavili jsme průvodce pro nové uživatele Mamutovo.cz</title><link>https://blog.oscloud.cz/posts/fedi-start-pruvodce-mamutovo/</link><pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author><guid>https://blog.oscloud.cz/posts/fedi-start-pruvodce-mamutovo/</guid><description>&lt;p&gt;Mamutovo.cz je česko-slovenská instance Mastodonu – komunitní, bez algoritmů, bez reklam.
 Jenže příchod na Mastodon může být ze začátku matoucí. Fediversum funguje jinak než Twitter nebo
 Facebook, a pokud nevíte, koho sledovat nebo jak hashtagy vlastně fungují, snadno to vzdáte dřív,
 než to dostane šanci. Proto vznikl &lt;strong&gt;fedi_start&lt;/strong&gt; – onboarding průvodce přímo pro Mamutovo.cz.&lt;/p&gt;
-&lt;h2 id=&#34;co-je-fedi_start&#34;&gt;Co je fedi_start&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://fedi.mamutovo.cz&#34;&gt;fedi.mamutovo.cz&lt;/a&gt; je statická webová aplikace, která má jeden cíl:
+&lt;h2 id="co-je-fedi_start"&gt;Co je fedi_start&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://fedi.mamutovo.cz"&gt;fedi.mamutovo.cz&lt;/a&gt; je statická webová aplikace, která má jeden cíl:
 pomoci novým uživatelům se zorientovat. Nechceme další obecný tutoriál o Mastodonu, který platí
-pro každou instanci stejně. Chceme něco konkrétního pro naši komunitu.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Sloučení Mastodon instancí – mamutovo.cz a mastodon.arch-linux.cz</title>
-      <link>http://localhost:1313/posts/slouceni-mastodon-instanci/</link>
-      <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>http://localhost:1313/posts/slouceni-mastodon-instanci/</guid>
-      <description>&lt;p&gt;Ahoj kamarádi, kolegové, Mastodontíci!&lt;/p&gt;
+pro každou instanci stejně. Chceme něco konkrétního pro naši komunitu.&lt;/p&gt;</description></item><item><title>Sloučení Mastodon instancí – mamutovo.cz a mastodon.arch-linux.cz</title><link>https://blog.oscloud.cz/posts/slouceni-mastodon-instanci/</link><pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author><guid>https://blog.oscloud.cz/posts/slouceni-mastodon-instanci/</guid><description>&lt;p&gt;Ahoj kamarádi, kolegové, Mastodontíci!&lt;/p&gt;
 &lt;p&gt;Rádi bychom vás informovali o našich plánech a změnách na našich Mastodon instancích.&lt;/p&gt;
 &lt;p&gt;Jak určitě víte, provozujeme aktuálně dvě instance - &lt;strong&gt;mamutovo.cz&lt;/strong&gt; a &lt;strong&gt;mastodon.arch-linux.cz&lt;/strong&gt;. Rozhodli jsme se, že pro zjednodušení správy, aktualizací, a ano, samozřejmě i snížení nákladů na provoz bychom rádi ponechali jen jednu instanci – &lt;strong&gt;mamutovo.cz&lt;/strong&gt;, které chceme i nadále věnovat maximální prioritu.&lt;/p&gt;
-&lt;p&gt;Volba mamutovo.cz nepadla náhodně, ale hlavně proto, že tato doména působí víc civilněji a ne jako nebezpečná barikáda pro lidi, kteří slovo Linux chápou asi tak jako neštovice, mor a jiné hrozby. Našim cílem je věnovat plnou podporu jedné instanci a nabídnout na ní vždycky to nejnovější a nejlepší, co Mastodon může nabídnout.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+&lt;p&gt;Volba mamutovo.cz nepadla náhodně, ale hlavně proto, že tato doména působí víc civilněji a ne jako nebezpečná barikáda pro lidi, kteří slovo Linux chápou asi tak jako neštovice, mor a jiné hrozby. Našim cílem je věnovat plnou podporu jedné instanci a nabídnout na ní vždycky to nejnovější a nejlepší, co Mastodon může nabídnout.&lt;/p&gt;</description></item></channel></rss>
