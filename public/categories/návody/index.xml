@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Návody on Oscloud News</title>
+    <link>http://localhost:1313/categories/n%C3%A1vody/</link>
+    <description>Recent content in Návody on Oscloud News</description>
+    <generator>Hugo -- 0.163.3</generator>
+    <language>cs-cz</language>
+    <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
+    <webMaster>info@oscloud.cz (OSCloud)</webMaster>
+    <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/n%C3%A1vody/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Surfer na OSCLOUDu — nejjednodušší způsob, jak rozjet vlastní web</title>
+      <link>http://localhost:1313/posts/surfer-na-oscloudu/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/posts/surfer-na-oscloudu/</guid>
+      <description>Surfer je malá aplikace, kterou na OSCLOUDu používáme pro statické weby, dokumentaci a sdílení souborů. Tady je návod, jak ji rozchodit i bez technického backgroundu.</description>
+    </item>
+  </channel>
+</rss>

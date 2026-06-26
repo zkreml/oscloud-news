@@ -2,28 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Služby on Oscloud News</title>
-    <link>https://blog.oscloud.cz/categories/slu%C5%BEby/</link>
+    <link>http://localhost:1313/categories/slu%C5%BEby/</link>
     <description>Recent content in Služby on Oscloud News</description>
-    <generator>Hugo -- 0.162.0</generator>
+    <generator>Hugo -- 0.163.3</generator>
     <language>cs-cz</language>
     <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
     <webMaster>info@oscloud.cz (OSCloud)</webMaster>
-    <lastBuildDate>Fri, 24 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blog.oscloud.cz/categories/slu%C5%BEby/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/slu%C5%BEby/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Surfer na OSCLOUDu — nejjednodušší způsob, jak rozjet vlastní web</title>
+      <link>http://localhost:1313/posts/surfer-na-oscloudu/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/posts/surfer-na-oscloudu/</guid>
+      <description>Surfer je malá aplikace, kterou na OSCLOUDu používáme pro statické weby, dokumentaci a sdílení souborů. Tady je návod, jak ji rozchodit i bez technického backgroundu.</description>
+    </item>
     <item>
       <title>Vikunja na OSCloud: todo aplikace, kterou si nemusíte hostovat sami</title>
-      <link>https://blog.oscloud.cz/posts/vikunja-na-oscloud/</link>
+      <link>http://localhost:1313/posts/vikunja-na-oscloud/</link>
       <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/posts/vikunja-na-oscloud/</guid>
+      <guid>http://localhost:1313/posts/vikunja-na-oscloud/</guid>
       <description>&lt;p&gt;Todo aplikací je mraky. Většina běžných (Todoist, Microsoft To Do, Trello, Asana) ale běží na cizích serverech, má různé &amp;ldquo;free&amp;rdquo; limity a vaše úkoly — včetně těch osobních a pracovních — leží někde, kam nevidíte. Vikunja je open-source alternativa, kterou na OSCloud provozujeme pro komunitu na adrese &lt;a href=&#34;https://todo.oscloud.cz/&#34;&gt;todo.oscloud.cz&lt;/a&gt;. Tenhle článek je o tom, co Vikunja umí a jak ji používat přes OSCloud — žádné dockery, žádné instalace.&lt;/p&gt;
 &lt;h2 id=&#34;co-je-vikunja&#34;&gt;Co je Vikunja&lt;/h2&gt;
 &lt;p&gt;Vikunja je open-source správa úkolů a projektů. V základu je to klasická todo aplikace — vytvoříte si projekt, hodíte do něj úkoly, nastavíte termíny, štítky, priority. Navíc to ale umí věci, kvůli kterým lidi obvykle platí Todoist nebo Trello: kanban nástěnky, Gantt diagramy, tabulkové zobrazení, filtry, sdílení projektů s dalšími uživateli, komentáře k úkolům, přílohy.&lt;/p&gt;</description>
     </item>
     <item>
       <title>MXChat: komunitní Matrix server pro lidi, co chtějí mít kontrolu nad svou komunikací</title>
-      <link>https://blog.oscloud.cz/posts/mxchat-komunitni-matrix-server/</link>
+      <link>http://localhost:1313/posts/mxchat-komunitni-matrix-server/</link>
       <pubDate>Mon, 20 Apr 2026 12:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/posts/mxchat-komunitni-matrix-server/</guid>
+      <guid>http://localhost:1313/posts/mxchat-komunitni-matrix-server/</guid>
       <description>&lt;p&gt;Messenger, WhatsApp, Telegram, Discord. Každý z nás má v telefonu aspoň jednu z těchto aplikací a většinou ani nepřemýšlíme nad tím, komu vlastně posíláme své zprávy. MXChat je jiný přístup k chatování – komunitní server postavený na otevřeném protokolu Matrix, kde data nekončí na serverech Mety nebo jiné velké firmy, ale na infrastruktuře, kterou spravuje komunita sama.&lt;/p&gt;
 &lt;p&gt;Tenhle článek je pro každého, kdo přemýšlí, jestli a proč by měl zkusit něco jiného než mainstreamové messengery – od úplných začátečníků až po lidi, kteří už si hrají s Linuxem a self-hostingem.&lt;/p&gt;</description>
     </item>
