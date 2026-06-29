@@ -8,7 +8,7 @@ tags: ["mastodon", "collections", "fediverse", "discovery", "4.6", "profily"]
 author: "Archos"
 ---
 
-mamutovo.cz aktualizováno na Mastodon 4.6.2 a Debian 13. Hlavní novinka této verze jsou Collections — kurátorské seznamy účtů pro snazší objevování lidí na Fediverse. Ale není to jediná věc, která se změnila.
+mamutovo.cz aktualizováno na Mastodon 4.6.2 a Debian 13. Hlavní novinka této verze jsou Collections — doporučené seznamy účtů pro snazší objevování lidí na Fediverse. Ale není to jediná věc, která se změnila.
 
 ## Proč to vůbec vzniklo
 
@@ -31,7 +31,7 @@ Collection je seznam účtů, který někdo sestavil s tím záměrem, aby ho sd
 Říká tím: "Tyhle účty stojí za pozornost, pokud tě zajímá X."
 
 Není to followlist — neznamená to, že kdo přistoupí k Collection, automaticky ty účty
-sleduje. Není to ani odběr. Je to kurátorský seznam, který si prohlédneš a rozhodneš se
+sleduje. Není to ani odběr. Je to doporučený seznam, který si prohlédneš a rozhodneš se
 sám, koho z něj začneš sledovat.
 
 Technicky jde o rozšíření stávajícího konceptu Lists — ten existuje v Mastodonu dlouho,
@@ -96,7 +96,7 @@ výchozí stav.
 **Limit 25 účtů** je pro některé use cases málo. Mastodon tým přiznává, že "magické
 číslo" je pravděpodobně mezi 25 a 80 — záměrně začínají na nižší hranici, protože
 limit je snazší zvýšit než snížit. Na Bluesky byl limit Starter Packů 150 účtů, což
-vedlo ke vzniku obřích, nekurátorovaných listů.
+vedlo ke vzniku obřích, neuspořádaných listů.
 
 **Žádné "Follow All" tlačítko** — bulk follow v 4.6 není. Vývojáři řeší, jak by
 fungovala inverzní operace a nechtějí jít cestou dark patterns.
