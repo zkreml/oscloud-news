@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Vhsky on Oscloud News</title><link>https://blog.oscloud.cz/tags/vhsky/</link><description>Recent content in Vhsky on Oscloud News</description><generator>Hugo -- 0.163.3</generator><language>cs-cz</language><managingEditor>info@oscloud.cz (OSCloud)</managingEditor><webMaster>info@oscloud.cz (OSCloud)</webMaster><lastBuildDate>Sat, 30 May 2026 07:00:00 +0200</lastBuildDate><atom:link href="https://blog.oscloud.cz/tags/vhsky/index.xml" rel="self" type="application/rss+xml"/><item><title>vhsky.cz je na PeerTube 8.2!</title><link>https://blog.oscloud.cz/posts/vhsky-peertube-8-2/</link><pubDate>Sat, 30 May 2026 07:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author><guid>https://blog.oscloud.cz/posts/vhsky-peertube-8-2/</guid><description>PeerTube běžící pod vhsky.cz byl aktualizován na verzi 8.2. Nová verze přináší převod kanálů, pozastavení livestreamu, ořez videí v editoru a import z YouTube s automatickou synchronizací.</description></item><item><title>VHSky.cz – ohlédnutí za rokem 2025 🎬</title><link>https://blog.oscloud.cz/posts/vhsky-2025/</link><pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author><guid>https://blog.oscloud.cz/posts/vhsky-2025/</guid><description>&lt;p&gt;VHSky.cz vzniklo jako PeerTube instance pro komunitní videoobsah. Rok 2025 byl prvním rokem, kdy se ukázalo, že má smysl projekt dělat dál.&lt;/p&gt;
-&lt;h2 id="proč-vlastně-peertube-"&gt;Proč vlastně PeerTube? 🤔&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Vhsky on Oscloud News</title>
+    <link>https://blog.oscloud.cz/tags/vhsky/</link>
+    <description>Recent content in Vhsky on Oscloud News</description>
+    <generator>Hugo -- 0.163.3</generator>
+    <language>cs-cz</language>
+    <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
+    <webMaster>info@oscloud.cz (OSCloud)</webMaster>
+    <lastBuildDate>Sat, 30 May 2026 07:00:00 +0200</lastBuildDate>
+    <atom:link href="https://blog.oscloud.cz/tags/vhsky/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vhsky.cz je na PeerTube 8.2!</title>
+      <link>https://blog.oscloud.cz/posts/vhsky-peertube-8-2/</link>
+      <pubDate>Sat, 30 May 2026 07:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>https://blog.oscloud.cz/posts/vhsky-peertube-8-2/</guid>
+      <description>PeerTube běžící pod vhsky.cz byl aktualizován na verzi 8.2. Nová verze přináší převod kanálů, pozastavení livestreamu, ořez videí v editoru a import z YouTube s automatickou synchronizací.
+</description>
+    </item>
+    <item>
+      <title>VHSky.cz – ohlédnutí za rokem 2025 🎬</title>
+      <link>https://blog.oscloud.cz/posts/vhsky-2025/</link>
+      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>https://blog.oscloud.cz/posts/vhsky-2025/</guid>
+      <description>&lt;p&gt;VHSky.cz vzniklo jako PeerTube instance pro komunitní videoobsah. Rok 2025 byl prvním rokem, kdy se ukázalo, že má smysl projekt dělat dál.&lt;/p&gt;
+&lt;h2 id=&#34;proč-vlastně-peertube-&#34;&gt;Proč vlastně PeerTube? 🤔&lt;/h2&gt;
 &lt;p&gt;YouTube se stal faktickým monopolem na video hosting. Pravidla se mění podle toho, jak se to hodí korporátu, algoritmy rozhodují o tom, co se dostane k divákům, a celý systém stojí na centralizovaném modelu, který tvůrcům dává minimální kontrolu.&lt;/p&gt;
-&lt;p&gt;VHSky.cz vzniklo jako alternativa pro ty, kteří chtějí publikovat videa bez reklam, bez sledování a bez závislosti na jedné komerční platformě. Ne jako náhrada YouTube, ale jako svobodná možnost vedle něj.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;VHSky.cz vzniklo jako alternativa pro ty, kteří chtějí publikovat videa bez reklam, bez sledování a bez závislosti na jedné komerční platformě. Ne jako náhrada YouTube, ale jako svobodná možnost vedle něj.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,8 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Onboarding on Oscloud News</title><link>https://blog.oscloud.cz/tags/onboarding/</link><description>Recent content in Onboarding on Oscloud News</description><generator>Hugo -- 0.163.3</generator><language>cs-cz</language><managingEditor>info@oscloud.cz (OSCloud)</managingEditor><webMaster>info@oscloud.cz (OSCloud)</webMaster><lastBuildDate>Wed, 15 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.oscloud.cz/tags/onboarding/index.xml" rel="self" type="application/rss+xml"/><item><title>fedi_start: Postavili jsme průvodce pro nové uživatele Mamutovo.cz</title><link>https://blog.oscloud.cz/posts/fedi-start-pruvodce-mamutovo/</link><pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author><guid>https://blog.oscloud.cz/posts/fedi-start-pruvodce-mamutovo/</guid><description>&lt;p&gt;Mamutovo.cz je česko-slovenská instance Mastodonu – komunitní, bez algoritmů, bez reklam.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Onboarding on Oscloud News</title>
+    <link>https://blog.oscloud.cz/tags/onboarding/</link>
+    <description>Recent content in Onboarding on Oscloud News</description>
+    <generator>Hugo -- 0.163.3</generator>
+    <language>cs-cz</language>
+    <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
+    <webMaster>info@oscloud.cz (OSCloud)</webMaster>
+    <lastBuildDate>Wed, 15 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.oscloud.cz/tags/onboarding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>fedi_start: Postavili jsme průvodce pro nové uživatele Mamutovo.cz</title>
+      <link>https://blog.oscloud.cz/posts/fedi-start-pruvodce-mamutovo/</link>
+      <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>https://blog.oscloud.cz/posts/fedi-start-pruvodce-mamutovo/</guid>
+      <description>&lt;p&gt;Mamutovo.cz je česko-slovenská instance Mastodonu – komunitní, bez algoritmů, bez reklam.
 Jenže příchod na Mastodon může být ze začátku matoucí. Fediversum funguje jinak než Twitter nebo
 Facebook, a pokud nevíte, koho sledovat nebo jak hashtagy vlastně fungují, snadno to vzdáte dřív,
 než to dostane šanci. Proto vznikl &lt;strong&gt;fedi_start&lt;/strong&gt; – onboarding průvodce přímo pro Mamutovo.cz.&lt;/p&gt;
-&lt;h2 id="co-je-fedi_start"&gt;Co je fedi_start&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://fedi.mamutovo.cz"&gt;fedi.mamutovo.cz&lt;/a&gt; je statická webová aplikace, která má jeden cíl:
+&lt;h2 id=&#34;co-je-fedi_start&#34;&gt;Co je fedi_start&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://fedi.mamutovo.cz&#34;&gt;fedi.mamutovo.cz&lt;/a&gt; je statická webová aplikace, která má jeden cíl:
 pomoci novým uživatelům se zorientovat. Nechceme další obecný tutoriál o Mastodonu, který platí
-pro každou instanci stejně. Chceme něco konkrétního pro naši komunitu.&lt;/p&gt;</description></item></channel></rss>
+pro každou instanci stejně. Chceme něco konkrétního pro naši komunitu.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

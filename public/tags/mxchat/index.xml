@@ -1,2 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Mxchat on Oscloud News</title><link>https://blog.oscloud.cz/tags/mxchat/</link><description>Recent content in Mxchat on Oscloud News</description><generator>Hugo -- 0.163.3</generator><language>cs-cz</language><managingEditor>info@oscloud.cz (OSCloud)</managingEditor><webMaster>info@oscloud.cz (OSCloud)</webMaster><lastBuildDate>Mon, 20 Apr 2026 12:00:00 +0200</lastBuildDate><atom:link href="https://blog.oscloud.cz/tags/mxchat/index.xml" rel="self" type="application/rss+xml"/><item><title>MXChat: komunitní Matrix server pro lidi, co chtějí mít kontrolu nad svou komunikací</title><link>https://blog.oscloud.cz/posts/mxchat-komunitni-matrix-server/</link><pubDate>Mon, 20 Apr 2026 12:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author><guid>https://blog.oscloud.cz/posts/mxchat-komunitni-matrix-server/</guid><description>&lt;p&gt;Messenger, WhatsApp, Telegram, Discord. Každý z nás má v telefonu aspoň jednu z těchto aplikací a většinou ani nepřemýšlíme nad tím, komu vlastně posíláme své zprávy. MXChat je jiný přístup k chatování – komunitní server postavený na otevřeném protokolu Matrix, kde data nekončí na serverech Mety nebo jiné velké firmy, ale na infrastruktuře, kterou spravuje komunita sama.&lt;/p&gt;
-&lt;p&gt;Tenhle článek je pro každého, kdo přemýšlí, jestli a proč by měl zkusit něco jiného než mainstreamové messengery – od úplných začátečníků až po lidi, kteří už si hrají s Linuxem a self-hostingem.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Mxchat on Oscloud News</title>
+    <link>https://blog.oscloud.cz/tags/mxchat/</link>
+    <description>Recent content in Mxchat on Oscloud News</description>
+    <generator>Hugo -- 0.163.3</generator>
+    <language>cs-cz</language>
+    <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
+    <webMaster>info@oscloud.cz (OSCloud)</webMaster>
+    <lastBuildDate>Mon, 20 Apr 2026 12:00:00 +0200</lastBuildDate>
+    <atom:link href="https://blog.oscloud.cz/tags/mxchat/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MXChat: komunitní Matrix server pro lidi, co chtějí mít kontrolu nad svou komunikací</title>
+      <link>https://blog.oscloud.cz/posts/mxchat-komunitni-matrix-server/</link>
+      <pubDate>Mon, 20 Apr 2026 12:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>https://blog.oscloud.cz/posts/mxchat-komunitni-matrix-server/</guid>
+      <description>&lt;p&gt;Messenger, WhatsApp, Telegram, Discord. Každý z nás má v telefonu aspoň jednu z těchto aplikací a většinou ani nepřemýšlíme nad tím, komu vlastně posíláme své zprávy. MXChat je jiný přístup k chatování – komunitní server postavený na otevřeném protokolu Matrix, kde data nekončí na serverech Mety nebo jiné velké firmy, ale na infrastruktuře, kterou spravuje komunita sama.&lt;/p&gt;
+&lt;p&gt;Tenhle článek je pro každého, kdo přemýšlí, jestli a proč by měl zkusit něco jiného než mainstreamové messengery – od úplných začátečníků až po lidi, kteří už si hrají s Linuxem a self-hostingem.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

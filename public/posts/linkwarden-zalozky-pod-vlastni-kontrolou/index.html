@@ -1,18 +1,431 @@
-<!doctype html><html lang=en dir=auto data-theme=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Linkwarden: záložky pod vlastní kontrolou | Oscloud News</title><meta name=keywords content="linkwarden,záložky,soukromí,oscloud,self-hosted"><meta name=description content="Záložky jsou jednou z těch věcí, které každý nějak řeší, ale málokdo je spokojený s tím, jak to řeší. Složky v prohlížeči se plní a nikdo je neprochází, cloudové služby zavírají nebo mění podmínky, a důležité články mizí spolu s doménami, na kterých byly. Na OScloud teď provozujeme Linkwarden – nástroj, který tohle celé řeší trochu jinak.
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Linkwarden: záložky pod vlastní kontrolou | Oscloud News</title>
+<meta name="keywords" content="linkwarden, záložky, soukromí, oscloud, self-hosted">
+<meta name="description" content="Záložky jsou jednou z těch věcí, které každý nějak řeší, ale málokdo je spokojený s tím, jak to řeší. Složky v prohlížeči se plní a nikdo je neprochází, cloudové služby zavírají nebo mění podmínky, a důležité články mizí spolu s doménami, na kterých byly. Na OScloud teď provozujeme Linkwarden – nástroj, který tohle celé řeší trochu jinak.
 Co je Linkwarden a proč ho máme
-Linkwarden je open-source správce záložek s archivací. To zní možná nudně, ale v praxi to znamená, že neukládáš jen odkaz – ukládáš i obsah stránky v podobě snímku. Pokud stránka za rok zmizí, článek máš pořád."><meta name=author content="oscloud"><link rel=canonical href=https://blog.oscloud.cz/posts/linkwarden-zalozky-pod-vlastni-kontrolou/><link crossorigin=anonymous href=/assets/css/stylesheet.01de0cf7a606abfce8ed6089ab89e1538996376aac8ff05d3c7d2340f377b07c.css integrity="sha256-Ad4M96YGq/zo7WCJq4nhU4mWN2qsj/BdPH0jQPN3sHw=" rel="preload stylesheet" as=style><link rel=icon href=https://blog.oscloud.cz/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://blog.oscloud.cz/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://blog.oscloud.cz/favicon-32x32.png><link rel=apple-touch-icon href=https://blog.oscloud.cz/apple-touch-icon.png><link rel=mask-icon href=https://blog.oscloud.cz/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://blog.oscloud.cz/posts/linkwarden-zalozky-pod-vlastni-kontrolou/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51);color-scheme:dark}.list{background:var(--theme)}.toc{background:var(--entry)}}@media(prefers-color-scheme:light){.list::-webkit-scrollbar-thumb{border-color:var(--code-bg)}}</style></noscript><script>localStorage.getItem("pref-theme")==="dark"?document.querySelector("html").dataset.theme="dark":localStorage.getItem("pref-theme")==="light"?document.querySelector("html").dataset.theme="light":window.matchMedia("(prefers-color-scheme: dark)").matches?document.querySelector("html").dataset.theme="dark":document.querySelector("html").dataset.theme="light"</script><script defer src=https://analytics.oscloud.cz/script.js data-website-id=70aaf052-385c-41fb-9cfe-d3b3c6f54f2d></script><meta property="og:url" content="https://blog.oscloud.cz/posts/linkwarden-zalozky-pod-vlastni-kontrolou/"><meta property="og:site_name" content="Oscloud News"><meta property="og:title" content="Linkwarden: záložky pod vlastní kontrolou"><meta property="og:description" content="Záložky jsou jednou z těch věcí, které každý nějak řeší, ale málokdo je spokojený s tím, jak to řeší. Složky v prohlížeči se plní a nikdo je neprochází, cloudové služby zavírají nebo mění podmínky, a důležité články mizí spolu s doménami, na kterých byly. Na OScloud teď provozujeme Linkwarden – nástroj, který tohle celé řeší trochu jinak.
-Co je Linkwarden a proč ho máme Linkwarden je open-source správce záložek s archivací. To zní možná nudně, ale v praxi to znamená, že neukládáš jen odkaz – ukládáš i obsah stránky v podobě snímku. Pokud stránka za rok zmizí, článek máš pořád."><meta property="og:locale" content="cs-cz"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2026-03-13T00:00:00+00:00"><meta property="article:modified_time" content="2026-03-13T00:00:00+00:00"><meta property="article:tag" content="Linkwarden"><meta property="article:tag" content="Záložky"><meta property="article:tag" content="Soukromí"><meta property="article:tag" content="Oscloud"><meta property="article:tag" content="Self-Hosted"><meta name=twitter:card content="summary"><meta name=twitter:title content="Linkwarden: záložky pod vlastní kontrolou"><meta name=twitter:description content="Záložky jsou jednou z těch věcí, které každý nějak řeší, ale málokdo je spokojený s tím, jak to řeší. Složky v prohlížeči se plní a nikdo je neprochází, cloudové služby zavírají nebo mění podmínky, a důležité články mizí spolu s doménami, na kterých byly. Na OScloud teď provozujeme Linkwarden – nástroj, který tohle celé řeší trochu jinak.
+Linkwarden je open-source správce záložek s archivací. To zní možná nudně, ale v praxi to znamená, že neukládáš jen odkaz – ukládáš i obsah stránky v podobě snímku. Pokud stránka za rok zmizí, článek máš pořád.">
+<meta name="author" content="oscloud">
+<link rel="canonical" href="https://blog.oscloud.cz/posts/linkwarden-zalozky-pod-vlastni-kontrolou/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.01de0cf7a606abfce8ed6089ab89e1538996376aac8ff05d3c7d2340f377b07c.css" integrity="sha256-Ad4M96YGq/zo7WCJq4nhU4mWN2qsj/BdPH0jQPN3sHw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://blog.oscloud.cz/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.oscloud.cz/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.oscloud.cz/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://blog.oscloud.cz/apple-touch-icon.png">
+<link rel="mask-icon" href="https://blog.oscloud.cz/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://blog.oscloud.cz/posts/linkwarden-zalozky-pod-vlastni-kontrolou/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><script defer src="https://analytics.oscloud.cz/script.js" data-website-id="70aaf052-385c-41fb-9cfe-d3b3c6f54f2d"></script>
+<meta property="og:url" content="https://blog.oscloud.cz/posts/linkwarden-zalozky-pod-vlastni-kontrolou/">
+  <meta property="og:site_name" content="Oscloud News">
+  <meta property="og:title" content="Linkwarden: záložky pod vlastní kontrolou">
+  <meta property="og:description" content="Záložky jsou jednou z těch věcí, které každý nějak řeší, ale málokdo je spokojený s tím, jak to řeší. Složky v prohlížeči se plní a nikdo je neprochází, cloudové služby zavírají nebo mění podmínky, a důležité články mizí spolu s doménami, na kterých byly. Na OScloud teď provozujeme Linkwarden – nástroj, který tohle celé řeší trochu jinak.
+Co je Linkwarden a proč ho máme Linkwarden je open-source správce záložek s archivací. To zní možná nudně, ale v praxi to znamená, že neukládáš jen odkaz – ukládáš i obsah stránky v podobě snímku. Pokud stránka za rok zmizí, článek máš pořád.">
+  <meta property="og:locale" content="cs-cz">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-03-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-03-13T00:00:00+00:00">
+    <meta property="article:tag" content="Linkwarden">
+    <meta property="article:tag" content="Záložky">
+    <meta property="article:tag" content="Soukromí">
+    <meta property="article:tag" content="Oscloud">
+    <meta property="article:tag" content="Self-Hosted">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Linkwarden: záložky pod vlastní kontrolou">
+<meta name="twitter:description" content="Záložky jsou jednou z těch věcí, které každý nějak řeší, ale málokdo je spokojený s tím, jak to řeší. Složky v prohlížeči se plní a nikdo je neprochází, cloudové služby zavírají nebo mění podmínky, a důležité články mizí spolu s doménami, na kterých byly. Na OScloud teď provozujeme Linkwarden – nástroj, který tohle celé řeší trochu jinak.
 Co je Linkwarden a proč ho máme
-Linkwarden je open-source správce záložek s archivací. To zní možná nudně, ale v praxi to znamená, že neukládáš jen odkaz – ukládáš i obsah stránky v podobě snímku. Pokud stránka za rok zmizí, článek máš pořád."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://blog.oscloud.cz/posts/"},{"@type":"ListItem","position":2,"name":"Linkwarden: záložky pod vlastní kontrolou","item":"https://blog.oscloud.cz/posts/linkwarden-zalozky-pod-vlastni-kontrolou/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Linkwarden: záložky pod vlastní kontrolou","name":"Linkwarden: záložky pod vlastní kontrolou","description":"Záložky jsou jednou z těch věcí, které každý nějak řeší, ale málokdo je spokojený s tím, jak to řeší. Složky v prohlížeči se plní a nikdo je neprochází, cloudové služby zavírají nebo mění podmínky, a důležité články mizí spolu s doménami, na kterých byly. Na OScloud teď provozujeme Linkwarden – nástroj, který tohle celé řeší trochu jinak.\nCo je Linkwarden a proč ho máme Linkwarden je open-source správce záložek s archivací. To zní možná nudně, ale v praxi to znamená, že neukládáš jen odkaz – ukládáš i obsah stránky v podobě snímku. Pokud stránka za rok zmizí, článek máš pořád.\n","keywords":["linkwarden","záložky","soukromí","oscloud","self-hosted"],"articleBody":"Záložky jsou jednou z těch věcí, které každý nějak řeší, ale málokdo je spokojený s tím, jak to řeší. Složky v prohlížeči se plní a nikdo je neprochází, cloudové služby zavírají nebo mění podmínky, a důležité články mizí spolu s doménami, na kterých byly. Na OScloud teď provozujeme Linkwarden – nástroj, který tohle celé řeší trochu jinak.\nCo je Linkwarden a proč ho máme Linkwarden je open-source správce záložek s archivací. To zní možná nudně, ale v praxi to znamená, že neukládáš jen odkaz – ukládáš i obsah stránky v podobě snímku. Pokud stránka za rok zmizí, článek máš pořád.\nNa OScloud jsme ho nasadili, protože jsme sami naráželi na limity toho, co existuje. Komerční alternativy jako Raindrop nebo Pocket jsou fajn, dokud vám nevyprší trial nebo dokud firma nezmění podmínky. A záložky v prohlížeči jsou chaos, který funguje jen dokud neformátuješ počítač nebo nepřejdeš na jiný prohlížeč.\nLinkwarden sedí přesně do filozofie OScloud: open source, data u nás, žádné sledování.\nProblémy, které zná každý Záložky, které nikdo nenajde Kdo z vás má ve Firefoxu nebo Chromu složku „Ke čtení\" nebo „Různé\" s desítkami odkazů, které tam leží roky? Záložky v prohlížeči nejsou špatné, ale bez organizace se rychle promění v digitální šuplík, kam se věci strčí a zapomenou.\nZávislost na cizích službách Pocket patří Mozille a jeho budoucnost je nejistá. Raindrop má free tier s omezeními. Notion je populární, ale je to americká firma s daty na amerických serverech. Pinboard přestal být aktivně vyvíjen. A co se stane, když se rozhodnou zdražit, změnit podmínky nebo prostě zavřít?\nTohle není paranoia – je to normální úvaha o tom, komu svěřuješ svá data a jak moc jsi na té službě závislý.\nStránky, které zmizí Obsah na webu je nestálý. Novinkové weby mažou staré články, blogy zanikají, doménám expirují registrace. Pokud si uložíš jen URL, nemáš žádnou záruku, že za dva roky bude odkaz stále fungovat. Archivace obsahu tohle řeší – Linkwarden si při uložení odkazu pořídí snímek stránky, který zůstane dostupný bez ohledu na to, co se děje s originálem.\nCo Linkwarden konkrétně umí Ukládání a organizace Základní funkce je ukládání odkazů. Ke každému odkazu můžeš přidat název, popis, tagy a zařadit ho do kolekce. Kolekce jsou něco jako složky – dají se vnořovat a pojmenovat podle tématu nebo projektu. Tagy pak fungují napříč kolekcemi a umožňují rychlé filtrování. Důležité odkazy nebo kolekce si můžeš připnout přímo na dashboard pro rychlý přístup.\nArchivace stránky Tohle je to, co Linkwarden odlišuje od jednoduchých správců záložek. Při uložení odkazu si systém automaticky stáhne snímek stránky ve čtyřech formátech: HTML (celá stránka), screenshot, PDF a čistá čitelná verze textu. Výsledek závisí na tom, jak je stránka postavená, ale ve většině případů máš k dispozici alespoň část obsahu i poté, co originál zmizí.\nReader view a anotace Uložené články si můžeš číst přímo v Linkwardenu v reader view – čistém zobrazení bez reklam a rozptylujících prvků. V nastavení si upravíš font, velikost písma, řádkování i šířku sloupce. Text lze zvýrazňovat a přidávat k němu poznámky.\nVyhledávání Linkwarden má plnotextové vyhledávání napříč všemi sbírkami včetně podpory vyhledávacích operátorů pro přesnější dotazy. Pokud ukládáš pravidelně, oceníš to rychle.\nSdílení a spolupráce Kolekce lze sdílet jako veřejný odkaz nebo pozvat konkrétní uživatele s různými úrovněmi přístupu: Viewer (pouze čtení), Contributor (čtení a přidávání odkazů) nebo Admin (plný přístup). Hodí se to pro sdílení zdrojů v rámci skupiny, projektu nebo komunity.\nImport a export Pokud přicházíš z prohlížeče nebo jiné služby, Linkwarden podporuje import přes standardní HTML formát záložek. Stačí vyexportovat záložky z prohlížeče a nahrát je – struktura složek se zachová. Export funguje stejně snadno.\nSynchronizace s prohlížečem Záložky v prohlížeči lze synchronizovat s Linkwardenem pomocí nástroje Floccus. Pro rychlé ukládání odkazů přímo při procházení webu jsou k dispozici rozšíření pro Chrome a Firefox.\nProč je to zajímavé z pohledu soukromí Data jsou uložená na serverech OScloud v EU – konkrétně v Hetzner datacentrech. Nemáme přístup k obsahu vašich záložek, nejsou analyzovány pro reklamu a nejsou sdíleny s třetími stranami. Žádné „abychom vám mohli nabídnout lepší zážitek\".\nLinkwarden je open source (licence AGPL), takže kód si může kdokoli projít a ověřit, co dělá. Nevěříte nám? Hezky. Kód je na GitHubu a kdokoli si může postavit vlastní instanci.\nProvoz OScloud je financovaný komunitou, ne reklamou. To je důležité – nejsme motivovaní k tomu, abychom cokoliv sbírali nebo prodávali.\nPro koho to dává smysl Linkwarden není pro každého. Nemá smysl instalovat další aplikaci, pokud vám záložky v prohlížeči stačí a máte jich deset.\nDává smysl, pokud:\nSbíráš zdroje ke konkrétním tématům – výzkum, studium, tvorba obsahu, sledování oborových novinek. Linkwarden ti umožní mít všechno na jednom místě, strukturovaně, s možností dohledání.\nZáleží ti na tom, aby obsah nezmizel. Pokud si ukládáš důležité články, technické dokumentace nebo archivní materiály, archivace ve více formátech je klíčová funkce.\nSdílíš zdroje s ostatními. Rodinný nebo komunitní seznam odkazů, zdroje pro projekt, doporučené čtení pro skupinu – sdílené kolekce s nastavitelnými právy to zvládají bez zbytečné složitosti.\nChceš mít data u sebe nebo v prostředí, kterému věříš.\nJak to funguje na OScloud Pokud máš účet na OScloud, přistoupíš k Linkwardenu přes jednotné přihlášení – stejný účet, stejné heslo jako pro ostatní služby. Žádné další údaje ani samostatná registrace do Linkwardenu nejsou potřeba.\nPokud účet ještě nemáš, registraci vyřídíš přes helpdesk na helpdesk.oscloud.cz. Více informací o projektu najdeš na oscloud.cz.\nData jsou hostovaná v EU a nejsou přenášena mimo evropské datové centrum. Zálohy provádíme pravidelně.\nLinkwarden na OScloud je dostupný na adrese links.oscloud.cz.\nZávěr Linkwarden není revoluční nástroj. Je to správce záložek, který dělá svou práci spolehlivě, respektuje tvoje soukromí a nenechá tě závislého na cloudové službě, která může zítra změnit podmínky nebo zmizet.\nPokud tě téma zajímá, vyzkoušej to. Registrace je zdarma, data máš pod kontrolou a pokud ti to nevyhovuje, záložky si vyexportuješ a jdeš jinam.\nOScloud funguje díky komunitě – pokud chceš projekt podpořit finančně nebo jinak, informace najdeš na oscloud.cz. Každá pomoc se počítá.\nFAQ Musím mít vlastní účet na OScloud, nebo se můžu přihlásit jinak? Stačí jeden OScloud účet – přihlášení funguje přes SSO, takže žádné další údaje ani samostatná registrace do Linkwardenu nejsou potřeba. Pokud účet ještě nemáš, požádáš o něj přes helpdesk.oscloud.cz.\nCo se stane s mými záložkami, pokud OScloud skončí? Linkwarden podporuje export záložek ve standardním HTML formátu, který zvládne importovat každý prohlížeč i jiné správce záložek. Data nejsou nikde uzamčena.\nArchivuje Linkwarden stránky automaticky, nebo to musím spustit ručně? Při uložení odkazu proběhne archivace automaticky ve čtyřech formátech: HTML, screenshot, PDF a čitelná textová verze. Závisí to na tom, jak je stránka technicky postavená, ale ve většině případů se alespoň část obsahu uloží úspěšně.\nMohu sdílet záložky s někým, kdo nemá účet na OScloud? Ano. Kolekci lze zpřístupnit jako veřejný odkaz – druhá strana nemusí mít žádný účet. Pokud chceš někomu umožnit přidávat nebo spravovat odkazy, pozveš ho jako uživatele s příslušnou rolí.\nJe Linkwarden dostupný jako mobilní aplikace? Ano, oficiální mobilní aplikace existuje pro iOS i Android. Před prvním použitím si v nastavení Linkwardenu vygeneruj API token aplikace a zadej ho při přihlášení. Pro rychlé ukládání odkazů z prohlížeče jsou k dispozici také rozšíření pro Chrome a Firefox.\n","wordCount":"1182","inLanguage":"en","datePublished":"2026-03-13T00:00:00Z","dateModified":"2026-03-13T00:00:00Z","author":{"@type":"Person","name":"oscloud"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.oscloud.cz/posts/linkwarden-zalozky-pod-vlastni-kontrolou/"},"publisher":{"@type":"Organization","name":"Oscloud News","logo":{"@type":"ImageObject","url":"https://blog.oscloud.cz/favicon.ico"}}}</script></head><body id=top><header class=header><nav class=nav><div class=logo><a href=https://blog.oscloud.cz/ accesskey=h title="Oscloud News (Alt + H)"><img src=https://blog.oscloud.cz/logo.png alt aria-label=logo height=32>Oscloud News</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
-<svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://blog.oscloud.cz/ title=🇨🇿><span>🇨🇿</span></a></li><li><a href=https://blog.oscloud.cz/archives/ title=Archiv><span>Archiv</span></a></li><li><a href=https://blog.oscloud.cz/search/ title=Vyhledávání><span>Vyhledávání</span></a></li><li><a href=https://blog.oscloud.cz/tags/ title=Tagy><span>Tagy</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://blog.oscloud.cz/>Home</a>&nbsp;»&nbsp;<a href=https://blog.oscloud.cz/posts/>Posts</a></div><h1 class="post-title entry-hint-parent">Linkwarden: záložky pod vlastní kontrolou</h1><div class=post-meta><span title='2026-03-13 00:00:00 +0000 UTC'>13. března 2026</span>&nbsp;·&nbsp;<span>6 min</span>&nbsp;·&nbsp;<span>oscloud</span></div></header><div class=post-content><p>Záložky jsou jednou z těch věcí, které každý nějak řeší, ale málokdo je spokojený s tím, jak to řeší. Složky v prohlížeči se plní a nikdo je neprochází, cloudové služby zavírají nebo mění podmínky, a důležité články mizí spolu s doménami, na kterých byly. Na OScloud teď provozujeme Linkwarden – nástroj, který tohle celé řeší trochu jinak.</p><h2 id=co-je-linkwarden-a-proč-ho-máme>Co je Linkwarden a proč ho máme<a hidden class=anchor aria-hidden=true href=#co-je-linkwarden-a-proč-ho-máme>#</a></h2><p>Linkwarden je open-source správce záložek s archivací. To zní možná nudně, ale v praxi to znamená, že neukládáš jen odkaz – ukládáš i obsah stránky v podobě snímku. Pokud stránka za rok zmizí, článek máš pořád.</p><p>Na OScloud jsme ho nasadili, protože jsme sami naráželi na limity toho, co existuje. Komerční alternativy jako Raindrop nebo Pocket jsou fajn, dokud vám nevyprší trial nebo dokud firma nezmění podmínky. A záložky v prohlížeči jsou chaos, který funguje jen dokud neformátuješ počítač nebo nepřejdeš na jiný prohlížeč.</p><p>Linkwarden sedí přesně do filozofie OScloud: open source, data u nás, žádné sledování.</p><h2 id=problémy-které-zná-každý>Problémy, které zná každý<a hidden class=anchor aria-hidden=true href=#problémy-které-zná-každý>#</a></h2><h3 id=záložky-které-nikdo-nenajde>Záložky, které nikdo nenajde<a hidden class=anchor aria-hidden=true href=#záložky-které-nikdo-nenajde>#</a></h3><p>Kdo z vás má ve Firefoxu nebo Chromu složku „Ke čtení" nebo „Různé" s desítkami odkazů, které tam leží roky? Záložky v prohlížeči nejsou špatné, ale bez organizace se rychle promění v digitální šuplík, kam se věci strčí a zapomenou.</p><h3 id=závislost-na-cizích-službách>Závislost na cizích službách<a hidden class=anchor aria-hidden=true href=#závislost-na-cizích-službách>#</a></h3><p>Pocket patří Mozille a jeho budoucnost je nejistá. Raindrop má free tier s omezeními. Notion je populární, ale je to americká firma s daty na amerických serverech. Pinboard přestal být aktivně vyvíjen. A co se stane, když se rozhodnou zdražit, změnit podmínky nebo prostě zavřít?</p><p>Tohle není paranoia – je to normální úvaha o tom, komu svěřuješ svá data a jak moc jsi na té službě závislý.</p><h3 id=stránky-které-zmizí>Stránky, které zmizí<a hidden class=anchor aria-hidden=true href=#stránky-které-zmizí>#</a></h3><p>Obsah na webu je nestálý. Novinkové weby mažou staré články, blogy zanikají, doménám expirují registrace. Pokud si uložíš jen URL, nemáš žádnou záruku, že za dva roky bude odkaz stále fungovat. Archivace obsahu tohle řeší – Linkwarden si při uložení odkazu pořídí snímek stránky, který zůstane dostupný bez ohledu na to, co se děje s originálem.</p><h2 id=co-linkwarden-konkrétně-umí>Co Linkwarden konkrétně umí<a hidden class=anchor aria-hidden=true href=#co-linkwarden-konkrétně-umí>#</a></h2><h3 id=ukládání-a-organizace>Ukládání a organizace<a hidden class=anchor aria-hidden=true href=#ukládání-a-organizace>#</a></h3><p>Základní funkce je ukládání odkazů. Ke každému odkazu můžeš přidat název, popis, tagy a zařadit ho do kolekce. Kolekce jsou něco jako složky – dají se vnořovat a pojmenovat podle tématu nebo projektu. Tagy pak fungují napříč kolekcemi a umožňují rychlé filtrování. Důležité odkazy nebo kolekce si můžeš připnout přímo na dashboard pro rychlý přístup.</p><h3 id=archivace-stránky>Archivace stránky<a hidden class=anchor aria-hidden=true href=#archivace-stránky>#</a></h3><p>Tohle je to, co Linkwarden odlišuje od jednoduchých správců záložek. Při uložení odkazu si systém automaticky stáhne snímek stránky ve čtyřech formátech: HTML (celá stránka), screenshot, PDF a čistá čitelná verze textu. Výsledek závisí na tom, jak je stránka postavená, ale ve většině případů máš k dispozici alespoň část obsahu i poté, co originál zmizí.</p><h3 id=reader-view-a-anotace>Reader view a anotace<a hidden class=anchor aria-hidden=true href=#reader-view-a-anotace>#</a></h3><p>Uložené články si můžeš číst přímo v Linkwardenu v reader view – čistém zobrazení bez reklam a rozptylujících prvků. V nastavení si upravíš font, velikost písma, řádkování i šířku sloupce. Text lze zvýrazňovat a přidávat k němu poznámky.</p><h3 id=vyhledávání>Vyhledávání<a hidden class=anchor aria-hidden=true href=#vyhledávání>#</a></h3><p>Linkwarden má plnotextové vyhledávání napříč všemi sbírkami včetně podpory vyhledávacích operátorů pro přesnější dotazy. Pokud ukládáš pravidelně, oceníš to rychle.</p><h3 id=sdílení-a-spolupráce>Sdílení a spolupráce<a hidden class=anchor aria-hidden=true href=#sdílení-a-spolupráce>#</a></h3><p>Kolekce lze sdílet jako veřejný odkaz nebo pozvat konkrétní uživatele s různými úrovněmi přístupu: Viewer (pouze čtení), Contributor (čtení a přidávání odkazů) nebo Admin (plný přístup). Hodí se to pro sdílení zdrojů v rámci skupiny, projektu nebo komunity.</p><h3 id=import-a-export>Import a export<a hidden class=anchor aria-hidden=true href=#import-a-export>#</a></h3><p>Pokud přicházíš z prohlížeče nebo jiné služby, Linkwarden podporuje import přes standardní HTML formát záložek. Stačí vyexportovat záložky z prohlížeče a nahrát je – struktura složek se zachová. Export funguje stejně snadno.</p><h3 id=synchronizace-s-prohlížečem>Synchronizace s prohlížečem<a hidden class=anchor aria-hidden=true href=#synchronizace-s-prohlížečem>#</a></h3><p>Záložky v prohlížeči lze synchronizovat s Linkwardenem pomocí nástroje Floccus. Pro rychlé ukládání odkazů přímo při procházení webu jsou k dispozici rozšíření pro Chrome a Firefox.</p><h2 id=proč-je-to-zajímavé-z-pohledu-soukromí>Proč je to zajímavé z pohledu soukromí<a hidden class=anchor aria-hidden=true href=#proč-je-to-zajímavé-z-pohledu-soukromí>#</a></h2><p>Data jsou uložená na serverech OScloud v EU – konkrétně v Hetzner datacentrech. Nemáme přístup k obsahu vašich záložek, nejsou analyzovány pro reklamu a nejsou sdíleny s třetími stranami. Žádné „abychom vám mohli nabídnout lepší zážitek".</p><p>Linkwarden je open source (licence AGPL), takže kód si může kdokoli projít a ověřit, co dělá. Nevěříte nám? Hezky. Kód je na GitHubu a kdokoli si může postavit vlastní instanci.</p><p>Provoz OScloud je financovaný komunitou, ne reklamou. To je důležité – nejsme motivovaní k tomu, abychom cokoliv sbírali nebo prodávali.</p><h2 id=pro-koho-to-dává-smysl>Pro koho to dává smysl<a hidden class=anchor aria-hidden=true href=#pro-koho-to-dává-smysl>#</a></h2><p>Linkwarden není pro každého. Nemá smysl instalovat další aplikaci, pokud vám záložky v prohlížeči stačí a máte jich deset.</p><p>Dává smysl, pokud:</p><p>Sbíráš zdroje ke konkrétním tématům – výzkum, studium, tvorba obsahu, sledování oborových novinek. Linkwarden ti umožní mít všechno na jednom místě, strukturovaně, s možností dohledání.</p><p>Záleží ti na tom, aby obsah nezmizel. Pokud si ukládáš důležité články, technické dokumentace nebo archivní materiály, archivace ve více formátech je klíčová funkce.</p><p>Sdílíš zdroje s ostatními. Rodinný nebo komunitní seznam odkazů, zdroje pro projekt, doporučené čtení pro skupinu – sdílené kolekce s nastavitelnými právy to zvládají bez zbytečné složitosti.</p><p>Chceš mít data u sebe nebo v prostředí, kterému věříš.</p><h2 id=jak-to-funguje-na-oscloud>Jak to funguje na OScloud<a hidden class=anchor aria-hidden=true href=#jak-to-funguje-na-oscloud>#</a></h2><p>Pokud máš účet na OScloud, přistoupíš k Linkwardenu přes jednotné přihlášení – stejný účet, stejné heslo jako pro ostatní služby. Žádné další údaje ani samostatná registrace do Linkwardenu nejsou potřeba.</p><p>Pokud účet ještě nemáš, registraci vyřídíš přes helpdesk na <a href=https://helpdesk.oscloud.cz/help/3020290644>helpdesk.oscloud.cz</a>. Více informací o projektu najdeš na <a href=https://oscloud.cz>oscloud.cz</a>.</p><p>Data jsou hostovaná v EU a nejsou přenášena mimo evropské datové centrum. Zálohy provádíme pravidelně.</p><p>Linkwarden na OScloud je dostupný na adrese <strong>links.oscloud.cz</strong>.</p><h2 id=závěr>Závěr<a hidden class=anchor aria-hidden=true href=#závěr>#</a></h2><p>Linkwarden není revoluční nástroj. Je to správce záložek, který dělá svou práci spolehlivě, respektuje tvoje soukromí a nenechá tě závislého na cloudové službě, která může zítra změnit podmínky nebo zmizet.</p><p>Pokud tě téma zajímá, vyzkoušej to. Registrace je zdarma, data máš pod kontrolou a pokud ti to nevyhovuje, záložky si vyexportuješ a jdeš jinam.</p><p>OScloud funguje díky komunitě – pokud chceš projekt podpořit finančně nebo jinak, informace najdeš na <a href=https://oscloud.cz>oscloud.cz</a>. Každá pomoc se počítá.</p><hr><h2 id=faq>FAQ<a hidden class=anchor aria-hidden=true href=#faq>#</a></h2><p><strong>Musím mít vlastní účet na OScloud, nebo se můžu přihlásit jinak?</strong>
-Stačí jeden OScloud účet – přihlášení funguje přes SSO, takže žádné další údaje ani samostatná registrace do Linkwardenu nejsou potřeba. Pokud účet ještě nemáš, požádáš o něj přes <a href=https://helpdesk.oscloud.cz/help/3020290644>helpdesk.oscloud.cz</a>.</p><p><strong>Co se stane s mými záložkami, pokud OScloud skončí?</strong>
-Linkwarden podporuje export záložek ve standardním HTML formátu, který zvládne importovat každý prohlížeč i jiné správce záložek. Data nejsou nikde uzamčena.</p><p><strong>Archivuje Linkwarden stránky automaticky, nebo to musím spustit ručně?</strong>
-Při uložení odkazu proběhne archivace automaticky ve čtyřech formátech: HTML, screenshot, PDF a čitelná textová verze. Závisí to na tom, jak je stránka technicky postavená, ale ve většině případů se alespoň část obsahu uloží úspěšně.</p><p><strong>Mohu sdílet záložky s někým, kdo nemá účet na OScloud?</strong>
-Ano. Kolekci lze zpřístupnit jako veřejný odkaz – druhá strana nemusí mít žádný účet. Pokud chceš někomu umožnit přidávat nebo spravovat odkazy, pozveš ho jako uživatele s příslušnou rolí.</p><p><strong>Je Linkwarden dostupný jako mobilní aplikace?</strong>
-Ano, oficiální mobilní aplikace existuje pro iOS i Android. Před prvním použitím si v nastavení Linkwardenu vygeneruj API token aplikace a zadej ho při přihlášení. Pro rychlé ukládání odkazů z prohlížeče jsou k dispozici také rozšíření pro Chrome a Firefox.</p></div><footer class=post-footer><ul class=post-tags><li><a href=https://blog.oscloud.cz/tags/linkwarden/>Linkwarden</a></li><li><a href=https://blog.oscloud.cz/tags/z%C3%A1lo%C5%BEky/>Záložky</a></li><li><a href=https://blog.oscloud.cz/tags/soukrom%C3%AD/>Soukromí</a></li><li><a href=https://blog.oscloud.cz/tags/oscloud/>Oscloud</a></li><li><a href=https://blog.oscloud.cz/tags/self-hosted/>Self-Hosted</a></li></ul><nav class=paginav><a class=prev href=https://blog.oscloud.cz/posts/fedi-start-pruvodce-mamutovo/><span class=title>« Prev</span><br><span>fedi_start: Postavili jsme průvodce pro nové uživatele Mamutovo.cz</span>
-</a><a class=next href=https://blog.oscloud.cz/posts/soukromi-digitalni/><span class=title>Next »</span><br><span>Proč se starat o digitální soukromí (a proč to není paranoia)</span></a></nav></footer></article></main><footer class=footer><span>&copy; 2026 <a href=https://blog.oscloud.cz/>Oscloud News</a></span> ·
-<span>Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-<a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
-</a><script>let menu=document.getElementById("menu");if(menu){const e=localStorage.getItem("menu-scroll-position");e&&(menu.scrollLeft=parseInt(e,10)),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}}document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{const e=document.querySelector("html");e.dataset.theme==="dark"?(e.dataset.theme="light",localStorage.setItem("pref-theme","light")):(e.dataset.theme="dark",localStorage.setItem("pref-theme","dark"))})</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="copy";function s(){t.innerHTML="copied!",setTimeout(()=>{t.innerHTML="copy"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>
+Linkwarden je open-source správce záložek s archivací. To zní možná nudně, ale v praxi to znamená, že neukládáš jen odkaz – ukládáš i obsah stránky v podobě snímku. Pokud stránka za rok zmizí, článek máš pořád.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://blog.oscloud.cz/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Linkwarden: záložky pod vlastní kontrolou",
+      "item": "https://blog.oscloud.cz/posts/linkwarden-zalozky-pod-vlastni-kontrolou/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Linkwarden: záložky pod vlastní kontrolou",
+  "name": "Linkwarden: záložky pod vlastní kontrolou",
+  "description": "Záložky jsou jednou z těch věcí, které každý nějak řeší, ale málokdo je spokojený s tím, jak to řeší. Složky v prohlížeči se plní a nikdo je neprochází, cloudové služby zavírají nebo mění podmínky, a důležité články mizí spolu s doménami, na kterých byly. Na OScloud teď provozujeme Linkwarden – nástroj, který tohle celé řeší trochu jinak.\nCo je Linkwarden a proč ho máme Linkwarden je open-source správce záložek s archivací. To zní možná nudně, ale v praxi to znamená, že neukládáš jen odkaz – ukládáš i obsah stránky v podobě snímku. Pokud stránka za rok zmizí, článek máš pořád.\n",
+  "keywords": [
+    "linkwarden", "záložky", "soukromí", "oscloud", "self-hosted"
+  ],
+  "articleBody": "Záložky jsou jednou z těch věcí, které každý nějak řeší, ale málokdo je spokojený s tím, jak to řeší. Složky v prohlížeči se plní a nikdo je neprochází, cloudové služby zavírají nebo mění podmínky, a důležité články mizí spolu s doménami, na kterých byly. Na OScloud teď provozujeme Linkwarden – nástroj, který tohle celé řeší trochu jinak.\nCo je Linkwarden a proč ho máme Linkwarden je open-source správce záložek s archivací. To zní možná nudně, ale v praxi to znamená, že neukládáš jen odkaz – ukládáš i obsah stránky v podobě snímku. Pokud stránka za rok zmizí, článek máš pořád.\nNa OScloud jsme ho nasadili, protože jsme sami naráželi na limity toho, co existuje. Komerční alternativy jako Raindrop nebo Pocket jsou fajn, dokud vám nevyprší trial nebo dokud firma nezmění podmínky. A záložky v prohlížeči jsou chaos, který funguje jen dokud neformátuješ počítač nebo nepřejdeš na jiný prohlížeč.\nLinkwarden sedí přesně do filozofie OScloud: open source, data u nás, žádné sledování.\nProblémy, které zná každý Záložky, které nikdo nenajde Kdo z vás má ve Firefoxu nebo Chromu složku „Ke čtení\" nebo „Různé\" s desítkami odkazů, které tam leží roky? Záložky v prohlížeči nejsou špatné, ale bez organizace se rychle promění v digitální šuplík, kam se věci strčí a zapomenou.\nZávislost na cizích službách Pocket patří Mozille a jeho budoucnost je nejistá. Raindrop má free tier s omezeními. Notion je populární, ale je to americká firma s daty na amerických serverech. Pinboard přestal být aktivně vyvíjen. A co se stane, když se rozhodnou zdražit, změnit podmínky nebo prostě zavřít?\nTohle není paranoia – je to normální úvaha o tom, komu svěřuješ svá data a jak moc jsi na té službě závislý.\nStránky, které zmizí Obsah na webu je nestálý. Novinkové weby mažou staré články, blogy zanikají, doménám expirují registrace. Pokud si uložíš jen URL, nemáš žádnou záruku, že za dva roky bude odkaz stále fungovat. Archivace obsahu tohle řeší – Linkwarden si při uložení odkazu pořídí snímek stránky, který zůstane dostupný bez ohledu na to, co se děje s originálem.\nCo Linkwarden konkrétně umí Ukládání a organizace Základní funkce je ukládání odkazů. Ke každému odkazu můžeš přidat název, popis, tagy a zařadit ho do kolekce. Kolekce jsou něco jako složky – dají se vnořovat a pojmenovat podle tématu nebo projektu. Tagy pak fungují napříč kolekcemi a umožňují rychlé filtrování. Důležité odkazy nebo kolekce si můžeš připnout přímo na dashboard pro rychlý přístup.\nArchivace stránky Tohle je to, co Linkwarden odlišuje od jednoduchých správců záložek. Při uložení odkazu si systém automaticky stáhne snímek stránky ve čtyřech formátech: HTML (celá stránka), screenshot, PDF a čistá čitelná verze textu. Výsledek závisí na tom, jak je stránka postavená, ale ve většině případů máš k dispozici alespoň část obsahu i poté, co originál zmizí.\nReader view a anotace Uložené články si můžeš číst přímo v Linkwardenu v reader view – čistém zobrazení bez reklam a rozptylujících prvků. V nastavení si upravíš font, velikost písma, řádkování i šířku sloupce. Text lze zvýrazňovat a přidávat k němu poznámky.\nVyhledávání Linkwarden má plnotextové vyhledávání napříč všemi sbírkami včetně podpory vyhledávacích operátorů pro přesnější dotazy. Pokud ukládáš pravidelně, oceníš to rychle.\nSdílení a spolupráce Kolekce lze sdílet jako veřejný odkaz nebo pozvat konkrétní uživatele s různými úrovněmi přístupu: Viewer (pouze čtení), Contributor (čtení a přidávání odkazů) nebo Admin (plný přístup). Hodí se to pro sdílení zdrojů v rámci skupiny, projektu nebo komunity.\nImport a export Pokud přicházíš z prohlížeče nebo jiné služby, Linkwarden podporuje import přes standardní HTML formát záložek. Stačí vyexportovat záložky z prohlížeče a nahrát je – struktura složek se zachová. Export funguje stejně snadno.\nSynchronizace s prohlížečem Záložky v prohlížeči lze synchronizovat s Linkwardenem pomocí nástroje Floccus. Pro rychlé ukládání odkazů přímo při procházení webu jsou k dispozici rozšíření pro Chrome a Firefox.\nProč je to zajímavé z pohledu soukromí Data jsou uložená na serverech OScloud v EU – konkrétně v Hetzner datacentrech. Nemáme přístup k obsahu vašich záložek, nejsou analyzovány pro reklamu a nejsou sdíleny s třetími stranami. Žádné „abychom vám mohli nabídnout lepší zážitek\".\nLinkwarden je open source (licence AGPL), takže kód si může kdokoli projít a ověřit, co dělá. Nevěříte nám? Hezky. Kód je na GitHubu a kdokoli si může postavit vlastní instanci.\nProvoz OScloud je financovaný komunitou, ne reklamou. To je důležité – nejsme motivovaní k tomu, abychom cokoliv sbírali nebo prodávali.\nPro koho to dává smysl Linkwarden není pro každého. Nemá smysl instalovat další aplikaci, pokud vám záložky v prohlížeči stačí a máte jich deset.\nDává smysl, pokud:\nSbíráš zdroje ke konkrétním tématům – výzkum, studium, tvorba obsahu, sledování oborových novinek. Linkwarden ti umožní mít všechno na jednom místě, strukturovaně, s možností dohledání.\nZáleží ti na tom, aby obsah nezmizel. Pokud si ukládáš důležité články, technické dokumentace nebo archivní materiály, archivace ve více formátech je klíčová funkce.\nSdílíš zdroje s ostatními. Rodinný nebo komunitní seznam odkazů, zdroje pro projekt, doporučené čtení pro skupinu – sdílené kolekce s nastavitelnými právy to zvládají bez zbytečné složitosti.\nChceš mít data u sebe nebo v prostředí, kterému věříš.\nJak to funguje na OScloud Pokud máš účet na OScloud, přistoupíš k Linkwardenu přes jednotné přihlášení – stejný účet, stejné heslo jako pro ostatní služby. Žádné další údaje ani samostatná registrace do Linkwardenu nejsou potřeba.\nPokud účet ještě nemáš, registraci vyřídíš přes helpdesk na helpdesk.oscloud.cz. Více informací o projektu najdeš na oscloud.cz.\nData jsou hostovaná v EU a nejsou přenášena mimo evropské datové centrum. Zálohy provádíme pravidelně.\nLinkwarden na OScloud je dostupný na adrese links.oscloud.cz.\nZávěr Linkwarden není revoluční nástroj. Je to správce záložek, který dělá svou práci spolehlivě, respektuje tvoje soukromí a nenechá tě závislého na cloudové službě, která může zítra změnit podmínky nebo zmizet.\nPokud tě téma zajímá, vyzkoušej to. Registrace je zdarma, data máš pod kontrolou a pokud ti to nevyhovuje, záložky si vyexportuješ a jdeš jinam.\nOScloud funguje díky komunitě – pokud chceš projekt podpořit finančně nebo jinak, informace najdeš na oscloud.cz. Každá pomoc se počítá.\nFAQ Musím mít vlastní účet na OScloud, nebo se můžu přihlásit jinak? Stačí jeden OScloud účet – přihlášení funguje přes SSO, takže žádné další údaje ani samostatná registrace do Linkwardenu nejsou potřeba. Pokud účet ještě nemáš, požádáš o něj přes helpdesk.oscloud.cz.\nCo se stane s mými záložkami, pokud OScloud skončí? Linkwarden podporuje export záložek ve standardním HTML formátu, který zvládne importovat každý prohlížeč i jiné správce záložek. Data nejsou nikde uzamčena.\nArchivuje Linkwarden stránky automaticky, nebo to musím spustit ručně? Při uložení odkazu proběhne archivace automaticky ve čtyřech formátech: HTML, screenshot, PDF a čitelná textová verze. Závisí to na tom, jak je stránka technicky postavená, ale ve většině případů se alespoň část obsahu uloží úspěšně.\nMohu sdílet záložky s někým, kdo nemá účet na OScloud? Ano. Kolekci lze zpřístupnit jako veřejný odkaz – druhá strana nemusí mít žádný účet. Pokud chceš někomu umožnit přidávat nebo spravovat odkazy, pozveš ho jako uživatele s příslušnou rolí.\nJe Linkwarden dostupný jako mobilní aplikace? Ano, oficiální mobilní aplikace existuje pro iOS i Android. Před prvním použitím si v nastavení Linkwardenu vygeneruj API token aplikace a zadej ho při přihlášení. Pro rychlé ukládání odkazů z prohlížeče jsou k dispozici také rozšíření pro Chrome a Firefox.\n",
+  "wordCount" : "1182",
+  "inLanguage": "en",
+  "datePublished": "2026-03-13T00:00:00Z",
+  "dateModified": "2026-03-13T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "oscloud"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://blog.oscloud.cz/posts/linkwarden-zalozky-pod-vlastni-kontrolou/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Oscloud News",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://blog.oscloud.cz/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://blog.oscloud.cz/" accesskey="h" title="Oscloud News (Alt + H)">
+                <img src="https://blog.oscloud.cz/logo.png" alt="" aria-label="logo"
+                    height="32">Oscloud News</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://blog.oscloud.cz/" title="🇨🇿">
+                    <span>🇨🇿</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.oscloud.cz/archives/" title="Archiv">
+                    <span>Archiv</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.oscloud.cz/search/" title="Vyhledávání">
+                    <span>Vyhledávání</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.oscloud.cz/tags/" title="Tagy">
+                    <span>Tagy</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://blog.oscloud.cz/">Home</a>&nbsp;»&nbsp;<a href="https://blog.oscloud.cz/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Linkwarden: záložky pod vlastní kontrolou
+    </h1>
+    <div class="post-meta"><span title='2026-03-13 00:00:00 +0000 UTC'>13. března 2026</span>&nbsp;·&nbsp;<span>6 min</span>&nbsp;·&nbsp;<span>oscloud</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>Záložky jsou jednou z těch věcí, které každý nějak řeší, ale málokdo je spokojený s tím, jak to řeší. Složky v prohlížeči se plní a nikdo je neprochází, cloudové služby zavírají nebo mění podmínky, a důležité články mizí spolu s doménami, na kterých byly. Na OScloud teď provozujeme Linkwarden – nástroj, který tohle celé řeší trochu jinak.</p>
+<h2 id="co-je-linkwarden-a-proč-ho-máme">Co je Linkwarden a proč ho máme<a hidden class="anchor" aria-hidden="true" href="#co-je-linkwarden-a-proč-ho-máme">#</a></h2>
+<p>Linkwarden je open-source správce záložek s archivací. To zní možná nudně, ale v praxi to znamená, že neukládáš jen odkaz – ukládáš i obsah stránky v podobě snímku. Pokud stránka za rok zmizí, článek máš pořád.</p>
+<p>Na OScloud jsme ho nasadili, protože jsme sami naráželi na limity toho, co existuje. Komerční alternativy jako Raindrop nebo Pocket jsou fajn, dokud vám nevyprší trial nebo dokud firma nezmění podmínky. A záložky v prohlížeči jsou chaos, který funguje jen dokud neformátuješ počítač nebo nepřejdeš na jiný prohlížeč.</p>
+<p>Linkwarden sedí přesně do filozofie OScloud: open source, data u nás, žádné sledování.</p>
+<h2 id="problémy-které-zná-každý">Problémy, které zná každý<a hidden class="anchor" aria-hidden="true" href="#problémy-které-zná-každý">#</a></h2>
+<h3 id="záložky-které-nikdo-nenajde">Záložky, které nikdo nenajde<a hidden class="anchor" aria-hidden="true" href="#záložky-které-nikdo-nenajde">#</a></h3>
+<p>Kdo z vás má ve Firefoxu nebo Chromu složku „Ke čtení&quot; nebo „Různé&quot; s desítkami odkazů, které tam leží roky? Záložky v prohlížeči nejsou špatné, ale bez organizace se rychle promění v digitální šuplík, kam se věci strčí a zapomenou.</p>
+<h3 id="závislost-na-cizích-službách">Závislost na cizích službách<a hidden class="anchor" aria-hidden="true" href="#závislost-na-cizích-službách">#</a></h3>
+<p>Pocket patří Mozille a jeho budoucnost je nejistá. Raindrop má free tier s omezeními. Notion je populární, ale je to americká firma s daty na amerických serverech. Pinboard přestal být aktivně vyvíjen. A co se stane, když se rozhodnou zdražit, změnit podmínky nebo prostě zavřít?</p>
+<p>Tohle není paranoia – je to normální úvaha o tom, komu svěřuješ svá data a jak moc jsi na té službě závislý.</p>
+<h3 id="stránky-které-zmizí">Stránky, které zmizí<a hidden class="anchor" aria-hidden="true" href="#stránky-které-zmizí">#</a></h3>
+<p>Obsah na webu je nestálý. Novinkové weby mažou staré články, blogy zanikají, doménám expirují registrace. Pokud si uložíš jen URL, nemáš žádnou záruku, že za dva roky bude odkaz stále fungovat. Archivace obsahu tohle řeší – Linkwarden si při uložení odkazu pořídí snímek stránky, který zůstane dostupný bez ohledu na to, co se děje s originálem.</p>
+<h2 id="co-linkwarden-konkrétně-umí">Co Linkwarden konkrétně umí<a hidden class="anchor" aria-hidden="true" href="#co-linkwarden-konkrétně-umí">#</a></h2>
+<h3 id="ukládání-a-organizace">Ukládání a organizace<a hidden class="anchor" aria-hidden="true" href="#ukládání-a-organizace">#</a></h3>
+<p>Základní funkce je ukládání odkazů. Ke každému odkazu můžeš přidat název, popis, tagy a zařadit ho do kolekce. Kolekce jsou něco jako složky – dají se vnořovat a pojmenovat podle tématu nebo projektu. Tagy pak fungují napříč kolekcemi a umožňují rychlé filtrování. Důležité odkazy nebo kolekce si můžeš připnout přímo na dashboard pro rychlý přístup.</p>
+<h3 id="archivace-stránky">Archivace stránky<a hidden class="anchor" aria-hidden="true" href="#archivace-stránky">#</a></h3>
+<p>Tohle je to, co Linkwarden odlišuje od jednoduchých správců záložek. Při uložení odkazu si systém automaticky stáhne snímek stránky ve čtyřech formátech: HTML (celá stránka), screenshot, PDF a čistá čitelná verze textu. Výsledek závisí na tom, jak je stránka postavená, ale ve většině případů máš k dispozici alespoň část obsahu i poté, co originál zmizí.</p>
+<h3 id="reader-view-a-anotace">Reader view a anotace<a hidden class="anchor" aria-hidden="true" href="#reader-view-a-anotace">#</a></h3>
+<p>Uložené články si můžeš číst přímo v Linkwardenu v reader view – čistém zobrazení bez reklam a rozptylujících prvků. V nastavení si upravíš font, velikost písma, řádkování i šířku sloupce. Text lze zvýrazňovat a přidávat k němu poznámky.</p>
+<h3 id="vyhledávání">Vyhledávání<a hidden class="anchor" aria-hidden="true" href="#vyhledávání">#</a></h3>
+<p>Linkwarden má plnotextové vyhledávání napříč všemi sbírkami včetně podpory vyhledávacích operátorů pro přesnější dotazy. Pokud ukládáš pravidelně, oceníš to rychle.</p>
+<h3 id="sdílení-a-spolupráce">Sdílení a spolupráce<a hidden class="anchor" aria-hidden="true" href="#sdílení-a-spolupráce">#</a></h3>
+<p>Kolekce lze sdílet jako veřejný odkaz nebo pozvat konkrétní uživatele s různými úrovněmi přístupu: Viewer (pouze čtení), Contributor (čtení a přidávání odkazů) nebo Admin (plný přístup). Hodí se to pro sdílení zdrojů v rámci skupiny, projektu nebo komunity.</p>
+<h3 id="import-a-export">Import a export<a hidden class="anchor" aria-hidden="true" href="#import-a-export">#</a></h3>
+<p>Pokud přicházíš z prohlížeče nebo jiné služby, Linkwarden podporuje import přes standardní HTML formát záložek. Stačí vyexportovat záložky z prohlížeče a nahrát je – struktura složek se zachová. Export funguje stejně snadno.</p>
+<h3 id="synchronizace-s-prohlížečem">Synchronizace s prohlížečem<a hidden class="anchor" aria-hidden="true" href="#synchronizace-s-prohlížečem">#</a></h3>
+<p>Záložky v prohlížeči lze synchronizovat s Linkwardenem pomocí nástroje Floccus. Pro rychlé ukládání odkazů přímo při procházení webu jsou k dispozici rozšíření pro Chrome a Firefox.</p>
+<h2 id="proč-je-to-zajímavé-z-pohledu-soukromí">Proč je to zajímavé z pohledu soukromí<a hidden class="anchor" aria-hidden="true" href="#proč-je-to-zajímavé-z-pohledu-soukromí">#</a></h2>
+<p>Data jsou uložená na serverech OScloud v EU – konkrétně v Hetzner datacentrech. Nemáme přístup k obsahu vašich záložek, nejsou analyzovány pro reklamu a nejsou sdíleny s třetími stranami. Žádné „abychom vám mohli nabídnout lepší zážitek&quot;.</p>
+<p>Linkwarden je open source (licence AGPL), takže kód si může kdokoli projít a ověřit, co dělá. Nevěříte nám? Hezky. Kód je na GitHubu a kdokoli si může postavit vlastní instanci.</p>
+<p>Provoz OScloud je financovaný komunitou, ne reklamou. To je důležité – nejsme motivovaní k tomu, abychom cokoliv sbírali nebo prodávali.</p>
+<h2 id="pro-koho-to-dává-smysl">Pro koho to dává smysl<a hidden class="anchor" aria-hidden="true" href="#pro-koho-to-dává-smysl">#</a></h2>
+<p>Linkwarden není pro každého. Nemá smysl instalovat další aplikaci, pokud vám záložky v prohlížeči stačí a máte jich deset.</p>
+<p>Dává smysl, pokud:</p>
+<p>Sbíráš zdroje ke konkrétním tématům – výzkum, studium, tvorba obsahu, sledování oborových novinek. Linkwarden ti umožní mít všechno na jednom místě, strukturovaně, s možností dohledání.</p>
+<p>Záleží ti na tom, aby obsah nezmizel. Pokud si ukládáš důležité články, technické dokumentace nebo archivní materiály, archivace ve více formátech je klíčová funkce.</p>
+<p>Sdílíš zdroje s ostatními. Rodinný nebo komunitní seznam odkazů, zdroje pro projekt, doporučené čtení pro skupinu – sdílené kolekce s nastavitelnými právy to zvládají bez zbytečné složitosti.</p>
+<p>Chceš mít data u sebe nebo v prostředí, kterému věříš.</p>
+<h2 id="jak-to-funguje-na-oscloud">Jak to funguje na OScloud<a hidden class="anchor" aria-hidden="true" href="#jak-to-funguje-na-oscloud">#</a></h2>
+<p>Pokud máš účet na OScloud, přistoupíš k Linkwardenu přes jednotné přihlášení – stejný účet, stejné heslo jako pro ostatní služby. Žádné další údaje ani samostatná registrace do Linkwardenu nejsou potřeba.</p>
+<p>Pokud účet ještě nemáš, registraci vyřídíš přes helpdesk na <a href="https://helpdesk.oscloud.cz/help/3020290644">helpdesk.oscloud.cz</a>. Více informací o projektu najdeš na <a href="https://oscloud.cz">oscloud.cz</a>.</p>
+<p>Data jsou hostovaná v EU a nejsou přenášena mimo evropské datové centrum. Zálohy provádíme pravidelně.</p>
+<p>Linkwarden na OScloud je dostupný na adrese <strong>links.oscloud.cz</strong>.</p>
+<h2 id="závěr">Závěr<a hidden class="anchor" aria-hidden="true" href="#závěr">#</a></h2>
+<p>Linkwarden není revoluční nástroj. Je to správce záložek, který dělá svou práci spolehlivě, respektuje tvoje soukromí a nenechá tě závislého na cloudové službě, která může zítra změnit podmínky nebo zmizet.</p>
+<p>Pokud tě téma zajímá, vyzkoušej to. Registrace je zdarma, data máš pod kontrolou a pokud ti to nevyhovuje, záložky si vyexportuješ a jdeš jinam.</p>
+<p>OScloud funguje díky komunitě – pokud chceš projekt podpořit finančně nebo jinak, informace najdeš na <a href="https://oscloud.cz">oscloud.cz</a>. Každá pomoc se počítá.</p>
+<hr>
+<h2 id="faq">FAQ<a hidden class="anchor" aria-hidden="true" href="#faq">#</a></h2>
+<p><strong>Musím mít vlastní účet na OScloud, nebo se můžu přihlásit jinak?</strong>
+Stačí jeden OScloud účet – přihlášení funguje přes SSO, takže žádné další údaje ani samostatná registrace do Linkwardenu nejsou potřeba. Pokud účet ještě nemáš, požádáš o něj přes <a href="https://helpdesk.oscloud.cz/help/3020290644">helpdesk.oscloud.cz</a>.</p>
+<p><strong>Co se stane s mými záložkami, pokud OScloud skončí?</strong>
+Linkwarden podporuje export záložek ve standardním HTML formátu, který zvládne importovat každý prohlížeč i jiné správce záložek. Data nejsou nikde uzamčena.</p>
+<p><strong>Archivuje Linkwarden stránky automaticky, nebo to musím spustit ručně?</strong>
+Při uložení odkazu proběhne archivace automaticky ve čtyřech formátech: HTML, screenshot, PDF a čitelná textová verze. Závisí to na tom, jak je stránka technicky postavená, ale ve většině případů se alespoň část obsahu uloží úspěšně.</p>
+<p><strong>Mohu sdílet záložky s někým, kdo nemá účet na OScloud?</strong>
+Ano. Kolekci lze zpřístupnit jako veřejný odkaz – druhá strana nemusí mít žádný účet. Pokud chceš někomu umožnit přidávat nebo spravovat odkazy, pozveš ho jako uživatele s příslušnou rolí.</p>
+<p><strong>Je Linkwarden dostupný jako mobilní aplikace?</strong>
+Ano, oficiální mobilní aplikace existuje pro iOS i Android. Před prvním použitím si v nastavení Linkwardenu vygeneruj API token aplikace a zadej ho při přihlášení. Pro rychlé ukládání odkazů z prohlížeče jsou k dispozici také rozšíření pro Chrome a Firefox.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://blog.oscloud.cz/tags/linkwarden/">Linkwarden</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/z%C3%A1lo%C5%BEky/">Záložky</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/soukrom%C3%AD/">Soukromí</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/oscloud/">Oscloud</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/self-hosted/">Self-Hosted</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://blog.oscloud.cz/posts/fedi-start-pruvodce-mamutovo/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>fedi_start: Postavili jsme průvodce pro nové uživatele Mamutovo.cz</span>
+  </a>
+  <a class="next" href="https://blog.oscloud.cz/posts/soukromi-digitalni/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Proč se starat o digitální soukromí (a proč to není paranoia)</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://blog.oscloud.cz/">Oscloud News</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Mastodon 4.6: Collections, nové profily a další novinky | Oscloud News</title>
+<meta name="keywords" content="mastodon, collections, fediverse, discovery, 4.6, profily">
+<meta name="description" content="mamutovo.cz aktualizováno na Mastodon 4.6.2 a Debian 13. Hlavní novinka této verze jsou Collections — kurátorské seznamy účtů pro snazší objevování lidí na Fediverse. Ale není to jediná věc, která se změnila.
+Proč to vůbec vzniklo
+Kdo na Fediverse přichází z Twitteru nebo jiných centralizovaných sítí, narazí dřív nebo
+později na stejný problém: jak najít lidi, které stojí za to sledovat?
+Na Twitteru to řeší algoritmus — ať chceš nebo ne, obsah ti přijde sám. Na Mastodonu to
+nefunguje. Federovaná síť složená z desítek tisíc instancí s různými zaměřeními je skvělá
+věc pro ty, kteří vědí, co hledají. Pro nováčka je to ale matoucí bludiště.">
+<meta name="author" content="Archos">
+<link rel="canonical" href="https://blog.oscloud.cz/posts/mastodon-4-6-collections/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.01de0cf7a606abfce8ed6089ab89e1538996376aac8ff05d3c7d2340f377b07c.css" integrity="sha256-Ad4M96YGq/zo7WCJq4nhU4mWN2qsj/BdPH0jQPN3sHw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://blog.oscloud.cz/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.oscloud.cz/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.oscloud.cz/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://blog.oscloud.cz/apple-touch-icon.png">
+<link rel="mask-icon" href="https://blog.oscloud.cz/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://blog.oscloud.cz/posts/mastodon-4-6-collections/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><script defer src="https://analytics.oscloud.cz/script.js" data-website-id="70aaf052-385c-41fb-9cfe-d3b3c6f54f2d"></script>
+<meta property="og:url" content="https://blog.oscloud.cz/posts/mastodon-4-6-collections/">
+  <meta property="og:site_name" content="Oscloud News">
+  <meta property="og:title" content="Mastodon 4.6: Collections, nové profily a další novinky">
+  <meta property="og:description" content="mamutovo.cz aktualizováno na Mastodon 4.6.2 a Debian 13. Hlavní novinka této verze jsou Collections — kurátorské seznamy účtů pro snazší objevování lidí na Fediverse. Ale není to jediná věc, která se změnila.
+Proč to vůbec vzniklo Kdo na Fediverse přichází z Twitteru nebo jiných centralizovaných sítí, narazí dřív nebo později na stejný problém: jak najít lidi, které stojí za to sledovat?
+Na Twitteru to řeší algoritmus — ať chceš nebo ne, obsah ti přijde sám. Na Mastodonu to nefunguje. Federovaná síť složená z desítek tisíc instancí s různými zaměřeními je skvělá věc pro ty, kteří vědí, co hledají. Pro nováčka je to ale matoucí bludiště.">
+  <meta property="og:locale" content="cs-cz">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-06-29T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-06-29T00:00:00+00:00">
+    <meta property="article:tag" content="Mastodon">
+    <meta property="article:tag" content="Collections">
+    <meta property="article:tag" content="Fediverse">
+    <meta property="article:tag" content="Discovery">
+    <meta property="article:tag" content="4.6">
+    <meta property="article:tag" content="Profily">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mastodon 4.6: Collections, nové profily a další novinky">
+<meta name="twitter:description" content="mamutovo.cz aktualizováno na Mastodon 4.6.2 a Debian 13. Hlavní novinka této verze jsou Collections — kurátorské seznamy účtů pro snazší objevování lidí na Fediverse. Ale není to jediná věc, která se změnila.
+Proč to vůbec vzniklo
+Kdo na Fediverse přichází z Twitteru nebo jiných centralizovaných sítí, narazí dřív nebo
+později na stejný problém: jak najít lidi, které stojí za to sledovat?
+Na Twitteru to řeší algoritmus — ať chceš nebo ne, obsah ti přijde sám. Na Mastodonu to
+nefunguje. Federovaná síť složená z desítek tisíc instancí s různými zaměřeními je skvělá
+věc pro ty, kteří vědí, co hledají. Pro nováčka je to ale matoucí bludiště.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://blog.oscloud.cz/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Mastodon 4.6: Collections, nové profily a další novinky",
+      "item": "https://blog.oscloud.cz/posts/mastodon-4-6-collections/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Mastodon 4.6: Collections, nové profily a další novinky",
+  "name": "Mastodon 4.6: Collections, nové profily a další novinky",
+  "description": "mamutovo.cz aktualizováno na Mastodon 4.6.2 a Debian 13. Hlavní novinka této verze jsou Collections — kurátorské seznamy účtů pro snazší objevování lidí na Fediverse. Ale není to jediná věc, která se změnila.\nProč to vůbec vzniklo Kdo na Fediverse přichází z Twitteru nebo jiných centralizovaných sítí, narazí dřív nebo později na stejný problém: jak najít lidi, které stojí za to sledovat?\nNa Twitteru to řeší algoritmus — ať chceš nebo ne, obsah ti přijde sám. Na Mastodonu to nefunguje. Federovaná síť složená z desítek tisíc instancí s různými zaměřeními je skvělá věc pro ty, kteří vědí, co hledají. Pro nováčka je to ale matoucí bludiště.\n",
+  "keywords": [
+    "mastodon", "collections", "fediverse", "discovery", "4.6", "profily"
+  ],
+  "articleBody": "mamutovo.cz aktualizováno na Mastodon 4.6.2 a Debian 13. Hlavní novinka této verze jsou Collections — kurátorské seznamy účtů pro snazší objevování lidí na Fediverse. Ale není to jediná věc, která se změnila.\nProč to vůbec vzniklo Kdo na Fediverse přichází z Twitteru nebo jiných centralizovaných sítí, narazí dřív nebo později na stejný problém: jak najít lidi, které stojí za to sledovat?\nNa Twitteru to řeší algoritmus — ať chceš nebo ne, obsah ti přijde sám. Na Mastodonu to nefunguje. Federovaná síť složená z desítek tisíc instancí s různými zaměřeními je skvělá věc pro ty, kteří vědí, co hledají. Pro nováčka je to ale matoucí bludiště.\nDosud existovala různá komunitní řešení — weby jako fedi.tips, ručně udržované seznamy, starter pack projekty třetích stran. Fungovalo to, ale stálo to úsilí a nebylo to nijak integrované do samotného Mastodonu.\nCollections mají tenhle problém řešit nativně, přímo v platformě.\nCo Collections jsou (a co nejsou) Collection je seznam účtů, který někdo sestavil s tím záměrem, aby ho sdílel s ostatními. Říká tím: “Tyhle účty stojí za pozornost, pokud tě zajímá X.”\nNení to followlist — neznamená to, že kdo přistoupí k Collection, automaticky ty účty sleduje. Není to ani odběr. Je to kurátorský seznam, který si prohlédneš a rozhodneš se sám, koho z něj začneš sledovat.\nTechnicky jde o rozšíření stávajícího konceptu Lists — ten existuje v Mastodonu dlouho, ale byl vždy soukromý. Collections jsou jeho veřejná, sdílitelná varianta.\nJak Collections fungují Vytvoření Collection vytvoříš přes menu profilu. Nastavíš název, krátký popis a volitelně jeden hashtag jako tematický štítek. Lze ji také označit jako citlivý obsah — popis a seznam účtů se pak schová za content warning.\nMaximální počet účtů v jedné Collection je 25.\nCo vidí ostatní Každý účet v Collection se zobrazuje s bio textem, počtem příspěvků, sledujících a — což je klíčové — s datem poslední aktivity. Průzkum mezi uživateli ukázal, že recency je pro rozhodnutí “sledovat / nesledovat” důležitější než počet followerů nebo přítomnost ověřeného odkazu.\nCollection zobrazuje bio, počet příspěvků a datum poslední aktivity\nPřehled tvých Collections V rozhraní máš dvě záložky: Created by you (Collections, které jsi sestavil) a Featuring you (Collections, ve kterých tě někdo jiný má). Takže vždy víš, kde se tvůj účet objevuje.\nZáložka Featuring you ukáže, ve kterých Collections se nacházíš\nViditelnost a sdílení Collection může být Public nebo Unlisted a sdílí se přímým odkazem. Public Collections se navíc zobrazí na tvém profilu v záložce Featured.\nVyhledávání Collections zatím není — přijde v pozdějších verzích. Teď jde hlavně o tvorbu a ruční sdílení odkazem.\nSoukromí a kontrola Tohle je část, kde vývojáři Mastodonu viditelně poučili ze zkušeností Bluesky.\nAby tě někdo mohl přidat do Collection, musíš mít v nastavení zapnuté “Feature me in discovery experiences”. Bez toho tě přidat nejde.\nBez zapnutého ‘Feature me in discovery experiences’ tě do Collections přidat nejde\nPokud tě někdo přidá, dostaneš notifikaci. Můžeš si Collection prohlédnout a pokud nechceš být její součástí, jednoduše se z ní odstraníš — bez nutnosti blokovat nebo reportovat autora.\nV případě obtěžování fungují standardní nástroje: report (řeší moderátoři instance) nebo blok (okamžitě tě odstraní ze všech Collections daného uživatele).\nKurátor se do vlastní Collection nepřidává automaticky — může to udělat, ale není to výchozí stav.\nPraktická omezení Limit 25 účtů je pro některé use cases málo. Mastodon tým přiznává, že “magické číslo” je pravděpodobně mezi 25 a 80 — záměrně začínají na nižší hranici, protože limit je snazší zvýšit než snížit. Na Bluesky byl limit Starter Packů 150 účtů, což vedlo ke vzniku obřích, nekurátorovaných listů.\nŽádné “Follow All” tlačítko — bulk follow v 4.6 není. Vývojáři řeší, jak by fungovala inverzní operace a nechtějí jít cestou dark patterns.\nBez vyhledávání — Collections zatím nejdou prohledávat jako katalog. Záměrně, tým chce nejdřív vidět, jak komunita Collections tvoří.\nJen instance na 4.6+ — přidávat půjde pouze účty z instancí, které jsou aktualizované na Mastodon 4.6 nebo novější.\nSrovnání s Bluesky Starter Packs Bluesky Starter Packs jsou funkčně podobný koncept. Ale na Bluesky nebyly notifikace o přidání, opt-out byl komplikovaný a vznikaly stale listy s neaktivními účty, které nováčci hromadně followovali a pak se divili, proč mají špatný feed.\nMastodon přistupuje konzervativněji: menší velikost, notifikace, snadný opt-out, bez bulk follow. Pomalejší onboarding, ale čistší.\nPraktické využití Onboarding na vlastní instanci. Správce instance může sestavit Collection “zajímavé účty pro nováčky” a dát na ni odkaz v uvítacím emailu. Je to přirozená náhrada za stávající Recommended Accounts funkci.\nKomunity a projekty. Selfhost projekt může mít Collection se všemi správci a přispěvateli. Open source projekt seznam maintainerů.\nTematická doporučení. Místo dlouhého vlákna “koho sledovat” jednoduše sdílíš odkaz.\nNové profily Mastodon 4.6 přináší i přepracované profily. Editace profilu teď probíhá přímo na stránce profilu v edit módu — není potřeba přecházet do nastavení. Profilovou fotku a hlavičku lze ořezat přímo tam, lze přidat alt text pro fotku i hlavičku.\nSpráva vlastních polí přímo v editaci profilu\nPřibyla kontrola nad záložkou Media — lze nastavit, jestli se zobrazuje vůbec, a jestli má zahrnovat přílohy z odpovědí. Záložku Featured (Collections a doporučené profily) lze také skrýt.\nProcházení profilu je přehlednější — přepínání mezi originálními příspěvky, boosty a odpověďmi vyžaduje méně kliknutí a nastavení se pamatuje napříč profily.\nNewsletters Nová funkce primárně pro instituce, novináře a tvůrce obsahu: uživatelé mohou povolit anonymním návštěvníkům odebírat jejich příspěvky e-mailem. Takže i lidé bez Mastodon účtu mohou sledovat konkrétní profil.\nFunkce není zapnutá pro všechny automaticky — vyžaduje souhlas správce instance, protože rozesílání newsletterů může výrazně zvýšit provozní náklady. Pokud tě to zajímá, obrať se na administrátory mamutovo.cz.\nWrapstodon Funkce “rok v přehledu”, kterou znáš z mastodon.social, je teď dostupná pro všechny instance. Od 10. prosince každého roku si budeš moci vygenerovat přehled svého roku na Mastodonu — ale jen pokud s tím explicitně souhlasíš. Výsledek lze sdílet jako odkaz, ne jen jako screenshot.\nPřístupnost Značná část práce v 4.6 šla do přístupnosti — navigace klávesnicí, správa fokusu, kontrasty barev, lepší podpora čteček obrazovky. Alt text pro profilové fotky a hlavičky je součástí toho. Na tomto se podílela i nizozemská vláda, která část vývoje financovala.\nShrnutí Mastodon 4.6 není velký skok, ale je to solidní aktualizace s praktickými dopady. Collections řeší reálný problém nativně a s respektem k soukromí uživatelů. Žádný algoritmus, žádné doporučování bez souhlasu.\nmamutovo.cz běží na 4.6.2. Collections si můžeš vyzkoušet hned — stačí mít zapnuté discovery v nastavení a jít na svůj profil.\n",
+  "wordCount" : "1052",
+  "inLanguage": "en",
+  "datePublished": "2026-06-29T00:00:00Z",
+  "dateModified": "2026-06-29T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Archos"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://blog.oscloud.cz/posts/mastodon-4-6-collections/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Oscloud News",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://blog.oscloud.cz/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://blog.oscloud.cz/" accesskey="h" title="Oscloud News (Alt + H)">
+                <img src="https://blog.oscloud.cz/logo.png" alt="" aria-label="logo"
+                    height="32">Oscloud News</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://blog.oscloud.cz/" title="🇨🇿">
+                    <span>🇨🇿</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.oscloud.cz/archives/" title="Archiv">
+                    <span>Archiv</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.oscloud.cz/search/" title="Vyhledávání">
+                    <span>Vyhledávání</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.oscloud.cz/tags/" title="Tagy">
+                    <span>Tagy</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://blog.oscloud.cz/">Home</a>&nbsp;»&nbsp;<a href="https://blog.oscloud.cz/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Mastodon 4.6: Collections, nové profily a další novinky
+    </h1>
+    <div class="post-meta"><span title='2026-06-29 00:00:00 +0000 UTC'>29. června 2026</span>&nbsp;·&nbsp;<span>5 min</span>&nbsp;·&nbsp;<span>Archos</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>mamutovo.cz aktualizováno na Mastodon 4.6.2 a Debian 13. Hlavní novinka této verze jsou Collections — kurátorské seznamy účtů pro snazší objevování lidí na Fediverse. Ale není to jediná věc, která se změnila.</p>
+<h2 id="proč-to-vůbec-vzniklo">Proč to vůbec vzniklo<a hidden class="anchor" aria-hidden="true" href="#proč-to-vůbec-vzniklo">#</a></h2>
+<p>Kdo na Fediverse přichází z Twitteru nebo jiných centralizovaných sítí, narazí dřív nebo
+později na stejný problém: jak najít lidi, které stojí za to sledovat?</p>
+<p>Na Twitteru to řeší algoritmus — ať chceš nebo ne, obsah ti přijde sám. Na Mastodonu to
+nefunguje. Federovaná síť složená z desítek tisíc instancí s různými zaměřeními je skvělá
+věc pro ty, kteří vědí, co hledají. Pro nováčka je to ale matoucí bludiště.</p>
+<p>Dosud existovala různá komunitní řešení — weby jako fedi.tips, ručně udržované seznamy,
+starter pack projekty třetích stran. Fungovalo to, ale stálo to úsilí a nebylo to nijak
+integrované do samotného Mastodonu.</p>
+<p>Collections mají tenhle problém řešit nativně, přímo v platformě.</p>
+<h2 id="co-collections-jsou-a-co-nejsou">Co Collections jsou (a co nejsou)<a hidden class="anchor" aria-hidden="true" href="#co-collections-jsou-a-co-nejsou">#</a></h2>
+<p>Collection je seznam účtů, který někdo sestavil s tím záměrem, aby ho sdílel s ostatními.
+Říká tím: &ldquo;Tyhle účty stojí za pozornost, pokud tě zajímá X.&rdquo;</p>
+<p>Není to followlist — neznamená to, že kdo přistoupí k Collection, automaticky ty účty
+sleduje. Není to ani odběr. Je to kurátorský seznam, který si prohlédneš a rozhodneš se
+sám, koho z něj začneš sledovat.</p>
+<p>Technicky jde o rozšíření stávajícího konceptu Lists — ten existuje v Mastodonu dlouho,
+ale byl vždy soukromý. Collections jsou jeho veřejná, sdílitelná varianta.</p>
+<h2 id="jak-collections-fungují">Jak Collections fungují<a hidden class="anchor" aria-hidden="true" href="#jak-collections-fungují">#</a></h2>
+<h3 id="vytvoření">Vytvoření<a hidden class="anchor" aria-hidden="true" href="#vytvoření">#</a></h3>
+<p>Collection vytvoříš přes menu profilu. Nastavíš název, krátký popis a volitelně jeden
+hashtag jako tematický štítek. Lze ji také označit jako citlivý obsah — popis a seznam
+účtů se pak schová za content warning.</p>
+<p>Maximální počet účtů v jedné Collection je 25.</p>
+<h3 id="co-vidí-ostatní">Co vidí ostatní<a hidden class="anchor" aria-hidden="true" href="#co-vidí-ostatní">#</a></h3>
+<p>Každý účet v Collection se zobrazuje s bio textem, počtem příspěvků, sledujících a —
+což je klíčové — s datem poslední aktivity. Průzkum mezi uživateli ukázal, že recency
+je pro rozhodnutí &ldquo;sledovat / nesledovat&rdquo; důležitější než počet followerů nebo přítomnost
+ověřeného odkazu.</p>
+<figure>
+    <img loading="lazy" src="/images/mastodon-46-collection-detail.png"
+         alt="Ukázka Collection Česká komunita na mamutovo.cz"/> <figcaption>
+            <p>Collection zobrazuje bio, počet příspěvků a datum poslední aktivity</p>
+        </figcaption>
+</figure>
+
+<h3 id="přehled-tvých-collections">Přehled tvých Collections<a hidden class="anchor" aria-hidden="true" href="#přehled-tvých-collections">#</a></h3>
+<p>V rozhraní máš dvě záložky: <strong>Created by you</strong> (Collections, které jsi sestavil) a
+<strong>Featuring you</strong> (Collections, ve kterých tě někdo jiný má). Takže vždy víš, kde se
+tvůj účet objevuje.</p>
+<figure>
+    <img loading="lazy" src="/images/mastodon-46-collections-overview.png"
+         alt="Přehled Collections na mamutovo.cz"/> <figcaption>
+            <p>Záložka Featuring you ukáže, ve kterých Collections se nacházíš</p>
+        </figcaption>
+</figure>
+
+<h3 id="viditelnost-a-sdílení">Viditelnost a sdílení<a hidden class="anchor" aria-hidden="true" href="#viditelnost-a-sdílení">#</a></h3>
+<p>Collection může být Public nebo Unlisted a sdílí se přímým odkazem. Public Collections
+se navíc zobrazí na tvém profilu v záložce Featured.</p>
+<p>Vyhledávání Collections zatím není — přijde v pozdějších verzích. Teď jde hlavně o
+tvorbu a ruční sdílení odkazem.</p>
+<h2 id="soukromí-a-kontrola">Soukromí a kontrola<a hidden class="anchor" aria-hidden="true" href="#soukromí-a-kontrola">#</a></h2>
+<p>Tohle je část, kde vývojáři Mastodonu viditelně poučili ze zkušeností Bluesky.</p>
+<p>Aby tě někdo mohl přidat do Collection, musíš mít v nastavení zapnuté <strong>&ldquo;Feature me in
+discovery experiences&rdquo;</strong>. Bez toho tě přidat nejde.</p>
+<figure>
+    <img loading="lazy" src="/images/mastodon-46-discovery-setting.png"
+         alt="Nastavení discovery v Mastodonu 4.6"/> <figcaption>
+            <p>Bez zapnutého &lsquo;Feature me in discovery experiences&rsquo; tě do Collections přidat nejde</p>
+        </figcaption>
+</figure>
+
+<p>Pokud tě někdo přidá, dostaneš notifikaci. Můžeš si Collection prohlédnout a pokud
+nechceš být její součástí, jednoduše se z ní odstraníš — bez nutnosti blokovat nebo
+reportovat autora.</p>
+<p>V případě obtěžování fungují standardní nástroje: report (řeší moderátoři instance)
+nebo blok (okamžitě tě odstraní ze všech Collections daného uživatele).</p>
+<p>Kurátor se do vlastní Collection nepřidává automaticky — může to udělat, ale není to
+výchozí stav.</p>
+<h2 id="praktická-omezení">Praktická omezení<a hidden class="anchor" aria-hidden="true" href="#praktická-omezení">#</a></h2>
+<p><strong>Limit 25 účtů</strong> je pro některé use cases málo. Mastodon tým přiznává, že &ldquo;magické
+číslo&rdquo; je pravděpodobně mezi 25 a 80 — záměrně začínají na nižší hranici, protože
+limit je snazší zvýšit než snížit. Na Bluesky byl limit Starter Packů 150 účtů, což
+vedlo ke vzniku obřích, nekurátorovaných listů.</p>
+<p><strong>Žádné &ldquo;Follow All&rdquo; tlačítko</strong> — bulk follow v 4.6 není. Vývojáři řeší, jak by
+fungovala inverzní operace a nechtějí jít cestou dark patterns.</p>
+<p><strong>Bez vyhledávání</strong> — Collections zatím nejdou prohledávat jako katalog. Záměrně,
+tým chce nejdřív vidět, jak komunita Collections tvoří.</p>
+<p><strong>Jen instance na 4.6+</strong> — přidávat půjde pouze účty z instancí, které jsou
+aktualizované na Mastodon 4.6 nebo novější.</p>
+<h2 id="srovnání-s-bluesky-starter-packs">Srovnání s Bluesky Starter Packs<a hidden class="anchor" aria-hidden="true" href="#srovnání-s-bluesky-starter-packs">#</a></h2>
+<p>Bluesky Starter Packs jsou funkčně podobný koncept. Ale na Bluesky nebyly notifikace
+o přidání, opt-out byl komplikovaný a vznikaly stale listy s neaktivními účty, které
+nováčci hromadně followovali a pak se divili, proč mají špatný feed.</p>
+<p>Mastodon přistupuje konzervativněji: menší velikost, notifikace, snadný opt-out, bez
+bulk follow. Pomalejší onboarding, ale čistší.</p>
+<h2 id="praktické-využití">Praktické využití<a hidden class="anchor" aria-hidden="true" href="#praktické-využití">#</a></h2>
+<p><strong>Onboarding na vlastní instanci.</strong> Správce instance může sestavit Collection
+&ldquo;zajímavé účty pro nováčky&rdquo; a dát na ni odkaz v uvítacím emailu. Je to přirozená
+náhrada za stávající Recommended Accounts funkci.</p>
+<p><strong>Komunity a projekty.</strong> Selfhost projekt může mít Collection se všemi správci
+a přispěvateli. Open source projekt seznam maintainerů.</p>
+<p><strong>Tematická doporučení.</strong> Místo dlouhého vlákna &ldquo;koho sledovat&rdquo; jednoduše sdílíš
+odkaz.</p>
+<h2 id="nové-profily">Nové profily<a hidden class="anchor" aria-hidden="true" href="#nové-profily">#</a></h2>
+<p>Mastodon 4.6 přináší i přepracované profily. Editace profilu teď probíhá přímo na
+stránce profilu v edit módu — není potřeba přecházet do nastavení. Profilovou fotku
+a hlavičku lze ořezat přímo tam, lze přidat alt text pro fotku i hlavičku.</p>
+<figure>
+    <img loading="lazy" src="/images/mastodon-46-profile-fields.png"
+         alt="Editace vlastních polí v profilu Mastodon 4.6"/> <figcaption>
+            <p>Správa vlastních polí přímo v editaci profilu</p>
+        </figcaption>
+</figure>
+
+<p>Přibyla kontrola nad záložkou Media — lze nastavit, jestli se zobrazuje vůbec, a jestli
+má zahrnovat přílohy z odpovědí. Záložku Featured (Collections a doporučené profily)
+lze také skrýt.</p>
+<p>Procházení profilu je přehlednější — přepínání mezi originálními příspěvky, boosty a
+odpověďmi vyžaduje méně kliknutí a nastavení se pamatuje napříč profily.</p>
+<h2 id="newsletters">Newsletters<a hidden class="anchor" aria-hidden="true" href="#newsletters">#</a></h2>
+<p>Nová funkce primárně pro instituce, novináře a tvůrce obsahu: uživatelé mohou povolit
+anonymním návštěvníkům odebírat jejich příspěvky e-mailem. Takže i lidé bez Mastodon
+účtu mohou sledovat konkrétní profil.</p>
+<p>Funkce není zapnutá pro všechny automaticky — vyžaduje souhlas správce instance,
+protože rozesílání newsletterů může výrazně zvýšit provozní náklady. Pokud tě to
+zajímá, obrať se na administrátory mamutovo.cz.</p>
+<h2 id="wrapstodon">Wrapstodon<a hidden class="anchor" aria-hidden="true" href="#wrapstodon">#</a></h2>
+<p>Funkce &ldquo;rok v přehledu&rdquo;, kterou znáš z mastodon.social, je teď dostupná pro všechny
+instance. Od 10. prosince každého roku si budeš moci vygenerovat přehled svého roku
+na Mastodonu — ale jen pokud s tím explicitně souhlasíš. Výsledek lze sdílet jako
+odkaz, ne jen jako screenshot.</p>
+<h2 id="přístupnost">Přístupnost<a hidden class="anchor" aria-hidden="true" href="#přístupnost">#</a></h2>
+<p>Značná část práce v 4.6 šla do přístupnosti — navigace klávesnicí, správa fokusu,
+kontrasty barev, lepší podpora čteček obrazovky. Alt text pro profilové fotky a
+hlavičky je součástí toho. Na tomto se podílela i nizozemská vláda, která část
+vývoje financovala.</p>
+<h2 id="shrnutí">Shrnutí<a hidden class="anchor" aria-hidden="true" href="#shrnutí">#</a></h2>
+<p>Mastodon 4.6 není velký skok, ale je to solidní aktualizace s praktickými dopady.
+Collections řeší reálný problém nativně a s respektem k soukromí uživatelů. Žádný
+algoritmus, žádné doporučování bez souhlasu.</p>
+<p>mamutovo.cz běží na 4.6.2. Collections si můžeš vyzkoušet hned — stačí mít zapnuté
+discovery v nastavení a jít na svůj profil.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://blog.oscloud.cz/tags/mastodon/">Mastodon</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/collections/">Collections</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/fediverse/">Fediverse</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/discovery/">Discovery</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/4.6/">4.6</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/profily/">Profily</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="https://blog.oscloud.cz/posts/surfer-na-oscloudu/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Surfer na OSCLOUDu — nejjednodušší způsob, jak rozjet vlastní web</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://blog.oscloud.cz/">Oscloud News</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
