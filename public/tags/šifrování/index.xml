@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Šifrování on Oscloud News</title>
+    <link>https://blog.oscloud.cz/tags/%C5%A1ifrov%C3%A1n%C3%AD/</link>
+    <description>Recent content in Šifrování on Oscloud News</description>
+    <generator>Hugo -- 0.163.3</generator>
+    <language>cs-cz</language>
+    <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
+    <webMaster>info@oscloud.cz (OSCloud)</webMaster>
+    <lastBuildDate>Fri, 03 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.oscloud.cz/tags/%C5%A1ifrov%C3%A1n%C3%AD/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nextcloud na OSCloud roste: vlastní úložiště až 1 TB</title>
+      <link>https://blog.oscloud.cz/posts/nextcloud-vlastni-uloziste/</link>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>https://blog.oscloud.cz/posts/nextcloud-vlastni-uloziste/</guid>
+      <description>&lt;p&gt;Google Drive. Dropbox. iCloud. Všechno pohodlné, všechno někde v USA, všechno plné sledování a podmínek, které jsi nikdy nečetl. Existuje jiná cesta — a my ji právě rozšiřujeme.&lt;/p&gt;
+&lt;h2 id=&#34;nextcloud-na-oscloud&#34;&gt;Nextcloud na OSCloud&lt;/h2&gt;
+&lt;p&gt;Na &lt;a href=&#34;https://oscloud.cz&#34;&gt;oscloud.cz&lt;/a&gt; provozujeme Nextcloud jako komunitní službu.
+Žádné korporace, žádné monetizování dat. Servery stojí u Hetzner ve Falkensteinově — EU, GDPR, bez amerického CLOUD Actu.&lt;/p&gt;
+&lt;p&gt;Nextcloud není jen úložiště. Součástí je Collabora Online pro editaci dokumentů přímo v prohlížeči, sdílené kalendáře, kontakty, úkoly, poznámky — a mobilní aplikace pro iOS i Android včetně automatické zálohy fotek.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
