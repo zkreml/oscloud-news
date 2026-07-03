@@ -296,6 +296,45 @@ Snapshot nezabere místo hned, sdílí kapacitu s úložištěm a roste jen podl
 </nav>
 
   </footer>
+<div class="comments-section">
+  <h2>Diskuze</h2>
+  <p>Reaguj na <a href="https://mamutovo.cz/web/statuses/116854122305163821" target="_blank">Mastodon příspěvek</a> a tvá odpověď se zobrazí tady.</p>
+  <button id="load-comments">Načíst komentáře</button>
+  <div id="mastodon-comments-list"></div>
+</div>
+<script>
+function escapeHtml(s) {
+  return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+}
+document.getElementById('load-comments').addEventListener('click', function () {
+  this.textContent = 'Načítám…';
+  fetch('https://mamutovo.cz/api/v1/statuses/116854122305163821/context')
+    .then(r => r.json())
+    .then(data => {
+      const list = document.getElementById('mastodon-comments-list');
+      if (!data.descendants || data.descendants.length === 0) {
+        list.innerHTML = '<p>Zatím žádné komentáře.</p>';
+        document.getElementById('load-comments').remove();
+        return;
+      }
+      list.innerHTML = data.descendants.map(toot => `
+        <div class="comment">
+          <img src="${toot.account.avatar}" width="32" height="32" alt="">
+          <strong>${escapeHtml(toot.account.display_name || toot.account.username)}</strong>
+          <span class="acct">@${toot.account.acct}</span>
+          <div class="content">${toot.content}</div>
+          <a href="${toot.url}" target="_blank">zobrazit na Mastodonu</a>
+        </div>
+      `).join('');
+      document.getElementById('load-comments').remove();
+    })
+    .catch(() => {
+      document.getElementById('mastodon-comments-list').innerHTML = '<p>Nepodařilo se načíst komentáře.</p>';
+    });
+});
+</script>
+
+
 </article>
     </main>
     

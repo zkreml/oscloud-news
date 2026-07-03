@@ -2,6 +2,9 @@
 title: "Nextcloud na OSCloud roste: vlastní úložiště až 1 TB"
 date: 2026-07-03
 draft: false
+comments:
+  host: "mamutovo.cz"
+  id: "116854122305163821"
 slug: nextcloud-vlastni-uloziste
 categories: ["Služby"]
 tags: ["nextcloud", "storage", "cloud", "soukromí", "zálohy", "šifrování"]
