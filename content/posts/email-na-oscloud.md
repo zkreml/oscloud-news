@@ -1,7 +1,7 @@
 ---
 title: "E-mail na OSCloud – kompletní průvodce pro uživatele"
-date: 2026-07-19T00:00:00+02:00
-draft: false
+date: 2026-07-17T09:00:00+02:00
+draft: true
 slug: "email-na-oscloud"
 categories: ["Návody"]
 tags: ["e-mail", "IMAP", "SMTP", "Thunderbird", "webmail", "soukromí"]
@@ -29,7 +29,9 @@ A hlavně – vaše data zůstávají na serveru v EU (Hetzner, Německo), pod k
 
 ## Co budete potřebovat
 
-Pro přístup k e-mailu potřebujete znát několik údajů. Všechny obdržíte od administrátora OSCloud při vytvoření schránky:
+E-mailovou schránku na OSCloud vám vytváří administrátor. Pokud ještě nemáte e-mail na OSCloud, napište na [helpdesk.oscloud.cz](https://helpdesk.oscloud.cz/help/3020290644) a sdělte, jakou e-mailovou adresu byste chtěli. Stejně tak pokud budete chtít e-mailový alias (alternativní adresu, která doručuje do stejné schránky) – stačí napsat administrátorovi, jaký alias potřebujete, a ten ho přidá.
+
+Po vytvoření schránky budete potřebovat následující údaje pro nastavení e-mailového klienta:
 
 | Údaj | Příklad |
 |------|---------|
