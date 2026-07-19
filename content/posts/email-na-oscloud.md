@@ -1,6 +1,6 @@
 ---
 title: "E-mail na OSCloud – kompletní průvodce pro uživatele"
-date: 2026-07-17T09:00:00+02:00
+date: 2026-07-19T09:00:00+02:00
 draft: false
 slug: "email-na-oscloud"
 categories: ["Návody"]
