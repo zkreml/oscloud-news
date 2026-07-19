@@ -1,11 +1,14 @@
 ---
 title: "E-mail na OSCloud – kompletní průvodce pro uživatele"
-date: 2026-07-19T09:00:00+02:00
+date: 2026-07-19T00:00:00+02:00
 draft: false
 slug: "email-na-oscloud"
 categories: ["Návody"]
 tags: ["e-mail", "IMAP", "SMTP", "Thunderbird", "webmail", "soukromí"]
 author: Archos
+cover:
+  image: images/email.jpg
+  alt: "E-mail na OSCloud"
 ---
 
 Ahoj komunito! Dneska se podíváme na jednu ze základních služeb, kterou OSCloud nabízí – **e-mail**. Vlastní e-mailová schránka bez závislosti na Googlu nebo Microsoftu, s respektem k vašemu soukromí a plnou kontrolou nad vašimi daty. Žádné profilování, žádné reklamy ve schránce, žádné skenování obsahu zpráv.
