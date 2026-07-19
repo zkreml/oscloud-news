@@ -4,12 +4,20 @@
     <title>Soukromí on Oscloud News</title>
     <link>https://blog.oscloud.cz/tags/soukrom%C3%AD/</link>
     <description>Recent content in Soukromí on Oscloud News</description>
-    <generator>Hugo -- 0.163.3</generator>
+    <generator>Hugo -- 0.164.0</generator>
     <language>cs-cz</language>
     <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
     <webMaster>info@oscloud.cz (OSCloud)</webMaster>
-    <lastBuildDate>Fri, 03 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2026 00:00:00 +0200</lastBuildDate>
     <atom:link href="https://blog.oscloud.cz/tags/soukrom%C3%AD/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>E-mail na OSCloud – kompletní průvodce pro uživatele</title>
+      <link>https://blog.oscloud.cz/posts/email-na-oscloud/</link>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>https://blog.oscloud.cz/posts/email-na-oscloud/</guid>
+      <description>&lt;p&gt;Ahoj komunito! Dneska se podíváme na jednu ze základních služeb, kterou OSCloud nabízí – &lt;strong&gt;e-mail&lt;/strong&gt;. Vlastní e-mailová schránka bez závislosti na Googlu nebo Microsoftu, s respektem k vašemu soukromí a plnou kontrolou nad vašimi daty. Žádné profilování, žádné reklamy ve schránce, žádné skenování obsahu zpráv.&lt;/p&gt;
+&lt;p&gt;V tomto článku vás provedeme od úplného začátku – co e-mail na OSCloud nabízí, jak se přihlásit přes webmail, jak nastavit Thunderbird, mobilní klienty a co dělat, když něco nefunguje.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Nextcloud na OSCloud roste: vlastní úložiště až 1 TB</title>
       <link>https://blog.oscloud.cz/posts/nextcloud-vlastni-uloziste/</link>

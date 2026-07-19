@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>E-mail na OSCloud – kompletní průvodce pro uživatele | Oscloud News</title>
+<meta name="keywords" content="e-mail, IMAP, SMTP, Thunderbird, webmail, soukromí">
+<meta name="description" content="Ahoj komunito! Dneska se podíváme na jednu ze základních služeb, kterou OSCloud nabízí – e-mail. Vlastní e-mailová schránka bez závislosti na Googlu nebo Microsoftu, s respektem k vašemu soukromí a plnou kontrolou nad vašimi daty. Žádné profilování, žádné reklamy ve schránce, žádné skenování obsahu zpráv.
+V tomto článku vás provedeme od úplného začátku – co e-mail na OSCloud nabízí, jak se přihlásit přes webmail, jak nastavit Thunderbird, mobilní klienty a co dělat, když něco nefunguje.">
+<meta name="author" content="Archos">
+<link rel="canonical" href="https://blog.oscloud.cz/posts/email-na-oscloud/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.01de0cf7a606abfce8ed6089ab89e1538996376aac8ff05d3c7d2340f377b07c.css" integrity="sha256-Ad4M96YGq/zo7WCJq4nhU4mWN2qsj/BdPH0jQPN3sHw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://blog.oscloud.cz/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.oscloud.cz/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.oscloud.cz/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://blog.oscloud.cz/apple-touch-icon.png">
+<link rel="mask-icon" href="https://blog.oscloud.cz/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://blog.oscloud.cz/posts/email-na-oscloud/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><script defer src="https://analytics.oscloud.cz/script.js" data-website-id="70aaf052-385c-41fb-9cfe-d3b3c6f54f2d"></script>
+<meta property="og:url" content="https://blog.oscloud.cz/posts/email-na-oscloud/">
+  <meta property="og:site_name" content="Oscloud News">
+  <meta property="og:title" content="E-mail na OSCloud – kompletní průvodce pro uživatele">
+  <meta property="og:description" content="Ahoj komunito! Dneska se podíváme na jednu ze základních služeb, kterou OSCloud nabízí – e-mail. Vlastní e-mailová schránka bez závislosti na Googlu nebo Microsoftu, s respektem k vašemu soukromí a plnou kontrolou nad vašimi daty. Žádné profilování, žádné reklamy ve schránce, žádné skenování obsahu zpráv.
+V tomto článku vás provedeme od úplného začátku – co e-mail na OSCloud nabízí, jak se přihlásit přes webmail, jak nastavit Thunderbird, mobilní klienty a co dělat, když něco nefunguje.">
+  <meta property="og:locale" content="cs-cz">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-07-19T00:00:00+02:00">
+    <meta property="article:modified_time" content="2026-07-19T00:00:00+02:00">
+    <meta property="article:tag" content="E-Mail">
+    <meta property="article:tag" content="IMAP">
+    <meta property="article:tag" content="SMTP">
+    <meta property="article:tag" content="Thunderbird">
+    <meta property="article:tag" content="Webmail">
+    <meta property="article:tag" content="Soukromí">
+    <meta property="og:image" content="https://blog.oscloud.cz/images/email.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://blog.oscloud.cz/images/email.jpg">
+<meta name="twitter:title" content="E-mail na OSCloud – kompletní průvodce pro uživatele">
+<meta name="twitter:description" content="Ahoj komunito! Dneska se podíváme na jednu ze základních služeb, kterou OSCloud nabízí – e-mail. Vlastní e-mailová schránka bez závislosti na Googlu nebo Microsoftu, s respektem k vašemu soukromí a plnou kontrolou nad vašimi daty. Žádné profilování, žádné reklamy ve schránce, žádné skenování obsahu zpráv.
+V tomto článku vás provedeme od úplného začátku – co e-mail na OSCloud nabízí, jak se přihlásit přes webmail, jak nastavit Thunderbird, mobilní klienty a co dělat, když něco nefunguje.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://blog.oscloud.cz/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "E-mail na OSCloud – kompletní průvodce pro uživatele",
+      "item": "https://blog.oscloud.cz/posts/email-na-oscloud/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "E-mail na OSCloud – kompletní průvodce pro uživatele",
+  "name": "E-mail na OSCloud – kompletní průvodce pro uživatele",
+  "description": "Ahoj komunito! Dneska se podíváme na jednu ze základních služeb, kterou OSCloud nabízí – e-mail. Vlastní e-mailová schránka bez závislosti na Googlu nebo Microsoftu, s respektem k vašemu soukromí a plnou kontrolou nad vašimi daty. Žádné profilování, žádné reklamy ve schránce, žádné skenování obsahu zpráv.\nV tomto článku vás provedeme od úplného začátku – co e-mail na OSCloud nabízí, jak se přihlásit přes webmail, jak nastavit Thunderbird, mobilní klienty a co dělat, když něco nefunguje.\n",
+  "keywords": [
+    "e-mail", "IMAP", "SMTP", "Thunderbird", "webmail", "soukromí"
+  ],
+  "articleBody": "Ahoj komunito! Dneska se podíváme na jednu ze základních služeb, kterou OSCloud nabízí – e-mail. Vlastní e-mailová schránka bez závislosti na Googlu nebo Microsoftu, s respektem k vašemu soukromí a plnou kontrolou nad vašimi daty. Žádné profilování, žádné reklamy ve schránce, žádné skenování obsahu zpráv.\nV tomto článku vás provedeme od úplného začátku – co e-mail na OSCloud nabízí, jak se přihlásit přes webmail, jak nastavit Thunderbird, mobilní klienty a co dělat, když něco nefunguje.\nCo získáte E-mailová schránka na OSCloud není jen adresa, na kterou vám chodí zprávy. Je to plnohodnotná e-mailová služba postavená na otevřených standardech, kterou můžete používat z libovolného zařízení a s libovolným e-mailovým klientem.\nKonkrétně získáte e-mailovou schránku s vlastní adresou na doméně OSCloud (například vas-nick@oscloud.cz), přístup přes webmail přímo v prohlížeči, plnou podporu protokolu IMAP pro synchronizaci e-mailů napříč zařízeními a SMTP pro odesílání zpráv. Veškerá komunikace je šifrovaná pomocí SSL/TLS, takže nikdo po cestě nemůže číst vaše e-maily. Můžete se přihlásit z počítače, telefonu i tabletu současně – vše se synchronizuje.\nPro pokročilejší uživatele je tu možnost používat vlastní doménu, nastavit si e-mailové aliasy (alternativní adresy, které doručují do stejné schránky – stačí napsat administrátorovi, jaký alias chcete) a filtrovat příchozí poštu pomocí serverových pravidel (Sieve).\nA hlavně – vaše data zůstávají na serveru v EU (Hetzner, Německo), pod kontrolou OSCloud komunity, bez profilování a bez prodeje dat třetím stranám.\nCo budete potřebovat Pro přístup k e-mailu potřebujete znát několik údajů. Všechny obdržíte od administrátora OSCloud při vytvoření schránky:\nÚdaj Příklad E-mailová adresa (= přihlašovací jméno) vas-nick@oscloud.cz Heslo Vaše heslo k platformě OSCloud IMAP server (příchozí pošta) my.oscloud.cz IMAP port 993 SMTP server (odchozí pošta) my.oscloud.cz SMTP port 587 Šifrování (IMAP) SSL/TLS Šifrování (SMTP) STARTTLS Tip: Přihlašovací jméno je vždy vaše plná e-mailová adresa, nikoli jen část před zavináčem. Heslo je stejné jako heslo k vašemu účtu na platformě OSCloud. Pokud si potřebujete heslo změnit, můžete tak udělat na my.oscloud.cz.\nPokud jste údaje nedostali nebo si je nepamatujete, kontaktujte podporu na helpdesk.oscloud.cz.\nPřístup přes webmail Nejjednodušší způsob, jak začít používat e-mail, je přes webmail – webové rozhraní, které funguje přímo v prohlížeči. Nepotřebujete nic instalovat, stačí otevřít adresu a přihlásit se.\nNa OSCloud máte k dispozici dva webmailové klienty. Oba přistupují ke stejné schránce, takže je můžete střídat podle toho, co vám víc vyhovuje.\nRoundcube – webmail.oscloud.cz Roundcube je klasický, osvědčený webmail s čistým rozhraním. Je rychlý, přehledný a dobře se v něm orientuje i začátečník. Pokud jste zvyklí na jednoduché webmailové rozhraní (podobné třeba Seznamu), Roundcube vám bude vyhovovat.\nVelkou výhodou Roundcube na OSCloud je podpora GPG šifrování. To znamená, že si můžete přímo ve webmailu nastavit GPG klíče a odesílat i přijímat šifrované e-maily, které si nepřečte nikdo kromě vás a příjemce – ani administrátor serveru. Nastavení GPG klíčů najdete v nastavení Roundcube v sekci „Šifrování\" nebo „Encryption\".\nSOGo – webmail.oscloud.online SOGo je komplexnější řešení, které kromě e-mailu nabízí i kalendář, kontakty a úkoly v jednom rozhraní. Pokud hledáte náhradu za Google Workspace nebo Microsoft 365, SOGo je bližší tomu, na co jste zvyklí. Rozhraní je modernější a podporuje synchronizaci kalendáře a kontaktů přes CalDAV a CardDAV.\nPřihlášení Postup je u obou klientů stejný:\nOtevřete adresu webmailu – webmail.oscloud.cz pro Roundcube nebo webmail.oscloud.online/SOGo/ pro SOGo. Zadejte svou plnou e-mailovou adresu jako přihlašovací jméno. Zadejte heslo k platformě OSCloud. Klikněte na tlačítko pro přihlášení. Po přihlášení uvidíte svou doručenou poštu. Pokud jste někdy používali jakýkoli webmail (Gmail, Seznam, Outlook.com), budete se orientovat okamžitě.\nZákladní orientace Webmail typicky obsahuje několik hlavních sekcí. V levém panelu najdete seznam složek – Doručená pošta (Inbox), Odeslaná pošta (Sent), Koncepty (Drafts), Koš (Trash) a Spam (Junk). Hlavní oblast zobrazuje seznam zpráv ve zvolené složce a po kliknutí na zprávu se otevře její obsah.\nPsaní e-mailu Klikněte na tlačítko „Napsat\" nebo „Nová zpráva\" (většinou ikona tužky nebo obálky). Vyplňte adresu příjemce do pole „Komu\" (To). Napište předmět zprávy. Napište text zprávy. Pokud chcete přiložit soubor, použijte tlačítko přílohy (ikona sponky). Klikněte na „Odeslat\". Tip: Pokud zprávu nedopíšete, uložte ji jako koncept – najdete ji pak ve složce Koncepty a můžete ji dokončit později.\nSložky a organizace Můžete si vytvářet vlastní složky pro organizaci pošty. Klikněte pravým tlačítkem na seznam složek a vyberte „Nová složka\". Zprávy pak přesouváte přetažením nebo přes kontextové menu.\nWebmail na OSCloud podporuje také serverové filtrování pomocí Sieve pravidel. To znamená, že si můžete nastavit automatické třídění – například všechny zprávy od konkrétního odesílatele přesunout do určité složky. Nastavení filtrů najdete obvykle v sekci „Filtry\" nebo „Pravidla\" v nastavení webmailu.\nKontakty Webmail obsahuje jednoduchý adresář kontaktů. Můžete přidávat kontakty ručně nebo se automaticky ukládají z odeslaných zpráv. Při psaní e-mailu vám webmail nabízí doplnění adresy z adresáře.\nNastavení v Thunderbirdu Thunderbird je bezplatný, otevřený e-mailový klient pro Windows, macOS i Linux. Je to jedna z nejlepších voleb pro práci s e-mailem na OSCloud – podporuje IMAP, má vestavěný kalendář a adresář a respektuje vaše soukromí.\nAutomatická konfigurace Thunderbird umí v mnoha případech rozpoznat nastavení serveru automaticky:\nOtevřete Thunderbird. Pokud spouštíte Thunderbird poprvé, průvodce nastavením se otevře automaticky. Jinak jděte do Nastavení účtu → Akce účtu → Přidat poštovní účet. Vyplňte své jméno (jak se bude zobrazovat příjemcům), e-mailovou adresu a heslo. Klikněte na Pokračovat. Thunderbird se pokusí automaticky najít správné nastavení serveru. Pokud autodetekce uspěje, zobrazí se nalezené nastavení IMAP a SMTP serveru. Ověřte, že odpovídá údajům od OSCloud, a klikněte na Hotovo. Ruční konfigurace Pokud automatická konfigurace nefunguje (což se může stát u méně známých serverů), nastavte účet ručně:\nV průvodci nastavením klikněte na Ruční konfigurace. Vyplňte údaje podle následující tabulky: Nastavení Příchozí pošta (IMAP) Odchozí pošta (SMTP) Server my.oscloud.cz my.oscloud.cz Port 993 587 Šifrování SSL/TLS STARTTLS Autentizace Normální heslo Normální heslo Uživatelské jméno vas-nick@oscloud.cz vas-nick@oscloud.cz Klikněte na Znovu otestovat – Thunderbird ověří spojení se serverem. Pokud test proběhne úspěšně, klikněte na Hotovo. Poznámka: Jako uživatelské jméno zadávejte vždy plnou e-mailovou adresu včetně domény, nikoli jen část před zavináčem.\nCo dělat, když automatická konfigurace nefunguje Thunderbird někdy nenajde správné nastavení automaticky. V takovém případě:\nUjistěte se, že jste správně zadali e-mailovou adresu a heslo. Přepněte na ruční konfiguraci a zadejte údaje z tabulky výše. Ověřte, že máte správný port a typ šifrování – IMAP musí být na portu 993 s SSL/TLS, SMTP na portu 587 se STARTTLS. Pokud Thunderbird hlásí chybu certifikátu, neklikejte na „Přidat výjimku\", ale kontaktujte podporu OSCloud – certifikát by měl být platný. Odeslání testovacího e-mailu Po nastavení účtu je dobré ověřit, že vše funguje:\nKlikněte na Napsat a vytvořte novou zprávu. Do pole „Komu\" zadejte svou vlastní adresu (nebo jinou adresu, ke které máte přístup). Napište libovolný předmět a text. Klikněte na Odeslat. Zkontrolujte, zda zpráva dorazila do Doručené pošty. Pokud zpráva dorazí, máte nastaveno správně – příchozí i odchozí pošta fungují.\nNastavení na Androidu Na Androidu máte několik kvalitních otevřených e-mailových klientů na výběr. Doporučujeme:\nThunderbird Mobile (dříve K-9 Mail) – otevřený, bez reklam, plná podpora IMAP. Aktuálně nejlepší volba pro Android. FairEmail – pokročilý klient s důrazem na soukromí a šifrování. K-9 Mail – starší verze, ze které vychází Thunderbird Mobile. Stále funkční, ale doporučujeme přejít na Thunderbird. Obecný postup nastavení Postup je u většiny klientů velmi podobný:\nNainstalujte vybranou aplikaci z F-Droid nebo Google Play. Otevřete aplikaci a vyberte Přidat účet (nebo se průvodce spustí automaticky). Zadejte svou e-mailovou adresu a heslo. Pokud aplikace nenajde nastavení automaticky, vyberte Ruční konfigurace a zadejte: Typ účtu: IMAP IMAP server: my.oscloud.cz, port 993, šifrování SSL/TLS SMTP server: my.oscloud.cz, port 587, šifrování STARTTLS Uživatelské jméno: vaše plná e-mailová adresa Uložte nastavení a otestujte odesláním zkušebního e-mailu. Tip: Thunderbird Mobile (K-9 Mail) najdete i na F-Droid, takže ho můžete používat zcela bez Google Play.\nNastavení na iPhonu Na iPhonu a iPadu můžete použít vestavěnou aplikaci Mail:\nOtevřete Nastavení → Pošta → Účty → Přidat účet. Vyberte Ostatní (ne iCloud, ne Gmail, ne Outlook). Zvolte Přidat poštovní účet. Vyplňte jméno, e-mailovou adresu, heslo a popis účtu (libovolný, třeba „OSCloud\"). Na další obrazovce vyberte IMAP (ne POP). Do sekce „Server příchozí pošty\" zadejte: Název hostitele: my.oscloud.cz Uživatelské jméno: vaše plná e-mailová adresa Heslo: vaše heslo k OSCloud Do sekce „Server odchozí pošty\" zadejte stejné údaje. Klepněte na Další – iPhone ověří nastavení. Po úspěšném ověření klepněte na Uložit. Poznámka: iOS by měl automaticky rozpoznat správné porty a šifrování. Pokud se ověření nepodaří, zkontrolujte zadané údaje a případně ručně nastavte port 993 (IMAP, SSL) a 587 (SMTP, STARTTLS) v pokročilých nastaveních účtu.\nPoužívání vlastní domény Jednou z velkých výhod e-mailu na OSCloud je možnost používat vlastní doménu. Místo adresy vas-nick@oscloud.cz můžete mít třeba info@vase-firma.cz nebo jmeno@vase-domena.cz.\nJak to funguje Pokud vlastníte doménu (například přes Wedos, Forpsi, Cloudflare nebo jiného registrátora), můžete ji propojit s e-mailem na OSCloud. Celý proces vypadá takto:\nKontaktujte administrátora OSCloud s požadavkem na přidání vlastní domény. Administrátor vám poskytne sadu DNS záznamů, které je potřeba nastavit u vašeho registrátora domény. Nastavíte DNS záznamy podle pokynů. Administrátor ověří nastavení a aktivuje doménu. Můžete začít používat e-mail na vlastní doméně. DNS záznamy – co to je a k čemu slouží Při nastavování vlastní domény se setkáte s několika typy DNS záznamů. Nemusíte rozumět jejich technické implementaci, ale je dobré vědět, k čemu slouží:\nMX záznam říká světu, kam se mají doručovat e-maily pro vaši doménu. Bez něj by ostatní servery nevěděly, kam vaši poštu poslat.\nSPF záznam je ochrana proti podvržení odesílatele. Říká příjemcům, které servery jsou oprávněné odesílat e-maily za vaši doménu. Bez SPF záznamu hrozí, že vaše e-maily skončí ve spamu.\nDKIM záznam přidává ke každému odeslanému e-mailu digitální podpis. Příjemce si díky němu může ověřit, že zpráva skutečně pochází z vašeho serveru a že nebyla cestou pozměněna.\nDMARC záznam spojuje SPF a DKIM dohromady a definuje, co se má stát s e-maily, které nesplňují pravidla. Zároveň umožňuje získávat reporty o doručování.\nVšechny tyto záznamy jsou důležité pro spolehlivé doručování vašich e-mailů a ochranu proti zneužití vaší domény. Administrátor OSCloud vám poskytne přesné hodnoty, které stačí zkopírovat do správy DNS u vašeho registrátora.\nDoporučení pro bezpečnost E-mail je jeden z nejčastějších cílů kybernetických útoků. I na sebezabezpečenějším serveru záleží na tom, jak se chováte vy jako uživatel. Tady je pár zásad, které vám pomohou udržet schránku v bezpečí.\nSilné heslo Používejte heslo, které je dostatečně dlouhé (minimálně 12 znaků) a obsahuje kombinaci velkých a malých písmen, číslic a speciálních znaků. Ideálně použijte správce hesel (KeePassXC, Bitwarden na OSCloud) a vygenerujte náhodné heslo. Nikdy nepoužívejte stejné heslo jako na jiných službách.\nDvoufázové ověření Pokud OSCloud nabízí dvoufázové ověření (2FA), rozhodně ho zapněte. Kromě hesla budete při přihlášení zadávat jednorázový kód z autentifikační aplikace (FreeOTP, Aegis Authenticator, Google Authenticator). I kdyby někdo získal vaše heslo, bez kódu se nepřihlásí.\nPozor na phishing Phishing je pokus vylákat z vás přihlašovací údaje pomocí falešných e-mailů nebo webových stránek. Pamatujte si:\nOSCloud vás nikdy nebude žádat o heslo e-mailem. Neklikejte na podezřelé odkazy v e-mailech, které vás vybízejí k „ověření účtu\" nebo „aktualizaci hesla\". Vždy zkontrolujte adresu v prohlížeči – přihlašujte se jen přes známou adresu webmailu. Pokud si nejste jisti, zda je e-mail legitimní, kontaktujte podporu OSCloud. Aktualizace e-mailového klienta Ať používáte Thunderbird, mobilní aplikaci nebo cokoliv jiného – udržujte software aktualizovaný. Aktualizace často opravují bezpečnostní chyby, které by útočníci mohli zneužít.\nPřihlašování z důvěryhodných zařízení Nepřihlašujte se do e-mailu z veřejných počítačů (knihovny, internetové kavárny, hotelové počítače). Pokud to musíte udělat, používejte anonymní režim prohlížeče a po skončení se vždy odhlaste. Na vlastních zařízeních mějte zamknutou obrazovku.\nNejčastější dotazy Mohu používat Outlook? Ano. Microsoft Outlook podporuje IMAP a SMTP, takže ho můžete použít jako klienta pro e-mail na OSCloud. Při nastavení zadejte stejné údaje jako u Thunderbirdu – IMAP server, port 993 s SSL/TLS, SMTP server, port 587 se STARTTLS a jako uživatelské jméno plnou e-mailovou adresu.\nMohu používat Thunderbird? Rozhodně. Thunderbird je doporučený klient pro práci s e-mailem na OSCloud. Je open-source, multiplatformní a skvěle spolupracuje s IMAP servery. Podrobný návod na nastavení najdete výše v článku.\nMohu mít e-mail na vlastní doméně? Ano. Pokud vlastníte doménu, můžete ji propojit s e-mailem na OSCloud. Kontaktujte administrátora, který vám poskytne potřebné DNS záznamy. Více informací najdete v sekci „Používání vlastní domény\" výše.\nMohu používat více zařízení současně? Ano. Díky protokolu IMAP se vaše e-maily synchronizují mezi všemi zařízeními. Zprávy, které si přečtete na telefonu, budou označené jako přečtené i v Thunderbirdu na počítači a naopak. Stejně tak přesuny do složek, mazání a další operace se projeví všude.\nFunguje synchronizace složek? Ano. IMAP synchronizuje nejen zprávy, ale i složky. Pokud si vytvoříte složku ve webmailu, uvidíte ji i v Thunderbirdu a na mobilu. U některých klientů může být potřeba v nastavení účtu zvolit „Přihlásit se k odběru složek\" (Subscribe), aby se zobrazily všechny složky na serveru.\nCo když zapomenu heslo? Heslo k e-mailu je stejné jako heslo k vašemu účtu na platformě OSCloud. Heslo si můžete změnit sami na my.oscloud.cz. Pokud se ani tam nemůžete přihlásit, kontaktujte administrátora na helpdesk.oscloud.cz, který vám pomůže s obnovou přístupu.\nMohu mít více e-mailových aliasů? Ano. Aliasy jsou alternativní adresy, které doručují poštu do vaší hlavní schránky. Aliasy nastavuje administrátor – stačí mu napsat, jakou adresu byste chtěli jako alias, a on ji přidá. Můžete mít i více aliasů najednou.\nNejčastější problémy a jejich řešení Nejde odesílat poštu Pokud zprávy přijímáte, ale nemůžete je odesílat, zkontrolujte nastavení odchozího serveru (SMTP). Server musí být my.oscloud.cz (nebo adresa, kterou jste obdrželi), port 587 a šifrování STARTTLS. Ověřte také, že máte vyplněné uživatelské jméno (plná e-mailová adresa) a heslo i pro odchozí server – některé klienty to nevyplňují automaticky.\nŠpatné heslo Chybová hláška „Authentication failed\" nebo „Nesprávné heslo\" znamená, že klient posílá špatné přihlašovací údaje. Zkontrolujte, že jako uživatelské jméno máte zadanou plnou e-mailovou adresu (včetně @oscloud.cz) a že heslo odpovídá vašemu heslu na platformě OSCloud. Pozor na mezery na začátku nebo konci hesla – některé klienty je přidávají při kopírování.\nChyba certifikátu Pokud klient hlásí problém s certifikátem, neklikejte automaticky na „Přidat výjimku\". Platný certifikát by měl být rozpoznán automaticky. Chyba certifikátu může znamenat, že máte zadanou špatnou adresu serveru, nebo že certifikát na serveru vypršel. V prvním případě zkontrolujte adresu, v druhém kontaktujte podporu OSCloud.\nNefunguje IMAP (nejde se připojit) Zkontrolujte, že máte správnou adresu serveru a port 993. Šifrování musí být nastaveno na SSL/TLS (ne STARTTLS, ten je pro SMTP na portu 587). Ujistěte se také, že váš firewall nebo VPN neblokuje port 993. Zkuste se přihlásit přes webmail – pokud tam e-mail funguje, problém je na straně klienta nebo sítě.\nPošta se nesynchronizuje Pokud vidíte na jednom zařízení zprávy, které na jiném chybí, zkontrolujte v nastavení klienta, zda máte zapnutou synchronizaci všech složek. V Thunderbirdu klikněte pravým tlačítkem na účet → Přihlásit se ke složkám a zaškrtněte všechny složky, které chcete synchronizovat. Na mobilních klientech hledejte nastavení jako „Synchronizovat složky\" nebo „Sync folders\".\nPokud se nesynchronizují přečtené/nepřečtené stavy, ověřte, že oba klienti používají IMAP (ne POP3). Protokol POP3 stahuje zprávy lokálně a nesdílí stav se serverem.\nE-maily končí ve spamu příjemce Pokud vaše e-maily končí ve spamu u příjemců (zejména u Gmailu nebo Outlooku), může to být problém s DNS záznamy vaší domény. Kontaktujte administrátora OSCloud, který zkontroluje nastavení SPF, DKIM a DMARC. Pokud používáte doménu OSCloud (ne vlastní), tyto záznamy by měly být nastaveny správně automaticky.\nZávěr E-mail na OSCloud je plnohodnotná alternativa ke komerčním e-mailovým službám. Nabízí standardní protokoly IMAP a SMTP, funguje s libovolným e-mailovým klientem, podporuje vlastní domény a aliasy a především – vaše data zůstávají pod kontrolou komunity, bez reklam a bez profilování.\nCelá infrastruktura běží na serverech Hetzner v Německu, v souladu s evropským GDPR. E-maily jsou přenášeny šifrovaně a nikdo k nim nemá přístup kromě vás (a administrátora platformy, který má technický přístup k infrastruktuře, ale vaše zprávy aktivně nečte ani neanalyzuje).\nPokud máte jakékoliv dotazy, narazíte na problém s nastavením nebo potřebujete pomoc, obraťte se na podporu OSCloud na helpdesk.oscloud.cz. Rádi vám pomůžeme.\n",
+  "wordCount" : "2613",
+  "inLanguage": "en",
+  "image":"https://blog.oscloud.cz/images/email.jpg","datePublished": "2026-07-19T00:00:00+02:00",
+  "dateModified": "2026-07-19T00:00:00+02:00",
+  "author":{
+    "@type": "Person",
+    "name": "Archos"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://blog.oscloud.cz/posts/email-na-oscloud/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Oscloud News",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://blog.oscloud.cz/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://blog.oscloud.cz/" accesskey="h" title="Oscloud News (Alt + H)">
+                <img src="https://blog.oscloud.cz/logo.png" alt="" aria-label="logo"
+                    height="32">Oscloud News</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://blog.oscloud.cz/" title="🇨🇿">
+                    <span>🇨🇿</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.oscloud.cz/archives/" title="Archiv">
+                    <span>Archiv</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.oscloud.cz/search/" title="Vyhledávání">
+                    <span>Vyhledávání</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://blog.oscloud.cz/tags/" title="Tagy">
+                    <span>Tagy</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://blog.oscloud.cz/">Home</a>&nbsp;»&nbsp;<a href="https://blog.oscloud.cz/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      E-mail na OSCloud – kompletní průvodce pro uživatele
+    </h1>
+    <div class="post-meta"><span title='2026-07-19 00:00:00 +0200 CEST'>19. července 2026</span>&nbsp;·&nbsp;<span>13 min</span>&nbsp;·&nbsp;<span>Archos</span>
+
+</div>
+  </header> 
+<figure class="entry-cover">
+        <img loading="eager" src="https://blog.oscloud.cz/images/email.jpg" alt="E-mail na OSCloud">
+        
+</figure>
+  <div class="post-content"><p>Ahoj komunito! Dneska se podíváme na jednu ze základních služeb, kterou OSCloud nabízí – <strong>e-mail</strong>. Vlastní e-mailová schránka bez závislosti na Googlu nebo Microsoftu, s respektem k vašemu soukromí a plnou kontrolou nad vašimi daty. Žádné profilování, žádné reklamy ve schránce, žádné skenování obsahu zpráv.</p>
+<p>V tomto článku vás provedeme od úplného začátku – co e-mail na OSCloud nabízí, jak se přihlásit přes webmail, jak nastavit Thunderbird, mobilní klienty a co dělat, když něco nefunguje.</p>
+<h2 id="co-získáte">Co získáte<a hidden class="anchor" aria-hidden="true" href="#co-získáte">#</a></h2>
+<p>E-mailová schránka na OSCloud není jen adresa, na kterou vám chodí zprávy. Je to plnohodnotná e-mailová služba postavená na otevřených standardech, kterou můžete používat z libovolného zařízení a s libovolným e-mailovým klientem.</p>
+<p>Konkrétně získáte e-mailovou schránku s vlastní adresou na doméně OSCloud (například <code>vas-nick@oscloud.cz</code>), přístup přes webmail přímo v prohlížeči, plnou podporu protokolu IMAP pro synchronizaci e-mailů napříč zařízeními a SMTP pro odesílání zpráv. Veškerá komunikace je šifrovaná pomocí SSL/TLS, takže nikdo po cestě nemůže číst vaše e-maily. Můžete se přihlásit z počítače, telefonu i tabletu současně – vše se synchronizuje.</p>
+<p>Pro pokročilejší uživatele je tu možnost používat vlastní doménu, nastavit si e-mailové aliasy (alternativní adresy, které doručují do stejné schránky – stačí napsat administrátorovi, jaký alias chcete) a filtrovat příchozí poštu pomocí serverových pravidel (Sieve).</p>
+<p>A hlavně – vaše data zůstávají na serveru v EU (Hetzner, Německo), pod kontrolou OSCloud komunity, bez profilování a bez prodeje dat třetím stranám.</p>
+<h2 id="co-budete-potřebovat">Co budete potřebovat<a hidden class="anchor" aria-hidden="true" href="#co-budete-potřebovat">#</a></h2>
+<p>Pro přístup k e-mailu potřebujete znát několik údajů. Všechny obdržíte od administrátora OSCloud při vytvoření schránky:</p>
+<table>
+	<thead>
+			<tr>
+					<th>Údaj</th>
+					<th>Příklad</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>E-mailová adresa (= přihlašovací jméno)</td>
+					<td><code>vas-nick@oscloud.cz</code></td>
+			</tr>
+			<tr>
+					<td>Heslo</td>
+					<td>Vaše heslo k platformě OSCloud</td>
+			</tr>
+			<tr>
+					<td>IMAP server (příchozí pošta)</td>
+					<td><code>my.oscloud.cz</code></td>
+			</tr>
+			<tr>
+					<td>IMAP port</td>
+					<td><code>993</code></td>
+			</tr>
+			<tr>
+					<td>SMTP server (odchozí pošta)</td>
+					<td><code>my.oscloud.cz</code></td>
+			</tr>
+			<tr>
+					<td>SMTP port</td>
+					<td><code>587</code></td>
+			</tr>
+			<tr>
+					<td>Šifrování (IMAP)</td>
+					<td>SSL/TLS</td>
+			</tr>
+			<tr>
+					<td>Šifrování (SMTP)</td>
+					<td>STARTTLS</td>
+			</tr>
+	</tbody>
+</table>
+<blockquote>
+<p><strong>Tip:</strong> Přihlašovací jméno je vždy vaše plná e-mailová adresa, nikoli jen část před zavináčem. Heslo je stejné jako heslo k vašemu účtu na platformě OSCloud. Pokud si potřebujete heslo změnit, můžete tak udělat na <a href="https://my.oscloud.cz">my.oscloud.cz</a>.</p>
+</blockquote>
+<p>Pokud jste údaje nedostali nebo si je nepamatujete, kontaktujte podporu na <a href="https://helpdesk.oscloud.cz/help/3020290644">helpdesk.oscloud.cz</a>.</p>
+<h2 id="přístup-přes-webmail">Přístup přes webmail<a hidden class="anchor" aria-hidden="true" href="#přístup-přes-webmail">#</a></h2>
+<p>Nejjednodušší způsob, jak začít používat e-mail, je přes webmail – webové rozhraní, které funguje přímo v prohlížeči. Nepotřebujete nic instalovat, stačí otevřít adresu a přihlásit se.</p>
+<p>Na OSCloud máte k dispozici dva webmailové klienty. Oba přistupují ke stejné schránce, takže je můžete střídat podle toho, co vám víc vyhovuje.</p>
+<h3 id="roundcube--webmailoscloudcz">Roundcube – webmail.oscloud.cz<a hidden class="anchor" aria-hidden="true" href="#roundcube--webmailoscloudcz">#</a></h3>
+<p><a href="https://webmail.oscloud.cz">Roundcube</a> je klasický, osvědčený webmail s čistým rozhraním. Je rychlý, přehledný a dobře se v něm orientuje i začátečník. Pokud jste zvyklí na jednoduché webmailové rozhraní (podobné třeba Seznamu), Roundcube vám bude vyhovovat.</p>
+<p>Velkou výhodou Roundcube na OSCloud je podpora <strong>GPG šifrování</strong>. To znamená, že si můžete přímo ve webmailu nastavit GPG klíče a odesílat i přijímat šifrované e-maily, které si nepřečte nikdo kromě vás a příjemce – ani administrátor serveru. Nastavení GPG klíčů najdete v nastavení Roundcube v sekci „Šifrování&quot; nebo „Encryption&quot;.</p>
+<h3 id="sogo--webmailoscloudonline">SOGo – webmail.oscloud.online<a hidden class="anchor" aria-hidden="true" href="#sogo--webmailoscloudonline">#</a></h3>
+<p><a href="https://webmail.oscloud.online/SOGo/">SOGo</a> je komplexnější řešení, které kromě e-mailu nabízí i <strong>kalendář, kontakty a úkoly</strong> v jednom rozhraní. Pokud hledáte náhradu za Google Workspace nebo Microsoft 365, SOGo je bližší tomu, na co jste zvyklí. Rozhraní je modernější a podporuje synchronizaci kalendáře a kontaktů přes CalDAV a CardDAV.</p>
+<h3 id="přihlášení">Přihlášení<a hidden class="anchor" aria-hidden="true" href="#přihlášení">#</a></h3>
+<p>Postup je u obou klientů stejný:</p>
+<ol>
+<li>Otevřete adresu webmailu – <a href="https://webmail.oscloud.cz">webmail.oscloud.cz</a> pro Roundcube nebo <a href="https://webmail.oscloud.online/SOGo/">webmail.oscloud.online/SOGo/</a> pro SOGo.</li>
+<li>Zadejte svou plnou e-mailovou adresu jako přihlašovací jméno.</li>
+<li>Zadejte heslo k platformě OSCloud.</li>
+<li>Klikněte na tlačítko pro přihlášení.</li>
+</ol>
+<p>Po přihlášení uvidíte svou doručenou poštu. Pokud jste někdy používali jakýkoli webmail (Gmail, Seznam, Outlook.com), budete se orientovat okamžitě.</p>
+<h3 id="základní-orientace">Základní orientace<a hidden class="anchor" aria-hidden="true" href="#základní-orientace">#</a></h3>
+<p>Webmail typicky obsahuje několik hlavních sekcí. V levém panelu najdete seznam složek – Doručená pošta (Inbox), Odeslaná pošta (Sent), Koncepty (Drafts), Koš (Trash) a Spam (Junk). Hlavní oblast zobrazuje seznam zpráv ve zvolené složce a po kliknutí na zprávu se otevře její obsah.</p>
+<h3 id="psaní-e-mailu">Psaní e-mailu<a hidden class="anchor" aria-hidden="true" href="#psaní-e-mailu">#</a></h3>
+<ol>
+<li>Klikněte na tlačítko „Napsat&quot; nebo „Nová zpráva&quot; (většinou ikona tužky nebo obálky).</li>
+<li>Vyplňte adresu příjemce do pole „Komu&quot; (To).</li>
+<li>Napište předmět zprávy.</li>
+<li>Napište text zprávy.</li>
+<li>Pokud chcete přiložit soubor, použijte tlačítko přílohy (ikona sponky).</li>
+<li>Klikněte na „Odeslat&quot;.</li>
+</ol>
+<blockquote>
+<p><strong>Tip:</strong> Pokud zprávu nedopíšete, uložte ji jako koncept – najdete ji pak ve složce Koncepty a můžete ji dokončit později.</p>
+</blockquote>
+<h3 id="složky-a-organizace">Složky a organizace<a hidden class="anchor" aria-hidden="true" href="#složky-a-organizace">#</a></h3>
+<p>Můžete si vytvářet vlastní složky pro organizaci pošty. Klikněte pravým tlačítkem na seznam složek a vyberte „Nová složka&quot;. Zprávy pak přesouváte přetažením nebo přes kontextové menu.</p>
+<p>Webmail na OSCloud podporuje také serverové filtrování pomocí Sieve pravidel. To znamená, že si můžete nastavit automatické třídění – například všechny zprávy od konkrétního odesílatele přesunout do určité složky. Nastavení filtrů najdete obvykle v sekci „Filtry&quot; nebo „Pravidla&quot; v nastavení webmailu.</p>
+<h3 id="kontakty">Kontakty<a hidden class="anchor" aria-hidden="true" href="#kontakty">#</a></h3>
+<p>Webmail obsahuje jednoduchý adresář kontaktů. Můžete přidávat kontakty ručně nebo se automaticky ukládají z odeslaných zpráv. Při psaní e-mailu vám webmail nabízí doplnění adresy z adresáře.</p>
+<h2 id="nastavení-v-thunderbirdu">Nastavení v Thunderbirdu<a hidden class="anchor" aria-hidden="true" href="#nastavení-v-thunderbirdu">#</a></h2>
+<p>Thunderbird je bezplatný, otevřený e-mailový klient pro Windows, macOS i Linux. Je to jedna z nejlepších voleb pro práci s e-mailem na OSCloud – podporuje IMAP, má vestavěný kalendář a adresář a respektuje vaše soukromí.</p>
+<h3 id="automatická-konfigurace">Automatická konfigurace<a hidden class="anchor" aria-hidden="true" href="#automatická-konfigurace">#</a></h3>
+<p>Thunderbird umí v mnoha případech rozpoznat nastavení serveru automaticky:</p>
+<ol>
+<li>Otevřete Thunderbird.</li>
+<li>Pokud spouštíte Thunderbird poprvé, průvodce nastavením se otevře automaticky. Jinak jděte do <strong>Nastavení účtu</strong> → <strong>Akce účtu</strong> → <strong>Přidat poštovní účet</strong>.</li>
+<li>Vyplňte své jméno (jak se bude zobrazovat příjemcům), e-mailovou adresu a heslo.</li>
+<li>Klikněte na <strong>Pokračovat</strong>. Thunderbird se pokusí automaticky najít správné nastavení serveru.</li>
+<li>Pokud autodetekce uspěje, zobrazí se nalezené nastavení IMAP a SMTP serveru. Ověřte, že odpovídá údajům od OSCloud, a klikněte na <strong>Hotovo</strong>.</li>
+</ol>
+<h3 id="ruční-konfigurace">Ruční konfigurace<a hidden class="anchor" aria-hidden="true" href="#ruční-konfigurace">#</a></h3>
+<p>Pokud automatická konfigurace nefunguje (což se může stát u méně známých serverů), nastavte účet ručně:</p>
+<ol>
+<li>V průvodci nastavením klikněte na <strong>Ruční konfigurace</strong>.</li>
+<li>Vyplňte údaje podle následující tabulky:</li>
+</ol>
+<table>
+	<thead>
+			<tr>
+					<th>Nastavení</th>
+					<th>Příchozí pošta (IMAP)</th>
+					<th>Odchozí pošta (SMTP)</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Server</td>
+					<td><code>my.oscloud.cz</code></td>
+					<td><code>my.oscloud.cz</code></td>
+			</tr>
+			<tr>
+					<td>Port</td>
+					<td><code>993</code></td>
+					<td><code>587</code></td>
+			</tr>
+			<tr>
+					<td>Šifrování</td>
+					<td>SSL/TLS</td>
+					<td>STARTTLS</td>
+			</tr>
+			<tr>
+					<td>Autentizace</td>
+					<td>Normální heslo</td>
+					<td>Normální heslo</td>
+			</tr>
+			<tr>
+					<td>Uživatelské jméno</td>
+					<td><code>vas-nick@oscloud.cz</code></td>
+					<td><code>vas-nick@oscloud.cz</code></td>
+			</tr>
+	</tbody>
+</table>
+<ol start="3">
+<li>Klikněte na <strong>Znovu otestovat</strong> – Thunderbird ověří spojení se serverem.</li>
+<li>Pokud test proběhne úspěšně, klikněte na <strong>Hotovo</strong>.</li>
+</ol>
+<blockquote>
+<p><strong>Poznámka:</strong> Jako uživatelské jméno zadávejte vždy plnou e-mailovou adresu včetně domény, nikoli jen část před zavináčem.</p>
+</blockquote>
+<h3 id="co-dělat-když-automatická-konfigurace-nefunguje">Co dělat, když automatická konfigurace nefunguje<a hidden class="anchor" aria-hidden="true" href="#co-dělat-když-automatická-konfigurace-nefunguje">#</a></h3>
+<p>Thunderbird někdy nenajde správné nastavení automaticky. V takovém případě:</p>
+<ul>
+<li>Ujistěte se, že jste správně zadali e-mailovou adresu a heslo.</li>
+<li>Přepněte na ruční konfiguraci a zadejte údaje z tabulky výše.</li>
+<li>Ověřte, že máte správný port a typ šifrování – IMAP musí být na portu 993 s SSL/TLS, SMTP na portu 587 se STARTTLS.</li>
+<li>Pokud Thunderbird hlásí chybu certifikátu, neklikejte na „Přidat výjimku&quot;, ale kontaktujte podporu OSCloud – certifikát by měl být platný.</li>
+</ul>
+<h3 id="odeslání-testovacího-e-mailu">Odeslání testovacího e-mailu<a hidden class="anchor" aria-hidden="true" href="#odeslání-testovacího-e-mailu">#</a></h3>
+<p>Po nastavení účtu je dobré ověřit, že vše funguje:</p>
+<ol>
+<li>Klikněte na <strong>Napsat</strong> a vytvořte novou zprávu.</li>
+<li>Do pole „Komu&quot; zadejte svou vlastní adresu (nebo jinou adresu, ke které máte přístup).</li>
+<li>Napište libovolný předmět a text.</li>
+<li>Klikněte na <strong>Odeslat</strong>.</li>
+<li>Zkontrolujte, zda zpráva dorazila do Doručené pošty.</li>
+</ol>
+<p>Pokud zpráva dorazí, máte nastaveno správně – příchozí i odchozí pošta fungují.</p>
+<h2 id="nastavení-na-androidu">Nastavení na Androidu<a hidden class="anchor" aria-hidden="true" href="#nastavení-na-androidu">#</a></h2>
+<p>Na Androidu máte několik kvalitních otevřených e-mailových klientů na výběr. Doporučujeme:</p>
+<ul>
+<li><strong>Thunderbird Mobile</strong> (dříve K-9 Mail) – otevřený, bez reklam, plná podpora IMAP. Aktuálně nejlepší volba pro Android.</li>
+<li><strong>FairEmail</strong> – pokročilý klient s důrazem na soukromí a šifrování.</li>
+<li><strong>K-9 Mail</strong> – starší verze, ze které vychází Thunderbird Mobile. Stále funkční, ale doporučujeme přejít na Thunderbird.</li>
+</ul>
+<h3 id="obecný-postup-nastavení">Obecný postup nastavení<a hidden class="anchor" aria-hidden="true" href="#obecný-postup-nastavení">#</a></h3>
+<p>Postup je u většiny klientů velmi podobný:</p>
+<ol>
+<li>Nainstalujte vybranou aplikaci z F-Droid nebo Google Play.</li>
+<li>Otevřete aplikaci a vyberte <strong>Přidat účet</strong> (nebo se průvodce spustí automaticky).</li>
+<li>Zadejte svou e-mailovou adresu a heslo.</li>
+<li>Pokud aplikace nenajde nastavení automaticky, vyberte <strong>Ruční konfigurace</strong> a zadejte:
+<ul>
+<li>Typ účtu: <strong>IMAP</strong></li>
+<li>IMAP server: <code>my.oscloud.cz</code>, port <code>993</code>, šifrování <strong>SSL/TLS</strong></li>
+<li>SMTP server: <code>my.oscloud.cz</code>, port <code>587</code>, šifrování <strong>STARTTLS</strong></li>
+<li>Uživatelské jméno: vaše plná e-mailová adresa</li>
+</ul>
+</li>
+<li>Uložte nastavení a otestujte odesláním zkušebního e-mailu.</li>
+</ol>
+<blockquote>
+<p><strong>Tip:</strong> Thunderbird Mobile (K-9 Mail) najdete i na F-Droid, takže ho můžete používat zcela bez Google Play.</p>
+</blockquote>
+<h2 id="nastavení-na-iphonu">Nastavení na iPhonu<a hidden class="anchor" aria-hidden="true" href="#nastavení-na-iphonu">#</a></h2>
+<p>Na iPhonu a iPadu můžete použít vestavěnou aplikaci Mail:</p>
+<ol>
+<li>Otevřete <strong>Nastavení</strong> → <strong>Pošta</strong> → <strong>Účty</strong> → <strong>Přidat účet</strong>.</li>
+<li>Vyberte <strong>Ostatní</strong> (ne iCloud, ne Gmail, ne Outlook).</li>
+<li>Zvolte <strong>Přidat poštovní účet</strong>.</li>
+<li>Vyplňte jméno, e-mailovou adresu, heslo a popis účtu (libovolný, třeba „OSCloud&quot;).</li>
+<li>Na další obrazovce vyberte <strong>IMAP</strong> (ne POP).</li>
+<li>Do sekce „Server příchozí pošty&quot; zadejte:
+<ul>
+<li>Název hostitele: <code>my.oscloud.cz</code></li>
+<li>Uživatelské jméno: vaše plná e-mailová adresa</li>
+<li>Heslo: vaše heslo k OSCloud</li>
+</ul>
+</li>
+<li>Do sekce „Server odchozí pošty&quot; zadejte stejné údaje.</li>
+<li>Klepněte na <strong>Další</strong> – iPhone ověří nastavení.</li>
+<li>Po úspěšném ověření klepněte na <strong>Uložit</strong>.</li>
+</ol>
+<blockquote>
+<p><strong>Poznámka:</strong> iOS by měl automaticky rozpoznat správné porty a šifrování. Pokud se ověření nepodaří, zkontrolujte zadané údaje a případně ručně nastavte port 993 (IMAP, SSL) a 587 (SMTP, STARTTLS) v pokročilých nastaveních účtu.</p>
+</blockquote>
+<h2 id="používání-vlastní-domény">Používání vlastní domény<a hidden class="anchor" aria-hidden="true" href="#používání-vlastní-domény">#</a></h2>
+<p>Jednou z velkých výhod e-mailu na OSCloud je možnost používat vlastní doménu. Místo adresy <code>vas-nick@oscloud.cz</code> můžete mít třeba <code>info@vase-firma.cz</code> nebo <code>jmeno@vase-domena.cz</code>.</p>
+<h3 id="jak-to-funguje">Jak to funguje<a hidden class="anchor" aria-hidden="true" href="#jak-to-funguje">#</a></h3>
+<p>Pokud vlastníte doménu (například přes Wedos, Forpsi, Cloudflare nebo jiného registrátora), můžete ji propojit s e-mailem na OSCloud. Celý proces vypadá takto:</p>
+<ol>
+<li>Kontaktujte administrátora OSCloud s požadavkem na přidání vlastní domény.</li>
+<li>Administrátor vám poskytne sadu DNS záznamů, které je potřeba nastavit u vašeho registrátora domény.</li>
+<li>Nastavíte DNS záznamy podle pokynů.</li>
+<li>Administrátor ověří nastavení a aktivuje doménu.</li>
+<li>Můžete začít používat e-mail na vlastní doméně.</li>
+</ol>
+<h3 id="dns-záznamy--co-to-je-a-k-čemu-slouží">DNS záznamy – co to je a k čemu slouží<a hidden class="anchor" aria-hidden="true" href="#dns-záznamy--co-to-je-a-k-čemu-slouží">#</a></h3>
+<p>Při nastavování vlastní domény se setkáte s několika typy DNS záznamů. Nemusíte rozumět jejich technické implementaci, ale je dobré vědět, k čemu slouží:</p>
+<p><strong>MX záznam</strong> říká světu, kam se mají doručovat e-maily pro vaši doménu. Bez něj by ostatní servery nevěděly, kam vaši poštu poslat.</p>
+<p><strong>SPF záznam</strong> je ochrana proti podvržení odesílatele. Říká příjemcům, které servery jsou oprávněné odesílat e-maily za vaši doménu. Bez SPF záznamu hrozí, že vaše e-maily skončí ve spamu.</p>
+<p><strong>DKIM záznam</strong> přidává ke každému odeslanému e-mailu digitální podpis. Příjemce si díky němu může ověřit, že zpráva skutečně pochází z vašeho serveru a že nebyla cestou pozměněna.</p>
+<p><strong>DMARC záznam</strong> spojuje SPF a DKIM dohromady a definuje, co se má stát s e-maily, které nesplňují pravidla. Zároveň umožňuje získávat reporty o doručování.</p>
+<p>Všechny tyto záznamy jsou důležité pro spolehlivé doručování vašich e-mailů a ochranu proti zneužití vaší domény. Administrátor OSCloud vám poskytne přesné hodnoty, které stačí zkopírovat do správy DNS u vašeho registrátora.</p>
+<h2 id="doporučení-pro-bezpečnost">Doporučení pro bezpečnost<a hidden class="anchor" aria-hidden="true" href="#doporučení-pro-bezpečnost">#</a></h2>
+<p>E-mail je jeden z nejčastějších cílů kybernetických útoků. I na sebezabezpečenějším serveru záleží na tom, jak se chováte vy jako uživatel. Tady je pár zásad, které vám pomohou udržet schránku v bezpečí.</p>
+<h3 id="silné-heslo">Silné heslo<a hidden class="anchor" aria-hidden="true" href="#silné-heslo">#</a></h3>
+<p>Používejte heslo, které je dostatečně dlouhé (minimálně 12 znaků) a obsahuje kombinaci velkých a malých písmen, číslic a speciálních znaků. Ideálně použijte správce hesel (KeePassXC, <a href="https://bitwarden.oscloud.online/#/signup">Bitwarden na OSCloud</a>) a vygenerujte náhodné heslo. Nikdy nepoužívejte stejné heslo jako na jiných službách.</p>
+<h3 id="dvoufázové-ověření">Dvoufázové ověření<a hidden class="anchor" aria-hidden="true" href="#dvoufázové-ověření">#</a></h3>
+<p>Pokud OSCloud nabízí dvoufázové ověření (2FA), rozhodně ho zapněte. Kromě hesla budete při přihlášení zadávat jednorázový kód z autentifikační aplikace (FreeOTP, Aegis Authenticator, Google Authenticator). I kdyby někdo získal vaše heslo, bez kódu se nepřihlásí.</p>
+<h3 id="pozor-na-phishing">Pozor na phishing<a hidden class="anchor" aria-hidden="true" href="#pozor-na-phishing">#</a></h3>
+<p>Phishing je pokus vylákat z vás přihlašovací údaje pomocí falešných e-mailů nebo webových stránek. Pamatujte si:</p>
+<ul>
+<li>OSCloud vás nikdy nebude žádat o heslo e-mailem.</li>
+<li>Neklikejte na podezřelé odkazy v e-mailech, které vás vybízejí k „ověření účtu&quot; nebo „aktualizaci hesla&quot;.</li>
+<li>Vždy zkontrolujte adresu v prohlížeči – přihlašujte se jen přes známou adresu webmailu.</li>
+<li>Pokud si nejste jisti, zda je e-mail legitimní, kontaktujte podporu OSCloud.</li>
+</ul>
+<h3 id="aktualizace-e-mailového-klienta">Aktualizace e-mailového klienta<a hidden class="anchor" aria-hidden="true" href="#aktualizace-e-mailového-klienta">#</a></h3>
+<p>Ať používáte Thunderbird, mobilní aplikaci nebo cokoliv jiného – udržujte software aktualizovaný. Aktualizace často opravují bezpečnostní chyby, které by útočníci mohli zneužít.</p>
+<h3 id="přihlašování-z-důvěryhodných-zařízení">Přihlašování z důvěryhodných zařízení<a hidden class="anchor" aria-hidden="true" href="#přihlašování-z-důvěryhodných-zařízení">#</a></h3>
+<p>Nepřihlašujte se do e-mailu z veřejných počítačů (knihovny, internetové kavárny, hotelové počítače). Pokud to musíte udělat, používejte anonymní režim prohlížeče a po skončení se vždy odhlaste. Na vlastních zařízeních mějte zamknutou obrazovku.</p>
+<h2 id="nejčastější-dotazy">Nejčastější dotazy<a hidden class="anchor" aria-hidden="true" href="#nejčastější-dotazy">#</a></h2>
+<h3 id="mohu-používat-outlook">Mohu používat Outlook?<a hidden class="anchor" aria-hidden="true" href="#mohu-používat-outlook">#</a></h3>
+<p>Ano. Microsoft Outlook podporuje IMAP a SMTP, takže ho můžete použít jako klienta pro e-mail na OSCloud. Při nastavení zadejte stejné údaje jako u Thunderbirdu – IMAP server, port 993 s SSL/TLS, SMTP server, port 587 se STARTTLS a jako uživatelské jméno plnou e-mailovou adresu.</p>
+<h3 id="mohu-používat-thunderbird">Mohu používat Thunderbird?<a hidden class="anchor" aria-hidden="true" href="#mohu-používat-thunderbird">#</a></h3>
+<p>Rozhodně. Thunderbird je doporučený klient pro práci s e-mailem na OSCloud. Je open-source, multiplatformní a skvěle spolupracuje s IMAP servery. Podrobný návod na nastavení najdete výše v článku.</p>
+<h3 id="mohu-mít-e-mail-na-vlastní-doméně">Mohu mít e-mail na vlastní doméně?<a hidden class="anchor" aria-hidden="true" href="#mohu-mít-e-mail-na-vlastní-doméně">#</a></h3>
+<p>Ano. Pokud vlastníte doménu, můžete ji propojit s e-mailem na OSCloud. Kontaktujte administrátora, který vám poskytne potřebné DNS záznamy. Více informací najdete v sekci „Používání vlastní domény&quot; výše.</p>
+<h3 id="mohu-používat-více-zařízení-současně">Mohu používat více zařízení současně?<a hidden class="anchor" aria-hidden="true" href="#mohu-používat-více-zařízení-současně">#</a></h3>
+<p>Ano. Díky protokolu IMAP se vaše e-maily synchronizují mezi všemi zařízeními. Zprávy, které si přečtete na telefonu, budou označené jako přečtené i v Thunderbirdu na počítači a naopak. Stejně tak přesuny do složek, mazání a další operace se projeví všude.</p>
+<h3 id="funguje-synchronizace-složek">Funguje synchronizace složek?<a hidden class="anchor" aria-hidden="true" href="#funguje-synchronizace-složek">#</a></h3>
+<p>Ano. IMAP synchronizuje nejen zprávy, ale i složky. Pokud si vytvoříte složku ve webmailu, uvidíte ji i v Thunderbirdu a na mobilu. U některých klientů může být potřeba v nastavení účtu zvolit „Přihlásit se k odběru složek&quot; (Subscribe), aby se zobrazily všechny složky na serveru.</p>
+<h3 id="co-když-zapomenu-heslo">Co když zapomenu heslo?<a hidden class="anchor" aria-hidden="true" href="#co-když-zapomenu-heslo">#</a></h3>
+<p>Heslo k e-mailu je stejné jako heslo k vašemu účtu na platformě OSCloud. Heslo si můžete změnit sami na <a href="https://my.oscloud.cz">my.oscloud.cz</a>. Pokud se ani tam nemůžete přihlásit, kontaktujte administrátora na <a href="https://helpdesk.oscloud.cz/help/3020290644">helpdesk.oscloud.cz</a>, který vám pomůže s obnovou přístupu.</p>
+<h3 id="mohu-mít-více-e-mailových-aliasů">Mohu mít více e-mailových aliasů?<a hidden class="anchor" aria-hidden="true" href="#mohu-mít-více-e-mailových-aliasů">#</a></h3>
+<p>Ano. Aliasy jsou alternativní adresy, které doručují poštu do vaší hlavní schránky. Aliasy nastavuje administrátor – stačí mu napsat, jakou adresu byste chtěli jako alias, a on ji přidá. Můžete mít i více aliasů najednou.</p>
+<h2 id="nejčastější-problémy-a-jejich-řešení">Nejčastější problémy a jejich řešení<a hidden class="anchor" aria-hidden="true" href="#nejčastější-problémy-a-jejich-řešení">#</a></h2>
+<h3 id="nejde-odesílat-poštu">Nejde odesílat poštu<a hidden class="anchor" aria-hidden="true" href="#nejde-odesílat-poštu">#</a></h3>
+<p>Pokud zprávy přijímáte, ale nemůžete je odesílat, zkontrolujte nastavení odchozího serveru (SMTP). Server musí být <code>my.oscloud.cz</code> (nebo adresa, kterou jste obdrželi), port <code>587</code> a šifrování <strong>STARTTLS</strong>. Ověřte také, že máte vyplněné uživatelské jméno (plná e-mailová adresa) a heslo i pro odchozí server – některé klienty to nevyplňují automaticky.</p>
+<h3 id="špatné-heslo">Špatné heslo<a hidden class="anchor" aria-hidden="true" href="#špatné-heslo">#</a></h3>
+<p>Chybová hláška „Authentication failed&quot; nebo „Nesprávné heslo&quot; znamená, že klient posílá špatné přihlašovací údaje. Zkontrolujte, že jako uživatelské jméno máte zadanou plnou e-mailovou adresu (včetně <code>@oscloud.cz</code>) a že heslo odpovídá vašemu heslu na platformě OSCloud. Pozor na mezery na začátku nebo konci hesla – některé klienty je přidávají při kopírování.</p>
+<h3 id="chyba-certifikátu">Chyba certifikátu<a hidden class="anchor" aria-hidden="true" href="#chyba-certifikátu">#</a></h3>
+<p>Pokud klient hlásí problém s certifikátem, neklikejte automaticky na „Přidat výjimku&quot;. Platný certifikát by měl být rozpoznán automaticky. Chyba certifikátu může znamenat, že máte zadanou špatnou adresu serveru, nebo že certifikát na serveru vypršel. V prvním případě zkontrolujte adresu, v druhém kontaktujte podporu OSCloud.</p>
+<h3 id="nefunguje-imap-nejde-se-připojit">Nefunguje IMAP (nejde se připojit)<a hidden class="anchor" aria-hidden="true" href="#nefunguje-imap-nejde-se-připojit">#</a></h3>
+<p>Zkontrolujte, že máte správnou adresu serveru a port 993. Šifrování musí být nastaveno na <strong>SSL/TLS</strong> (ne STARTTLS, ten je pro SMTP na portu 587). Ujistěte se také, že váš firewall nebo VPN neblokuje port 993. Zkuste se přihlásit přes webmail – pokud tam e-mail funguje, problém je na straně klienta nebo sítě.</p>
+<h3 id="pošta-se-nesynchronizuje">Pošta se nesynchronizuje<a hidden class="anchor" aria-hidden="true" href="#pošta-se-nesynchronizuje">#</a></h3>
+<p>Pokud vidíte na jednom zařízení zprávy, které na jiném chybí, zkontrolujte v nastavení klienta, zda máte zapnutou synchronizaci všech složek. V Thunderbirdu klikněte pravým tlačítkem na účet → <strong>Přihlásit se ke složkám</strong> a zaškrtněte všechny složky, které chcete synchronizovat. Na mobilních klientech hledejte nastavení jako „Synchronizovat složky&quot; nebo „Sync folders&quot;.</p>
+<p>Pokud se nesynchronizují přečtené/nepřečtené stavy, ověřte, že oba klienti používají IMAP (ne POP3). Protokol POP3 stahuje zprávy lokálně a nesdílí stav se serverem.</p>
+<h3 id="e-maily-končí-ve-spamu-příjemce">E-maily končí ve spamu příjemce<a hidden class="anchor" aria-hidden="true" href="#e-maily-končí-ve-spamu-příjemce">#</a></h3>
+<p>Pokud vaše e-maily končí ve spamu u příjemců (zejména u Gmailu nebo Outlooku), může to být problém s DNS záznamy vaší domény. Kontaktujte administrátora OSCloud, který zkontroluje nastavení SPF, DKIM a DMARC. Pokud používáte doménu OSCloud (ne vlastní), tyto záznamy by měly být nastaveny správně automaticky.</p>
+<h2 id="závěr">Závěr<a hidden class="anchor" aria-hidden="true" href="#závěr">#</a></h2>
+<p>E-mail na OSCloud je plnohodnotná alternativa ke komerčním e-mailovým službám. Nabízí standardní protokoly IMAP a SMTP, funguje s libovolným e-mailovým klientem, podporuje vlastní domény a aliasy a především – vaše data zůstávají pod kontrolou komunity, bez reklam a bez profilování.</p>
+<p>Celá infrastruktura běží na serverech Hetzner v Německu, v souladu s evropským GDPR. E-maily jsou přenášeny šifrovaně a nikdo k nim nemá přístup kromě vás (a administrátora platformy, který má technický přístup k infrastruktuře, ale vaše zprávy aktivně nečte ani neanalyzuje).</p>
+<p>Pokud máte jakékoliv dotazy, narazíte na problém s nastavením nebo potřebujete pomoc, obraťte se na podporu OSCloud na <a href="https://helpdesk.oscloud.cz/help/3020290644">helpdesk.oscloud.cz</a>. Rádi vám pomůžeme.</p>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://blog.oscloud.cz/tags/e-mail/">E-Mail</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/imap/">IMAP</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/smtp/">SMTP</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/thunderbird/">Thunderbird</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/webmail/">Webmail</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/soukrom%C3%AD/">Soukromí</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="https://blog.oscloud.cz/posts/nextcloud-vlastni-uloziste/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Nextcloud na OSCloud roste: vlastní úložiště až 1 TB</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://blog.oscloud.cz/">Oscloud News</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
