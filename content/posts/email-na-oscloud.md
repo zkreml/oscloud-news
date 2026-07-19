@@ -2,6 +2,9 @@
 title: "E-mail na OSCloud – kompletní průvodce pro uživatele"
 date: 2026-07-19T00:00:00+02:00
 draft: false
+comments:
+  host: "mamutovo.cz"
+  id: "116945152083883010"
 slug: "email-na-oscloud"
 categories: ["Návody"]
 tags: ["e-mail", "IMAP", "SMTP", "Thunderbird", "webmail", "soukromí"]
