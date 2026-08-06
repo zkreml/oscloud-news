@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Surfer na OSCLOUDu — nejjednodušší způsob, jak rozjet vlastní web | Oscloud News</title>
 <meta name="keywords" content="surfer, webdav, sftp, selfhosting, oscloud, hugo">
 <meta name="description" content="Surfer je malá aplikace, kterou na OSCLOUDu používáme pro statické weby, dokumentaci a sdílení souborů. Tady je návod, jak ji rozchodit i bez technického backgroundu.">
 <meta name="author" content="map[email:info@oscloud.cz name:OSCloud]">
-<link rel="canonical" href="http://localhost:1313/posts/surfer-na-oscloudu/">
+<link rel="canonical" href="https://blog.oscloud.cz/posts/surfer-na-oscloudu/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.01de0cf7a606abfce8ed6089ab89e1538996376aac8ff05d3c7d2340f377b07c.css" integrity="sha256-Ad4M96YGq/zo7WCJq4nhU4mWN2qsj/BdPH0jQPN3sHw=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://blog.oscloud.cz/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.oscloud.cz/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.oscloud.cz/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://blog.oscloud.cz/apple-touch-icon.png">
+<link rel="mask-icon" href="https://blog.oscloud.cz/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/surfer-na-oscloudu/">
+<link rel="alternate" hreflang="en" href="https://blog.oscloud.cz/posts/surfer-na-oscloudu/">
 <noscript>
     <style>
         #theme-toggle,
@@ -71,14 +71,86 @@
     }
 
 </script><script defer src="https://analytics.oscloud.cz/script.js" data-website-id="70aaf052-385c-41fb-9cfe-d3b3c6f54f2d"></script>
+<meta property="og:url" content="https://blog.oscloud.cz/posts/surfer-na-oscloudu/">
+  <meta property="og:site_name" content="Oscloud News">
+  <meta property="og:title" content="Surfer na OSCLOUDu — nejjednodušší způsob, jak rozjet vlastní web">
+  <meta property="og:description" content="Surfer je malá aplikace, kterou na OSCLOUDu používáme pro statické weby, dokumentaci a sdílení souborů. Tady je návod, jak ji rozchodit i bez technického backgroundu.">
+  <meta property="og:locale" content="cs-cz">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-06-26T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-06-26T00:00:00+00:00">
+    <meta property="article:tag" content="Surfer">
+    <meta property="article:tag" content="Webdav">
+    <meta property="article:tag" content="Sftp">
+    <meta property="article:tag" content="Selfhosting">
+    <meta property="article:tag" content="Oscloud">
+    <meta property="article:tag" content="Hugo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Surfer na OSCLOUDu — nejjednodušší způsob, jak rozjet vlastní web">
+<meta name="twitter:description" content="Surfer je malá aplikace, kterou na OSCLOUDu používáme pro statické weby, dokumentaci a sdílení souborů. Tady je návod, jak ji rozchodit i bez technického backgroundu.">
 
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://blog.oscloud.cz/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Surfer na OSCLOUDu — nejjednodušší způsob, jak rozjet vlastní web",
+      "item": "https://blog.oscloud.cz/posts/surfer-na-oscloudu/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Surfer na OSCLOUDu — nejjednodušší způsob, jak rozjet vlastní web",
+  "name": "Surfer na OSCLOUDu — nejjednodušší způsob, jak rozjet vlastní web",
+  "description": "Surfer je malá aplikace, kterou na OSCLOUDu používáme pro statické weby, dokumentaci a sdílení souborů. Tady je návod, jak ji rozchodit i bez technického backgroundu.",
+  "keywords": [
+    "surfer", "webdav", "sftp", "selfhosting", "oscloud", "hugo"
+  ],
+  "articleBody": "Surfer je jeden z nejlepších nástrojů na OSCLOUDu, o kterém většina lidí neví, že existuje. Přitom je to nejjednodušší možný způsob, jak dostat vlastní web online — žádné databáze, žádný CMS, žádné PHP. Nahraješ HTML soubory a máš web. Tečka.\nTenhle článek je pro každého, kdo někdy chtěl mít vlastní stránku, dokumentaci k projektu, portfolio nebo prostě místo, kam nahrát pár souborů a poslat odkaz kamarádovi.\nCo Surfer dělá Surfer servíruje statické soubory. Co tam nahraješ, to ukáže v prohlížeči. Když nahraješ index.html, návštěvník na tvojí doméně uvidí ten HTML. Když nahraješ obrázek, je dostupný na přímé URL.\nNení to redakční systém. Není to cloudové úložiště. Je to webový server, který umí jednu věc — vzít soubor a poslat ho prohlížeči. A přesně proto je tak užitečný.\nK čemu se to hodí Osobní stránka, portfolio, vizitka — pár HTML souborů a hotovo Dokumentace — výstup z MkDocs, Sphinx nebo Docusaurus Blog — generovaný Hugem, Jekyllem, Astrem Landing page — jedna stránka pro projekt nebo akci Sdílení souborů — hodíš PDF nebo ZIP a pošleš odkaz Web malého spolku — pár stránek, kontakt, fotky Pokud potřebuješ formuláře, login, databázi nebo komentáře, Surfer to neumí. Pro všechno ostatní je to ta nejmíň otravná cesta.\nJak Surfer vypadá Po přihlášení do svojí Surfer instance najdeš admin rozhraní na https://tvoje-domena.cz/_admin. Logování je přes OSCLOUD účet, žádné extra heslo si nepamatuješ.\nV adminu vidíš:\nstrom souborů a složek tlačítko pro nahrávání (drag and drop funguje) nastavení (Settings) — kde se konfiguruje, jak se web chová access tokeny — pro nahrávání z terminálu nebo CI Pro většinu lidí stačí web rozhraní. Otevřeš, přetáhneš složku se souborama a máš web.\nDoména Surfer můžeš provozovat buď na subdoméně pod oscloud.cz (například mujprojekt.oscloud.cz), nebo na vlastní doméně, kterou si přineseš.\nPostup:\nZaregistruj se na OSCLOUDu přes helpdesk. Po založení Surferu dostaneš pokyny, jaký DNS záznam nastavit (typicky CNAME nebo A). Po propagaci DNS funguje doména včetně HTTPS. Certifikát řeší OSCLOUD za tebe. Žádné Let’s Encrypt, žádné renewals, žádné konfigurace. Funguje.\nJak nahrávat soubory Surfer nabízí čtyři způsoby. Vyber si podle toho, co ti vyhovuje.\n1. Web rozhraní — pro všechny Otevři /_admin, přetáhni soubory nebo složky myší. Funguje to úplně stejně jako uploady kamkoliv jinam. Pro občasné úpravy nebo nahrání pár souborů to bohatě stačí.\n2. FileZilla a SFTP — pro lidi, co znají FTP klienty Pokud jsi někdy nahrával web přes FileZilla, WinSCP nebo Cyberduck, tohle je tvoje cesta. Surfer má SFTP přístup — funguje úplně stejně jako klasický webhosting.\nPřihlašovací údaje (host, port, username) najdeš v Cloudron app dialogu pod sekcí SFTP. Heslo je tvoje OSCLOUD heslo.\nV FileZilla:\nHostitel: tvoje-domena.cz Port: podle Cloudron dialogu Protokol: SFTP Uživatel a heslo: OSCLOUD účet Pak prostě přetahuješ soubory zleva doprava, jako u jakéhokoliv jiného hostingu.\n3. Příkazová řádka — pro terminálové lidi Když jsi zvyklý na terminál, máš dvě dobré volby.\nSFTP přes scp:\nscp -P -r ./public/* uzivatel@tvoje-domena.cz:/ Surfer CLI (oficiální nástroj přes npm):\nnpm install -g cloudron-surfer Login (token vygeneruješ v /_admin v Settings):\nsurfer config --server tvoje-domena.cz --token Upload složky — pozor na hvězdičku, je to důležité:\n# Tohle nahraje OBSAH ./public do rootu surfer put ./public/* / # Tohle nahraje SLOŽKU public jako podadresář surfer put ./public / Bez hvězdičky ti vznikne https://tvoje-domena.cz/public/ místo toho, aby se obsah zobrazil rovnou. Klasický footgun, na který lidi narážejí.\nSmazání:\nsurfer del /stara-stranka.html 4. WebDAV — pro pokročilé WebDAV endpoint je https://tvoje-domena.cz/_webdav/. Jako heslo se používá access token, který si vygeneruješ v adminu (ne tvoje OSCLOUD heslo — to je častý zdroj nedorozumění).\nUžitečné hlavně pro tři věci:\nPřipojení v souborovém manažeru (Files, Nautilus, Dolphin) — místo URL napiš:\nGnome Files: davs://tvoje-domena.cz/_webdav/ KDE Dolphin: webdavs://tvoje-domena.cz/_webdav/ Pak s tím pracuješ jako s jakoukoliv jinou složkou.\nRychlý upload jednoho souboru přes curl:\ncurl -T index.html \\ -u \"uzivatel:tvuj_access_token\" \\ https://tvoje-domena.cz/_webdav/index.html Deploy z CI/CD pipeline:\nsurfer put --token --server tvoje-domena.cz dist/* / Užitečné nastavení (Settings) V admin rozhraní v sekci Settings najdeš pár přepínačů, které stojí za to znát.\nAccess control — kdo web uvidí Tohle je možná nejcennější vlastnost Surferu. Můžeš si vybrat ze tří režimů:\nPublic — web je veřejný, kdokoliv ho vidí Password restricted — návštěvník zadá heslo, které nastavíš User restricted — vidí ho jen lidé s OSCLOUD účtem Pro veřejný blog dává smysl Public. Pro interní dokumentaci spolku nebo rozdělanou věc, kterou chceš ukázat jen kolegům, použij Password. Pro něco, co má zůstat v rámci komunity, User restricted.\n404.html — vlastní stránka pro nenalezené Když do rootu webu nahraješ soubor 404.html, Surfer ho automaticky pošle při každé chybě 404. Můžeš tam dát vlastní zprávu, vtípek, odkaz na hlavní stranu — co chceš.\nPublic Folder Listing — výpis složky Defaultně Surfer pro každou složku hledá index.html. Když ho nenajde, vrátí 404. Pokud zapneš Public Folder Listing, místo 404 se ukáže výpis souborů ve složce — užitečné, když chceš složku používat jako sdílený “file dump”.\nPříklad: nahraješ do /soubory/ pár PDF a ZIP souborů, žádný index.html, a návštěvník na /soubory/ uvidí seznam.\nVýchozí index Defaultně se servíruje index.html nebo index.htm. V Settings můžeš změnit jméno toho výchozího souboru, kdyby ti to z nějakého důvodu nesedlo.\nReálný workflow — Hugo blog Takhle deployuju OSCLOUD blog. Nic složitého, žádný build server, žádné CI:\n# 1. napsání článku nvim content/posts/novy-clanek.md # 2. preview lokálně hugo server -D # 3. build statiky hugo --minify # 4. nahrání na Surfer surfer put ./public/* / # 5. commit zdrojáků do Gitu git add -A \u0026\u0026 git commit -m \"novy clanek\" \u0026\u0026 git push Hotovo. Webový blog updatovaný za pár sekund, bez závislosti na GitHub Actions, Netlify nebo cokoliv podobného.\nPro pohodlí si to hodím do Makefile:\n.PHONY: deploy build: hugo --minify deploy: build surfer put ./public/* / Pak jen make deploy.\nZávěr Surfer je důkaz, že self-hosting nemusí být složitý. Žádné konfiguráky, žádné upgrady, žádné updaty pluginů, které ti rozbijí web. Otevřeš admin, přetáhneš soubory, máš web.\nPokud máš nápad na vlastní stránku, projekt nebo dokumentaci a chceš ji hostovat v rámci OSCLOUDu, ozvi se přes helpdesk. Surfer instance je za pár minut.\nA pokud máš tipy nebo otázky, najdeš nás na Mastodonu.\n",
+  "wordCount" : "1011",
+  "inLanguage": "en",
+  "datePublished": "2026-06-26T00:00:00Z",
+  "dateModified": "2026-06-26T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": {"email":"info@oscloud.cz","name":"OSCloud"}
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://blog.oscloud.cz/posts/surfer-na-oscloudu/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Oscloud News",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://blog.oscloud.cz/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Oscloud News (Alt + H)">
-                <img src="http://localhost:1313/logo.png" alt="" aria-label="logo"
+            <a href="https://blog.oscloud.cz/" accesskey="h" title="Oscloud News (Alt + H)">
+                <img src="https://blog.oscloud.cz/logo.png" alt="" aria-label="logo"
                     height="32">Oscloud News</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
@@ -105,22 +177,22 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/" title="🇨🇿">
+                <a href="https://blog.oscloud.cz/" title="🇨🇿">
                     <span>🇨🇿</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/archives/" title="Archiv">
+                <a href="https://blog.oscloud.cz/archives/" title="Archiv">
                     <span>Archiv</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/search/" title="Vyhledávání">
+                <a href="https://blog.oscloud.cz/search/" title="Vyhledávání">
                     <span>Vyhledávání</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="Tagy">
+                <a href="https://blog.oscloud.cz/tags/" title="Tagy">
                     <span>Tagy</span>
                 </a>
             </li>
@@ -131,7 +203,7 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://blog.oscloud.cz/">Home</a>&nbsp;»&nbsp;<a href="https://blog.oscloud.cz/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Surfer na OSCLOUDu — nejjednodušší způsob, jak rozjet vlastní web
     </h1>
@@ -276,20 +348,20 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/surfer/">Surfer</a></li>
-      <li><a href="http://localhost:1313/tags/webdav/">Webdav</a></li>
-      <li><a href="http://localhost:1313/tags/sftp/">Sftp</a></li>
-      <li><a href="http://localhost:1313/tags/selfhosting/">Selfhosting</a></li>
-      <li><a href="http://localhost:1313/tags/oscloud/">Oscloud</a></li>
-      <li><a href="http://localhost:1313/tags/hugo/">Hugo</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/surfer/">Surfer</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/webdav/">Webdav</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/sftp/">Sftp</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/selfhosting/">Selfhosting</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/oscloud/">Oscloud</a></li>
+      <li><a href="https://blog.oscloud.cz/tags/hugo/">Hugo</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/posts/mastodon-4-6-collections/">
+  <a class="prev" href="https://blog.oscloud.cz/posts/mastodon-4-6-collections/">
     <span class="title">« Prev</span>
     <br>
     <span>Mastodon 4.6: Collections, nové profily a další novinky</span>
   </a>
-  <a class="next" href="http://localhost:1313/posts/vhsky-peertube-8-2/">
+  <a class="next" href="https://blog.oscloud.cz/posts/vhsky-peertube-8-2/">
     <span class="title">Next »</span>
     <br>
     <span>vhsky.cz je na PeerTube 8.2!</span>
@@ -301,7 +373,7 @@
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/">Oscloud News</a></span> · 
+        <span>&copy; 2026 <a href="https://blog.oscloud.cz/">Oscloud News</a></span> · 
 
     <span>
         Powered by
