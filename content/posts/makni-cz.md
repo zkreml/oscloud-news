@@ -17,7 +17,7 @@ cover:
   alt: "makni.cz — sportovní platforma na OSCloud"
 comments:
   host: mamutovo.cz
-  id:
+  id: 117049712072362654
 ---
 
 Máte chytré hodinky nebo cyklopočítač a rádi byste si uchovávali záznamy z tréninků? Většina komerčních fitness platforem vám to umožní — ale za cenu vašich dat, reklam a předplatného, které se mění podle nálady investorů.

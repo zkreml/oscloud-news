@@ -279,7 +279,7 @@ Pro komunitu OSCloud jsme spustili makni.cz — vlastní fitness platformu posta
   </footer>
 <div class="comments-section">
   <h2>Diskuze</h2>
-  <p>Reaguj na <a href="https://mamutovo.cz/web/statuses/" target="_blank">Mastodon příspěvek</a> a tvá odpověď se zobrazí tady.</p>
+  <p>Reaguj na <a href="https://mamutovo.cz/web/statuses/117049712072362654" target="_blank">Mastodon příspěvek</a> a tvá odpověď se zobrazí tady.</p>
   <button id="load-comments">Načíst komentáře</button>
   <div id="mastodon-comments-list"></div>
 </div>
@@ -289,7 +289,7 @@ function escapeHtml(s) {
 }
 document.getElementById('load-comments').addEventListener('click', function () {
   this.textContent = 'Načítám…';
-  fetch('https://mamutovo.cz/api/v1/statuses//context')
+  fetch('https://mamutovo.cz/api/v1/statuses/117049712072362654/context')
     .then(r => r.json())
     .then(data => {
       const list = document.getElementById('mastodon-comments-list');
