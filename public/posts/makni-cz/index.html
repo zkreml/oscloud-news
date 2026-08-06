@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>makni.cz — vaše tréninky, vaše data | Oscloud News</title>
+<meta name="keywords" content="makni.cz, FitPub, fitness, Fediverse, ActivityPub">
+<meta name="description" content="Máte chytré hodinky nebo cyklopočítač a rádi byste si uchovávali záznamy z tréninků? Většina komerčních fitness platforem vám to umožní — ale za cenu vašich dat, reklam a předplatného, které se mění podle nálady investorů.
+Pro komunitu OSCloud jsme spustili makni.cz — vlastní fitness platformu postavenou na open-source projektu FitPub. A jo, i nerdi mají rádi sport. Někteří dokonce běhají venku, jiní válí kopce na kole — a ne jen mezi serverovnou a kuchyňkou. 🚴">
+<meta name="author" content="Archos">
+<link rel="canonical" href="http://localhost:1313/posts/makni-cz/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.01de0cf7a606abfce8ed6089ab89e1538996376aac8ff05d3c7d2340f377b07c.css" integrity="sha256-Ad4M96YGq/zo7WCJq4nhU4mWN2qsj/BdPH0jQPN3sHw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/makni-cz/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><script defer src="https://analytics.oscloud.cz/script.js" data-website-id="70aaf052-385c-41fb-9cfe-d3b3c6f54f2d"></script>
+
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Oscloud News (Alt + H)">
+                <img src="http://localhost:1313/logo.png" alt="" aria-label="logo"
+                    height="32">Oscloud News</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="🇨🇿">
+                    <span>🇨🇿</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archiv">
+                    <span>Archiv</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="Vyhledávání">
+                    <span>Vyhledávání</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tagy">
+                    <span>Tagy</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      makni.cz — vaše tréninky, vaše data
+    </h1>
+    <div class="post-meta"><span title='2026-08-06 00:00:00 +0200 CEST'>6. srpna 2026</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Archos</span>
+
+</div>
+  </header> 
+<figure class="entry-cover">
+        <img loading="eager" src="http://localhost:1313/images/makni-cz.png" alt="makni.cz — sportovní platforma na OSCloud">
+        
+</figure>
+  <div class="post-content"><p>Máte chytré hodinky nebo cyklopočítač a rádi byste si uchovávali záznamy z tréninků? Většina komerčních fitness platforem vám to umožní — ale za cenu vašich dat, reklam a předplatného, které se mění podle nálady investorů.</p>
+<p>Pro komunitu OSCloud jsme spustili <strong>makni.cz</strong> — vlastní fitness platformu postavenou na open-source projektu <a href="https://codeberg.org/fitpub/fitpub">FitPub</a>. A jo, i nerdi mají rádi sport. Někteří dokonce běhají venku, jiní válí kopce na kole — a ne jen mezi serverovnou a kuchyňkou. 🚴</p>
+<h2 id="co-to-je-a-k-čemu-to-slouží">Co to je a k čemu to slouží<a hidden class="anchor" aria-hidden="true" href="#co-to-je-a-k-čemu-to-slouží">#</a></h2>
+<p>makni.cz je místo, kam si nahrajete své sportovní aktivity, prohlédnete si mapy tras, statistiky a postupně sledujete svůj progres. Vaše data přitom zůstávají na serveru v EU a nikdo je neprodává, neprofiluje a nezobrazuje kolem nich reklamy.</p>
+<p><img alt="Profil uživatele na makni.cz s přehledem aktivit" loading="lazy" src="/images/makni-profil.png"></p>
+<p>Platforma podporuje soubory <strong>FIT, GPX a TCX</strong> — tedy formáty, které exportují prakticky všechny hodinky a cyklopočítače (Garmin, Wahoo, Polar, Coros, Suunto…). Stačí soubor stáhnout z hodinek a nahrát na makni.cz. Kdo nechce řešit soubory, může aktivitu zadat i ručně — vzdálenost, čas, převýšení.</p>
+<p>Přímý import ze Stravy nebo synchronizace s Garminem zatím není k dispozici — aktivity je potřeba nahrát ručně jako soubor nebo zadat přes formulář. Není to ideální, ale FitPub se aktivně vyvíjí a věci se postupně zlepšují.</p>
+<h2 id="proč-zrovna-maknicz">Proč zrovna makni.cz<a hidden class="anchor" aria-hidden="true" href="#proč-zrovna-maknicz">#</a></h2>
+<p>Hlavní rozdíly oproti komerčním platformám jsou principiální:</p>
+<p><strong>Žádné reklamy, žádné předplatné.</strong> Služba je součástí komunitní platformy OSCloud. Nemusíte platit za to, abyste viděli vlastní data.</p>
+<p><strong>Data jsou uložena na serverech OSCloud v Německu a nejsou využívána pro reklamní profilování.</strong> Vaše trasy, tepová frekvence ani GPS souřadnice nikam neputují.</p>
+<p><strong>Open source.</strong> FitPub je svobodný software pod licencí AGPL-3.0. Kdokoli si může ověřit, co s daty děláme (odpověď: nic, kromě toho, že vám je zobrazíme).</p>
+<p><strong>Žádné sociální inženýrství.</strong> Žádné gamifikace navržené tak, aby vás udržely v aplikaci co nejdéle. Prostě si nahrajete trénink, podíváte se na výsledky a jdete dál.</p>
+<h2 id="propojení-s-fediversem">Propojení s Fediversem<a hidden class="anchor" aria-hidden="true" href="#propojení-s-fediversem">#</a></h2>
+<p>A teď ta nejzajímavější část. makni.cz mluví protokolem <strong>ActivityPub</strong> — stejným, který používá Mastodon, Pixelfed nebo PeerTube. To znamená, že vaše aktivity se dají sdílet do Fediverse. Sledující na Mastodonu (třeba na našem <a href="https://mamutovo.cz">mamutovo.cz</a>) mohou vaše tréninky vidět, komentovat a lajkovat přímo ze svého feedu.</p>
+<p>Každá aktivita má tři úrovně viditelnosti: <strong>veřejná</strong>, <strong>jen pro sledující</strong> nebo <strong>soukromá</strong>. Sami si rozhodnete, co chcete sdílet a co zůstane jen pro vás.</p>
+<h2 id="co-všechno-umí">Co všechno umí<a hidden class="anchor" aria-hidden="true" href="#co-všechno-umí">#</a></h2>
+<p>Po nahrání aktivity se zobrazí mapa trasy, statistiky a grafy. Ale makni.cz toho nabízí víc:</p>
+<p><strong>Časová osa</strong> — přehled všech vašich aktivit chronologicky na jednom místě.</p>
+<p><strong>Heatmapy</strong> — kde všude jste běhali nebo jezdili, vizualizované na jedné mapě. Skvělý přehled za celou sezónu.</p>
+<p><strong>Osobní rekordy a achievementy</strong> — platforma sleduje vaše nejlepší výkony a upozorní vás, když překonáte vlastní rekord.</p>
+<p><strong>Tréninková zátěž</strong> — analytika, která vám pomůže pochopit, jestli trénujete dost nebo moc.</p>
+<p><strong>Soukromé zóny</strong> — bydlíte u cyklostezky a nechcete, aby každý věděl, kde přesně? Nastavíte si privacy zónu a makni.cz automaticky ořízne začátek a konec trasy.</p>
+<p><strong>Hromadný import</strong> — přecházíte z jiné platformy? Exportujte si archiv a nahrajte ho jako ZIP. Celá historie na jednom místě.</p>
+<h2 id="kdo-to-provozuje">Kdo to provozuje<a hidden class="anchor" aria-hidden="true" href="#kdo-to-provozuje">#</a></h2>
+<p>makni.cz běží na infrastruktuře <a href="https://oscloud.cz">OSCloud</a> — komunitní platformy, která provozuje i Mastodon (mamutovo.cz), PeerTube (vhsky.cz), Pixelfed (pixelfed.cz), Nextcloud a řadu dalších služeb. Servery stojí v Německu, spadáme pod GDPR a na rozdíl od komerčních služeb neexistuje žádný byznys model postavený na vašich datech.</p>
+<p>makni.cz provozuje komunita OSCloud. Data patří vám, my poskytujeme pouze infrastrukturu a provoz služby.</p>
+<h2 id="jak-začít">Jak začít<a hidden class="anchor" aria-hidden="true" href="#jak-začít">#</a></h2>
+<p>Registrace je otevřená a zabere minutu:</p>
+<ol>
+<li>Jděte na <strong><a href="https://makni.cz">makni.cz</a></strong></li>
+<li>Klikněte na registraci a vyplňte uživatelské jméno, email a heslo</li>
+<li>Na email vám přijde ověřovací kód — zadejte ho a máte hotovo</li>
+<li>Nahrajte první aktivitu (FIT/GPX/TCX soubor z hodinek) nebo ji zadejte ručně</li>
+</ol>
+<p>A to je celé. Žádné podmínky, žádné kreditky, žádný trial. Prostě si to vyzkoušejte a uvidíte, jestli vám to sedne.</p>
+<p>Máte otázky nebo nápady? Ozvěte se na <a href="https://helpdesk.oscloud.cz">helpdesk.oscloud.cz</a> nebo na Mastodonu <a href="https://mamutovo.cz/@oscloud">@oscloud@mamutovo.cz</a>. 🚴</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/makni.cz/">Makni.cz</a></li>
+      <li><a href="http://localhost:1313/tags/fitpub/">FitPub</a></li>
+      <li><a href="http://localhost:1313/tags/fitness/">Fitness</a></li>
+      <li><a href="http://localhost:1313/tags/fediverse/">Fediverse</a></li>
+      <li><a href="http://localhost:1313/tags/activitypub/">ActivityPub</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="http://localhost:1313/posts/email-na-oscloud/">
+    <span class="title">Next »</span>
+    <br>
+    <span>E-mail na OSCloud – kompletní průvodce pro uživatele</span>
+  </a>
+</nav>
+
+  </footer>
+<div class="comments-section">
+  <h2>Diskuze</h2>
+  <p>Reaguj na <a href="https://mamutovo.cz/web/statuses/" target="_blank">Mastodon příspěvek</a> a tvá odpověď se zobrazí tady.</p>
+  <button id="load-comments">Načíst komentáře</button>
+  <div id="mastodon-comments-list"></div>
+</div>
+<script>
+function escapeHtml(s) {
+  return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+}
+document.getElementById('load-comments').addEventListener('click', function () {
+  this.textContent = 'Načítám…';
+  fetch('https://mamutovo.cz/api/v1/statuses//context')
+    .then(r => r.json())
+    .then(data => {
+      const list = document.getElementById('mastodon-comments-list');
+      if (!data.descendants || data.descendants.length === 0) {
+        list.innerHTML = '<p>Zatím žádné komentáře.</p>';
+        document.getElementById('load-comments').remove();
+        return;
+      }
+      list.innerHTML = data.descendants.map(toot => `
+        <div class="comment">
+          <img src="${toot.account.avatar}" width="32" height="32" alt="">
+          <strong>${escapeHtml(toot.account.display_name || toot.account.username)}</strong>
+          <span class="acct">@${toot.account.acct}</span>
+          <div class="content">${toot.content}</div>
+          <a href="${toot.url}" target="_blank">zobrazit na Mastodonu</a>
+        </div>
+      `).join('');
+      document.getElementById('load-comments').remove();
+    })
+    .catch(() => {
+      document.getElementById('mastodon-comments-list').innerHTML = '<p>Nepodařilo se načíst komentáře.</p>';
+    });
+});
+</script>
+
+
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Oscloud News</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

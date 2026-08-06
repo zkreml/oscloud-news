@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Mamutovo on Oscloud News</title>
-    <link>https://blog.oscloud.cz/tags/mamutovo/</link>
+    <link>http://localhost:1313/tags/mamutovo/</link>
     <description>Recent content in Mamutovo on Oscloud News</description>
     <generator>Hugo -- 0.164.0</generator>
     <language>cs-cz</language>
     <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
     <webMaster>info@oscloud.cz (OSCloud)</webMaster>
     <lastBuildDate>Wed, 15 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blog.oscloud.cz/tags/mamutovo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/mamutovo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>fedi_start: Postavili jsme průvodce pro nové uživatele Mamutovo.cz</title>
-      <link>https://blog.oscloud.cz/posts/fedi-start-pruvodce-mamutovo/</link>
+      <link>http://localhost:1313/posts/fedi-start-pruvodce-mamutovo/</link>
       <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/posts/fedi-start-pruvodce-mamutovo/</guid>
+      <guid>http://localhost:1313/posts/fedi-start-pruvodce-mamutovo/</guid>
       <description>&lt;p&gt;Mamutovo.cz je česko-slovenská instance Mastodonu – komunitní, bez algoritmů, bez reklam.
 Jenže příchod na Mastodon může být ze začátku matoucí. Fediversum funguje jinak než Twitter nebo
 Facebook, a pokud nevíte, koho sledovat nebo jak hashtagy vlastně fungují, snadno to vzdáte dřív,

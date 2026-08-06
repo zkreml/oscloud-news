@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Aplikace on Oscloud News</title>
-    <link>https://blog.oscloud.cz/tags/aplikace/</link>
+    <link>http://localhost:1313/tags/aplikace/</link>
     <description>Recent content in Aplikace on Oscloud News</description>
     <generator>Hugo -- 0.164.0</generator>
     <language>cs-cz</language>
     <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
     <webMaster>info@oscloud.cz (OSCloud)</webMaster>
     <lastBuildDate>Sat, 24 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blog.oscloud.cz/tags/aplikace/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/aplikace/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nextcloud na OSCloudu: Praktická alternativa ke cloudovým službám</title>
-      <link>https://blog.oscloud.cz/posts/nextcloud-oscloud/</link>
+      <link>http://localhost:1313/posts/nextcloud-oscloud/</link>
       <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/posts/nextcloud-oscloud/</guid>
+      <guid>http://localhost:1313/posts/nextcloud-oscloud/</guid>
       <description>&lt;p&gt;Každý den posíláme soubory přes email, protože &amp;ldquo;sdílení přes Google Drive je nějak složité&amp;rdquo;. Kalendář máme v telefonu, ale kolega používá Outlook, tak se domlouváme přes zprávy. Dokumenty editujeme v Google Docs, i když by stačil prostý textový editor. A všechno to funguje, dokud nepotřebujete vědět, kde vlastně ta data jsou, kdo k nim má přístup a co se s nimi děje.&lt;/p&gt;
 &lt;p&gt;Není to o paranoi. Je to o tom, že někdy prostě chcete mít věci pod kontrolou. A k tomu slouží Nextcloud na OSCloudu.&lt;/p&gt;</description>
     </item>

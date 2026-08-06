@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>FitPub on Oscloud News</title>
+    <link>http://localhost:1313/tags/fitpub/</link>
+    <description>Recent content in FitPub on Oscloud News</description>
+    <generator>Hugo -- 0.164.0</generator>
+    <language>cs-cz</language>
+    <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
+    <webMaster>info@oscloud.cz (OSCloud)</webMaster>
+    <lastBuildDate>Thu, 06 Aug 2026 00:00:00 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/fitpub/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>makni.cz — vaše tréninky, vaše data</title>
+      <link>http://localhost:1313/posts/makni-cz/</link>
+      <pubDate>Thu, 06 Aug 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/posts/makni-cz/</guid>
+      <description>&lt;p&gt;Máte chytré hodinky nebo cyklopočítač a rádi byste si uchovávali záznamy z tréninků? Většina komerčních fitness platforem vám to umožní — ale za cenu vašich dat, reklam a předplatného, které se mění podle nálady investorů.&lt;/p&gt;
+&lt;p&gt;Pro komunitu OSCloud jsme spustili &lt;strong&gt;makni.cz&lt;/strong&gt; — vlastní fitness platformu postavenou na open-source projektu &lt;a href=&#34;https://codeberg.org/fitpub/fitpub&#34;&gt;FitPub&lt;/a&gt;. A jo, i nerdi mají rádi sport. Někteří dokonce běhají venku, jiní válí kopce na kole — a ne jen mezi serverovnou a kuchyňkou. 🚴&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
