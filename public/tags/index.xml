@@ -8,8 +8,43 @@
     <language>cs-cz</language>
     <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
     <webMaster>info@oscloud.cz (OSCloud)</webMaster>
-    <lastBuildDate>Thu, 06 Aug 2026 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 00:00:00 +0200</lastBuildDate>
     <atom:link href="https://blog.oscloud.cz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>E2ee</title>
+      <link>https://blog.oscloud.cz/tags/e2ee/</link>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>https://blog.oscloud.cz/tags/e2ee/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ente</title>
+      <link>https://blog.oscloud.cz/tags/ente/</link>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>https://blog.oscloud.cz/tags/ente/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fotky</title>
+      <link>https://blog.oscloud.cz/tags/fotky/</link>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>https://blog.oscloud.cz/tags/fotky/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Self-Hosting</title>
+      <link>https://blog.oscloud.cz/tags/self-hosting/</link>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>https://blog.oscloud.cz/tags/self-hosting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Soukromí</title>
+      <link>https://blog.oscloud.cz/tags/soukrom%C3%AD/</link>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>https://blog.oscloud.cz/tags/soukrom%C3%AD/</guid>
+      <description></description>
+    </item>
     <item>
       <title>ActivityPub</title>
       <link>https://blog.oscloud.cz/tags/activitypub/</link>
@@ -64,13 +99,6 @@
       <link>https://blog.oscloud.cz/tags/smtp/</link>
       <pubDate>Sun, 19 Jul 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
       <guid>https://blog.oscloud.cz/tags/smtp/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Soukromí</title>
-      <link>https://blog.oscloud.cz/tags/soukrom%C3%AD/</link>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/soukrom%C3%AD/</guid>
       <description></description>
     </item>
     <item>
@@ -340,13 +368,6 @@
       <description></description>
     </item>
     <item>
-      <title>Self-Hosting</title>
-      <link>https://blog.oscloud.cz/tags/self-hosting/</link>
-      <pubDate>Mon, 20 Apr 2026 12:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/self-hosting/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Fedi_start</title>
       <link>https://blog.oscloud.cz/tags/fedi_start/</link>
       <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
@@ -386,13 +407,6 @@
       <link>https://blog.oscloud.cz/tags/cryptpad/</link>
       <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
       <guid>https://blog.oscloud.cz/tags/cryptpad/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>E2ee</title>
-      <link>https://blog.oscloud.cz/tags/e2ee/</link>
-      <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/e2ee/</guid>
       <description></description>
     </item>
     <item>

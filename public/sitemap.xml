@@ -2,10 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.oscloud.cz/tags/activitypub/</loc>
-    <lastmod>2026-08-06T00:00:00+02:00</lastmod>
-  </url><url>
     <loc>https://blog.oscloud.cz/categories/</loc>
+    <lastmod>2026-08-07T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/tags/e2ee/</loc>
+    <lastmod>2026-08-07T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/tags/ente/</loc>
+    <lastmod>2026-08-07T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/posts/ente-photos-spusteni/</loc>
+    <lastmod>2026-08-07T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/tags/fotky/</loc>
+    <lastmod>2026-08-07T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/</loc>
+    <lastmod>2026-08-07T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/categories/ozn%C3%A1men%C3%AD/</loc>
+    <lastmod>2026-08-07T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/posts/</loc>
+    <lastmod>2026-08-07T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/tags/self-hosting/</loc>
+    <lastmod>2026-08-07T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/tags/soukrom%C3%AD/</loc>
+    <lastmod>2026-08-07T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/tags/</loc>
+    <lastmod>2026-08-07T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>https://blog.oscloud.cz/tags/activitypub/</loc>
     <lastmod>2026-08-06T00:00:00+02:00</lastmod>
   </url><url>
     <loc>https://blog.oscloud.cz/tags/fediverse/</loc>
@@ -23,16 +53,7 @@
     <loc>https://blog.oscloud.cz/posts/makni-cz/</loc>
     <lastmod>2026-08-06T00:00:00+02:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/</loc>
-    <lastmod>2026-08-06T00:00:00+02:00</lastmod>
-  </url><url>
-    <loc>https://blog.oscloud.cz/posts/</loc>
-    <lastmod>2026-08-06T00:00:00+02:00</lastmod>
-  </url><url>
     <loc>https://blog.oscloud.cz/categories/slu%C5%BEby/</loc>
-    <lastmod>2026-08-06T00:00:00+02:00</lastmod>
-  </url><url>
-    <loc>https://blog.oscloud.cz/tags/</loc>
     <lastmod>2026-08-06T00:00:00+02:00</lastmod>
   </url><url>
     <loc>https://blog.oscloud.cz/tags/e-mail/</loc>
@@ -48,9 +69,6 @@
     <lastmod>2026-07-19T00:00:00+02:00</lastmod>
   </url><url>
     <loc>https://blog.oscloud.cz/tags/smtp/</loc>
-    <lastmod>2026-07-19T00:00:00+02:00</lastmod>
-  </url><url>
-    <loc>https://blog.oscloud.cz/tags/soukrom%C3%AD/</loc>
     <lastmod>2026-07-19T00:00:00+02:00</lastmod>
   </url><url>
     <loc>https://blog.oscloud.cz/tags/thunderbird/</loc>
@@ -224,9 +242,6 @@
     <loc>https://blog.oscloud.cz/posts/mxchat-komunitni-matrix-server/</loc>
     <lastmod>2026-04-20T12:00:00+02:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/tags/self-hosting/</loc>
-    <lastmod>2026-04-20T12:00:00+02:00</lastmod>
-  </url><url>
     <loc>https://blog.oscloud.cz/tags/fedi_start/</loc>
     <lastmod>2026-04-15T00:00:00+00:00</lastmod>
   </url><url>
@@ -260,13 +275,7 @@
     <loc>https://blog.oscloud.cz/posts/crytpad/</loc>
     <lastmod>2026-02-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.oscloud.cz/tags/e2ee/</loc>
-    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.oscloud.cz/tags/mamutovo.cz/</loc>
-    <lastmod>2026-02-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.oscloud.cz/categories/ozn%C3%A1men%C3%AD/</loc>
     <lastmod>2026-02-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.oscloud.cz/posts/slouceni-mastodon-instanci/</loc>

@@ -1,7 +1,7 @@
 ---
 title: "Ente Photos: end-to-end šifrovaná alternativa ke Google Photos je na OSCloud"
 date: 2026-08-07T00:00:00+02:00
-draft: true
+draft: false
 slug: "ente-photos-spusteni"
 categories: ["Oznámení"]
 tags: ["ente", "fotky", "e2ee", "soukromí", "self-hosting"]

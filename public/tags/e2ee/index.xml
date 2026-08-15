@@ -8,8 +8,17 @@
     <language>cs-cz</language>
     <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
     <webMaster>info@oscloud.cz (OSCloud)</webMaster>
-    <lastBuildDate>Sat, 07 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 00:00:00 +0200</lastBuildDate>
     <atom:link href="https://blog.oscloud.cz/tags/e2ee/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ente Photos: end-to-end šifrovaná alternativa ke Google Photos je na OSCloud</title>
+      <link>https://blog.oscloud.cz/posts/ente-photos-spusteni/</link>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>https://blog.oscloud.cz/posts/ente-photos-spusteni/</guid>
+      <description>&lt;p&gt;Spouštíme placenou instanci &lt;strong&gt;Ente Photos&lt;/strong&gt; na &lt;strong&gt;oscloud.photos&lt;/strong&gt; — end-to-end šifrovanou alternativu ke Google Photos a iCloud, kterou provozujeme sami, na vlastních serverech.&lt;/p&gt;
+&lt;h2 id=&#34;co-je-ente-photos&#34;&gt;Co je Ente Photos&lt;/h2&gt;
+&lt;p&gt;Ente je open source (AGPL-3.0) platforma pro zálohování a sdílení fotek a videí, postavená tak, aby provozovatel k obsahu neměl technicky přístup. Šifrování probíhá přímo v zařízení ještě před nahráním na server — takže i my jako správci vidíme jen zašifrovaná data a to, kolik místa zabíráte. Klientské aplikace i server (museum) jsou open source a kryptografii si nechali nezávisle prověřit (Cure53, Symbolic Software).&lt;/p&gt;</description>
+    </item>
     <item>
       <title>CryptPad: Bezpečná kancelář, která nevidí do vašich dokumentů</title>
       <link>https://blog.oscloud.cz/posts/crytpad/</link>
