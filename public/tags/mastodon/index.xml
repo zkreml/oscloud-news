@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Mastodon on Oscloud News</title>
-    <link>https://blog.oscloud.cz/tags/mastodon/</link>
+    <link>http://localhost:1313/tags/mastodon/</link>
     <description>Recent content in Mastodon on Oscloud News</description>
     <generator>Hugo -- 0.164.0</generator>
     <language>cs-cz</language>
     <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
     <webMaster>info@oscloud.cz (OSCloud)</webMaster>
     <lastBuildDate>Mon, 29 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blog.oscloud.cz/tags/mastodon/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/mastodon/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mastodon 4.6: Collections, nové profily a další novinky</title>
-      <link>https://blog.oscloud.cz/posts/mastodon-4-6-collections/</link>
+      <link>http://localhost:1313/posts/mastodon-4-6-collections/</link>
       <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/posts/mastodon-4-6-collections/</guid>
+      <guid>http://localhost:1313/posts/mastodon-4-6-collections/</guid>
       <description>&lt;p&gt;mamutovo.cz aktualizováno na Mastodon 4.6.2 a Debian 13. Hlavní novinka této verze jsou Collections — doporučené seznamy účtů pro snazší objevování lidí na Fediverse. Ale není to jediná věc, která se změnila.&lt;/p&gt;
 &lt;h2 id=&#34;proč-to-vůbec-vzniklo&#34;&gt;Proč to vůbec vzniklo&lt;/h2&gt;
 &lt;p&gt;Kdo na Fediverse přichází z Twitteru nebo jiných centralizovaných sítí, narazí dřív nebo
@@ -25,16 +25,16 @@ věc pro ty, kteří vědí, co hledají. Pro nováčka je to ale matoucí bludi
     </item>
     <item>
       <title>Rozloučení s mastodon.arch-linux.cz</title>
-      <link>https://blog.oscloud.cz/posts/rozlouceni-mastodon-arch-linux-cz/</link>
+      <link>http://localhost:1313/posts/rozlouceni-mastodon-arch-linux-cz/</link>
       <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/posts/rozlouceni-mastodon-arch-linux-cz/</guid>
+      <guid>http://localhost:1313/posts/rozlouceni-mastodon-arch-linux-cz/</guid>
       <description>28. dubna 2026 vypínáme mastodon.arch-linux.cz. Instance, která sehrála zásadní roli v historii českého fediversu.</description>
     </item>
     <item>
       <title>fedi_start: Postavili jsme průvodce pro nové uživatele Mamutovo.cz</title>
-      <link>https://blog.oscloud.cz/posts/fedi-start-pruvodce-mamutovo/</link>
+      <link>http://localhost:1313/posts/fedi-start-pruvodce-mamutovo/</link>
       <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/posts/fedi-start-pruvodce-mamutovo/</guid>
+      <guid>http://localhost:1313/posts/fedi-start-pruvodce-mamutovo/</guid>
       <description>&lt;p&gt;Mamutovo.cz je česko-slovenská instance Mastodonu – komunitní, bez algoritmů, bez reklam.
 Jenže příchod na Mastodon může být ze začátku matoucí. Fediversum funguje jinak než Twitter nebo
 Facebook, a pokud nevíte, koho sledovat nebo jak hashtagy vlastně fungují, snadno to vzdáte dřív,
@@ -46,9 +46,9 @@ pro každou instanci stejně. Chceme něco konkrétního pro naši komunitu.&lt;
     </item>
     <item>
       <title>Sloučení Mastodon instancí – mamutovo.cz a mastodon.arch-linux.cz</title>
-      <link>https://blog.oscloud.cz/posts/slouceni-mastodon-instanci/</link>
+      <link>http://localhost:1313/posts/slouceni-mastodon-instanci/</link>
       <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/posts/slouceni-mastodon-instanci/</guid>
+      <guid>http://localhost:1313/posts/slouceni-mastodon-instanci/</guid>
       <description>&lt;p&gt;Ahoj kamarádi, kolegové, Mastodontíci!&lt;/p&gt;
 &lt;p&gt;Rádi bychom vás informovali o našich plánech a změnách na našich Mastodon instancích.&lt;/p&gt;
 &lt;p&gt;Jak určitě víte, provozujeme aktuálně dvě instance - &lt;strong&gt;mamutovo.cz&lt;/strong&gt; a &lt;strong&gt;mastodon.arch-linux.cz&lt;/strong&gt;. Rozhodli jsme se, že pro zjednodušení správy, aktualizací, a ano, samozřejmě i snížení nákladů na provoz bychom rádi ponechali jen jednu instanci – &lt;strong&gt;mamutovo.cz&lt;/strong&gt;, které chceme i nadále věnovat maximální prioritu.&lt;/p&gt;

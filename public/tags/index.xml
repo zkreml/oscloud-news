@@ -2,425 +2,439 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Oscloud News</title>
-    <link>https://blog.oscloud.cz/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Oscloud News</description>
     <generator>Hugo -- 0.164.0</generator>
     <language>cs-cz</language>
     <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
     <webMaster>info@oscloud.cz (OSCloud)</webMaster>
-    <lastBuildDate>Thu, 06 Aug 2026 00:00:00 +0200</lastBuildDate>
-    <atom:link href="https://blog.oscloud.cz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Aug 2026 00:00:00 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>ActivityPub</title>
-      <link>https://blog.oscloud.cz/tags/activitypub/</link>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/activitypub/</guid>
+      <title>E2ee</title>
+      <link>http://localhost:1313/tags/e2ee/</link>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/e2ee/</guid>
       <description></description>
     </item>
     <item>
-      <title>Fediverse</title>
-      <link>https://blog.oscloud.cz/tags/fediverse/</link>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/fediverse/</guid>
+      <title>Ente</title>
+      <link>http://localhost:1313/tags/ente/</link>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/ente/</guid>
       <description></description>
     </item>
     <item>
-      <title>Fitness</title>
-      <link>https://blog.oscloud.cz/tags/fitness/</link>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/fitness/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>FitPub</title>
-      <link>https://blog.oscloud.cz/tags/fitpub/</link>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/fitpub/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Makni.cz</title>
-      <link>https://blog.oscloud.cz/tags/makni.cz/</link>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/makni.cz/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>E-Mail</title>
-      <link>https://blog.oscloud.cz/tags/e-mail/</link>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/e-mail/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>IMAP</title>
-      <link>https://blog.oscloud.cz/tags/imap/</link>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/imap/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SMTP</title>
-      <link>https://blog.oscloud.cz/tags/smtp/</link>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/smtp/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Soukromí</title>
-      <link>https://blog.oscloud.cz/tags/soukrom%C3%AD/</link>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/soukrom%C3%AD/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Thunderbird</title>
-      <link>https://blog.oscloud.cz/tags/thunderbird/</link>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/thunderbird/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Webmail</title>
-      <link>https://blog.oscloud.cz/tags/webmail/</link>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/webmail/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cloud</title>
-      <link>https://blog.oscloud.cz/tags/cloud/</link>
-      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/cloud/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nextcloud</title>
-      <link>https://blog.oscloud.cz/tags/nextcloud/</link>
-      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/nextcloud/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Šifrování</title>
-      <link>https://blog.oscloud.cz/tags/%C5%A1ifrov%C3%A1n%C3%AD/</link>
-      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/%C5%A1ifrov%C3%A1n%C3%AD/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Storage</title>
-      <link>https://blog.oscloud.cz/tags/storage/</link>
-      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/storage/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Zálohy</title>
-      <link>https://blog.oscloud.cz/tags/z%C3%A1lohy/</link>
-      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/z%C3%A1lohy/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>4.6</title>
-      <link>https://blog.oscloud.cz/tags/4.6/</link>
-      <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/4.6/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Collections</title>
-      <link>https://blog.oscloud.cz/tags/collections/</link>
-      <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/collections/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Discovery</title>
-      <link>https://blog.oscloud.cz/tags/discovery/</link>
-      <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/discovery/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mastodon</title>
-      <link>https://blog.oscloud.cz/tags/mastodon/</link>
-      <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/mastodon/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Profily</title>
-      <link>https://blog.oscloud.cz/tags/profily/</link>
-      <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/profily/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Hugo</title>
-      <link>https://blog.oscloud.cz/tags/hugo/</link>
-      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/hugo/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Oscloud</title>
-      <link>https://blog.oscloud.cz/tags/oscloud/</link>
-      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/oscloud/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Selfhosting</title>
-      <link>https://blog.oscloud.cz/tags/selfhosting/</link>
-      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/selfhosting/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Sftp</title>
-      <link>https://blog.oscloud.cz/tags/sftp/</link>
-      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/sftp/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Surfer</title>
-      <link>https://blog.oscloud.cz/tags/surfer/</link>
-      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/surfer/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Webdav</title>
-      <link>https://blog.oscloud.cz/tags/webdav/</link>
-      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/webdav/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Peertube</title>
-      <link>https://blog.oscloud.cz/tags/peertube/</link>
-      <pubDate>Sat, 30 May 2026 07:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/peertube/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Vhsky</title>
-      <link>https://blog.oscloud.cz/tags/vhsky/</link>
-      <pubDate>Sat, 30 May 2026 07:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/vhsky/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Video</title>
-      <link>https://blog.oscloud.cz/tags/video/</link>
-      <pubDate>Sat, 30 May 2026 07:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/video/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Komunita</title>
-      <link>https://blog.oscloud.cz/tags/komunita/</link>
-      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/komunita/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Opensource</title>
-      <link>https://blog.oscloud.cz/tags/opensource/</link>
-      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/opensource/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Spoluprace</title>
-      <link>https://blog.oscloud.cz/tags/spoluprace/</link>
-      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/spoluprace/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Webhosting</title>
-      <link>https://blog.oscloud.cz/tags/webhosting/</link>
-      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/webhosting/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Alternativa Google</title>
-      <link>https://blog.oscloud.cz/tags/alternativa-google/</link>
-      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/alternativa-google/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Digitální Soukromí</title>
-      <link>https://blog.oscloud.cz/tags/digit%C3%A1ln%C3%AD-soukrom%C3%AD/</link>
-      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/digit%C3%A1ln%C3%AD-soukrom%C3%AD/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Matrix</title>
-      <link>https://blog.oscloud.cz/tags/matrix/</link>
-      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/matrix/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Open Source Cloud</title>
-      <link>https://blog.oscloud.cz/tags/open-source-cloud/</link>
-      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/open-source-cloud/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Oscloud.site</title>
-      <link>https://blog.oscloud.cz/tags/oscloud.site/</link>
-      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/oscloud.site/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Služby</title>
-      <link>https://blog.oscloud.cz/tags/slu%C5%BEby/</link>
-      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/slu%C5%BEby/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Oznámení</title>
-      <link>https://blog.oscloud.cz/tags/ozn%C3%A1men%C3%AD/</link>
-      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/ozn%C3%A1men%C3%AD/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Produktivita</title>
-      <link>https://blog.oscloud.cz/tags/produktivita/</link>
-      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/produktivita/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Self-Hosted</title>
-      <link>https://blog.oscloud.cz/tags/self-hosted/</link>
-      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/self-hosted/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Todo</title>
-      <link>https://blog.oscloud.cz/tags/todo/</link>
-      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/todo/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Vikunja</title>
-      <link>https://blog.oscloud.cz/tags/vikunja/</link>
-      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/vikunja/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Chat</title>
-      <link>https://blog.oscloud.cz/tags/chat/</link>
-      <pubDate>Mon, 20 Apr 2026 12:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/chat/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mxchat</title>
-      <link>https://blog.oscloud.cz/tags/mxchat/</link>
-      <pubDate>Mon, 20 Apr 2026 12:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/mxchat/</guid>
+      <title>Fotky</title>
+      <link>http://localhost:1313/tags/fotky/</link>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/fotky/</guid>
       <description></description>
     </item>
     <item>
       <title>Self-Hosting</title>
-      <link>https://blog.oscloud.cz/tags/self-hosting/</link>
+      <link>http://localhost:1313/tags/self-hosting/</link>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/self-hosting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Soukromí</title>
+      <link>http://localhost:1313/tags/soukrom%C3%AD/</link>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/soukrom%C3%AD/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ActivityPub</title>
+      <link>http://localhost:1313/tags/activitypub/</link>
+      <pubDate>Thu, 06 Aug 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/activitypub/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fediverse</title>
+      <link>http://localhost:1313/tags/fediverse/</link>
+      <pubDate>Thu, 06 Aug 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/fediverse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fitness</title>
+      <link>http://localhost:1313/tags/fitness/</link>
+      <pubDate>Thu, 06 Aug 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/fitness/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>FitPub</title>
+      <link>http://localhost:1313/tags/fitpub/</link>
+      <pubDate>Thu, 06 Aug 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/fitpub/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Makni.cz</title>
+      <link>http://localhost:1313/tags/makni.cz/</link>
+      <pubDate>Thu, 06 Aug 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/makni.cz/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>E-Mail</title>
+      <link>http://localhost:1313/tags/e-mail/</link>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/e-mail/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IMAP</title>
+      <link>http://localhost:1313/tags/imap/</link>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/imap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SMTP</title>
+      <link>http://localhost:1313/tags/smtp/</link>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/smtp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Thunderbird</title>
+      <link>http://localhost:1313/tags/thunderbird/</link>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/thunderbird/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Webmail</title>
+      <link>http://localhost:1313/tags/webmail/</link>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/webmail/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud</title>
+      <link>http://localhost:1313/tags/cloud/</link>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/cloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nextcloud</title>
+      <link>http://localhost:1313/tags/nextcloud/</link>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/nextcloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Šifrování</title>
+      <link>http://localhost:1313/tags/%C5%A1ifrov%C3%A1n%C3%AD/</link>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/%C5%A1ifrov%C3%A1n%C3%AD/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Storage</title>
+      <link>http://localhost:1313/tags/storage/</link>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/storage/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zálohy</title>
+      <link>http://localhost:1313/tags/z%C3%A1lohy/</link>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/z%C3%A1lohy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>4.6</title>
+      <link>http://localhost:1313/tags/4.6/</link>
+      <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/4.6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Collections</title>
+      <link>http://localhost:1313/tags/collections/</link>
+      <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/collections/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Discovery</title>
+      <link>http://localhost:1313/tags/discovery/</link>
+      <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/discovery/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mastodon</title>
+      <link>http://localhost:1313/tags/mastodon/</link>
+      <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/mastodon/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Profily</title>
+      <link>http://localhost:1313/tags/profily/</link>
+      <pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/profily/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>http://localhost:1313/tags/hugo/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Oscloud</title>
+      <link>http://localhost:1313/tags/oscloud/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/oscloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Selfhosting</title>
+      <link>http://localhost:1313/tags/selfhosting/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/selfhosting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sftp</title>
+      <link>http://localhost:1313/tags/sftp/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/sftp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Surfer</title>
+      <link>http://localhost:1313/tags/surfer/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/surfer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Webdav</title>
+      <link>http://localhost:1313/tags/webdav/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/webdav/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Peertube</title>
+      <link>http://localhost:1313/tags/peertube/</link>
+      <pubDate>Sat, 30 May 2026 07:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/peertube/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vhsky</title>
+      <link>http://localhost:1313/tags/vhsky/</link>
+      <pubDate>Sat, 30 May 2026 07:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/vhsky/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Video</title>
+      <link>http://localhost:1313/tags/video/</link>
+      <pubDate>Sat, 30 May 2026 07:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/video/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Komunita</title>
+      <link>http://localhost:1313/tags/komunita/</link>
+      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/komunita/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Opensource</title>
+      <link>http://localhost:1313/tags/opensource/</link>
+      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/opensource/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Spoluprace</title>
+      <link>http://localhost:1313/tags/spoluprace/</link>
+      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/spoluprace/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Webhosting</title>
+      <link>http://localhost:1313/tags/webhosting/</link>
+      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/webhosting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Alternativa Google</title>
+      <link>http://localhost:1313/tags/alternativa-google/</link>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/alternativa-google/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Digitální Soukromí</title>
+      <link>http://localhost:1313/tags/digit%C3%A1ln%C3%AD-soukrom%C3%AD/</link>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/digit%C3%A1ln%C3%AD-soukrom%C3%AD/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Matrix</title>
+      <link>http://localhost:1313/tags/matrix/</link>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/matrix/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open Source Cloud</title>
+      <link>http://localhost:1313/tags/open-source-cloud/</link>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/open-source-cloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Oscloud.site</title>
+      <link>http://localhost:1313/tags/oscloud.site/</link>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/oscloud.site/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Služby</title>
+      <link>http://localhost:1313/tags/slu%C5%BEby/</link>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/slu%C5%BEby/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Oznámení</title>
+      <link>http://localhost:1313/tags/ozn%C3%A1men%C3%AD/</link>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/ozn%C3%A1men%C3%AD/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Produktivita</title>
+      <link>http://localhost:1313/tags/produktivita/</link>
+      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/produktivita/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Self-Hosted</title>
+      <link>http://localhost:1313/tags/self-hosted/</link>
+      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/self-hosted/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Todo</title>
+      <link>http://localhost:1313/tags/todo/</link>
+      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/todo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vikunja</title>
+      <link>http://localhost:1313/tags/vikunja/</link>
+      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/vikunja/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chat</title>
+      <link>http://localhost:1313/tags/chat/</link>
       <pubDate>Mon, 20 Apr 2026 12:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/self-hosting/</guid>
+      <guid>http://localhost:1313/tags/chat/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mxchat</title>
+      <link>http://localhost:1313/tags/mxchat/</link>
+      <pubDate>Mon, 20 Apr 2026 12:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/tags/mxchat/</guid>
       <description></description>
     </item>
     <item>
       <title>Fedi_start</title>
-      <link>https://blog.oscloud.cz/tags/fedi_start/</link>
+      <link>http://localhost:1313/tags/fedi_start/</link>
       <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/fedi_start/</guid>
+      <guid>http://localhost:1313/tags/fedi_start/</guid>
       <description></description>
     </item>
     <item>
       <title>Mamutovo</title>
-      <link>https://blog.oscloud.cz/tags/mamutovo/</link>
+      <link>http://localhost:1313/tags/mamutovo/</link>
       <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/mamutovo/</guid>
+      <guid>http://localhost:1313/tags/mamutovo/</guid>
       <description></description>
     </item>
     <item>
       <title>Onboarding</title>
-      <link>https://blog.oscloud.cz/tags/onboarding/</link>
+      <link>http://localhost:1313/tags/onboarding/</link>
       <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/onboarding/</guid>
+      <guid>http://localhost:1313/tags/onboarding/</guid>
       <description></description>
     </item>
     <item>
       <title>Linkwarden</title>
-      <link>https://blog.oscloud.cz/tags/linkwarden/</link>
+      <link>http://localhost:1313/tags/linkwarden/</link>
       <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/linkwarden/</guid>
+      <guid>http://localhost:1313/tags/linkwarden/</guid>
       <description></description>
     </item>
     <item>
       <title>Záložky</title>
-      <link>https://blog.oscloud.cz/tags/z%C3%A1lo%C5%BEky/</link>
+      <link>http://localhost:1313/tags/z%C3%A1lo%C5%BEky/</link>
       <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/z%C3%A1lo%C5%BEky/</guid>
+      <guid>http://localhost:1313/tags/z%C3%A1lo%C5%BEky/</guid>
       <description></description>
     </item>
     <item>
       <title>Cryptpad</title>
-      <link>https://blog.oscloud.cz/tags/cryptpad/</link>
+      <link>http://localhost:1313/tags/cryptpad/</link>
       <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/cryptpad/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>E2ee</title>
-      <link>https://blog.oscloud.cz/tags/e2ee/</link>
-      <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/e2ee/</guid>
+      <guid>http://localhost:1313/tags/cryptpad/</guid>
       <description></description>
     </item>
     <item>
       <title>Mamutovo.cz</title>
-      <link>https://blog.oscloud.cz/tags/mamutovo.cz/</link>
+      <link>http://localhost:1313/tags/mamutovo.cz/</link>
       <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/mamutovo.cz/</guid>
+      <guid>http://localhost:1313/tags/mamutovo.cz/</guid>
       <description></description>
     </item>
     <item>
       <title>Aplikace</title>
-      <link>https://blog.oscloud.cz/tags/aplikace/</link>
+      <link>http://localhost:1313/tags/aplikace/</link>
       <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/aplikace/</guid>
+      <guid>http://localhost:1313/tags/aplikace/</guid>
       <description></description>
     </item>
     <item>
       <title>Privacy</title>
-      <link>https://blog.oscloud.cz/tags/privacy/</link>
+      <link>http://localhost:1313/tags/privacy/</link>
       <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/privacy/</guid>
+      <guid>http://localhost:1313/tags/privacy/</guid>
       <description></description>
     </item>
     <item>
       <title>Novinky</title>
-      <link>https://blog.oscloud.cz/tags/novinky/</link>
+      <link>http://localhost:1313/tags/novinky/</link>
       <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>https://blog.oscloud.cz/tags/novinky/</guid>
+      <guid>http://localhost:1313/tags/novinky/</guid>
       <description></description>
     </item>
   </channel>

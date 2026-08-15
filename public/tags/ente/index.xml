@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ente on Oscloud News</title>
+    <link>http://localhost:1313/tags/ente/</link>
+    <description>Recent content in Ente on Oscloud News</description>
+    <generator>Hugo -- 0.164.0</generator>
+    <language>cs-cz</language>
+    <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
+    <webMaster>info@oscloud.cz (OSCloud)</webMaster>
+    <lastBuildDate>Fri, 07 Aug 2026 00:00:00 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ente/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ente Photos: end-to-end šifrovaná alternativa ke Google Photos je na OSCloud</title>
+      <link>http://localhost:1313/posts/ente-photos-spusteni/</link>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0200</pubDate><author>info@oscloud.cz (OSCloud)</author>
+      <guid>http://localhost:1313/posts/ente-photos-spusteni/</guid>
+      <description>&lt;p&gt;Spouštíme placenou instanci &lt;strong&gt;Ente Photos&lt;/strong&gt; na &lt;strong&gt;oscloud.photos&lt;/strong&gt; — end-to-end šifrovanou alternativu ke Google Photos a iCloud, kterou provozujeme sami, na vlastních serverech.&lt;/p&gt;
+&lt;h2 id=&#34;co-je-ente-photos&#34;&gt;Co je Ente Photos&lt;/h2&gt;
+&lt;p&gt;Ente je open source (AGPL-3.0) platforma pro zálohování a sdílení fotek a videí, postavená tak, aby provozovatel k obsahu neměl technicky přístup. Šifrování probíhá přímo v zařízení ještě před nahráním na server — takže i my jako správci vidíme jen zašifrovaná data a to, kolik místa zabíráte. Klientské aplikace i server (museum) jsou open source a kryptografii si nechali nezávisle prověřit (Cure53, Symbolic Software).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
