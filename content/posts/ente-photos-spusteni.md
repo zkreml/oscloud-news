@@ -6,6 +6,9 @@ slug: "ente-photos-spusteni"
 categories: ["Oznámení"]
 tags: ["ente", "fotky", "e2ee", "soukromí", "self-hosting"]
 author: Archos
+comments:
+  host: mamutovo.cz
+  id: "117097968134433938"
 cover:
   image: "images/ente-photos-spusteni.jpg"
   alt: "Ente Photos na OSCloud"
