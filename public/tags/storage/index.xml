@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Storage on Oscloud News</title>
-    <link>http://localhost:1313/tags/storage/</link>
+    <link>https://blog.oscloud.cz/tags/storage/</link>
     <description>Recent content in Storage on Oscloud News</description>
     <generator>Hugo -- 0.164.0</generator>
     <language>cs-cz</language>
     <managingEditor>info@oscloud.cz (OSCloud)</managingEditor>
     <webMaster>info@oscloud.cz (OSCloud)</webMaster>
     <lastBuildDate>Fri, 03 Jul 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/storage/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.oscloud.cz/tags/storage/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nextcloud na OSCloud roste: vlastní úložiště až 1 TB</title>
-      <link>http://localhost:1313/posts/nextcloud-vlastni-uloziste/</link>
+      <link>https://blog.oscloud.cz/posts/nextcloud-vlastni-uloziste/</link>
       <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate><author>info@oscloud.cz (OSCloud)</author>
-      <guid>http://localhost:1313/posts/nextcloud-vlastni-uloziste/</guid>
+      <guid>https://blog.oscloud.cz/posts/nextcloud-vlastni-uloziste/</guid>
       <description>&lt;p&gt;Google Drive. Dropbox. iCloud. Všechno pohodlné, všechno někde v USA, všechno plné sledování a podmínek, které jsi nikdy nečetl. Existuje jiná cesta — a my ji právě rozšiřujeme.&lt;/p&gt;
 &lt;h2 id=&#34;nextcloud-na-oscloud&#34;&gt;Nextcloud na OSCloud&lt;/h2&gt;
 &lt;p&gt;Na &lt;a href=&#34;https://oscloud.cz&#34;&gt;oscloud.cz&lt;/a&gt; provozujeme Nextcloud jako komunitní službu.
